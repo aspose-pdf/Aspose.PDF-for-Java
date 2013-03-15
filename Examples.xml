@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Pdf.</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Working With Aspose.Pdf</Title>
+          <Description>Samples and Examples for using Aspose.PDF in your applications.</Description>
+          <FolderName>WorkingWithAsposePDF</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Working With Pages</Title>
+              <Description>This section includes sample examples for all the page level operations which could be performed using Aspose.PDF</Description>
+              <FolderName>WorkingWithPages</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Concatenate PDF Files</Title>
+                  <Description>Example explaining concatenation of two PDF files.</Description>
+                  <FolderName>ConcatenatePdfFiles</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Concatenate PDF Files</DisplayName>
+                    <Url>Concatenate+PDF+Files</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\input2.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Images</Title>
+              <Description>This section includes the sample examples for all image related operations which could be performed using Aspose.Pdf.</Description>
+              <FolderName>WorkingWithImages</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Convert All PDF Pages to JPEG Images</Title>
+                  <Description>The JpegDevice class allows you to convert PDF pages to JPEG images using Aspose.Pdf. This class provides a method named Process which allows you to convert a particular page of the PDF file to JPEG image. If you want to convert all the pages to the images, you need to loop through all the pages of the PDF and then convert each page individually. You first need to create an object of Document class, so you could get the particular page which you want to convert to JPEG. After that, you need to call the Process method to convert the page to JPEG image.</Description>
+                  <FolderName>ConvertPagesToImages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Convert all PDF pages to JPEG Images</DisplayName>
+                    <Url>Convert+all+PDF+pages+to+JPEG+Images</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\image1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\image2.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\image3.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Text</Title>
+              <Description>This section includes sample examples for all the text operations which could be performed using Aspose.PDF</Description>
+              <FolderName>WorkingWithText</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Replace Text in All Pages of PDF</Title>
+                  <Description>In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using Save method of the Document object. The example elaborates this in detail to replace text in a PDF document.</Description>
+                  <FolderName>ReplaceTextInAllPages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in All Pages of a PDF Document</DisplayName>
+                    <Url>Replace+Text+in+All+Pages+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Document Conversion</Title>
+              <Description>This section includes examples related to the following topics: 
+
+- Convert PCL file to PDF format
+- Convert PDF file into DOC format
+- Convert PDF file into HTML format
+- Convert PDF file into TeX format
+- Convert PDF File to PDF-A
+- Convert SVG file to PDF format
+- Convert XPS files to PDF format</Description>
+              <FolderName>WorkWithDocumentConversion</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Convert PDF file into DOC format</Title>
+                  <Description>Aspose.Pdf for .NET provides two liner code to transform source PDF file into resultant .DOC file. In order to accomplish this feature, a new enumeration named SaveFormat has been introduced and its value .Doc enables us to save the source file into MS word format. This examples describes the saving of PDF to .DOC using two liner code and also depicts the use of SaveOptions and other parameters that could be used in saving a PDF to .DOC</Description>
+                  <FolderName>ConvertPDFToDOC</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF file into DOC format</DisplayName>
+                    <Url>Convert+PDF+file+into+DOC+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\saveOptionsOutput.doc</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\simpleOutput.doc</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PCL file to PDF format</Title>
+                  <Description>PCL (Printer Command Language) is a Hewlett-Packard printer language has developed to access standard printer features. PCL levels 1 through 5e/5c are command based languages using control sequences that are processed and interpreted in the order they are received. At a consumer level, PCL data streams are generated by a print driver. PCL output can also be easily generated by custom applications
+
+In order to accomplish this feature, we have introduced a class named PclLoadOptions which is used to initialize LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. This example shows the process of converting PCL file into PDF format in detail.</Description>
+                  <FolderName>ConvertPCLToPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Convert PCL file to PDF format</DisplayName>
+                    <Url>Convert+PCL+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.pcl</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test-converted.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF file into HTML format</Title>
+                  <Description>Keeping alive the tradition of making things simple and understandable, Aspose.Pdf for .NET provides two liner code to transform source PDF file into resultant .Html file. In order to accomplish this requirement, the enumeration named SaveFormat contains a value .Html which will enable you to save the source file into Html format. This example demonstrates PDF to HTML conversion.</Description>
+                  <FolderName>ConvertPDFToHTML</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF file into HTML format</DisplayName>
+                    <Url>Convert+PDF+file+into+HTML+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output_files\style.css</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\output_files\img_02.svg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\output_files\img_01.svg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\output.html</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert XPS files to PDF format</Title>
+                  <Description>The XPS file type is primarily associated with 'XML Paper Specification' by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into its Windows operating system.
+
+In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a class named XpsLoadOptions which is used to initialize LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. This example depicts the conversion using Aspose.Pdf</Description>
+                  <FolderName>ConvertXPSToPDF</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Convert XPS files to PDF format</DisplayName>
+                    <Url>Convert+XPS+files+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.xps</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\resultant.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF File to PDF-A</Title>
+                  <Description>Aspose.Pdf allows you to convert the PDF file to PDF/A-1b compliant PDF file. You can convert the PDF using Convert method of the Document class. Before converting the PDF to PDF/A compliant file, you need to validate the PDF using Validate method. The validation result is stored in the XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using ConvertErrorAction enumeration. This example elaborates the conversion from PDF to PDF-A using Aspose.Pdf</Description>
+                  <FolderName>ConvertPDFToPDFA</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF File to PDF-A</DisplayName>
+                    <Url>Convert+PDF+File+to+PDF-A</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\log.xml</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working with Aspose.Pdf.Generator</Title>
+          <Description>This section includes examples related to the following topics: 
+
+- Introduction to XML Technologies (Generator)
+- Aspose.Pdf for .NET Document Object Model (DOM)
+- Your First Application using Aspose.Pdf for .NET
+- Working with Document (Generator)
+- Working with Sections (Generator)
+- Working with Paragraphs (Generator)
+- Working with Floating Box (Generator)
+- Working with Text (Generator)
+- Working with Graphs (Generator)
+- Working with Images (Generator)
+- Working with Headings (Generator)
+- Working with Tables (Generator)
+- Working with Hyperlinks (Generator)
+- Working with Attachments and Annotations (Generator)
+- Working with Security Features (Generator)
+- Utility Features (Generator)
+- Conversion Features (Generator)
+- Advance Features (Generator)</Description>
+          <FolderName>WorkingWithAsposePdfGenerator</FolderName>
+          <Order>2</Order>
+          <Examples>
+            <Example>
+              <Title>Convert XSL-FO to PDF format</Title>
+              <Description>XSL-FO stands for eXtensible Stylesheet Language Formatting Objects. It's a language for describing a styled document completely. The XSL-FO document contains the medium and appearance specific Formatting Objects that make up the page (or for audio output, the speech). For the print medium, formatting objects can include characters, blocks of text, images, tables, borders, master pages and so on.
+
+Conversion of an XML document tree into various supported output formats, is a common need in applications and usually it’s a two-step process
+- Convert the XML source to an XSL-FO representation.
+- Convert the XSL-FO representation to the target format.
+
+This example provides complete demonstration of the almost all possible ways to convert XSL-FO files in any form to PDF document. The example also describes that how developers can set Meta information of the PDF documents. In the early lines of code, it is also practiced about how to set license for Aspose.Pdf. These lines are commented for the developers using evaluation versions of Aspose.Pdf. If you have bought a license of Aspose.Pdf then you should un-comment those lines.</Description>
+              <FolderName>ConvertXSLFOToPDF</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Converting XSL FO to PDF</DisplayName>
+                <Url>Converting+XSL+FO+to+PDF</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\test.fo</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test.xml</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test.xsl</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Test.pdf</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test_fo_doc2string.pdf</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test_fo_sring2string.pdf</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test_fo_stream2string.pdf</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\test_xml_string2string.pdf</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+          <Folders>
+            <Folder>
+              <Title>Conversion Features (Generator)</Title>
+              <Description>This section includes examples related to the following topics: 
+
+- Converting PCL file to PDF format
+- Converting XSL FO to PDF
+- Converting SVG file to PDF format
+- HTML to PDF conversion</Description>
+              <FolderName>ConversionFeatures</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>HTML to PDF conversion</Title>
+                  <Description>Aspose.Pdf for .NET fully supports HTML 4.1 and CSS 2.1. However HTML5 is partially supported i.e. The feature 'Canvas' object of HTML5 is not yet implemented. Our component do support CSS3 standard but the support is still partial.</Description>
+                  <FolderName>ConvertHTMLToPDF</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>HTML to PDF conversion</DisplayName>
+                    <Url>HTML+to+PDF+conversion</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.htm</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\HTML2pdf.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+    <Folder>
+      <Title>Knowledge Base</Title>
+      <Description>This section includes examples related to the following topics: 
+
+- Tips and Tricks
+- Technical Articles
+- Known Issues
+- Migration from Earlier Versions of Aspose.Pdf for .NET
+- Migration from Adobe Acrobat Automation to Aspose
+- Use Aspose.Pdf for .NET in Other Programming Languages
+- Integration with Aspose.Total Components</Description>
+      <FolderName>KnowledgeBase</FolderName>
+      <Order>2</Order>
+      <Folders>
+        <Folder>
+          <Title>Technical Articles</Title>
+          <Description>This section includes examples related to the following topics: 
+
+- Aspose.Pdf.Generator Articles
+- Aspose.Pdf.Facades Articles
+- Aspose.Pdf Articles</Description>
+          <FolderName>TechnicalArticles</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Aspose.Pdf.Generator Articles</Title>
+              <Description>This Section includes examples related to following topics: 
+
+- Adding Image in table Cell
+- Bind XML and work with individual objects
+- Display Currency symbol with table values
+- Export Excel Worksheet data into PDF table
+- Fonts embedding while creating PDF
+- How to Convert an Image to PDF
+- How to Convert a text file to PDF
+- How to convert HTML to PDF using InLineHTML approach
+- How to Convert MemoryStream Image to PDF
+- How to Create MultiLayer PDF document
+- How to Create PDF A 1 with Aspose.Pdf
+- How to dynamically set columns width in a Table row
+- How to Figure out if the table will break in current page
+- How to Remove Hyperlinks from Text during HTML to PDF conversion
+- How to Set page orientation according to image dimensions
+- Image and Page Number in Header Footer section
+- Performance Improvement while converting TIFF to PDF
+- Placing a text around an image
+- Read Database, Create PDF and send it as an attachment with email
+- Table in Header Footer section
+- Using hyphenation while creating PDF</Description>
+              <FolderName>AsposePdfGeneratorArticles</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Convert Text File to PDF</Title>
+                  <Description>This example explains how to easily and efficiently convert a text file to PDF using Aspose.Pdf.</Description>
+                  <FolderName>ConvertTextFileToPDF</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>How to Convert a text file to PDF</DisplayName>
+                    <Url>How+to+Convert+a+text+file+to+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.txt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert an Image to PDF</Title>
+                  <Description>Images are one of the major data components beside text information, which are shared among different users. Sharing the Images in PDF format is also a very convenient way. Keeping this aspect in mind, Aspose.Pdf has been designed to support the conversion of Images into PDF format.
+
+In our DOM (document object model) every PDF file is comprised of sections, and each section contains paragraphs. Whereas a paragraph can comprise of text, and image file, Table, Floating Box, Graph, Heading, form field or an attachment. So in order to convert and image file into PDF format, we must enclose it into a paragraph.
+
+To add an image, simply create an object of Image class, add the image to paragraphs collection of a section, specify the location where an image is placed and specify the image type. For that reason we have a class named ImageInfo which offers the capability to define the image source. This examples explains the concept of converting an image to PDF in detail.</Description>
+                  <FolderName>ConvertImageToPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>How to   Convert an Image to PDF</DisplayName>
+                    <Url>How+to+++Convert+an+Image+to+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\aspose.bmp</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\aspose.tif</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\jpegOutput.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\resizedBmpOutput.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\tifOutput.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Image and Page Number in Header Footer section</Title>
+                  <Description>While creating a document we often require adding a watermark in the Header/Footer section of the PDF file. Whereas a watermark can be a text logo or an image file. Aspose.Pdf facilitates you to add both image and text information into the Header/Footer section. Sometimes we may require adding the page number information in the Header/Footer section. To server this purpose, Aspose.Pdf has a set of replaceable symbols, where Replaceable symbols are special symbols in text string that can be replaced with corresponding content at run time. $P displays total number of pages in the document &amp; $p displays the page number of current page in the document.
+For more information and details of supported replaceable symbols offered by Aspose.Pdf please visit http://www.aspose.com/docs/display/pdfjava/Replaceable+Symbols.
+
+This example displays Image in Header section and Page number information in Footer section of the PDF file.</Description>
+                  <FolderName>ImagePageNumberInHeaderFooter</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Image  and  Page Number in Header Footer section</DisplayName>
+                    <Url>Image++and++Page+Number+in+Header+Footer+section</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\pdfWithHeaderAndPageNos.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Table in Header Footer Section</Title>
+                  <Description>This example describes addition of Table in Header section of a PDF. The header of a page uses the top margin area of the page, which means the height of the header can't be larger than the top margin of the page. Similarly, Footer is a special area on the bottom of the page and uses the bottom margin area of the page. If the Header or Footer is larger than the top or bottom margin of the page respectively, the top or bottom margin will be enlarged automatically.</Description>
+                  <FolderName>TableInHeaderFooter</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Table in Header Footer section</DisplayName>
+                    <Url>Table+in+Header+Footer+section</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\asposelogo.png</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Table_in_Header.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Image in Table Cell</Title>
+                  <Description>According to our DOM (Document Object Model) a document is composed of Sections. Where a section may be a Header/Footer or a body of the document. A section contains one or more paragraphs, and a paragraph may be an Image, a text, a form field, Heading, FloatingBox, graph, attachment, or a table. Whereas, a table has a collection of Rows, a row has a collection of Cells and a cell is a collection of Paragraphs. So, as according to our DOM, a table cell may contain any of the paragraph elements specified above which also includes images. One must have a clear understanding of cell width, especially when displaying an image in table cell, so that the image width should be fixed according to the width of a cell, in order to display it properly. Width of an Image can be fixed by setting the FixWidth property of ImageInfo class. In this case the image is scaled to the fixed width of table cell. This example discusses this concept in detail.</Description>
+                  <FolderName>AddImageInTableCell</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Adding Image in table Cell</DisplayName>
+                    <Url>Adding+Image+in+table+Cell</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Image_in_Cell.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
