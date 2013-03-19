@@ -12,7 +12,7 @@ public class ConvertXSLFOToPDF
 {
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory...
+        // The path to the documents directory....
         String dataDir = "src/programmersguide/workingwithasposepdf/workwithdocumentconversion/convertxslfotopdf/data/";
 
         System.out.println("XSL-FO to PDF conversion example will be available very soon.");
