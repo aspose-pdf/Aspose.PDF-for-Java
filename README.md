@@ -16,6 +16,10 @@ Using Aspose.Pdf for Java in your project gives you the following benefits:
 
 These examples provide helpful demonstrations and code when using Aspose.Pdf for Java.
 
+###Run Examples on your PC
+
+Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose.total-for-java/category1426.aspx) to view and run all these examples on your PC.
+
 ## Open Source Feel of Aspose.Pdf
 
 Aspose.Pdf for .NET and Aspose.Pdf for Java are successful commercial products, but our philosophy is to develop them using our unique "*open-source feel*" approach. In other words, we at Aspose are extremely customer driven and this shows in:
