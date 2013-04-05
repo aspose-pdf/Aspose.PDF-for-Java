@@ -21,11 +21,11 @@ public class ConvertPagesToImages
         PdfConverter converter = new PdfConverter();
         converter.bindPdf(dataDir + "input.pdf");
         converter.doConvert();
-        String suffix = ".png";
+        String suffix = ".jpg";
         int imageCount = 1;
         while (converter.hasNextImage())
         {
-            converter.getNextImage(dataDir + "image" + imageCount + suffix, ImageType.PNG);
+            converter.getNextImage(dataDir + "image" + imageCount + suffix, ImageType.JPEG);
             imageCount++;
         }
 
