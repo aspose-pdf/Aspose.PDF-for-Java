@@ -4,5 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="../lib/aspose.pdf-3.3.jdk16.jar"/>
 	<classpathentry kind="lib" path="../lib/aspose-pdf-kit-4.5.0.jar"/>
+	<classpathentry kind="lib" path="../lib/jai_core.jar"/>
+	<classpathentry kind="lib" path="../lib/jai_codec.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
