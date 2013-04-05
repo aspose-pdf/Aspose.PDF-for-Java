@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
  
-package programmersguide.workingwithasposepdf.workwithdocumentconversion.convertxslfotopdf.java;
+package programmersguide.workingwithasposepdfgenerator.convertxslfotopdf.java;
 
 public class ConvertXSLFOToPDF
 {
