@@ -2,23 +2,20 @@
 
 This package contains Java Examples [Aspose.Pdf for Java](http://www.aspose.com/categories/java-components/aspose.pdf-for-java/default.aspx).
 
-Aspose.Pdf for Java is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat. Aspose.PDF for Java offers an incredible wealth of features, these include: PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling. 
+##How to use the Examples?
 
-Using Aspose.Pdf for Java in your project gives you the following benefits:
+###With the Examples Dashboard
 
-+ Rich Set of Features
+Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
 
-+ Platform Independence
+![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/03/Java-Dashboard1.png "Aspose Examples Dashboard")
 
-+ Performance and Scalability
+###With IDE
 
-+ Minimal Learning Curve
+Clone or Download the ZIP and extract the contents to your local hard drive. If you have IntelliJ IDEA, then open the project directly 
+by browsing to the folder. For Netbeans and Eclipse, you can import project feature.
 
-These examples provide helpful demonstrations and code when using Aspose.Pdf for Java.
-
-###Run Examples on your PC
-
-Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose.total-for-java/category1426.aspx) to view and run all these examples on your PC.
+Also download the [latest version](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx) of Aspose.Pdf for Java and set/fix jar references.
 
 ## Open Source Feel of Aspose.Pdf
 
@@ -68,40 +65,6 @@ Following examples are included in the Examples Repository.
   <tr><td>Security</td><td>Demonstrates how to apply security restrictions to a PDF document.</td></tr>  
   <tr><td>XMLExample</td><td>Shows how create simple PDF using XML file.</td></tr>  
 </table>
-
-###Output
-
-+ Output Pdf file is saved on a specified location on the user's machine.
-
-###Help Material
-
-For further details on setting up the examples and any requirements refer to the readme.txt found in the root of the repository.
-
-
-##Download the Examples
-
-Please [Download the Aspose.Pdf for Java Examples](https://github.com/asposepdf/Aspose_Pdf_Java/downloads) to try them at your end.
-
-
-##How to use the Examples?
-
-1. Firstly make sure that you have downloaded and extracted the latest version of [Aspose.Pdf for Java](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/category1366.aspx).
-
-2. Download the examples from the above link. 
-
-3. In order to run the examples using command line, copy the .java file to \bin folder inside JAVA_HOME (JAVA_HOME is the folder where JDK is installed).
-
-4. comment out the code line in which package is being referenced.
-
-5. Use the following command to compile the example (e.g. HelloWorldExample.java)
-
-	$JAVA_HOME\bin>javac -cp .;aspose-pdf-3.0.1-jdk16.jar HelloWorldExample.java
-
-3) Use the following command to run the example
-
-	$JAVA_HOME\bin>java -cp .;aspose-pdf-3.0.1-jdk16.jar HelloWorldExample
-
-
 
 ##Contact Us
 
