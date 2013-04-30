@@ -43,6 +43,188 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Get Number of Pages of a PDF File</Title>
+                  <Description>In order to get the number of pages of a PDF file, you need to open the PDF file using Document class. After that, you can use Count property of the Pages Collection of Document object to get the total number of pages in the document.</Description>
+                  <FolderName>GetNumberofPagesofaPDFFile</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Get Number of Pages of a PDF File</DisplayName>
+                    <Url>Get+Number+of+Pages+of+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input1.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Page Properties</Title>
+                  <Description>The Page Class provides all the properties related to a particular page of a PDF document. All the pages of the PDF files are contained by Pages Collection of the Document object. We can access either individual Page object by Index value, from this collection, or loop through the collection, using foreach loop, and get all the pages. Once an individual page is accessed, we can get its properties.</Description>
+                  <FolderName>GetPageProperties</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Get Page Properties</DisplayName>
+                    <Url>Get+Page+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input1.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Insert an Empty Page in a PDF File</Title>
+                  <Description>Insert method of the Pages Collection allows you to insert an empty page in a PDF document. You need to pass the location of the newly inserted blank page to the Insert method. First of all, create a Document object with the input PDF file, in which you want to add the blank page. Then, call the Insert method of the Pages Collection of this Document object. Finally, save the output PDF using Save method.</Description>
+                  <FolderName>InsertEmptyPageInPDFFile</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Insert an Empty Page in a PDF File</DisplayName>
+                    <Url>Insert+an+Empty+Page+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Insert an Empty Page at the End of a PDF File</Title>
+                  <Description>If you want to insert an empty page at the end of the PDF file, you only need to call Add method of the Pages Collection of Document object, without any parameters. First, you need to create a Document object with the input PDF file in which you want to add the blank page. Then, you have to call Add method of the Pages Collection, and finally save the output PDF using Save method.</Description>
+                  <FolderName>InsertEmptyPageAtEndofPDFFile</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Insert an Empty Page at the End of a PDF File</DisplayName>
+                    <Url>Insert+an+Empty+Page+at+the+End+of+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Split PDF File to Individual Pages</Title>
+                  <Description>In order to split a PDF file into single page PDF files, you need to loop through the Pages Collection of the Document object. In each iteration you need to create a new Document object and add the individual Page in this empty document. After that, you need to save the new PDF using Save method.</Description>
+                  <FolderName>SplitPDFFiletoIndividualPages</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Split PDF File to Individual Pages</DisplayName>
+                    <Url>Split+PDF+File+to+Individual+Pages</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\page_1.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\page_2.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get a Particular Page of the PDF File</Title>
+                  <Description>Pages Collection of the Document object returns all the pages of the PDF file. In order to get a particular page from this collection you need to specify its Index. Once you get a particular page, you need to create a new Document object and add this Page object into the Document object and save the output using Save method.</Description>
+                  <FolderName>GetParticularPageOfPDFFile</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Get a Particular Page of the PDF File</DisplayName>
+                    <Url>Get+a+Particular+Page+of+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete a Particular Page from the PDF File</Title>
+                  <Description>In order to delete a particular page from the Pages Collection, you need to call the Delete method and specify the Index of the particular page you want to delete. After that call Save method to save the updated PDF file.</Description>
+                  <FolderName>DeleteParticularPageFromPDFFile</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Page from the PDF File</DisplayName>
+                    <Url>Delete+a+Particular+Page+from+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Page Dimensions</Title>
+                  <Description>The Page contains a method named SetPageSize(...) which provides the feature/capability to set the page size/dimensions. In following code snippet, we will load the source PDF file, get page collection into PageCollection object, get particular page whose dimensions we need to update, and then we will call SetPageSize(..) method to update its dimensions. Finally we will call the Save(..) method of Document class to generate the PDF file with updated page dimensions.</Description>
+                  <FolderName>UpdatePageDimensions</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Update Page Dimensions</DisplayName>
+                    <Url>Update+Page+Dimensions</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add image as page background</Title>
+                  <Description>A PDF document is a collection of pages and each page contains collection of artifacts. We have a class named BackgroundArtifact which can be used to add background image to page object.</Description>
+                  <FolderName>AddImageAsPageBackground</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Add image as page background</DisplayName>
+                    <Url>Add+image+as+page+background</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\aspose-total-for-net.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
