@@ -289,6 +289,69 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Add Text to an existing PDF file</Title>
+                  <Description>To add text to an existing PDF file:
+
+- Open the input PDF using the Document object.
+- Get the particular page to which you want to add the text.
+- Create a TextFragment object with the input text along with other text properties. The TextBuilder object created from that particular page – to which you want to add the text – allow you to add the TextFragment object to the page using the appendText method.
+- Call the Document object's save method and save the output PDF file.</Description>
+                  <FolderName>AddTexttoPDFfile</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add Text to an existing PDF file</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Add+Text+to+an+existing+PDF+file</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\text-added.out.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Text From All the Pages of a PDF Document</Title>
+                  <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for java allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call accept(..) method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.</Description>
+                  <FolderName>ExtractTextFromAllPagesofPDF</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text From All the Pages of a PDF Document</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Extract+Text+From+All+the+Pages+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\extracted_text.out.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text from the Pages of PDF Document</Title>
+                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.</Description>
+                  <FolderName>SearchandGetTextfromPagesofPDF</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text from the Pages of PDF Document</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+from+the+Pages+of+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
