@@ -352,6 +352,115 @@
                   </InputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Extract Text from an Individual Page of the PDF Document</Title>
+                  <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for java allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call accept(..) method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.
+
+In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.</Description>
+                  <FolderName>ExtractTxtfromPageofPDFDoc</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from an Individual Page of the PDF Document</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Extract+Text+From+All+the+Pages+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\extracted_text.out.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text from a Single Page of a PDF Document</Title>
+                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
+
+In order to search a text an get properties associated with it, please provide the page index against which you need to get the information.</Description>
+                  <FolderName>SearchandGetTextfromPageofPDFDoc</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text from a Single Page of a PDF Document</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+from+the+Pages+of+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text Segments from Pages of PDF</Title>
+                  <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
+                  <FolderName>SearchandGetTextSegmentsfromPagesofPDF</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text Segments from Pages of PDF</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+Segments+from+Pages+of+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text Segments From an Individual Page of PDF Document</Title>
+                  <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.
+
+In order to search a textsegment and get properties associated with it on a single page, please specify the page index for which you need to get the information.</Description>
+                  <FolderName>SearchandGetTextSegmentsFromanIndividualPageofPDFDocument</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text Segments From an Individual Page of PDF Document</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+Segments+from+Pages+of+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and get Text from all pages using Regular Expression</Title>
+                  <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.</Description>
+                  <FolderName>SearchandgetTextfromallpagesusingRegularExpression</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Search and get Text from all pages using Regular Expression</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+get+Text+from+pages+using+Regular+Expression</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text from a Single Page Using Regular Expression</Title>
+                  <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.
+
+In order to search a text and get properties associated with it on a single page, please specify the page index for which you need to get the information.</Description>
+                  <FolderName>SearchandGetTextfromaSinglePageUsingRegularExpression</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text from a Single Page Using Regular Expression</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+get+Text+from+pages+using+Regular+Expression</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
