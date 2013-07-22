@@ -603,6 +603,116 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 </Example>
               </Examples>
             </Folder>
+			<Folder>
+              <Title>Working with Annotations</Title>
+              <Description>This section includes the following topics:
+
+1: Add Annotation in an Existing PDF File
+2: Get Particular Annotation from a PDF File
+3: Get All Annotations from the Page of a PDF document
+4: Delete a Particular Annotation from the PDF File
+5: Delete All Annotations from a Page of a PDF File
+            </Description>
+              <FolderName>WorkingWithAnnotations</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Annotation in an Existing PDF File</Title>
+                  <Description>The annotations are contained by the Annotations collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection. In order to add an annotation in a particular page, you need to add it to the Annotations collection of that page using Addmethod. So first step is to create a particular annotation, which you want to add to the PDF. Then open the input PDF file and add this annotation to the Page's Annotations collection.</Description>
+                  <FolderName>AddAnnotationInExistingPDFFile</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Annotation in an Existing PDF File</DisplayName>
+                    <Url>Add+Annotation+in+an+Existing+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Particular Annotation from a PDF File</Title>
+                  <Description>All the annotations for a particular page can be found in the Annotations collection of that Page. In order to get a particular annotation, you need to specify an Index of the annotation. This will return an object of type Annotation and you will have to cast it to a particular type of the annotation i.e. TextAnnotation etc.</Description>
+                  <FolderName>GetParticularAnnotationFromPDFFile</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Get Particular Annotation from a PDF File</DisplayName>
+                    <Url>Get+Particular+Annotation+from+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get All Annotations from the Page of a PDF document</Title>
+                  <Description>In order to get all the annotations from the page of a PDF document, you need to loop through the Annotations collection of that particular Page. Please note that, if you want to get all the annotations from the whole PDF, you will have to loop through the Pages collection of the document as well, before navigating through the Annotations collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation and then show its properties.</Description>
+                  <FolderName>GetAllAnnotationsFromPageOfPDFDocument</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Get All Annotations from the Page of a PDF document</DisplayName>
+                    <Url>Get+All+Annotations+from+the+Page+of+a+PDF+document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete a Particular Annotation from the PDF File</Title>
+                  <Description>In order to delete a particular annotation from a PDF, you need to call the Delete method of the Annotations collection. This collection belongs to the Page object where the annotation exists. The Delete method requires the Index of the annotation which needs to be deleted. After that, save the update PDF file.</Description>
+                  <FolderName>DeleteParticularAnnotationFromPDFFile</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Annotation from the PDF File</DisplayName>
+                    <Url>Delete+a+Particular+Annotation+from+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Annotations from a Page of a PDF File</Title>
+                  <Description>Annotations collection contains all the annotations for that particular page. In order to delete all the annotations from that page, you need to call the Delete method of the Annotations collection.</Description>
+                  <FolderName>DeleteAllAnnotationsFromPageOfPDFFile</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Annotations from a Page of a PDF File</DisplayName>
+                    <Url>Delete+All+Annotations+from+a+Page+of+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>                        
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
