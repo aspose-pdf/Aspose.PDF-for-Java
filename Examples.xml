@@ -713,6 +713,260 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 </Example>                        
               </Examples>
             </Folder>
+          <Folder>
+              <Title>Working with Attachments</Title>
+              <Description>This section includes the following examples:
+
+1: Add Attachment in a PDF Document
+2: Get Individual Attachment from a PDF Document
+3: Get All the Attachments from a PDF Document
+4: Delete all Attachments from PDF document
+5: Get Information of an Attachment</Description>
+              <FolderName>WorkingWithAttachments</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Attachment in a PDF Document</Title>
+                  <Description>In order to add attachment in a PDF document, you need to create a FileSpecification object with the file, which needs to be added, and the file description. After that the FileSpecification object can be added to EmbeddedFiles collection of Document object using collection Add method. The EmbeddedFiles collection contains all the attachments added in the PDF file.</Description>
+                  <FolderName>AddAttachmentInPDFDocument</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Attachment in a PDF Document</DisplayName>
+                    <Url>Add+Attachment+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Individual Attachment from a PDF Document</Title>
+                  <Description>EmbeddedFiles collection of the Document object contains all the attachments. Each element of this collection represents a FileSpecification object. If you want to get an individual attachment from the collection, you can do so by using Index value. The Index represents the number of the file to be fetched. This way, you will be able to get a FileSpecification object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.</Description>
+                  <FolderName>GetIndividualAttachmentFromPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Get Individual Attachment from a PDF Document</DisplayName>
+                    <Url>Get+Individual+Attachment+from+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get All the Attachments from a PDF Document</Title>
+                  <Description>In order to get all the attachments from the PDF file, you need to loop through the EmbeddedFiles collection of the Document object. EmbeddedFiles collection contains all the attachments. Each element of this collection represents a FileSpecification object. Each iteration of the foreach loop through the EmbeddedFiles collection will return a FileSpecification object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.</Description>
+                  <FolderName>GetAlltheAttachmentsFromPDF</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Get All the Attachments from a PDF Document</DisplayName>
+                    <Url>Get+All+the+Attachments+from+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\1.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\2.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete all Attachments from PDF document</Title>
+                  <Description>The attachments of the PDF document can found in the EmbeddedFiles collection of the Document object. In order to delete all the attachments, you only need to call the Delete method of the EmbeddedFiles collection and then save the updated file using Save method of the Document object.</Description>
+                  <FolderName>DeleteAllAttachmentsFromPDF</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Delete all Attachments from PDF document</DisplayName>
+                    <Url>Delete+all+Attachments+from+PDF+document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Information of an Attachment</Title>
+                  <Description>FileSpecification object provides properties like Name, Description, MIMEType and Params which provide the information about the attachment. First three properties are quite evident from their names, while Params property provides the information about the file parameters. These parameters include CheckSum, CreationDate, ModDate and Size. In order to get these parameters, you first need to make sure that the Params property is not null.</Description>
+                  <FolderName>GetInformationOfAttachment</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Information of an Attachment</DisplayName>
+                    <Url>Get+Information+of+an+Attachment</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Bookmarks</Title>
+              <Description>This section includes the following examples:
+
+
+1: Add a Bookmark in the PDF Document
+2: Add a Child Bookmark in the PDF Document
+3: Delete All Bookmarks from the PDF Document
+4: Delete a Particular Bookmark from the PDF Document
+5: Get Bookmarks from the PDF Document
+6: Get ChildBookmarks From the PDF Document
+7: Update Bookmarks in a PDF Document
+8: Update Child Bookmarks in a PDF Document</Description>
+              <FolderName>WorkingWithBookmarks</FolderName>
+              <Order>7</Order>
+              <Examples>
+                <Example>
+                  <Title>Add a Bookmark in the PDF Document</Title>
+                  <Description>A bookmark can be added in a PDF document using OutlineItemCollection. First of all, you need to open the PDF document using Document object. After that, you can add the OutlineItemCollection in the Outlines collection of the Document object. However, before adding the OutlineItemCollection in the Outlines collection, you need to define the properties of the bookmark.</Description>
+                  <FolderName>AddBookmarkInPDF</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add a Bookmark in the PDF Document</DisplayName>
+                    <Url>Add+a+Bookmark+in+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add a Child Bookmark in the PDF Document</Title>
+                  <Description>In this example we will see how to add child bookmark in a PDF document using Aspose.Pdf.</Description>
+                  <FolderName>AddChildBookmarkPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add a Child Bookmark in the PDF Document</DisplayName>
+                    <Url>Add+a+Child+Bookmark+in+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Bookmarks from the PDF Document</Title>
+                  <Description>The Outline collection contains all the bookmarks of the PDF document. In order to delete all the bookmarks from the PDF file, you only need to call the Delete method of Outlines collection and then save the modified file using Save method of the Document object.</Description>
+                  <FolderName>DeleteAllBookmarksFromPDF</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Bookmarks from the PDF Document</DisplayName>
+                    <Url>Delete+All+Bookmarks+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete a Particular Bookmark from the PDF Document</Title>
+                  <Description>In order to delete a particular bookmark from the PDF file, you need to pass the bookmark title as parameter to the Delete method of the Outlines collection. The Outlines collection is provided by the Document object. The Delete method will remove the bookmark having the same Title as passed to the method. After that, just save the updated file using Save method of the Document object.</Description>
+                  <FolderName>DeleteParticularBookmarkFromPDF</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Bookmark from the PDF Document</DisplayName>
+                    <Url>Delete+a+Particular+Bookmark+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Bookmarks from the PDF Document</Title>
+                  <Description>The Outlines collection of the Document object contains all a PDF file's bookmarks. To get those bookmarks, loop through the Outlines collection and get each bookmark in OutlineItemCollection. The OutlineItemCollection provides access to all the bookmrark's attributes.</Description>
+                  <FolderName>GetBookmarksFromPDF</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Bookmarks from the PDF Document</DisplayName>
+                    <Url>Get+Bookmarks+from+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get ChildBookmarks From the PDF Document</Title>
+                  <Description>In order to get all the bookmarks you need to loop through the Outlines collections of Document object. However, if you want to get the child bookmarks as well then you also need to loop through all the bookmarks in each OutlineItemCollection object obtained in the above mentioned loop.</Description>
+                  <FolderName>GetChildBookmarksFromPDF</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Get ChildBookmarks From the PDF Document</DisplayName>
+                    <Url>Get+ChildBookmarks+From+the+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
