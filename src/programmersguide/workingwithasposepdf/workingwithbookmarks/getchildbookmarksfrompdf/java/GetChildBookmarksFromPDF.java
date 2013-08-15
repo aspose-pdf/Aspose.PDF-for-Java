@@ -24,24 +24,15 @@ public class GetChildBookmarksFromPDF
         //loop through all the bookmarks
         for (int i=1; i<=outline.size(); i++ )
         {
-            System.out.println(outline.get_Item(i).getTitle());
-            System.out.println(outline.get_Item(i).getItalic());
-            System.out.println(outline.get_Item(i).getBold());
-            System.out.println(outline.get_Item(i).getColor());
 
-            if (outline.get_Item(i).size() > 0)
+            for(com.aspose.pdf.OutlineItemCollection outlineItem : (Iterable<com.aspose.pdf.OutlineItemCollection>)outline.get_Item(1))
             {
-                System.out.println("Child Bookmarks");
-
-                //there are child bookmarks then loop through that as well
-                for (int j=1; j<= outline.get_Item(i).size();j++)
-                {
-                    System.out.println(outline.get_Item(i).get_Item(j).getTitle());
-                    System.out.println(outline.get_Item(i).get_Item(j).getItalic());
-                    System.out.println(outline.get_Item(i).get_Item(j).getBold());
-                    System.out.println(outline.get_Item(i).get_Item(j).getColor());
-                }
+                System.out.println("Title :- "+outlineItem.getTitle());
+                System.out.println("Is Italic :- "+ outlineItem.getItalic());
+                System.out.println("Is Bold :- "+ outlineItem.getBold());
+                System.out.println("Color :- "+ outlineItem.getColor());
             }
+
         }
     }
 }

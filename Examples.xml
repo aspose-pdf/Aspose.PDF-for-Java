@@ -290,39 +290,13 @@
                   <Type>Console</Type>
                 </Example>
                 <Example>
-                  <Title>Add Text to an existing PDF file</Title>
-                  <Description>To add text to an existing PDF file:
-
-- Open the input PDF using the Document object.
-- Get the particular page to which you want to add the text.
-- Create a TextFragment object with the input text along with other text properties. The TextBuilder object created from that particular page – to which you want to add the text – allow you to add the TextFragment object to the page using the appendText method.
-- Call the Document object's save method and save the output PDF file.</Description>
-                  <FolderName>AddTexttoPDFfile</FolderName>
+                  <Title>Extract Text From All the Pages of a PDF Document</Title>
+                  <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for .NET allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call Accept method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.</Description>
+                  <FolderName>ExtractTextFromAllPagesOfPDF</FolderName>
                   <Order>2</Order>
                   <DocLink>
-                    <DisplayName>Add Text to an existing PDF file</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Add+Text+to+an+existing+PDF+file</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\input.pdf</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\text-added.out.pdf</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Extract Text From All the Pages of a PDF Document</Title>
-                  <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for java allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call accept(..) method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.</Description>
-                  <FolderName>ExtractTextFromAllPagesofPDF</FolderName>
-                  <Order>3</Order>
-                  <DocLink>
                     <DisplayName>Extract Text From All the Pages of a PDF Document</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Extract+Text+From+All+the+Pages+of+a+PDF+Document</Url>
+                    <Url>Extract+Text+From+All+the+Pages+of+a+PDF+Document</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -331,37 +305,19 @@
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\extracted_text.out.txt</Path>
+                      <Path>..\Data\extracted-text.txt</Path>
                     </DataFile>
                   </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Search and Get Text from the Pages of PDF Document</Title>
-                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.</Description>
-                  <FolderName>SearchandGetTextfromPagesofPDF</FolderName>
-                  <Order>4</Order>
-                  <DocLink>
-                    <DisplayName>Search and Get Text from the Pages of PDF Document</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+from+the+Pages+of+PDF+Document</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\input.pdf</Path>
-                    </DataFile>
-                  </InputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
                   <Title>Extract Text from an Individual Page of the PDF Document</Title>
-                  <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for java allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call accept(..) method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.
-
-In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.</Description>
-                  <FolderName>ExtractTxtfromPageofPDFDoc</FolderName>
-                  <Order>5</Order>
+                  <Description>TextAbsorber class allows you to extract text from a particular page of a PDF document. This class returns the extracted text in Text property. The Accept method of an individual page is called to extract the text. Create objects of Document and TextAbsorber classes. Call Accept method on the individual page, as PageIndex , of Document object. The Index is the particular page number from where text needs to be extracted. You can get text from the Text property of the TextAbsorber class.</Description>
+                  <FolderName>ExtractTextFromIndividualPageOfPDF</FolderName>
+                  <Order>3</Order>
                   <DocLink>
                     <DisplayName>Extract Text from an Individual Page of the PDF Document</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Extract+Text+From+All+the+Pages+of+a+PDF+Document</Url>
+                    <Url>Extract+Text+from+an+Individual+Page+of+the+PDF+Document</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -370,21 +326,19 @@ In order to extract text from specific page of document, we need to specify the 
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\extracted_text.out.txt</Path>
+                      <Path>..\Data\extracted-text.txt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
-                  <Title>Search and Get Text from a Single Page of a PDF Document</Title>
-                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
-
-In order to search a text an get properties associated with it, please provide the page index against which you need to get the information.</Description>
-                  <FolderName>SearchandGetTextfromPageofPDFDoc</FolderName>
-                  <Order>6</Order>
+                  <Title>Search and Get Text from All the Pages of PDF Document</Title>
+                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
+                  <FolderName>SearchAndGetTextFromAllPagesOfPDF</FolderName>
+                  <Order>4</Order>
                   <DocLink>
-                    <DisplayName>Search and Get Text from a Single Page of a PDF Document</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+from+the+Pages+of+PDF+Document</Url>
+                    <DisplayName>Search and Get Text from All the Pages of PDF Document</DisplayName>
+                    <Url>Search+and+Get+Text+from+All+the+Pages+of+PDF+Document</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -394,13 +348,29 @@ In order to search a text an get properties associated with it, please provide t
                   <Type>Console</Type>
                 </Example>
                 <Example>
-                  <Title>Search and Get Text Segments from Pages of PDF</Title>
-                  <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
-                  <FolderName>SearchandGetTextSegmentsfromPagesofPDF</FolderName>
-                  <Order>7</Order>
+                  <Title>Search and Get Text from a Single Page of a PDF Document</Title>
+                  <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from a particular page of a PDF document. In order to search text from an individual page, you need to call the Accept method of that particular as Page Index . The Index represents a particular page number. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
+                  <FolderName>SearchAndGetTextFromSinglePageOfPDF</FolderName>
+                  <Order>5</Order>
                   <DocLink>
-                    <DisplayName>Search and Get Text Segments from Pages of PDF</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+Segments+from+Pages+of+PDF</Url>
+                    <DisplayName>Search and Get Text from a Single Page of a PDF Document</DisplayName>
+                    <Url>Search+and+Get+Text+from+a+Single+Page+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search and Get Text Segments from All Pages of PDF Document</Title>
+                  <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
+                  <FolderName>SearchAndGetTextSegmentsFromAllPagesOfPDF</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Search and Get Text Segments from All Pages of PDF Document</DisplayName>
+                    <Url>Search+and+Get+Text+Segments+from+All+Pages+of+PDF+Document</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -411,14 +381,12 @@ In order to search a text an get properties associated with it, please provide t
                 </Example>
                 <Example>
                   <Title>Search and Get Text Segments From an Individual Page of PDF Document</Title>
-                  <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the accept method of Pages collection. The accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.
-
-In order to search a textsegment and get properties associated with it on a single page, please specify the page index for which you need to get the information.</Description>
-                  <FolderName>SearchandGetTextSegmentsFromanIndividualPageofPDFDocument</FolderName>
-                  <Order>8</Order>
+                  <Description>In order to search text segments from a single page, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from an individual page of a PDF document. In order to search text from a particular page, you need to call the Accept method of that particular page as Pages Index . Index represents the page number from where text needs to be extracted. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
+                  <FolderName>SearchAndGetTextSegmentsFromIndividualPageOfPDF</FolderName>
+                  <Order>7</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text Segments From an Individual Page of PDF Document</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+Get+Text+Segments+from+Pages+of+PDF</Url>
+                    <Url>Search+and+Get+Text+Segments+From+an+Individual+Page+of+PDF+Document</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -429,12 +397,12 @@ In order to search a textsegment and get properties associated with it on a sing
                 </Example>
                 <Example>
                   <Title>Search and get Text from all pages using Regular Expression</Title>
-                  <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.</Description>
-                  <FolderName>SearchandgetTextfromallpagesusingRegularExpression</FolderName>
-                  <Order>9</Order>
+                  <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call Accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.</Description>
+                  <FolderName>SearchAndGetTextFromAllPagesUsingRegularExpression</FolderName>
+                  <Order>8</Order>
                   <DocLink>
                     <DisplayName>Search and get Text from all pages using Regular Expression</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+get+Text+from+pages+using+Regular+Expression</Url>
+                    <Url>Search+and+get+Text+from+all+pages+using+Regular+Expression</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
@@ -445,20 +413,39 @@ In order to search a textsegment and get properties associated with it on a sing
                 </Example>
                 <Example>
                   <Title>Search and Get Text from a Single Page Using Regular Expression</Title>
-                  <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.
-
-In order to search a text and get properties associated with it on a single page, please specify the page index for which you need to get the information.</Description>
-                  <FolderName>SearchandGetTextfromaSinglePageUsingRegularExpression</FolderName>
-                  <Order>10</Order>
+                  <Description>TextFragmentAbsorber helps you search and retrieve text, from a single page, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from a particular page, you need to call Accept method of that individual page as Pages Index. Index represents the page number. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression</Description>
+                  <FolderName>SearchAndGetTextFromSinglePageUsingRegularExpression</FolderName>
+                  <Order>9</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from a Single Page Using Regular Expression</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/pdfjava/Search+and+get+Text+from+pages+using+Regular+Expression</Url>
+                    <Url>Search+and+Get+Text+from+a+Single+Page+Using+Regular+Expression</Url>
                   </DocLink>
                   <InputFiles>
                     <DataFile>
                       <Path>..\Data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Text in a Single Page of a PDF Document</Title>
+                  <Description>N order to replace text in a single page, you need to get TextFragments of that particular page. For that matter, you first need to create TextFragmentAbsorber with the phrase you want to replace. Once you get all the TextFragments , you can loop though them and replace the text and other attributes. After that, you need to save the updated PDF using Save method of Document object.</Description>
+                  <FolderName>ReplaceTextInSinglePageOfPDF</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in a Single Page of a PDF Document</DisplayName>
+                    <Url>Replace+Text+in+a+Single+Page+of+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -603,7 +590,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 </Example>
               </Examples>
             </Folder>
-			<Folder>
+            <Folder>
               <Title>Working with Annotations</Title>
               <Description>This section includes the following topics:
 
@@ -612,7 +599,8 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 3: Get All Annotations from the Page of a PDF document
 4: Delete a Particular Annotation from the PDF File
 5: Delete All Annotations from a Page of a PDF File
-            </Description>
+6: Add swf file as annotation to PDF document
+7: Set Formatting of FreeTextAnnotation</Description>
               <FolderName>WorkingWithAnnotations</FolderName>
               <Order>5</Order>
               <Examples>
@@ -710,10 +698,55 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
-                </Example>                        
+                </Example>
+                <Example>
+                  <Title>Add Swf file as annotation to PDF document</Title>
+                  <Description>The annotations in a PDF document are contained in Annotations collection of a particular Page. This collection contains the annotaitons for that individual page only, so every page has its own Annotations collection. In order to add an annotation in a particular page, you need to add it to the Annotations collection of that page using Add method. However in order to support the feature of including SWF files as annotation inside the PDF document, we need to try using ScreenAnnotation class present under Aspose.Pdf.InteractiveFeatures.Annotations namespace.</Description>
+                  <FolderName>AddSwfFileAsAnnotationToPDFDocument</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Add Swf file as annotation to PDF document</DisplayName>
+                    <Url>Add+swf+file+as+annotation+to+PDF+document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\input.swf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Formatting of FreeTextAnnotation</Title>
+                  <Description>The annotations are contained by the Annotations collection of a particular Page and every page has its own Annotations collection. When adding FreeTextAnnotation in PDF document, we can specify the formatting information i.e. Font Face, Size, Color etc using DefaultAppearance or we can even specify the formatting information using TextStyle property. Furthermore, we can also update the formatting of FreeTextAnnotation already present in existing PDF document.</Description>
+                  <FolderName>SetFormattingOfFreeTextAnnotation</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Set Formatting of FreeTextAnnotation</DisplayName>
+                    <Url>Set+Formatting+of+FreeTextAnnotation</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
-          <Folder>
+            <Folder>
               <Title>Working with Attachments</Title>
               <Description>This section includes the following examples:
 
@@ -963,6 +996,48 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                       <Path>..\Data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Bookmarks in a PDF Document</Title>
+                  <Description>If you want to update an existing bookmark in a PDF file, you first need to get the particular bookmark from the Outlines collection of the Document object by specifying the Index of the particular bookmark. Once you retrieve the bookmark into OutlineItemCollection object, you can update its properties and then save the updated PDF file using Save method.</Description>
+                  <FolderName>UpdateBookmarksInPDF</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Update Bookmarks in a PDF Document</DisplayName>
+                    <Url>Update+Bookmarks+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Child Bookmarks in a PDF Document</Title>
+                  <Description>In order to update child bookmark, you first need to retrieve that particular child bookmark from the PDF file. You can do that by first getting the parent bookmark and then the child bookmark using appropriate Index values. You can get the particular bookmark from the Outlines collection of the Document object by specifying the Index of that bookmark, and then get the child bookmark by specifying the Index on this parent bookmark. Finally, you need to save the updated PDF file using Save method.</Description>
+                  <FolderName>UpdateChildBookmarksInPDF</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Update Child Bookmarks in a PDF Document</DisplayName>
+                    <Url>Update+Child+Bookmarks+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
