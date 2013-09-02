@@ -27,6 +27,8 @@ public class GetParticularAnnotationFromPDFFile
         System.out.printf("Title :- " + textAnnotation.getTitle());
         System.out.printf("Subject :-  " + textAnnotation.getSubject());
         System.out.printf("Contents :- " + textAnnotation.getContents());
+
+
     }
 }
 

@@ -1042,6 +1042,104 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working with Document</Title>
+              <Description>This section includes the following examples: 
+
+1: Set Document Window and Page Display Properties
+2: Get Document Window and Page Display Properties
+3: Validate PDF Document for PDF A Standard (A 1A and A 1B)
+4: Optimize PDF Document for the Web
+5: Set PDF File Information
+6: Get PDF File Information
+7: Set XMP Metadata in a PDF File
+8: Get XMP Metadata from PDF File
+9: Add TOC in Existing PDF
+10: Get-Set zoom factor of PDF file</Description>
+              <FolderName>WorkingwithDocument</FolderName>
+              <Order>8</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Document Window and Page Display Properties</Title>
+                  <Description>This examples  helps you understand how to set properties of the document-s window, viewer application, and pages when displayed to the user. In order to set these different properties, you first need to open the PDF file using Document class. After that, you can set properties of the Document object like CenterWindow, Direction, DisplayDocTitle, HideMenuBar, HideToolBar, HideWindowUI, NonFullScreenPageMode, PageLayout and PageMode etc. You need to save the updated PDF file using Save method.</Description>
+                  <FolderName>SetDocumentWindow</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Document Window and Page Display Properties</DisplayName>
+                    <Url>Set+Document+Window+and+Page+Display+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Document Window and Page Display Properties</Title>
+                  <Description>This example helps you understand how to get properties of the documen-s window, viewer application, and pages how they are displayed to the user. In order to set these different properties, you first need to open the PDF file using Document class. After that, you can set properties of the Document object like CenterWindow, Direction, DisplayDocTitle, HideMenuBar, HideToolBar, HideWindowUI, NonFullScreenPageMode, PageLayout and PageMode etc.</Description>
+                  <FolderName>GetDocumentWindow</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Get Document Window and Page Display Properties</DisplayName>
+                    <Url>Get+Document+Window+and+Page+Display+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Optimize PDF Document for the Web</Title>
+                  <Description>Optimization or linearization refers to the process of making a PDF file suitable for online browsing using a web browser. Aspose.Pdf allows you to optimize the PDF files. You can use Optimize method of the Document class. And finally you need to save the optimized document using Save method.</Description>
+                  <FolderName>OptimizePDFDocument</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Optimize PDF Document for the Web</DisplayName>
+                    <Url>Optimize+PDF+Document+for+the+Web</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set PDF File Information</Title>
+                  <Description>Aspose.Pdf allows you to set file specific information of a PDF file like Author, CreationDate, Subject, and Title etc. In order to set this information, you need to create a DocumentInfo object and set the values of these individual properties. Once the values are set you can simply save the updated document using Save method of the Document object.</Description>
+                  <FolderName>SetPDFFileInformation</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Set PDF File Information</DisplayName>
+                    <Url>Set+PDF+File+Information</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
