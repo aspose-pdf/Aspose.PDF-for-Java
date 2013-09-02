@@ -313,7 +313,7 @@
                 <Example>
                   <Title>Extract Text from an Individual Page of the PDF Document</Title>
                   <Description>TextAbsorber class allows you to extract text from a particular page of a PDF document. This class returns the extracted text in Text property. The Accept method of an individual page is called to extract the text. Create objects of Document and TextAbsorber classes. Call Accept method on the individual page, as PageIndex , of Document object. The Index is the particular page number from where text needs to be extracted. You can get text from the Text property of the TextAbsorber class.</Description>
-                  <FolderName>ExtractTextFromIndividualPageOfPDF</FolderName>
+                  <FolderName>extracttxtfrompageofpdfdoc</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Extract Text from an Individual Page of the PDF Document</DisplayName>
@@ -334,7 +334,7 @@
                 <Example>
                   <Title>Search and Get Text from All the Pages of PDF Document</Title>
                   <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
-                  <FolderName>SearchAndGetTextFromAllPagesOfPDF</FolderName>
+                  <FolderName>searchandgettextfrompagesofpdf</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from All the Pages of PDF Document</DisplayName>
@@ -350,7 +350,7 @@
                 <Example>
                   <Title>Search and Get Text from a Single Page of a PDF Document</Title>
                   <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from a particular page of a PDF document. In order to search text from an individual page, you need to call the Accept method of that particular as Page Index . The Index represents a particular page number. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
-                  <FolderName>SearchAndGetTextFromSinglePageOfPDF</FolderName>
+                  <FolderName>searchandgettextfrompageofpdfdoc</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from a Single Page of a PDF Document</DisplayName>
@@ -366,7 +366,7 @@
                 <Example>
                   <Title>Search and Get Text Segments from All Pages of PDF Document</Title>
                   <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
-                  <FolderName>SearchAndGetTextSegmentsFromAllPagesOfPDF</FolderName>
+                  <FolderName>searchandgettextsegmentsfrompagesofpdf</FolderName>
                   <Order>6</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text Segments from All Pages of PDF Document</DisplayName>
@@ -382,7 +382,7 @@
                 <Example>
                   <Title>Search and Get Text Segments From an Individual Page of PDF Document</Title>
                   <Description>In order to search text segments from a single page, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from an individual page of a PDF document. In order to search text from a particular page, you need to call the Accept method of that particular page as Pages Index . Index represents the page number from where text needs to be extracted. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
-                  <FolderName>SearchAndGetTextSegmentsFromIndividualPageOfPDF</FolderName>
+                  <FolderName>searchandgettextsegmentsfromanindividualpageofpdfdocument</FolderName>
                   <Order>7</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text Segments From an Individual Page of PDF Document</DisplayName>
@@ -398,7 +398,7 @@
                 <Example>
                   <Title>Search and get Text from all pages using Regular Expression</Title>
                   <Description>TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from all the pages, you need to call Accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression.</Description>
-                  <FolderName>SearchAndGetTextFromAllPagesUsingRegularExpression</FolderName>
+                  <FolderName>searchandgettextfromallpagesusingregularexpression</FolderName>
                   <Order>8</Order>
                   <DocLink>
                     <DisplayName>Search and get Text from all pages using Regular Expression</DisplayName>
@@ -414,7 +414,7 @@
                 <Example>
                   <Title>Search and Get Text from a Single Page Using Regular Expression</Title>
                   <Description>TextFragmentAbsorber helps you search and retrieve text, from a single page, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from a particular page, you need to call Accept method of that individual page as Pages Index. Index represents the page number. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression</Description>
-                  <FolderName>SearchAndGetTextFromSinglePageUsingRegularExpression</FolderName>
+                  <FolderName>searchandgettextfromasinglepageusingregularexpression</FolderName>
                   <Order>9</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from a Single Page Using Regular Expression</DisplayName>
@@ -430,7 +430,7 @@
                 <Example>
                   <Title>Replace Text in a Single Page of a PDF Document</Title>
                   <Description>N order to replace text in a single page, you need to get TextFragments of that particular page. For that matter, you first need to create TextFragmentAbsorber with the phrase you want to replace. Once you get all the TextFragments , you can loop though them and replace the text and other attributes. After that, you need to save the updated PDF using Save method of Document object.</Description>
-                  <FolderName>ReplaceTextInSinglePageOfPDF</FolderName>
+                  <FolderName>replacetextinallpages</FolderName>
                   <Order>10</Order>
                   <DocLink>
                     <DisplayName>Replace Text in a Single Page of a PDF Document</DisplayName>
