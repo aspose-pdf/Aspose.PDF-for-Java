@@ -1,6 +1,16 @@
-#Aspose.Pdf for Java Examples Repository
+##Aspose.Pdf for Java Examples Repository
 
 This package contains Java Examples [Aspose.Pdf for Java](http://www.aspose.com/categories/java-components/aspose.pdf-for-java/default.aspx).
+<br/><br/>
+<p align="center">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
+  </a>
+  &nbsp;
+  <a title="Download Examples ZIP" href="https://github.com/asposepdf/Aspose_Pdf_Java/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 ##How to use the Examples?
 
