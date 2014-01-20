@@ -4,25 +4,25 @@
     <Folder>
       <Title>Programmers Guide</Title>
       <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Pdf.</Description>
-      <FolderName>ProgrammersGuide</FolderName>
+      <FolderName>programmersguide</FolderName>
       <Order>1</Order>
       <Folders>
         <Folder>
           <Title>Working With Aspose.Pdf</Title>
           <Description>Samples and Examples for using Aspose.PDF in your applications.</Description>
-          <FolderName>WorkingWithAsposePDF</FolderName>
+          <FolderName>workingwithasposepdf</FolderName>
           <Order>1</Order>
           <Folders>
             <Folder>
               <Title>Working With Pages</Title>
               <Description>This section includes sample examples for all the page level operations which could be performed using Aspose.PDF</Description>
-              <FolderName>WorkingWithPages</FolderName>
+              <FolderName>workingwithpages</FolderName>
               <Order>1</Order>
               <Examples>
                 <Example>
                   <Title>Concatenate PDF Files</Title>
                   <Description>Example explaining concatenation of two PDF files.</Description>
-                  <FolderName>ConcatenatePdfFiles</FolderName>
+                  <FolderName>concatenatepdffiles</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Concatenate PDF Files</DisplayName>
@@ -30,15 +30,15 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input1.pdf</Path>
+                      <Path>..\data\input1.pdf</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\input2.pdf</Path>
+                      <Path>..\data\input2.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -46,7 +46,7 @@
                 <Example>
                   <Title>Get Number of Pages of a PDF File</Title>
                   <Description>In order to get the number of pages of a PDF file, you need to open the PDF file using Document class. After that, you can use Count property of the Pages Collection of Document object to get the total number of pages in the document.</Description>
-                  <FolderName>GetNumberofPagesofaPDFFile</FolderName>
+                  <FolderName>getnumberofpagesofapdffile</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Get Number of Pages of a PDF File</DisplayName>
@@ -54,7 +54,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input1.pdf</Path>
+                      <Path>..\data\input1.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -62,7 +62,7 @@
                 <Example>
                   <Title>Get Page Properties</Title>
                   <Description>The Page Class provides all the properties related to a particular page of a PDF document. All the pages of the PDF files are contained by Pages Collection of the Document object. We can access either individual Page object by Index value, from this collection, or loop through the collection, using foreach loop, and get all the pages. Once an individual page is accessed, we can get its properties.</Description>
-                  <FolderName>GetPageProperties</FolderName>
+                  <FolderName>getpageproperties</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Get Page Properties</DisplayName>
@@ -70,7 +70,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input1.pdf</Path>
+                      <Path>..\data\input1.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -78,7 +78,7 @@
                 <Example>
                   <Title>Insert an Empty Page in a PDF File</Title>
                   <Description>Insert method of the Pages Collection allows you to insert an empty page in a PDF document. You need to pass the location of the newly inserted blank page to the Insert method. First of all, create a Document object with the input PDF file, in which you want to add the blank page. Then, call the Insert method of the Pages Collection of this Document object. Finally, save the output PDF using Save method.</Description>
-                  <FolderName>InsertEmptyPageInPDFFile</FolderName>
+                  <FolderName>insertemptypageinpdffile</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Insert an Empty Page in a PDF File</DisplayName>
@@ -86,12 +86,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -99,7 +99,7 @@
                 <Example>
                   <Title>Insert an Empty Page at the End of a PDF File</Title>
                   <Description>If you want to insert an empty page at the end of the PDF file, you only need to call Add method of the Pages Collection of Document object, without any parameters. First, you need to create a Document object with the input PDF file in which you want to add the blank page. Then, you have to call Add method of the Pages Collection, and finally save the output PDF using Save method.</Description>
-                  <FolderName>InsertEmptyPageAtEndofPDFFile</FolderName>
+                  <FolderName>insertemptypageatendofpdffile</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Insert an Empty Page at the End of a PDF File</DisplayName>
@@ -107,12 +107,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -120,7 +120,7 @@
                 <Example>
                   <Title>Split PDF File to Individual Pages</Title>
                   <Description>In order to split a PDF file into single page PDF files, you need to loop through the Pages Collection of the Document object. In each iteration you need to create a new Document object and add the individual Page in this empty document. After that, you need to save the new PDF using Save method.</Description>
-                  <FolderName>SplitPDFFiletoIndividualPages</FolderName>
+                  <FolderName>splitpdffiletoindividualpages</FolderName>
                   <Order>6</Order>
                   <DocLink>
                     <DisplayName>Split PDF File to Individual Pages</DisplayName>
@@ -128,15 +128,15 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\page_1.pdf</Path>
+                      <Path>..\data\page_1.pdf</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\page_2.pdf</Path>
+                      <Path>..\data\page_2.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -144,7 +144,7 @@
                 <Example>
                   <Title>Get a Particular Page of the PDF File</Title>
                   <Description>Pages Collection of the Document object returns all the pages of the PDF file. In order to get a particular page from this collection you need to specify its Index. Once you get a particular page, you need to create a new Document object and add this Page object into the Document object and save the output using Save method.</Description>
-                  <FolderName>GetParticularPageOfPDFFile</FolderName>
+                  <FolderName>getparticularpageofpdffile</FolderName>
                   <Order>7</Order>
                   <DocLink>
                     <DisplayName>Get a Particular Page of the PDF File</DisplayName>
@@ -152,12 +152,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -165,7 +165,7 @@
                 <Example>
                   <Title>Delete a Particular Page from the PDF File</Title>
                   <Description>In order to delete a particular page from the Pages Collection, you need to call the Delete method and specify the Index of the particular page you want to delete. After that call Save method to save the updated PDF file.</Description>
-                  <FolderName>DeleteParticularPageFromPDFFile</FolderName>
+                  <FolderName>deleteparticularpagefrompdffile</FolderName>
                   <Order>8</Order>
                   <DocLink>
                     <DisplayName>Delete a Particular Page from the PDF File</DisplayName>
@@ -173,12 +173,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -186,7 +186,7 @@
                 <Example>
                   <Title>Update Page Dimensions</Title>
                   <Description>The Page contains a method named SetPageSize(...) which provides the feature/capability to set the page size/dimensions. In following code snippet, we will load the source PDF file, get page collection into PageCollection object, get particular page whose dimensions we need to update, and then we will call SetPageSize(..) method to update its dimensions. Finally we will call the Save(..) method of Document class to generate the PDF file with updated page dimensions.</Description>
-                  <FolderName>UpdatePageDimensions</FolderName>
+                  <FolderName>updatepagedimensions</FolderName>
                   <Order>9</Order>
                   <DocLink>
                     <DisplayName>Update Page Dimensions</DisplayName>
@@ -194,12 +194,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -207,7 +207,7 @@
                 <Example>
                   <Title>Add image as page background</Title>
                   <Description>A PDF document is a collection of pages and each page contains collection of artifacts. We have a class named BackgroundArtifact which can be used to add background image to page object.</Description>
-                  <FolderName>AddImageAsPageBackground</FolderName>
+                  <FolderName>addimageaspagebackground</FolderName>
                   <Order>10</Order>
                   <DocLink>
                     <DisplayName>Add image as page background</DisplayName>
@@ -215,12 +215,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\aspose-total-for-net.jpg</Path>
+                      <Path>..\data\aspose-total-for-net.jpg</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -230,13 +230,13 @@
             <Folder>
               <Title>Working With Images</Title>
               <Description>This section includes the sample examples for all image related operations which could be performed using Aspose.Pdf.</Description>
-              <FolderName>WorkingWithImages</FolderName>
+              <FolderName>workingwithimages</FolderName>
               <Order>2</Order>
               <Examples>
                 <Example>
                   <Title>Convert All PDF Pages to JPEG Images</Title>
                   <Description>The JpegDevice class allows you to convert PDF pages to JPEG images using Aspose.Pdf. This class provides a method named Process which allows you to convert a particular page of the PDF file to JPEG image. If you want to convert all the pages to the images, you need to loop through all the pages of the PDF and then convert each page individually. You first need to create an object of Document class, so you could get the particular page which you want to convert to JPEG. After that, you need to call the Process method to convert the page to JPEG image.</Description>
-                  <FolderName>ConvertPagesToImages</FolderName>
+                  <FolderName>convertpagestoimages</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Convert all PDF pages to JPEG Images</DisplayName>
@@ -244,18 +244,18 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\image1.jpg</Path>
+                      <Path>..\data\image1.jpg</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\image2.jpg</Path>
+                      <Path>..\data\image2.jpg</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\image3.jpg</Path>
+                      <Path>..\data\image3.jpg</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -265,13 +265,13 @@
             <Folder>
               <Title>Working With Text</Title>
               <Description>This section includes sample examples for all the text operations which could be performed using Aspose.PDF</Description>
-              <FolderName>WorkingWithText</FolderName>
+              <FolderName>workingwithtext</FolderName>
               <Order>3</Order>
               <Examples>
                 <Example>
                   <Title>Replace Text in All Pages of PDF</Title>
                   <Description>In order to replace text in all the pages of a PDF document, you first need to use TextFragmentAbsorber to find the particular phrase you want to replace. After that, you need to go through all the TextFragments to replace the text and change any other attributes. Once you have done that, you only need to save the output PDF using Save method of the Document object. The example elaborates this in detail to replace text in a PDF document.</Description>
-                  <FolderName>ReplaceTextInAllPages</FolderName>
+                  <FolderName>replacetextinallpages</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Replace Text in All Pages of a PDF Document</DisplayName>
@@ -279,12 +279,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -292,7 +292,7 @@
                 <Example>
                   <Title>Extract Text From All the Pages of a PDF Document</Title>
                   <Description>Extracting text from a PDF document is a common requirement. In this example, you will see how Aspose.Pdf for .NET allows to extract text from all the pages of a PDF document. You need to create an object of TextAbsorber class. After that, open the PDF using Document class and call Accept method of the Pages collection. The TextAbsorber class absorbs the text from the document and returns in Text property.</Description>
-                  <FolderName>ExtractTextFromAllPagesOfPDF</FolderName>
+                  <FolderName>extracttextfromallpagesofpdf</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Extract Text From All the Pages of a PDF Document</DisplayName>
@@ -300,12 +300,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\extracted-text.txt</Path>
+                      <Path>..\data\extracted-text.txt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -313,7 +313,7 @@
                 <Example>
                   <Title>Extract Text from an Individual Page of the PDF Document</Title>
                   <Description>TextAbsorber class allows you to extract text from a particular page of a PDF document. This class returns the extracted text in Text property. The Accept method of an individual page is called to extract the text. Create objects of Document and TextAbsorber classes. Call Accept method on the individual page, as PageIndex , of Document object. The Index is the particular page number from where text needs to be extracted. You can get text from the Text property of the TextAbsorber class.</Description>
-                  <FolderName>extracttxtfrompageofpdfdoc</FolderName>
+                  <FolderName>extracttextfromindividualpageofpdf</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Extract Text from an Individual Page of the PDF Document</DisplayName>
@@ -321,12 +321,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\extracted-text.txt</Path>
+                      <Path>..\data\extracted-text.txt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -334,7 +334,7 @@
                 <Example>
                   <Title>Search and Get Text from All the Pages of PDF Document</Title>
                   <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
-                  <FolderName>searchandgettextfrompagesofpdf</FolderName>
+                  <FolderName>searchandgettextfromallpagesofpdf</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from All the Pages of PDF Document</DisplayName>
@@ -342,7 +342,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -350,7 +350,7 @@
                 <Example>
                   <Title>Search and Get Text from a Single Page of a PDF Document</Title>
                   <Description>TextFragmentAbsorber allows you to find text, matching a particular phrase, from a particular page of a PDF document. In order to search text from an individual page, you need to call the Accept method of that particular as Page Index . The Index represents a particular page number. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects. You can loop through all the fragments and get their properties like Text , Position ( XIndent , YIndent ), FontName , FontSize , IsAccessible , IsEmbedded , IsSubset , ForegroundColor ** etc.</Description>
-                  <FolderName>searchandgettextfrompageofpdfdoc</FolderName>
+                  <FolderName>searchandgettextfromsinglepageofpdf</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from a Single Page of a PDF Document</DisplayName>
@@ -358,7 +358,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -366,7 +366,7 @@
                 <Example>
                   <Title>Search and Get Text Segments from All Pages of PDF Document</Title>
                   <Description>In order to search text segments from all the pages, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
-                  <FolderName>searchandgettextsegmentsfrompagesofpdf</FolderName>
+                  <FolderName>searchandgettextsegmentsfromallpagesofpdf</FolderName>
                   <Order>6</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text Segments from All Pages of PDF Document</DisplayName>
@@ -374,7 +374,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -382,7 +382,7 @@
                 <Example>
                   <Title>Search and Get Text Segments From an Individual Page of PDF Document</Title>
                   <Description>In order to search text segments from a single page, you first need to get the TextFragment objects from the document . TextFragmentAbsorber allows you to find text, matching a particular phrase, from an individual page of a PDF document. In order to search text from a particular page, you need to call the Accept method of that particular page as Pages Index . Index represents the page number from where text needs to be extracted. The Accept method takes TextFragmentAbsorber object as parameter, which returns a collection of TextFragment objects.</Description>
-                  <FolderName>searchandgettextsegmentsfromanindividualpageofpdfdocument</FolderName>
+                  <FolderName>searchandgettextsegmentsfromindividualpageofpdf</FolderName>
                   <Order>7</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text Segments From an Individual Page of PDF Document</DisplayName>
@@ -390,7 +390,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -406,7 +406,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -414,7 +414,7 @@
                 <Example>
                   <Title>Search and Get Text from a Single Page Using Regular Expression</Title>
                   <Description>TextFragmentAbsorber helps you search and retrieve text, from a single page, based on regular expression. First you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as parameter to its constructor while creating new object. As you want to retrieve matching text from a particular page, you need to call Accept method of that individual page as Pages Index. Index represents the page number. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression</Description>
-                  <FolderName>searchandgettextfromasinglepageusingregularexpression</FolderName>
+                  <FolderName>searchandgettextfromsinglepageusingregularexpression</FolderName>
                   <Order>9</Order>
                   <DocLink>
                     <DisplayName>Search and Get Text from a Single Page Using Regular Expression</DisplayName>
@@ -422,7 +422,7 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -430,7 +430,7 @@
                 <Example>
                   <Title>Replace Text in a Single Page of a PDF Document</Title>
                   <Description>N order to replace text in a single page, you need to get TextFragments of that particular page. For that matter, you first need to create TextFragmentAbsorber with the phrase you want to replace. Once you get all the TextFragments , you can loop though them and replace the text and other attributes. After that, you need to save the updated PDF using Save method of Document object.</Description>
-                  <FolderName>replacetextinallpages</FolderName>
+                  <FolderName>replacetextinsinglepageofpdf</FolderName>
                   <Order>10</Order>
                   <DocLink>
                     <DisplayName>Replace Text in a Single Page of a PDF Document</DisplayName>
@@ -438,12 +438,12 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -461,13 +461,13 @@
 - Convert PDF File to PDF-A
 - Convert SVG file to PDF format
 - Convert XPS files to PDF format</Description>
-              <FolderName>WorkWithDocumentConversion</FolderName>
+              <FolderName>workwithdocumentconversion</FolderName>
               <Order>4</Order>
               <Examples>
                 <Example>
                   <Title>Convert PDF file into DOC format</Title>
                   <Description>Aspose.Pdf for .NET provides two liner code to transform source PDF file into resultant .DOC file. In order to accomplish this feature, a new enumeration named SaveFormat has been introduced and its value .Doc enables us to save the source file into MS word format. This examples describes the saving of PDF to .DOC using two liner code and also depicts the use of SaveOptions and other parameters that could be used in saving a PDF to .DOC</Description>
-                  <FolderName>ConvertPDFToDOC</FolderName>
+                  <FolderName>convertpdftodoc</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Convert PDF file into DOC format</DisplayName>
@@ -475,15 +475,15 @@
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\saveOptionsOutput.doc</Path>
+                      <Path>..\data\saveOptionsOutput.doc</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\simpleOutput.doc</Path>
+                      <Path>..\data\simpleOutput.doc</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -493,7 +493,7 @@
                   <Description>PCL (Printer Command Language) is a Hewlett-Packard printer language has developed to access standard printer features. PCL levels 1 through 5e/5c are command based languages using control sequences that are processed and interpreted in the order they are received. At a consumer level, PCL data streams are generated by a print driver. PCL output can also be easily generated by custom applications
 
 In order to accomplish this feature, we have introduced a class named PclLoadOptions which is used to initialize LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. This example shows the process of converting PCL file into PDF format in detail.</Description>
-                  <FolderName>ConvertPCLToPDF</FolderName>
+                  <FolderName>convertpcltopdf</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Convert PCL file to PDF format</DisplayName>
@@ -501,12 +501,12 @@ In order to accomplish this feature, we have introduced a class named PclLoadOpt
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\test.pcl</Path>
+                      <Path>..\data\test.pcl</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\test-converted.pdf</Path>
+                      <Path>..\data\test-converted.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -514,7 +514,7 @@ In order to accomplish this feature, we have introduced a class named PclLoadOpt
                 <Example>
                   <Title>Convert PDF file into HTML format</Title>
                   <Description>Keeping alive the tradition of making things simple and understandable, Aspose.Pdf for .NET provides two liner code to transform source PDF file into resultant .Html file. In order to accomplish this requirement, the enumeration named SaveFormat contains a value .Html which will enable you to save the source file into Html format. This example demonstrates PDF to HTML conversion.</Description>
-                  <FolderName>ConvertPDFToHTML</FolderName>
+                  <FolderName>convertpdftohtml</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Convert PDF file into HTML format</DisplayName>
@@ -522,21 +522,21 @@ In order to accomplish this feature, we have introduced a class named PclLoadOpt
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output_files\style.css</Path>
+                      <Path>..\data\output_files\style.css</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\output_files\img_02.svg</Path>
+                      <Path>..\data\output_files\img_02.svg</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\output_files\img_01.svg</Path>
+                      <Path>..\data\output_files\img_01.svg</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\output.html</Path>
+                      <Path>..\data\output.html</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -546,7 +546,7 @@ In order to accomplish this feature, we have introduced a class named PclLoadOpt
                   <Description>The XPS file type is primarily associated with 'XML Paper Specification' by Microsoft Corporation. The XML Paper Specification (XPS), formerly codenamed Metro and subsuming the Next Generation Print Path (NGPP) marketing concept, is Microsoft's initiative to integrate document creation and viewing into its Windows operating system.
 
 In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a class named XpsLoadOptions which is used to initialize LoadOptions object. Later on this object is passed as an argument during Document object initialization and it helps the PDF rendering engine to determine the input format of source document. This example depicts the conversion using Aspose.Pdf</Description>
-                  <FolderName>ConvertXPSToPDF</FolderName>
+                  <FolderName>convertxpstopdf</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Convert XPS files to PDF format</DisplayName>
@@ -554,12 +554,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\test.xps</Path>
+                      <Path>..\data\test.xps</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\resultant.pdf</Path>
+                      <Path>..\data\resultant.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -567,7 +567,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Convert PDF File to PDF-A</Title>
                   <Description>Aspose.Pdf allows you to convert the PDF file to PDF/A-1b compliant PDF file. You can convert the PDF using Convert method of the Document class. Before converting the PDF to PDF/A compliant file, you need to validate the PDF using Validate method. The validation result is stored in the XML file and then this result is also passed to the Convert method. You can also specify the action for the elements which cannot be converted using ConvertErrorAction enumeration. This example elaborates the conversion from PDF to PDF-A using Aspose.Pdf</Description>
-                  <FolderName>ConvertPDFToPDFA</FolderName>
+                  <FolderName>convertpdftopdfa</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Convert PDF File to PDF-A</DisplayName>
@@ -575,15 +575,120 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\log.xml</Path>
+                      <Path>..\data\log.xml</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF to ePUB format</Title>
+                  <Description>Aspose.Pdf for .NET also supports the feature to convert PDF document to EPUB format. Aspose.Pdf for .NET has a class named EpubSaveOptions which can be used as second argument to Document.Save(..) method, in order to generate ePUB file.</Description>
+                  <FolderName>convertpdftoepub</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF to ePUB format</DisplayName>
+                    <Url>Convert+PDF+to+ePUB+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Sample.epub</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert SVG file to PDF format</Title>
+                  <Description>To convert SVG files to PDF, use the class named SvgLoadOptions which is used to initialize the LoadOptions object. Later, this object is passed as an argument during the Document object initialization and helps the PDF rendering engine to determine the input format of the source document.</Description>
+                  <FolderName>convertsvgtopdf</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Convert SVG file to PDF format</DisplayName>
+                    <Url>Convert+SVG+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Example.svg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\converted.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get SVG dimensions</Title>
+                  <Description>We can also get the dimensions information of source SVG file being used. This information can be useful if we want the SVG to cover the entire page of resultant PDF document. A property named AdjustPageSize is present in SvgLoadOption class which fulfills this requirement. The default value of this property is false. If the value is set to true, then resultant PDF document will have same size (dimensions) as source svg file.</Description>
+                  <FolderName>getsvgdimensions</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Convert SVG file to PDF format</DisplayName>
+                    <Url>Convert+SVG+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Example.svg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\SVG_test.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF file into TeX format</Title>
+                  <Description>The LaTeX file format is a text file format with markup in the LaTeX 2ε derivative of the TeX family of languages and LaTeX is a derived format of the TeX system.</Description>
+                  <FolderName>convertpdftotex</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF file into TeX format</DisplayName>
+                    <Url>Convert+PDF+file+into+TeX+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Output.tex</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert EPUB file to PDF format</Title>
+                  <Description>To converting EPUB files to PDF format, Aspose.Pdf for .NET has a class named EpubLoadOptions which is used to initialize a LoadOptions object. After that, the object is passed as an argument during the Document object initialization and helps the PDF rendering engine determine the source document's input format.</Description>
+                  <FolderName>convertepubtopdf</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Convert EPUB file to PDF format</DisplayName>
+                    <Url>Convert+EPUB+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Sample.epub</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -601,13 +706,13 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 5: Delete All Annotations from a Page of a PDF File
 6: Add swf file as annotation to PDF document
 7: Set Formatting of FreeTextAnnotation</Description>
-              <FolderName>WorkingWithAnnotations</FolderName>
+              <FolderName>workingwithannotations</FolderName>
               <Order>5</Order>
               <Examples>
                 <Example>
                   <Title>Add Annotation in an Existing PDF File</Title>
                   <Description>The annotations are contained by the Annotations collection of a particular Page. This collection contains the annotations for that individual page only; every page has its own Annotations collection. In order to add an annotation in a particular page, you need to add it to the Annotations collection of that page using Addmethod. So first step is to create a particular annotation, which you want to add to the PDF. Then open the input PDF file and add this annotation to the Page's Annotations collection.</Description>
-                  <FolderName>AddAnnotationInExistingPDFFile</FolderName>
+                  <FolderName>addannotationinexistingpdffile</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Add Annotation in an Existing PDF File</DisplayName>
@@ -615,12 +720,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -628,7 +733,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get Particular Annotation from a PDF File</Title>
                   <Description>All the annotations for a particular page can be found in the Annotations collection of that Page. In order to get a particular annotation, you need to specify an Index of the annotation. This will return an object of type Annotation and you will have to cast it to a particular type of the annotation i.e. TextAnnotation etc.</Description>
-                  <FolderName>GetParticularAnnotationFromPDFFile</FolderName>
+                  <FolderName>getparticularannotationfrompdffile</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Get Particular Annotation from a PDF File</DisplayName>
@@ -636,7 +741,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -644,7 +749,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get All Annotations from the Page of a PDF document</Title>
                   <Description>In order to get all the annotations from the page of a PDF document, you need to loop through the Annotations collection of that particular Page. Please note that, if you want to get all the annotations from the whole PDF, you will have to loop through the Pages collection of the document as well, before navigating through the Annotations collection. You can get each annotation of the collection in a base annotation type called MarkupAnnotation and then show its properties.</Description>
-                  <FolderName>GetAllAnnotationsFromPageOfPDFDocument</FolderName>
+                  <FolderName>getallannotationsfrompageofpdfdocument</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Get All Annotations from the Page of a PDF document</DisplayName>
@@ -652,7 +757,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -660,7 +765,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Delete a Particular Annotation from the PDF File</Title>
                   <Description>In order to delete a particular annotation from a PDF, you need to call the Delete method of the Annotations collection. This collection belongs to the Page object where the annotation exists. The Delete method requires the Index of the annotation which needs to be deleted. After that, save the update PDF file.</Description>
-                  <FolderName>DeleteParticularAnnotationFromPDFFile</FolderName>
+                  <FolderName>deleteparticularannotationfrompdffile</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Delete a Particular Annotation from the PDF File</DisplayName>
@@ -668,12 +773,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -681,7 +786,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Delete All Annotations from a Page of a PDF File</Title>
                   <Description>Annotations collection contains all the annotations for that particular page. In order to delete all the annotations from that page, you need to call the Delete method of the Annotations collection.</Description>
-                  <FolderName>DeleteAllAnnotationsFromPageOfPDFFile</FolderName>
+                  <FolderName>deleteallannotationsfrompageofpdffile</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Delete All Annotations from a Page of a PDF File</DisplayName>
@@ -689,12 +794,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -702,7 +807,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Add Swf file as annotation to PDF document</Title>
                   <Description>The annotations in a PDF document are contained in Annotations collection of a particular Page. This collection contains the annotaitons for that individual page only, so every page has its own Annotations collection. In order to add an annotation in a particular page, you need to add it to the Annotations collection of that page using Add method. However in order to support the feature of including SWF files as annotation inside the PDF document, we need to try using ScreenAnnotation class present under Aspose.Pdf.InteractiveFeatures.Annotations namespace.</Description>
-                  <FolderName>AddSwfFileAsAnnotationToPDFDocument</FolderName>
+                  <FolderName>addswffileasannotationtopdfdocument</FolderName>
                   <Order>6</Order>
                   <DocLink>
                     <DisplayName>Add Swf file as annotation to PDF document</DisplayName>
@@ -710,15 +815,15 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\input.swf</Path>
+                      <Path>..\data\input.swf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -726,7 +831,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Set Formatting of FreeTextAnnotation</Title>
                   <Description>The annotations are contained by the Annotations collection of a particular Page and every page has its own Annotations collection. When adding FreeTextAnnotation in PDF document, we can specify the formatting information i.e. Font Face, Size, Color etc using DefaultAppearance or we can even specify the formatting information using TextStyle property. Furthermore, we can also update the formatting of FreeTextAnnotation already present in existing PDF document.</Description>
-                  <FolderName>SetFormattingOfFreeTextAnnotation</FolderName>
+                  <FolderName>setformattingoffreetextannotation</FolderName>
                   <Order>7</Order>
                   <DocLink>
                     <DisplayName>Set Formatting of FreeTextAnnotation</DisplayName>
@@ -734,12 +839,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -755,13 +860,13 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 3: Get All the Attachments from a PDF Document
 4: Delete all Attachments from PDF document
 5: Get Information of an Attachment</Description>
-              <FolderName>WorkingWithAttachments</FolderName>
+              <FolderName>workingwithattachments</FolderName>
               <Order>6</Order>
               <Examples>
                 <Example>
                   <Title>Add Attachment in a PDF Document</Title>
                   <Description>In order to add attachment in a PDF document, you need to create a FileSpecification object with the file, which needs to be added, and the file description. After that the FileSpecification object can be added to EmbeddedFiles collection of Document object using collection Add method. The EmbeddedFiles collection contains all the attachments added in the PDF file.</Description>
-                  <FolderName>AddAttachmentInPDFDocument</FolderName>
+                  <FolderName>addattachmentinpdfdocument</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Add Attachment in a PDF Document</DisplayName>
@@ -769,15 +874,15 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\test.txt</Path>
+                      <Path>..\data\test.txt</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -785,7 +890,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get Individual Attachment from a PDF Document</Title>
                   <Description>EmbeddedFiles collection of the Document object contains all the attachments. Each element of this collection represents a FileSpecification object. If you want to get an individual attachment from the collection, you can do so by using Index value. The Index represents the number of the file to be fetched. This way, you will be able to get a FileSpecification object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.</Description>
-                  <FolderName>GetIndividualAttachmentFromPDF</FolderName>
+                  <FolderName>getindividualattachmentfrompdf</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Get Individual Attachment from a PDF Document</DisplayName>
@@ -793,12 +898,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\test.txt</Path>
+                      <Path>..\data\test.txt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -806,7 +911,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get All the Attachments from a PDF Document</Title>
                   <Description>In order to get all the attachments from the PDF file, you need to loop through the EmbeddedFiles collection of the Document object. EmbeddedFiles collection contains all the attachments. Each element of this collection represents a FileSpecification object. Each iteration of the foreach loop through the EmbeddedFiles collection will return a FileSpecification object. Once this object is available, you can retrieve either all the properties of the attached file or the file itself.</Description>
-                  <FolderName>GetAlltheAttachmentsFromPDF</FolderName>
+                  <FolderName>getalltheattachmentsfrompdf</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Get All the Attachments from a PDF Document</DisplayName>
@@ -814,15 +919,15 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\1.txt</Path>
+                      <Path>..\data\1.txt</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\2.txt</Path>
+                      <Path>..\data\2.txt</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -830,7 +935,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Delete all Attachments from PDF document</Title>
                   <Description>The attachments of the PDF document can found in the EmbeddedFiles collection of the Document object. In order to delete all the attachments, you only need to call the Delete method of the EmbeddedFiles collection and then save the updated file using Save method of the Document object.</Description>
-                  <FolderName>DeleteAllAttachmentsFromPDF</FolderName>
+                  <FolderName>deleteallattachmentsfrompdf</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Delete all Attachments from PDF document</DisplayName>
@@ -838,12 +943,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -851,7 +956,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get Information of an Attachment</Title>
                   <Description>FileSpecification object provides properties like Name, Description, MIMEType and Params which provide the information about the attachment. First three properties are quite evident from their names, while Params property provides the information about the file parameters. These parameters include CheckSum, CreationDate, ModDate and Size. In order to get these parameters, you first need to make sure that the Params property is not null.</Description>
-                  <FolderName>GetInformationOfAttachment</FolderName>
+                  <FolderName>getinformationofattachment</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Get Information of an Attachment</DisplayName>
@@ -859,7 +964,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -879,13 +984,13 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 6: Get ChildBookmarks From the PDF Document
 7: Update Bookmarks in a PDF Document
 8: Update Child Bookmarks in a PDF Document</Description>
-              <FolderName>WorkingWithBookmarks</FolderName>
+              <FolderName>workingwithbookmarks</FolderName>
               <Order>7</Order>
               <Examples>
                 <Example>
                   <Title>Add a Bookmark in the PDF Document</Title>
                   <Description>A bookmark can be added in a PDF document using OutlineItemCollection. First of all, you need to open the PDF document using Document object. After that, you can add the OutlineItemCollection in the Outlines collection of the Document object. However, before adding the OutlineItemCollection in the Outlines collection, you need to define the properties of the bookmark.</Description>
-                  <FolderName>AddBookmarkInPDF</FolderName>
+                  <FolderName>addbookmarkinpdf</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Add a Bookmark in the PDF Document</DisplayName>
@@ -893,12 +998,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -906,7 +1011,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Add a Child Bookmark in the PDF Document</Title>
                   <Description>In this example we will see how to add child bookmark in a PDF document using Aspose.Pdf.</Description>
-                  <FolderName>AddChildBookmarkPDF</FolderName>
+                  <FolderName>addchildbookmarkpdf</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Add a Child Bookmark in the PDF Document</DisplayName>
@@ -914,12 +1019,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -927,7 +1032,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Delete All Bookmarks from the PDF Document</Title>
                   <Description>The Outline collection contains all the bookmarks of the PDF document. In order to delete all the bookmarks from the PDF file, you only need to call the Delete method of Outlines collection and then save the modified file using Save method of the Document object.</Description>
-                  <FolderName>DeleteAllBookmarksFromPDF</FolderName>
+                  <FolderName>deleteallbookmarksfrompdf</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Delete All Bookmarks from the PDF Document</DisplayName>
@@ -935,12 +1040,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -948,7 +1053,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Delete a Particular Bookmark from the PDF Document</Title>
                   <Description>In order to delete a particular bookmark from the PDF file, you need to pass the bookmark title as parameter to the Delete method of the Outlines collection. The Outlines collection is provided by the Document object. The Delete method will remove the bookmark having the same Title as passed to the method. After that, just save the updated file using Save method of the Document object.</Description>
-                  <FolderName>DeleteParticularBookmarkFromPDF</FolderName>
+                  <FolderName>deleteparticularbookmarkfrompdf</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Delete a Particular Bookmark from the PDF Document</DisplayName>
@@ -956,12 +1061,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -969,7 +1074,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get Bookmarks from the PDF Document</Title>
                   <Description>The Outlines collection of the Document object contains all a PDF file's bookmarks. To get those bookmarks, loop through the Outlines collection and get each bookmark in OutlineItemCollection. The OutlineItemCollection provides access to all the bookmrark's attributes.</Description>
-                  <FolderName>GetBookmarksFromPDF</FolderName>
+                  <FolderName>getbookmarksfrompdf</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Get Bookmarks from the PDF Document</DisplayName>
@@ -977,7 +1082,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -985,7 +1090,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get ChildBookmarks From the PDF Document</Title>
                   <Description>In order to get all the bookmarks you need to loop through the Outlines collections of Document object. However, if you want to get the child bookmarks as well then you also need to loop through all the bookmarks in each OutlineItemCollection object obtained in the above mentioned loop.</Description>
-                  <FolderName>GetChildBookmarksFromPDF</FolderName>
+                  <FolderName>getchildbookmarksfrompdf</FolderName>
                   <Order>6</Order>
                   <DocLink>
                     <DisplayName>Get ChildBookmarks From the PDF Document</DisplayName>
@@ -993,7 +1098,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -1001,7 +1106,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Update Bookmarks in a PDF Document</Title>
                   <Description>If you want to update an existing bookmark in a PDF file, you first need to get the particular bookmark from the Outlines collection of the Document object by specifying the Index of the particular bookmark. Once you retrieve the bookmark into OutlineItemCollection object, you can update its properties and then save the updated PDF file using Save method.</Description>
-                  <FolderName>UpdateBookmarksInPDF</FolderName>
+                  <FolderName>updatebookmarksinpdf</FolderName>
                   <Order>7</Order>
                   <DocLink>
                     <DisplayName>Update Bookmarks in a PDF Document</DisplayName>
@@ -1009,12 +1114,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1022,7 +1127,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Update Child Bookmarks in a PDF Document</Title>
                   <Description>In order to update child bookmark, you first need to retrieve that particular child bookmark from the PDF file. You can do that by first getting the parent bookmark and then the child bookmark using appropriate Index values. You can get the particular bookmark from the Outlines collection of the Document object by specifying the Index of that bookmark, and then get the child bookmark by specifying the Index on this parent bookmark. Finally, you need to save the updated PDF file using Save method.</Description>
-                  <FolderName>UpdateChildBookmarksInPDF</FolderName>
+                  <FolderName>updatechildbookmarksinpdf</FolderName>
                   <Order>8</Order>
                   <DocLink>
                     <DisplayName>Update Child Bookmarks in a PDF Document</DisplayName>
@@ -1030,12 +1135,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1056,13 +1161,13 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 8: Get XMP Metadata from PDF File
 9: Add TOC in Existing PDF
 10: Get-Set zoom factor of PDF file</Description>
-              <FolderName>WorkingwithDocument</FolderName>
+              <FolderName>workingwithdocument</FolderName>
               <Order>8</Order>
               <Examples>
                 <Example>
                   <Title>Set Document Window and Page Display Properties</Title>
                   <Description>This examples  helps you understand how to set properties of the document-s window, viewer application, and pages when displayed to the user. In order to set these different properties, you first need to open the PDF file using Document class. After that, you can set properties of the Document object like CenterWindow, Direction, DisplayDocTitle, HideMenuBar, HideToolBar, HideWindowUI, NonFullScreenPageMode, PageLayout and PageMode etc. You need to save the updated PDF file using Save method.</Description>
-                  <FolderName>SetDocumentWindow</FolderName>
+                  <FolderName>setdocumentwindow</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Set Document Window and Page Display Properties</DisplayName>
@@ -1070,12 +1175,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1083,7 +1188,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Get Document Window and Page Display Properties</Title>
                   <Description>This example helps you understand how to get properties of the documen-s window, viewer application, and pages how they are displayed to the user. In order to set these different properties, you first need to open the PDF file using Document class. After that, you can set properties of the Document object like CenterWindow, Direction, DisplayDocTitle, HideMenuBar, HideToolBar, HideWindowUI, NonFullScreenPageMode, PageLayout and PageMode etc.</Description>
-                  <FolderName>GetDocumentWindow</FolderName>
+                  <FolderName>getdocumentwindow</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Get Document Window and Page Display Properties</DisplayName>
@@ -1091,7 +1196,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -1099,7 +1204,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Optimize PDF Document for the Web</Title>
                   <Description>Optimization or linearization refers to the process of making a PDF file suitable for online browsing using a web browser. Aspose.Pdf allows you to optimize the PDF files. You can use Optimize method of the Document class. And finally you need to save the optimized document using Save method.</Description>
-                  <FolderName>OptimizePDFDocument</FolderName>
+                  <FolderName>optimizepdfdocument</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Optimize PDF Document for the Web</DisplayName>
@@ -1107,12 +1212,12 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1120,7 +1225,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                 <Example>
                   <Title>Set PDF File Information</Title>
                   <Description>Aspose.Pdf allows you to set file specific information of a PDF file like Author, CreationDate, Subject, and Title etc. In order to set this information, you need to create a DocumentInfo object and set the values of these individual properties. Once the values are set you can simply save the updated document using Save method of the Document object.</Description>
-                  <FolderName>SetPDFFileInformation</FolderName>
+                  <FolderName>setpdffileinformation</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Set PDF File Information</DisplayName>
@@ -1128,17 +1233,397 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\input.pdf</Path>
+                      <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Validate PDF Document for PDF A Standard (A 1A and A 1B)</Title>
+                  <Description>In order to validate a PDF document for PDF/A-1a or PDF/A-1b standard, you can use Validate method of Document class. This method allows you to specify the name of the file in which the result is to be saved and the required validation type PdfFormat enumeration : PDF_A_1A or PDF_A_1B.</Description>
+                  <FolderName>validatepdfforpdfastandard</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Validate PDF Document for PDF A Standard (A 1A and A 1B)</DisplayName>
+                    <Url>Validate+PDF+Document+for+PDF+A+Standard+%28A+1A+and+A+1B%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\validation-result-A1A.xml</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get PDF File Information</Title>
+                  <Description>In order to get file specific information of a PDF file, you first need to get the DocumentInfo object using Info property of the Document object. Once the DocumentInfo object is retrieved, you can get the values of the individual properties.</Description>
+                  <FolderName>getpdffileinformation</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Get PDF File Information</DisplayName>
+                    <Url>Get+PDF+File+Information</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set XMP Metadata in a PDF File</Title>
+                  <Description>Aspose.Pdf allows you to set metadata in a PDF file. In order to set metadata, you need to create a Document object and set the values using Metadata property. Once the values are set you can simply save the updated document using Save method of the Document object.</Description>
+                  <FolderName>setxmpmetadata</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Set XMP Metadata in a PDF File</DisplayName>
+                    <Url>Set+XMP+Metadata+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get XMP Metadata from PDF File</Title>
+                  <Description>In order to get metadata of a PDF file, you first need to create the Document object and open the input PDF file. After that, you can get the metadata using Metadata property of the Document object.</Description>
+                  <FolderName>getxmpmetadata</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Get XMP Metadata from PDF File</DisplayName>
+                    <Url>Get+XMP+Metadata+from+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add TOC in Existing PDF</Title>
+                  <Description>To support adding a TOC to an existing PDF file, a Heading class is available in the Aspose.Pdf namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace.</Description>
+                  <FolderName>addtocinexistingpdf</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Add TOC in Existing PDF</DisplayName>
+                    <Url>Add+TOC+in+Existing+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\TOC_Output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Get-Set Zoom Factor of PDF file</Title>
+                  <Description>This section includes the following examples:
+
+1: Set Zoom Factor
+2: Get Zoom Factor</Description>
+                  <FolderName>getsetzoomfactor</FolderName>
+                  <Order>10</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Set Zoom Factor</Title>
+                      <Description>This example shows how to set the zoom factor of PDF file using Aspose.Pdf for .NET.</Description>
+                      <FolderName>setzoomfactor</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Get-Set zoom factor of PDF file</DisplayName>
+                        <Url>Get-Set+zoom+factor+of+PDF+file</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\Zoomed_pdf.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Get Zoom Factor</Title>
+                      <Description>This example shows how to get the zoom factor information from a PDF document using Aspose.Pdf for .NET.</Description>
+                      <FolderName>getzoomfactor</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Get-Set zoom factor of PDF file</DisplayName>
+                        <Url>Get-Set+zoom+factor+of+PDF+file</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\Zoomed_pdf.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Forms</Title>
+              <Description>This section includes the following examples:
+
+- Add Form Field in a PDF Document
+- Delete a Particular Form Field from a PDF Document
+- Modify Form Field in a PDF Document
+- Fill Form Field in a PDF Document
+- Get Value from an Individual Field of PDF Document
+- Get Values from all the Fields of PDF Document
+- Move Form Field to a New Location in a PDF File
+- Preserve Extended Rights feature while working with Forms
+- Add Tooltip to form field
+- Get Form Fields from a Specific Region of PDF file
+- Set Form Field Font Other Than the 14 Core PDF Fonts
+- Convert Dynamic XFA form to Standard AcroForm
+- working with XFA forms
+- Determine if field is marked as required
+- Set JavaScript on form field</Description>
+              <FolderName>workingwithforms</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Delete a Particular Form Field from a PDF Document</Title>
+                  <Description>All the form fields are contained in the Form collection of the Document object. This collection provides different methods to manage form fields, including Delete method. If you want to delete a particular field, you can use Delete method and pass the field name as parameter. After that, you need to save the updated PDF document.</Description>
+                  <FolderName>deleteformfield</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Form Field from a PDF Document</DisplayName>
+                    <Url>Delete+a+Particular+Form+Field+from+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Modify Form Field in a PDF Document</Title>
+                  <Description>Form collection of Document object allows you to manage all the form fields in a PDF document. If you want to modify an existing form field, you can get the particular field from the Form collection and set its properties. After that, you will have to save the updated PDF document.</Description>
+                  <FolderName>modifyformfield</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Modify Form Field in a PDF Document</DisplayName>
+                    <Url>Modify+Form+Field+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Fill Form Field in a PDF Document</Title>
+                  <Description>In order to fill a form field, you need to get the field from the Form collection of the Document object. After that, you can set the Value property of the field to set the field’s value. In this example, we have selected a TextBoxField and set its value using Value property.</Description>
+                  <FolderName>fillformfield</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Fill Form Field in a PDF Document</DisplayName>
+                    <Url>Fill+Form+Field+in+a+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Value from an Individual Field of PDF Document</Title>
+                  <Description>The Value property of the form field allows you to get the value of a particular field. In order to get the value, you first need to get the form field from the Form collection of the Document object. In this example, we have selected a TextBoxField and retrieved its value using the Value property.</Description>
+                  <FolderName>getvaluefromfield</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Value from an Individual Field of PDF Document</DisplayName>
+                    <Url>Get+Value+from+an+Individual+Field+of+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Values from all the Fields of PDF Document</Title>
+                  <Description>In order to get values from all the fields of a PDF document, you need to navigate through all the form fields and then get the value using Value property. You can get each field, from the Form collection, in the base field type called Field and access its Value property.</Description>
+                  <FolderName>getvaluesfromallfields</FolderName>
+                  <Order>6</Order>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Move Form Field to a New Location in a PDF File</Title>
+                  <Description>If you want to move a form field to a new location in the PDF page, you first need to get that particular object and then specify new value for its Rect property. A Rectangle object with new coordinates is assigned to the Rect property. After that, you only need to save the updated PDF using Save method of Document object.</Description>
+                  <FolderName>moveformfield</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Move Form Field to a New Location in a PDF File</DisplayName>
+                    <Url>Move+Form+Field+to+a+New+Location+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Tooltip to form field</Title>
+                  <Description>The Document class provides a collection named Form which helps you manage form fields in a PDF document. To let you add a tooltip to a form field, we have introduced a property named AlternateName to the Field class. Alternate name is used as field tooltip in Adobe Acrobat.</Description>
+                  <FolderName>addtooltiptofield</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Add Tooltip to form field</DisplayName>
+                    <Url>Add+Tooltip+to+form+field</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Form Fields from a Specific Region of PDF file</Title>
+                  <Description>In order to get the form fields from a specific region of a PDF file, you need to open the PDF file using Document object. After that, you can get the Form from the Forms collection of PDF document using the document Object. Now, to get the fields from a specific region, you can specify the Rectangular Region and pass it to GetFieldsInRect method of Form object. A collection of Fields will be returned which can be used to manipulate the fields.</Description>
+                  <FolderName>getfieldsfromaregion</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Get Form Fields from a Specific Region of PDF file</DisplayName>
+                    <Url>Get+Form+Fields+from+a+Specific+Region+of+PDF+file</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Add Form Field in a PDF Document</Title>
+                  <Description>This section includes the following examples:
+
+- Adding TextBox Field
+- Adding RadioButton Field
+- Adding ComboBox Field</Description>
+                  <FolderName>addformfieldpdf</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding TextBox Field</Title>
+                      <Description>The following example show how to add TextBoxField field in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>addingtextboxfield</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding RadioButton Field</Title>
+                      <Description>The following example shows how to add RadioButtonField in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>addingradiobuttonfield</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding ComboBox Field</Title>
+                      <Description>The following example shows how to add ComboBox field in a PDF document using Aspose.Pdf API.</Description>
+                      <FolderName>addingcomboboxfield</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Add Form Field in a PDF Document</DisplayName>
+                        <Url>Add+Form+Field+in+a+PDF+Document</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>
@@ -1164,7 +1649,7 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
 - Utility Features (Generator)
 - Conversion Features (Generator)
 - Advance Features (Generator)</Description>
-          <FolderName>WorkingWithAsposePdfGenerator</FolderName>
+          <FolderName>workingwithasposepdfgenerator</FolderName>
           <Order>2</Order>
           <Examples>
             <Example>
@@ -1176,7 +1661,7 @@ Conversion of an XML document tree into various supported output formats, is a c
 - Convert the XSL-FO representation to the target format.
 
 This example provides complete demonstration of the almost all possible ways to convert XSL-FO files in any form to PDF document. The example also describes that how developers can set Meta information of the PDF documents. In the early lines of code, it is also practiced about how to set license for Aspose.Pdf. These lines are commented for the developers using evaluation versions of Aspose.Pdf. If you have bought a license of Aspose.Pdf then you should un-comment those lines.</Description>
-              <FolderName>ConvertXSLFOToPDF</FolderName>
+              <FolderName>convertxslfotopdf</FolderName>
               <Order>1</Order>
               <DocLink>
                 <DisplayName>Converting XSL FO to PDF</DisplayName>
@@ -1184,30 +1669,30 @@ This example provides complete demonstration of the almost all possible ways to 
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\test.fo</Path>
+                  <Path>..\data\test.fo</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test.xml</Path>
+                  <Path>..\data\test.xml</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test.xsl</Path>
+                  <Path>..\data\test.xsl</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\Test.pdf</Path>
+                  <Path>..\data\Test.pdf</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test_fo_doc2string.pdf</Path>
+                  <Path>..\data\test_fo_doc2string.pdf</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test_fo_sring2string.pdf</Path>
+                  <Path>..\data\test_fo_sring2string.pdf</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test_fo_stream2string.pdf</Path>
+                  <Path>..\data\test_fo_stream2string.pdf</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\test_xml_string2string.pdf</Path>
+                  <Path>..\data\test_xml_string2string.pdf</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -1222,13 +1707,13 @@ This example provides complete demonstration of the almost all possible ways to 
 - Converting XSL FO to PDF
 - Converting SVG file to PDF format
 - HTML to PDF conversion</Description>
-              <FolderName>ConversionFeatures</FolderName>
+              <FolderName>conversionfeatures</FolderName>
               <Order>2</Order>
               <Examples>
                 <Example>
                   <Title>HTML to PDF conversion</Title>
                   <Description>Aspose.Pdf for .NET fully supports HTML 4.1 and CSS 2.1. However HTML5 is partially supported i.e. The feature 'Canvas' object of HTML5 is not yet implemented. Our component do support CSS3 standard but the support is still partial.</Description>
-                  <FolderName>ConvertHTMLToPDF</FolderName>
+                  <FolderName>converthtmltopdf</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>HTML to PDF conversion</DisplayName>
@@ -1236,12 +1721,12 @@ This example provides complete demonstration of the almost all possible ways to 
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\Aspose.htm</Path>
+                      <Path>..\data\Aspose.htm</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\HTML2pdf.pdf</Path>
+                      <Path>..\data\HTML2pdf.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1263,7 +1748,7 @@ This example provides complete demonstration of the almost all possible ways to 
 - Migration from Adobe Acrobat Automation to Aspose
 - Use Aspose.Pdf for .NET in Other Programming Languages
 - Integration with Aspose.Total Components</Description>
-      <FolderName>KnowledgeBase</FolderName>
+      <FolderName>knowledgebase</FolderName>
       <Order>2</Order>
       <Folders>
         <Folder>
@@ -1273,7 +1758,7 @@ This example provides complete demonstration of the almost all possible ways to 
 - Aspose.Pdf.Generator Articles
 - Aspose.Pdf.Facades Articles
 - Aspose.Pdf Articles</Description>
-          <FolderName>TechnicalArticles</FolderName>
+          <FolderName>technicalarticles</FolderName>
           <Order>1</Order>
           <Folders>
             <Folder>
@@ -1301,13 +1786,13 @@ This example provides complete demonstration of the almost all possible ways to 
 - Read Database, Create PDF and send it as an attachment with email
 - Table in Header Footer section
 - Using hyphenation while creating PDF</Description>
-              <FolderName>AsposePdfGeneratorArticles</FolderName>
+              <FolderName>asposepdfgeneratorarticles</FolderName>
               <Order>1</Order>
               <Examples>
                 <Example>
                   <Title>Convert Text File to PDF</Title>
                   <Description>This example explains how to easily and efficiently convert a text file to PDF using Aspose.Pdf.</Description>
-                  <FolderName>ConvertTextFileToPDF</FolderName>
+                  <FolderName>converttextfiletopdf</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>How to Convert a text file to PDF</DisplayName>
@@ -1315,12 +1800,12 @@ This example provides complete demonstration of the almost all possible ways to 
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\test.txt</Path>
+                      <Path>..\data\test.txt</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\output.pdf</Path>
+                      <Path>..\data\output.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1332,7 +1817,7 @@ This example provides complete demonstration of the almost all possible ways to 
 In our DOM (document object model) every PDF file is comprised of sections, and each section contains paragraphs. Whereas a paragraph can comprise of text, and image file, Table, Floating Box, Graph, Heading, form field or an attachment. So in order to convert and image file into PDF format, we must enclose it into a paragraph.
 
 To add an image, simply create an object of Image class, add the image to paragraphs collection of a section, specify the location where an image is placed and specify the image type. For that reason we have a class named ImageInfo which offers the capability to define the image source. This examples explains the concept of converting an image to PDF in detail.</Description>
-                  <FolderName>ConvertImageToPDF</FolderName>
+                  <FolderName>convertimagetopdf</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>How to   Convert an Image to PDF</DisplayName>
@@ -1340,24 +1825,24 @@ To add an image, simply create an object of Image class, add the image to paragr
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\aspose.jpg</Path>
+                      <Path>..\data\aspose.jpg</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\aspose.bmp</Path>
+                      <Path>..\data\aspose.bmp</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\aspose.tif</Path>
+                      <Path>..\data\aspose.tif</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\jpegOutput.pdf</Path>
+                      <Path>..\data\jpegOutput.pdf</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\resizedBmpOutput.pdf</Path>
+                      <Path>..\data\resizedBmpOutput.pdf</Path>
                     </DataFile>
                     <DataFile>
-                      <Path>..\Data\tifOutput.pdf</Path>
+                      <Path>..\data\tifOutput.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1368,7 +1853,7 @@ To add an image, simply create an object of Image class, add the image to paragr
 For more information and details of supported replaceable symbols offered by Aspose.Pdf please visit http://www.aspose.com/docs/display/pdfjava/Replaceable+Symbols.
 
 This example displays Image in Header section and Page number information in Footer section of the PDF file.</Description>
-                  <FolderName>ImagePageNumberInHeaderFooter</FolderName>
+                  <FolderName>imagepagenumberinheaderfooter</FolderName>
                   <Order>3</Order>
                   <DocLink>
                     <DisplayName>Image  and  Page Number in Header Footer section</DisplayName>
@@ -1376,12 +1861,12 @@ This example displays Image in Header section and Page number information in Foo
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\aspose.jpg</Path>
+                      <Path>..\data\aspose.jpg</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\pdfWithHeaderAndPageNos.pdf</Path>
+                      <Path>..\data\pdfWithHeaderAndPageNos.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1389,7 +1874,7 @@ This example displays Image in Header section and Page number information in Foo
                 <Example>
                   <Title>Table in Header Footer Section</Title>
                   <Description>This example describes addition of Table in Header section of a PDF. The header of a page uses the top margin area of the page, which means the height of the header can't be larger than the top margin of the page. Similarly, Footer is a special area on the bottom of the page and uses the bottom margin area of the page. If the Header or Footer is larger than the top or bottom margin of the page respectively, the top or bottom margin will be enlarged automatically.</Description>
-                  <FolderName>TableInHeaderFooter</FolderName>
+                  <FolderName>tableinheaderfooter</FolderName>
                   <Order>4</Order>
                   <DocLink>
                     <DisplayName>Table in Header Footer section</DisplayName>
@@ -1397,12 +1882,12 @@ This example displays Image in Header section and Page number information in Foo
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\asposelogo.png</Path>
+                      <Path>..\data\asposelogo.png</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\Table_in_Header.pdf</Path>
+                      <Path>..\data\Table_in_Header.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -1410,7 +1895,7 @@ This example displays Image in Header section and Page number information in Foo
                 <Example>
                   <Title>Adding Image in Table Cell</Title>
                   <Description>According to our DOM (Document Object Model) a document is composed of Sections. Where a section may be a Header/Footer or a body of the document. A section contains one or more paragraphs, and a paragraph may be an Image, a text, a form field, Heading, FloatingBox, graph, attachment, or a table. Whereas, a table has a collection of Rows, a row has a collection of Cells and a cell is a collection of Paragraphs. So, as according to our DOM, a table cell may contain any of the paragraph elements specified above which also includes images. One must have a clear understanding of cell width, especially when displaying an image in table cell, so that the image width should be fixed according to the width of a cell, in order to display it properly. Width of an Image can be fixed by setting the FixWidth property of ImageInfo class. In this case the image is scaled to the fixed width of table cell. This example discusses this concept in detail.</Description>
-                  <FolderName>AddImageInTableCell</FolderName>
+                  <FolderName>addimageintablecell</FolderName>
                   <Order>5</Order>
                   <DocLink>
                     <DisplayName>Adding Image in table Cell</DisplayName>
@@ -1418,12 +1903,12 @@ This example displays Image in Header section and Page number information in Foo
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\aspose.jpg</Path>
+                      <Path>..\data\aspose.jpg</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\Image_in_Cell.pdf</Path>
+                      <Path>..\data\Image_in_Cell.pdf</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
