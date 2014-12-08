@@ -8,7 +8,8 @@
  
 package programmersguide.workingwithasposepdf.workingwithpages.concatenatepdffiles.java;
 
-import com.aspose.pdf.kit.PdfFileEditor;
+import com.aspose.pdf.*;
+import com.aspose.pdf.facades.PdfFileEditor;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,33 +21,19 @@ public class ConcatenatePdfFiles
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithpages/concatenatepdffiles/data/";
 
-        try
-        {
-            //read the input file
-            String inFile1 = dataDir + "input1.pdf";
-            String inFile2 = dataDir + "input2.pdf";
-            String outFile = dataDir + "output.pdf";
+        // Open the target document
+        com.aspose.pdf.Document pdfDocument1 = new com.aspose.pdf.Document(dataDir+ "input1.pdf");
 
-            FileInputStream inStream1 = new FileInputStream(inFile1);
-            FileInputStream inStream2 = new FileInputStream(inFile2);
+// Open the source document
+        com.aspose.pdf.Document pdfDocument2 = new com.aspose.pdf.Document(dataDir+ "input2.pdf");
 
-            //concatenate two files
-            FileOutputStream outputStream = new FileOutputStream(outFile);
+// Add the pages of the source document to the target document
+        pdfDocument1.getPages().add(pdfDocument2.getPages());
 
-            PdfFileEditor editor = new PdfFileEditor();
-            editor.concatenate(inStream1, inStream2, outputStream);
-
-            //close the output FileOutputStream
-            outputStream.close();
-
-            // Display result.
-            System.out.println("PDF files are concatenated successfully!");
-        }
-        catch (Exception ex)
-        {
-            System.out.println(ex.getMessage());
-        }
+// Save the concatenated output file (the target document)
+        pdfDocument1.save(dataDir+ "Concatenate_output.pdf");
     }
+
 }
 
 

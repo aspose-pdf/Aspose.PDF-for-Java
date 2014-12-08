@@ -31,7 +31,7 @@ public class AddImageInTableCell
         table.setColumnWidths("100 100 120");
 
         //Set table border using another customized BorderInfo object
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.All.getValue(), 1F));
+        table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 1F));
 
         //Create an image object in the section
         aspose.pdf.Image img1 = new aspose.pdf.Image(sec1);
@@ -51,7 +51,7 @@ public class AddImageInTableCell
         cell2.getParagraphs().add(img1);
 
         row1.getCells().add("Previous cell with image");
-        row1.getCells().getCell(2).setVerticalAlignment(VerticalAlignmentType.Center);
+        row1.getCells().get_Item(2).setVerticalAlignment(VerticalAlignmentType.Center);
 
         //Save the document
         pdf1.save(dataDir + "Image_in_Cell.pdf");

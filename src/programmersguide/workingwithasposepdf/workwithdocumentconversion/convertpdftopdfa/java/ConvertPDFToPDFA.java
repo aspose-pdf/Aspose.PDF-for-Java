@@ -8,7 +8,7 @@
  
 package programmersguide.workingwithasposepdf.workwithdocumentconversion.convertpdftopdfa.java;
 
-import com.aspose.pdf.kit.PdfConverter;
+import com.aspose.pdf.*;
 
 public class ConvertPDFToPDFA
 {
@@ -17,19 +17,7 @@ public class ConvertPDFToPDFA
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workwithdocumentconversion/convertpdftopdfa/data/";
 
-        com.aspose.pdf.kit.PdfConverter pConv = new PdfConverter();
-        pConv.bindPdf(dataDir + "input.pdf");
 
-        //open document
-//        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("input.pdf");
-//
-//        //Convert to PDF/A compliant document
-//        pdfDocument.validate("Validation_log.xml", com.aspose.pdf.PdfFormat.PDF_A_1B);
-//        pdfDocument.convert("Conversion_log.xml", com.aspose.pdf.PdfFormat.PDF_A_1B, com.aspose.pdf.ConvertErrorAction.Delete);
-//
-//        //Save updated document
-//        pdfDocument.save("output.pdf");
-        System.out.println("PDF to PDF-A conversion example will be available very soon.");
     }
 }
 

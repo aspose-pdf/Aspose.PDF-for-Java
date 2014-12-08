@@ -10,6 +10,9 @@ package programmersguide.workingwithasposepdf.workingwithtext.addtexttopdffile.j
 
 import com.aspose.pdf.*;
 
+import java.awt.*;
+import java.awt.Color;
+
 public class AddTexttoPDFfile
 {
     public static void main(String[] args) throws Exception
@@ -29,7 +32,7 @@ public class AddTexttoPDFfile
         textFragment.getTextState().setFont(com.aspose.pdf.FontRepository.findFont("Verdana"));
         textFragment.getTextState().setFontSize(14);
         
-        textFragment.getTextState().setForegroundColor(java.awt.Color.BLUE);
+        textFragment.getTextState().setForegroundColor(com.aspose.pdf.Color.getRed());
 
         // create TextBuilder object
         com.aspose.pdf.TextBuilder textBuilder = new com.aspose.pdf.TextBuilder(pdfPage);

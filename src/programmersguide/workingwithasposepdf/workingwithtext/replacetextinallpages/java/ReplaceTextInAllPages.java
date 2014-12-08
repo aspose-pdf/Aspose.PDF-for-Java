@@ -8,8 +8,8 @@
  
 package programmersguide.workingwithasposepdf.workingwithtext.replacetextinallpages.java;
 
-import com.aspose.pdf.kit.PdfContentEditor;
-import com.aspose.pdf.kit.ReplaceTextStrategy;
+import com.aspose.pdf.*;
+
 
 public class ReplaceTextInAllPages
 {
@@ -17,27 +17,31 @@ public class ReplaceTextInAllPages
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithtext/replacetextinallpages/data/";
+        // Open document
+        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(dataDir+ "source.pdf");
 
-        //create PdfContentEditor object and open PDF file
-        PdfContentEditor pdfEditor = new PdfContentEditor();
-        pdfEditor.bindPdf(dataDir + "input.pdf");
+        // Create TextAbsorber object to find all instances of the input search phrase
+        com.aspose.pdf.TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber("sample");
 
-        //set wordwrap mode for text replacement
-        pdfEditor.getReplaceTextStrategy().setTextNotFitAction(ReplaceTextStrategy.Action.WORDWRAP);
+        // Accept the absorber for first page of document
+        pdfDocument.getPages().accept(textFragmentAbsorber);
 
-        //set new line interval
-        pdfEditor.getReplaceTextStrategy().setLineInterval(2);
+        // Get the extracted text fragments into collection
+        com.aspose.pdf.TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
 
-        //set alignment as required
-        pdfEditor.getReplaceTextStrategy().setAlignment(ReplaceTextStrategy.Alignment.LEFT);
+        // Loop through the fragments
+        for(com.aspose.pdf.TextFragment textFragment : (Iterable<com.aspose.pdf.TextFragment>)textFragmentCollection)
+        {
+            // Update text and other properties
+            textFragment.setText("New Pharase");
+            textFragment.getTextState().setFont(com.aspose.pdf.FontRepository.findFont("Verdana"));
+            textFragment.getTextState().setFontSize(22);
+            textFragment.getTextState().setForegroundColor(com.aspose.pdf.Color.getBlue());
+            textFragment.getTextState().setBackgroundColor(com.aspose.pdf.Color.getGray());
+        }
+        // Save the updated PDF file
+        pdfDocument.save(dataDir+ "Updated_Text.pdf");
 
-        //replace short text with longer string
-        while (pdfEditor.replaceText("text", "string"));
-
-        //save output PDF file
-        pdfEditor.save(dataDir + "output.pdf");
-
-        System.out.println("Text replaced successfully!");
     }
 }
 

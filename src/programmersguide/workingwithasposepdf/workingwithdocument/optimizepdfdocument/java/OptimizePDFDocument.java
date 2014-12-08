@@ -17,18 +17,12 @@ public class OptimizePDFDocument
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithdocument/optimizepdfdocument/data/";
 
-        //open document
-        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(dataDir + "input.pdf");
-
-        //optimize for web
+        //Open document
+        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(dataDir+ "input.pdf");
+        //Optimize for web
         pdfDocument.optimize();
-
-        //save output document
-        pdfDocument.save(dataDir + "output.pdf");
-
-        // Display result.
-        System.out.println("Process completed successfully!");
-
+        //Save output document
+        pdfDocument.save("Optimized_output.pdf");
     }
 }
 

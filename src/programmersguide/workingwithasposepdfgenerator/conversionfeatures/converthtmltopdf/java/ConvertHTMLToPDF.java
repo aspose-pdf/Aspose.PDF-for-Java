@@ -14,6 +14,7 @@ import aspose.pdf.Text;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import com.aspose.pdf.*;
 
 public class ConvertHTMLToPDF
 {
@@ -44,7 +45,7 @@ public class ConvertHTMLToPDF
             Text text1 = new Text(sec1,sb.toString());
 
             // enable the property to display HTML contents within their own formatting
-            text1.setIsHtmlTagSupported(true);
+            text1.setIfHtmlTagSupportedCssWinsOnFirstLevelChildren(true);
 
             //Add the text paragraphs containing HTML text to the section
             sec1.getParagraphs().add(text1);

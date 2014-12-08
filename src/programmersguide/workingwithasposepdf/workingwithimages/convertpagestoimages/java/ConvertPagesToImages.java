@@ -8,8 +8,9 @@
  
 package programmersguide.workingwithasposepdf.workingwithimages.convertpagestoimages.java;
 
-import com.aspose.pdf.kit.ImageType;
-import com.aspose.pdf.kit.PdfConverter;
+import com.aspose.pdf.*;
+import com.aspose.pdf.facades.PdfConverter;
+import com.sun.image.codec.jpeg.ImageFormatException;
 
 public class ConvertPagesToImages
 {
@@ -25,7 +26,7 @@ public class ConvertPagesToImages
         int imageCount = 1;
         while (converter.hasNextImage())
         {
-            converter.getNextImage(dataDir + "image" + imageCount + suffix, ImageType.JPEG);
+            converter.getNextImage(dataDir + "image" + imageCount + suffix, ImageFormatInternal.getJpeg());
             imageCount++;
         }
 

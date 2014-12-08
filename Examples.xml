@@ -260,7 +260,316 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Add Image In Existing PDF file</Title>
+                  <Description>In this example, we will see how we can add image in a PDF document using Aspose.Pdf.</Description>
+                  <FolderName>addimageinexistingpdf</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add Image in existing PDF file</DisplayName>
+                    <Url>Add+Image+in+existing+PDF+file</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete Images From The PDF File</Title>
+                  <Description>In this example, we will see how we can delete the image from the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>deleteimages</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Delete Images from the PDF File</DisplayName>
+                    <Url>Delete+Images+from+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images From The PDF File</Title>
+                  <Description>In this example, we will see how we can extract images from the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extractimages</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images from the PDF File</DisplayName>
+                    <Url>Extract+Images+from+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\output.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Image In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can replace an image in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>replaceimage</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Replace Image in an Existing PDF File</DisplayName>
+                    <Url>Replace+Image+in+an+Existing+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF Pages To JPEG images</Title>
+                  <Description>In this example, we will see how we can convert all the PDF page to JPEG image using Aspose.Pdf.</Description>
+                  <FolderName>convertpdfpages</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF pages to JPEG images</DisplayName>
+                    <Url>Convert+PDF+pages+to+JPEG+images</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\image1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image2.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image3.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert Particular PDF Page To PNG Image</Title>
+                  <Description>In this example, we will see how we can convert a particular page of the PDF file to PNG image using Aspose.Pdf.</Description>
+                  <FolderName>convertparticularpdfpagetopng</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Convert particular PDF page to PNG Image</DisplayName>
+                    <Url>Convert+particular+PDF+page+to+PNG+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert All PDF Pages To PNG Images</Title>
+                  <Description>In this example, we will see how we can convert all the PDF page to PNG images using Aspose.Pdf.</Description>
+                  <FolderName>convertallpdfpagestopng</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Convert all PDF pages to PNG Images</DisplayName>
+                    <Url>Convert+all+PDF+pages+to+PNG+Images</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\image1.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image2.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image3.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert Particular PDF Page To TIFF Image</Title>
+                  <Description>In this example, we will see how we can convert a particular page of the PDF file to TIFF image using Aspose.Pdf.</Description>
+                  <FolderName>convertparticularpdfpagetotiff</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Convert Particular PDF Page to TIFF Image</DisplayName>
+                    <Url>Convert+Particular+PDF+Page+to+TIFF+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.tif</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert All PDF Pages Tto EMF Images</Title>
+                  <Description>In this example, we will see how we can convert all PDF pages to EMF image using Aspose.Pdf.</Description>
+                  <FolderName>convertallpdfpagestoemfimages</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Convert all PDF Pages to EMF Images</DisplayName>
+                    <Url>Convert+all+PDF+Pages+to+EMF+Images</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\image1.emf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image2.emf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\image3.emf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert CGM Image To PDF</Title>
+                  <Description>In this example, we will see how we can convert CGM image to PDF using Aspose.Pdf.</Description>
+                  <FolderName>convertcgmimagetopdf</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Convert CGM image to PDF</DisplayName>
+                    <Url>Convert+CGM+image+to+PDF</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Search And Get Images From PDF Document</Title>
+                  <Description>In this example, we will see how we can search and get the images from all the pages in a PDF document using Aspose.Pdf.</Description>
+                  <FolderName>searchandgetimages</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Search and get images from PDF Document</DisplayName>
+                    <Url>Search+and+get+images+from+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert Particular PDF Page To EMF Image</Title>
+                  <Description>In this example, we will see how we can convert particular page to EMF image using Aspose.Pdf.</Description>
+                  <FolderName>convertparticularpdfpagetoemf</FolderName>
+                  <Order>14</Order>
+                  <DocLink>
+                    <DisplayName>Convert Particular PDF page to EMF Image</DisplayName>
+                    <Url>Convert+Particular+PDF+page+to+EMF+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\image.emf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Get The Resolution And Dimensions Of Embedded Images</Title>
+                  <Description>This topic includes the following examples:
+
+ - Getting Image Information without Extracting the Images
+ - Working with Image Placement</Description>
+                  <FolderName>getresolutionanddimensionsofembeddedimages</FolderName>
+                  <Order>12</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Getting Image Information Without Extracting The Images</Title>
+                      <Description>In this example, we will see how we can get the image informatio n without extracting the images using Aspose.Pdf.</Description>
+                      <FolderName>gettingimageinformation</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Getting Image Information without Extracting the Images</DisplayName>
+                        <Url>Get+the+resolution+and+dimensions+of+embedded+images</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Working With Image Placement</Title>
+                      <Description>In this example, we will see how we can get an image's position in a PDF document using Aspose.Pdf.</Description>
+                      <FolderName>workingwithimageplacement</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Working with Image Placement</DisplayName>
+                        <Url>Get+the+resolution+and+dimensions+of+embedded+images</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
             <Folder>
               <Title>Working With Text</Title>
@@ -1561,6 +1870,75 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </InputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Set Form Field Font Other Than the 14 Core PDF Fonts</Title>
+                  <Description>Form fields in Adobe PDF files can be configured to use specific default fonts and Aspose.Pdf provides the feature to set the font other than 14 Core fonts.</Description>
+                  <FolderName>formfieldfont14</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Set Form Field Font Other Than the 14 Core PDF Fonts</DisplayName>
+                    <Url>Set+Form+Field+Font+Other+Than+the+14+Core+PDF+Fonts</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert Dynamic XFA form to Standard AcroForm</Title>
+                  <Description>We know that we cannot extracted or manipulate pages of XFA Forms, because the contents of form are generated at runtime (during XFA form viewing) within the application/software trying to display/render the XFA form. However we have recently worked on supporting a feature where we can convert XFA form to Standard AcroForm.</Description>
+                  <FolderName>dynamicxfatoacroform</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Convert Dynamic XFA form to Standard AcroForm</DisplayName>
+                    <Url>Convert+Dynamic+XFA+form+to+Standard+AcroForm</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Dynamic_XFA.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Standard_AcroForm.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Determine if field is marked as required</Title>
+                  <Description>Aspose.Pdf supports the feature to retrieve the information related to form fields present inside document and we can also get the information/properties associated with particular form field. This example shows the steps to determine if particular form field is marked as required or not.</Description>
+                  <FolderName>determinerequiredfield</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Determine if field is marked as required</DisplayName>
+                    <Url>Determine+if+field+is+marked+as+required</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set JavaScript on form field</Title>
+                  <Description>This example shows how to set JavaScript on form field using Aspose.Pdf.</Description>
+                  <FolderName>setjavascript</FolderName>
+                  <Order>14</Order>
+                  <DocLink>
+                    <DisplayName>Set JavaScript on form field</DisplayName>
+                    <Url>Set+JavaScript+on+form+field</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
               <Folders>
                 <Folder>
@@ -1619,6 +1997,843 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                         <DisplayName>Add Form Field in a PDF Document</DisplayName>
                         <Url>Add+Form+Field+in+a+PDF+Document</Url>
                       </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Working with XFA forms</Title>
+                  <Description>Dynamic forms are based on an XML specification known as XFA, the “XML Forms Architecture”. The information about the form (as far as PDF is concerned) is very vague – it specifies that fields exist, with properties, and JavaScript events, but does not specify any rendering. The objects of XFA form are drawn at the time loading the document.</Description>
+                  <FolderName>workingwithxfa</FolderName>
+                  <Order>12</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Fill XFA Fields</Title>
+                      <Description>This example shows you how to fill fields in XFA form using Aspose.Pdf.</Description>
+                      <FolderName>fillxfafields</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Working with XFA forms</DisplayName>
+                        <Url>working+with+XFA+forms</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\Filled_XFA.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Get XFA field properties</Title>
+                      <Description>In order to access field properties, first you need to use Document.Form.XFA.Teamplate to access to field template. The following example shows the steps of getting X and Y coordinates of XFA form field.</Description>
+                      <FolderName>getxfaproperties</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Working with XFA forms</DisplayName>
+                        <Url>working+with+XFA+forms</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\Filled_XFA.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working With Links And Actions</Title>
+              <Description>This section includes the following topics: 
+
+ - Create Application Link in a PDF File
+ - Create PDF Document Link in a PDF File
+ - Remove Document Open Action from a PDF File
+ - Extract Links from the PDF File
+ - Add Hyperlink in a PDF File
+ - Update Links in a PDF File
+ - How to specify PDF page when viewing document
+ - Get PDF Hyperlink Destination (URL)</Description>
+              <FolderName>workingwithlinksandactions</FolderName>
+              <Order>10</Order>
+              <Examples>
+                <Example>
+                  <Title>Create Application Link In A PDF File</Title>
+                  <Description>In this example, we will see how we can create application link in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>createapplicationlinkinpdffile</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Create Application Link in a PDF File</DisplayName>
+                    <Url>Create+Application+Link+in+a+PDF+File</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Create PDF Document Link In A PDF File</Title>
+                  <Description>In this example, we will see how we can create PDF document link in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>createpdfdocumentlink</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Create PDF Document Link in a PDF File</DisplayName>
+                    <Url>Create+PDF+Document+Link+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Remove Document Open Action From A PDF File</Title>
+                  <Description>In this example, we will see how we can remove document open action from the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>removedocumentopenaction</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Remove Document Open Action from a PDF File</DisplayName>
+                    <Url>Remove+Document+Open+Action+from+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Links From The PDF File</Title>
+                  <Description>In this example, we will see how we can extract links from a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extractlinks</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Extract Links from the PDF File</DisplayName>
+                    <Url>Extract+Links+from+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Hyperlink In A PDF File</Title>
+                  <Description>In this example, we will see how we can to add a hyperlink to a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addhyperlink</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Add Hyperlink in a PDF File</DisplayName>
+                    <Url>Add+Hyperlink+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Links In A PDF File</Title>
+                  <Description>In this example, we will see how we can update a link in a PDF file and set its target to the second page of the document using Aspose.Pdf.</Description>
+                  <FolderName>updatelinks</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Update Links in a PDF File</DisplayName>
+                    <Url>Update+Links+in+a+PDF+File</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>How To Specify PDF Page When Viewing Document</Title>
+                  <Description>In this example, we will see how we can specify page as document open action when viewing it using Aspose.Pdf.</Description>
+                  <FolderName>specifypdfpagewhenviewingdocument</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>How to specify PDF page when viewing document</DisplayName>
+                    <Url>How+to+specify+PDF+page+when+viewing+document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\goto2page.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Operators</Title>
+              <Description>This section includes the following topics: 
+
+ - Introduction to the PDF Operators and Their Usage
+ - Draw XForm on page usage operators
+ - Remove Graphics objects using Operator classes</Description>
+              <FolderName>workingwithoperators</FolderName>
+              <Order>11</Order>
+              <Examples>
+                <Example>
+                  <Title>Introduction To The PDF Operators And Their Usage</Title>
+                  <Description>In this example, we will see how we can use the PDF operators using Aspose.Pdf.</Description>
+                  <FolderName>pdfoperatorsandtheirusage</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Introduction to the PDF Operators and Their Usage</DisplayName>
+                    <Url>Introduction+to+the+PDF+Operators+and+Their+Usage</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Draw XForm on page usage operators</Title>
+                  <Description>In this example, we will see how we can draw the XForm on page usage operators using Aspose.Pdf.</Description>
+                  <FolderName>drawxformonpageusageoperators</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Draw XForm on page usage operators</DisplayName>
+                    <Url>Draw+XForm+on+page+usage+operators</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\blank-sample2-out.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Remove Graphics Objects Using Operator Classes</Title>
+                  <Description>In this example, we will see how we can remove the graphic objects using operator classes using Aspose.Pdf.</Description>
+                  <FolderName>removegraphicsobjects</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Remove Graphics objects using Operator classes</DisplayName>
+                    <Url>Remove+Graphics+objects+using+Operator+classes</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\No_Graphics.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Security And Signatures</Title>
+              <Description>This section includes the following topics: 
+
+ - Encrypt PDF File using Different Encryption Types and Algorithms
+ - Decrypt PDF File using Owner Password
+ - Change Password of a PDF File
+ - How to - determine if the source PDF is password protected
+ - Extract Signature Information
+ - Extracting Image from Signature Field
+ - Digitally sign PDF file
+ - Digitally Signing PDF with Timestamp Server
+-  Set Privileges on an Existing PDF File</Description>
+              <FolderName>workingwithsecurityandsignatures</FolderName>
+              <Order>12</Order>
+              <Examples>
+                <Example>
+                  <Title>Encrypt PDF File Using Different Encryption Types And Algorithms</Title>
+                  <Description>In this example, we will see how we can encrypt a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>encryptpdffile</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Encrypt PDF File using Different Encryption Types and Algorithms</DisplayName>
+                    <Url>Encrypt+PDF+File+using+Different+Encryption+Types+and+Algorithms</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Decrypt PDF File Using Owner Password</Title>
+                  <Description>In this example, we will see how we can decrypt the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>decryptpdffile</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Decrypt PDF File using Owner Password</DisplayName>
+                    <Url>Decrypt+PDF+File+using+Owner+Password</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Change Password Of A PDF File</Title>
+                  <Description>In this example, we will see how we can change password of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>changepassword</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Change Password of a PDF File</DisplayName>
+                    <Url>Change+Password+of+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Determine If The source PDF Is Password Protected</Title>
+                  <Description>When dealing with encrypted PDF files, you may come across the scenario where you would be interested to detect if a PDF has an open password and/or an edit password. Sometimes there is a document which does not require password information while opening them but they require information in order to edit the contents of file. 
+In this example, we will see how we can determine if the source PDF is password protected.</Description>
+                  <FolderName>determinepdfispasswordprotected</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>How to - determine if the source PDF is password protected</DisplayName>
+                    <Url>How+to+-+determine+if+the+source+PDF+is+password+protected</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Signature Information</Title>
+                  <Description>In this example, we will see how we can extract the signature information using Aspose.Pdf.</Description>
+                  <FolderName>extractsignatureinformation</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Extract Signature Information</DisplayName>
+                    <Url>Extract+Signature+Information</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extracting Image From Signature Field</Title>
+                  <Description>In this example, we will see how we can extract the image associated with signature field using Aspose.Pdf.</Description>
+                  <FolderName>extractingimage</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Extracting Image from Signature Field</DisplayName>
+                    <Url>Extracting+Image+from+Signature+Field</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Digitally Sign PDF File</Title>
+                  <Description>In this example, we will see how we can digitally sign the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>digitallysignpdffile</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Digitally sign PDF file</DisplayName>
+                    <Url>Digitally+sign+PDF+file</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Stamps And Watermarks</Title>
+              <Description>This section includes the following topics: 
+
+ - Adding Text Stamp in the PDF File
+ - Adding Image Stamp in PDF File
+ - Adding PDF Page Stamp in the PDF File
+ - Add Page Number Stamp in a PDF File
+ - Adding Text in Header of PDF File
+ - Adding Text in Footer of PDF File
+ - Adding Image in Header of PDF File
+ - Adding Image in Footer of PDF File
+ - Adding different Headers in one PDF File
+ - Define alignment for TextStamp object
+ - Working with Existing Watermarks
+ - Adding Date-Time Stamp in PDF</Description>
+              <FolderName>workingwithstampsandwatermarks</FolderName>
+              <Order>13</Order>
+              <Examples>
+                <Example>
+                  <Title>Adding Text Stamp In The PDF File</Title>
+                  <Description>In this example, we will see how we can add text stamp in the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addingtextstamp</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Adding Text Stamp in the PDF File</DisplayName>
+                    <Url>Adding+Text+Stamp+in+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding PDF Page Stamp In The PDF File</Title>
+                  <Description>In this example, we will see how we can add the PDF page stamp in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addingpdfpagestamp</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Adding PDF Page Stamp in the PDF File</DisplayName>
+                    <Url>Adding+PDF+Page+Stamp+in+the+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Page Number Stamp In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the page numbers in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addpagenumberstamp</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Add Page Number Stamp in a PDF File</DisplayName>
+                    <Url>Add+Page+Number+Stamp+in+a+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Text In Header Of PDF File</Title>
+                  <Description>In this example, we will see how we can add text in the header of a PDF fileusing Aspose.Pdf.</Description>
+                  <FolderName>addingtextinheader</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Adding Text in Header of PDF File</DisplayName>
+                    <Url>Adding+Text+in+Header+of+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Text In Footer Of PDF File</Title>
+                  <Description>In this example, we will see how we can add the text in the footer of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addingtextinfooter</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Adding Text in Footer of PDF File</DisplayName>
+                    <Url>Adding+Text+in+Footer+of+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Image in Header of PDF File</Title>
+                  <Description>In this example, we will see how we can add image in the header of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addingimageinheaderofpdffile</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Adding Image in Header of PDF File</DisplayName>
+                    <Url>Adding+Image+in+Header+of+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Image In Footer Of PDF File</Title>
+                  <Description>In this example, we will see how we can add image in the footer of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addingimageinfooter</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Adding Image in Footer of PDF File</DisplayName>
+                    <Url>Adding+Image+in+Footer+of+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding Different Headers In One PDF File</Title>
+                  <Description>In this example, we will see how we can add multiple headers in a single PDF document using Aspose.Pdf.</Description>
+                  <FolderName>addingdifferentheaders</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Adding different Headers in one PDF File</DisplayName>
+                    <Url>Adding+different+Headers+in+one+PDF+File</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\multiheader.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Define Alignment For TextStamp Object</Title>
+                  <Description>In this example, we will see how we can load an existing PDF document and add TextStamp over it using Aspose.Pdf.</Description>
+                  <FolderName>definealignment</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Define alignment for TextStamp object</DisplayName>
+                    <Url>Define+alignment+for+TextStamp+object</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\StampedPDF.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Adding Image Stamp In PDF File</Title>
+                  <Description>This section includes the following topics:
+
+ - Add Image Stamp
+ - Control Image Quality when Adding a Stamp</Description>
+                  <FolderName>addingimagestamp</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Add Image Stamp</Title>
+                      <Description>In this example, we will see how we can add image stamp in the PDF file using Aspose.Pdf.</Description>
+                      <FolderName>addimagestamp</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Image Stamp in PDF File</DisplayName>
+                        <Url>Adding+Image+Stamp+in+PDF+File</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\data\aspose-logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Control Image Quality when Adding a Stamp</Title>
+                      <Description>In this example, we will see how we can control the quality of the image while adding an image as a stamp object using Aspose.Pdf.</Description>
+                      <FolderName>controlimagequality</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Image Stamp in PDF File</DisplayName>
+                        <Url>Adding+Image+Stamp+in+PDF+File</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\data\aspose-logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Working With Existing Watermarks</Title>
+                  <Description>This section includes the following topics:
+
+ - Getting Watermarks
+ - Counting Artifacts of a Particular Type</Description>
+                  <FolderName>workingwithexistingwatermarks</FolderName>
+                  <Order>11</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Getting Watermarks</Title>
+                      <Description>In this example, we will see how we can get each watermark on the first page of a PDF file using Aspose.Pdf.</Description>
+                      <FolderName>gettingwatermarks</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Getting Watermarks</DisplayName>
+                        <Url>Working+with+Existing+Watermarks</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Counting Artifacts Of A Particular Type</Title>
+                      <Description>In this example, we will see how we can calculate the total count of artifacts of a particular type (for example, the total number of watermarks) using Aspose.Pdf.</Description>
+                      <FolderName>countingartifacts</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Counting Artifacts of a Particular Type</DisplayName>
+                        <Url>Working+with+Existing+Watermarks</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working With Tables</Title>
+              <Description>This section contains topics related to creation of tables in PDF file.
+
+ - Add Table in Existing PDF Document
+ - Integrate Table with Database (DOM)
+ - Render Table in New Page
+ - Set Border Style, Margins and Padding of the Table (MergedAPI)</Description>
+              <FolderName>workingwithtables</FolderName>
+              <Order>14</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Table In Existing PDF Document</Title>
+                  <Description>In this example, we will see how we can add a table to an existing PDF using Aspose.Pdf.</Description>
+                  <FolderName>addtableinexistingpdf</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Table in Existing PDF Document</DisplayName>
+                    <Url>Add+Table+in+Existing+PDF+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\document_with_table.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Integrate Table With Database (DOM)</Title>
+                  <Description>In this example, we will see how we can integrate the table with database using Aspose.Pdf.</Description>
+                  <FolderName>integratetablewithdatabase</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Integrate Table with Database (DOM)</DisplayName>
+                    <Url>Integrate+Table+with+Database+%28DOM%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\DataIntegrated.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Render Table In New Page</Title>
+                  <Description>In this example, we will see how we can render a table on a new page using Aspose.Pdf.</Description>
+                  <FolderName>rendertable</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Render Table in New Page</DisplayName>
+                    <Url>Render+Table+in+New+Page</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\IsNewPageProperty_Test.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Set Border Style, Margins and Padding of the Table (MergedAPI)</Title>
+                  <Description>This section includes the following topics:
+
+ - Margins or Padding
+ - Double border</Description>
+                  <FolderName>setborderstylemarginsandpadding</FolderName>
+                  <Order>4</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Margins or Padding</Title>
+                      <Description>In this example, we will see how we can set the margins or padding of a cell in a table using Aspose.Pdf.</Description>
+                      <FolderName>marginsorpadding</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Set Border Style, Margins and Padding of the Table (MergedAPI)</DisplayName>
+                        <Url>Set+Border+Style%2C+Margins+and+Padding+of+the+Table+%28MergedAPI%29</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Double Border</Title>
+                      <Description>In this example, we will see how we can add double border around Table/Cells objects using Aspose.Pdf.</Description>
+                      <FolderName>doubleborder</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Double Border</DisplayName>
+                        <Url>Set+Border+Style%2C+Margins+and+Padding+of+the+Table+%28MergedAPI%29</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\TableBorderTest.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
                       <Type>Console</Type>
                     </Example>
                   </Examples>
@@ -1700,7 +2915,7 @@ This example provides complete demonstration of the almost all possible ways to 
           </Examples>
           <Folders>
             <Folder>
-              <Title>Conversion Features (Generator)</Title>
+              <Title>Conversion Features</Title>
               <Description>This section includes examples related to the following topics: 
 
 - Converting PCL file to PDF format
@@ -1729,6 +2944,1624 @@ This example provides complete demonstration of the almost all possible ways to 
                       <Path>..\data\HTML2pdf.pdf</Path>
                     </DataFile>
                   </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Document</Title>
+              <Description>This section includes the following topics: 
+
+ - Set Document Information
+ - Set Zoom Factor for the First Page of the Document
+ - Set the Appearance of the document
+ - Set Page Transition Effect
+ - Adding JavaScript
+ - Adding XMPMetaData</Description>
+              <FolderName>workingwithdocument</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Document Information</Title>
+                  <Description>In this example, we will see how we can set the document information while creating a new pdf file using Aspose.Pdf.</Description>
+                  <FolderName>setdocumentinformation</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Document Information</DisplayName>
+                    <Url>Set+Document+Information</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\DocInfo.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Zoom Factor For The First Page Of The Document</Title>
+                  <Description>In this example, we will see how we can set the zoom factor for the first page of the PDF file using Aspsoe.Pdf.</Description>
+                  <FolderName>setzoomfactor</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Set Zoom Factor for the First Page of the Document</DisplayName>
+                    <Url>Set+Zoom+Factor+for+the+First+Page+of+the+Document</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set the Appearance Of The Document</Title>
+                  <Description>In this example, we will see how we can set the appearance of the Pdf file when the document is opened using Aspose.Pdf.</Description>
+                  <FolderName>settheappearance</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Set the Appearance of the document</DisplayName>
+                    <Url>Set+the+Appearance+of+the+document</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Page Transition Effect</Title>
+                  <Description>In this example, we will see how we can set the page transition effect for the PDF document using Aspose.Pdf.</Description>
+                  <FolderName>setpagetransitioneffect</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Set Page Transition Effect</DisplayName>
+                    <Url>Set+Page+Transition+Effect</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding JavaScript</Title>
+                  <Description>In this example, we will see how we can add the JavaScipts in the Pdf file using Aspose.Pdf.</Description>
+                  <FolderName>addingjavascript</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Adding JavaScript</DisplayName>
+                    <Url>Adding+JavaScript</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Aspose.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Adding XMPMetaData</Title>
+                  <Description>In this example, we will see how we can add the XMP Meta Data file using Aspose.Pdf.</Description>
+                  <FolderName>addingxmpmetadata</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Adding XMPMetaData</DisplayName>
+                    <Url>Adding+XMPMetaData</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Aspose.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Sections</Title>
+              <Description>This section includes the following topics: 
+
+ - Set Page Size and Margins
+ - Set Page Background Image
+ - Set Page Header and Footer</Description>
+              <FolderName>workingwithsections</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Page Background Image</Title>
+                  <Description>In this example, we will see how we can set the page background image of a section using Aspose.Pdf.</Description>
+                  <FolderName>setpagebackgroundimage</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Page Background Image</DisplayName>
+                    <Url>Set+Page+Background+Image</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Paragraphs</Title>
+              <Description>This section includes the following topics: 
+
+ - Set Paragraph Margins
+ - Assign ID to Paragraph
+ - Render the Paragraph in a New Page</Description>
+              <FolderName>workingwithparagraphs</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Paragraph Margins</Title>
+                  <Description>In this example, we will see how we can set the margins of any kind of paragraph using Aspose.Pdf.</Description>
+                  <FolderName>setparagraphmargins</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Paragraph Margins</DisplayName>
+                    <Url>Set+Paragraph+Margins</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\MergedOutput.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Assign ID To Paragraph</Title>
+                  <Description>In this example, we will see how we can assign ID to the paragraph using Aspose.Pdf.</Description>
+                  <FolderName>assignidtoparagraph</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Assign ID to Paragraph</DisplayName>
+                    <Url>Assign+ID+to+Paragraph</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\ParaID.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Render The Paragraph In A New Page</Title>
+                  <Description>In this example, we will see how we can render the paragraph in a new page using Aspose.Pdf.</Description>
+                  <FolderName>rendertheparagraph</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Render the Paragraph in a New Page</DisplayName>
+                    <Url>Render+the+Paragraph+in+a+New+Page</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\HelloWorld.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Text</Title>
+              <Description>This section includes the following topics: 
+
+ - Text Layout
+ - Text Formatting
+ - Font Handling
+ - Replaceable Symbols
+ - Right to Left Aligned Languages
+ - Custom Tab Stops
+ - HTML Tags in Text
+ - FootNotes and EndNotes
+ - Inline RadioButton</Description>
+              <FolderName>workingwithtext</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Use Right To Left Aligned Languages</Title>
+                  <Description>In this example, we will see how we can use the right-to-left aligned language using Aspose.Pdf.</Description>
+                  <FolderName>righttoleftalignedlanguages</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Use Right to Left Aligned Languages</DisplayName>
+                    <Url>Right+to+Left+Aligned+Languages</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\AsposeOutput.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Aspose.Pdf.TruetypeFontMap.xml</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Custom Tab Stops</Title>
+                  <Description>In this example, we will see how we can use the custom tab stops in the Pdf documents using Aspose.Pdf.</Description>
+                  <FolderName>customtabstops</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Custom Tab Stops</DisplayName>
+                    <Url>Custom+Tab+Stops</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Text Layout</Title>
+                  <Description>This section includes the following topics: 
+
+ - Create Left Hanging Text Paragraph 
+ - Preserve White Space</Description>
+                  <FolderName>textlayout</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Create Left Hanging Text Paragraph</Title>
+                      <Description>In this example, we will see how we can create a left hanging text paragraph using Aspose.Pdf.</Description>
+                      <FolderName>createlefthangingtextparagraph</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Create Left Hanging Text Paragraph</DisplayName>
+                        <Url>Text+Layout</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Text Formatting</Title>
+                  <Description>This section includes the followng topics:
+
+ - Inheriting Text Format
+ - Change Text Format for all Segments
+ - Underline, Overline and Strike Out the Text
+ - Set Text Rendering Mode
+ - Set Vertical Alignment of Paragraph to Baseline or Topline
+ - Set Text Background Color</Description>
+                  <FolderName>textformatting</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Inheriting Text Format</Title>
+                      <Description>In this example, we will see how we can inherit the text format settings from the Aspose.Pdf.</Description>
+                      <FolderName>inheritingtextformat</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Inheriting Text Format</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Change Text Format For All Segments</Title>
+                      <Description>In this example, we will see how we can change the text format for the segments of a PDF file using Aspose.Pdf.</Description>
+                      <FolderName>changetextformat</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Text Formatting</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Underline, Overline And Strike Out The Text</Title>
+                      <Description>In this example, we will see how we can underline, overline and strike out the text using Aspose.Pdf.</Description>
+                      <FolderName>underlineoverlinestrikeout</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Text Formatting</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\Output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Set Text Rendering Mode</Title>
+                      <Description>In this example, we will see how we apply set the text rendering using Aspose.Pdf.</Description>
+                      <FolderName>settextrenderingmode</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Text Formatting</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\Output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Set Vertical Alignment Of Paragraph To Baseline Or Topline</Title>
+                      <Description>In this example, we will see how we can set the vertical alignment of the text segments in the text paragraph using Aspose.Pdf.</Description>
+                      <FolderName>setverticalalignment</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Text Formatting</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\AsposeOutput.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Set Text Background Color</Title>
+                      <Description>In this example, we will see how we can set the text background color for a text paragraph using Aspose.Pdf.</Description>
+                      <FolderName>settextbackgroundcolor</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Text Formatting</DisplayName>
+                        <Url>Text+Formatting</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\AsposeOutput.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>HTML Tags In Text</Title>
+                  <Description>This section includes the following topics:
+
+ - Inline HTML From XML
+ - Text Formatting Tags
+ - Hyperlink Tags
+ - Superscript &amp; Subscript</Description>
+                  <FolderName>htmltagsintext</FolderName>
+                  <Order>5</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Inline HTML From XML</Title>
+                      <Description>In this example, we will see how we can can generate the Pdf file  just from the Inline HTML from  XML Doc using Aspose.Pdf.</Description>
+                      <FolderName>inlinehtmlfromxml</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>HTML Tags in Text</DisplayName>
+                        <Url>http://support.aspose.dynabic.com/wiki/display/demos/.NET+Dashboard+Examples+-+2014.06</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Text Formatting Tags</Title>
+                      <Description>In this example, we will see how we can add text with embedded HTML tags to a Pdf document using Aspose.Pdf.</Description>
+                      <FolderName>textformattingtags</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>HTML Tags in Text</DisplayName>
+                        <Url>HTML+Tags+in+Text</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\TestHtml.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working With Aspose.Pdf.Facades</Title>
+          <Description>This section includes the following topics:
+
+ - Working with Text (Facades)
+ - Working with Images (Facades)
+ - Working with Stamps and Watermarks (Facades)
+ - Working with Bookmarks (Facades)
+ - Working with Annotations (Facades)
+ - Working with Attachments (Facades)
+ - Working with Links and Actions (Facades)
+ - Working with Document (Facades)
+ - Working with Pages (Facades)
+ - Working with Forms (Facades)
+ - Working with Security and Signatures (Facades)
+  - Working with PDF printing (Facades)</Description>
+          <FolderName>workingwithasposepdffacades</FolderName>
+          <Order>3</Order>
+          <Folders>
+            <Folder>
+              <Title>Working With Bookmarks</Title>
+              <Description>This section includes the following topics:
+
+ - Add Bookmark in an Existing PDF File (Facades)
+ - Add Child Bookmark in an Existing PDF File (Facades)
+ - Create Bookmark of a Particular Page (Facades)
+ - Create Bookmarks of All Pages (Facades)
+ - Create Bookmarks of All Pages with Properties (Facades)
+ - Create Bookmarks of a Range of Pages (Facades)
+ - Delete All Bookmarks from the PDF File (Facades)
+ - Delete a Particular Bookmark from a PDF File (Facades)
+ - Export Bookmarks to XML from an Existing PDF File (Facades)
+ - Extract Bookmarks from an Existing PDF File (Facades)
+ - Get Bookmarks from the PDF Document Facades
+ - Import Bookmarks from XML to an Existing PDF File (Facades)
+ - Update an Existing Bookmark in the PDF File (Facades)</Description>
+              <FolderName>workingwithbookmarks</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Create Bookmarks Of All Pages</Title>
+                  <Description>In this example, we will see how we can create the bookmarks of all the pages in a PDF document using Aspose.Pdf.</Description>
+                  <FolderName>createbookmarksofallpages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Create Bookmarks of All Pages (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Create+Bookmarks+of+All+Pages+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Bookmark In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add the bookmark in an existing PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addbookmarkinexistingpdf</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add Bookmark in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Bookmark+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Child Bookmark In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add child bookmarks in an existing PDF file using Aspose.Pdf,</Description>
+                  <FolderName>addchildbookmark</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Add Child Bookmark in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Child+Bookmark+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Create Bookmark of a Particular Page</Title>
+                  <Description>You can create a bookmark of a particular page in an existing PDF file using CreateBookmarkOfPage method. This method takes two arguments: bookmark title and page number. First, you need to create an object of PdfBookmarkEditor class and bind input PDF file using BindPdf method. Then, you have to call the CreateBookmarkOfPage method and save the output PDF file using Save method.</Description>
+                  <FolderName>createbookmarkofparticularpage</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Create Bookmark of a Particular Page (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Create+Bookmark+of+a+Particular+Page+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Create Bookmarks Of All Pages with Properties</Title>
+                  <Description>In this example, we will see how we can create bookmarks of all the pages with properties using Aspose.Pdf.</Description>
+                  <FolderName>createbookmarksofpagesproperties</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Create Bookmarks of All Pages with Properties (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Create+Bookmarks+of+All+Pages+with+Properties+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Bookmarks from the PDF File</Title>
+                  <Description>You can delete all the bookmarks from the PDF file using DeleteBookmarks method without any parameters. First of all, you need to create an object of PdfBookmarkEditor class and bind the input PDF file using BindPdf method. After that, you need to call the DeleteBookmarks method and then save the updated PDF file using Save method.</Description>
+                  <FolderName>deleteallbookmarks</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Bookmarks from the PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+All+Bookmarks+from+the+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete A Particular Bookmark From A PDF File</Title>
+                  <Description>In this example, we will see how we can delete a particular bookmark from a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>deleteaparticularbookmark</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Delete a Particular Bookmark from a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+a+Particular+Bookmark+from+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Export Bookmarks To XML From An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can export the bookmarks from a PDF file to an XML file using Aspose.Pdf.</Description>
+                  <FolderName>exportbookmarkstoxml</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Export Bookmarks to XML from an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Export+Bookmarks+to+XML+from+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\bookmarks.xml</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Bookmarks From An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can extract the bookmarks from a PDF file using Aspose.Pdf,</Description>
+                  <FolderName>extractbookmarks</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Extract Bookmarks from an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Bookmarks+from+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Bookmarks From The PDF Document Facades</Title>
+                  <Description>In this example, we will see how we can get the information related to each bookmark in PDF file using Aspose.Pdf.</Description>
+                  <FolderName>getbookmarksfrompdf</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Get Bookmarks from the PDF Document Facades</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Get+Bookmarks+from+the+PDF+Document+Facades</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Import Bookmarks From XML To An Existing PDF File (Facades)</Title>
+                  <Description>ImportBookmarksWithXml method allows you to import bookmarks into a PDF file from an XML file. In order to import the bookmarks, you need to create PdfBookmarkEditor object and bind the PDF file using BindPdf method. After that, you need to call ImportBookmarksWithXml method. Finally, save the updated PDF file using Save method.</Description>
+                  <FolderName>importbookmarksfromxml</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Import Bookmarks from XML to an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Import+Bookmarks+from+XML+to+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\bookmarks.xml</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update An Existing Bookmark In The PDF File</Title>
+                  <Description>In this example, we will see how we can modify an existing bookmark in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>updateanexistingbookmark</FolderName>
+                  <Order>12</Order>
+                  <DocLink>
+                    <DisplayName>Update an Existing Bookmark in the PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Update+an+Existing+Bookmark+in+the+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Annotations</Title>
+              <Description>This section includes the following topics:
+
+ - Add Annotation in an Existing PDF File (Facades)
+ - Delete All Annotations by Specified Type (Facades)
+ - Delete All Annotations from an Existing PDF File (Facades)
+ - Export Annotations from PDF File to XFDF (Facades)
+ - Extract Annotations from an Existing PDF File (Facades)
+ - Import Annotations from XFDF into PDF File (Facades)
+ - Update Annotations in an Existing PDF File (Facades)</Description>
+              <FolderName>workingwithannotations</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Delete All Annotations By Specified Type</Title>
+                  <Description>In this example, we will see how we can delete all annotations by specified annotation type using Aspose.Pdf.</Description>
+                  <FolderName>deleteallannotations</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Annotations by Specified Type (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+All+Annotations+by+Specified+Type+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Annotations From An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can to delete all the annotations from the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>deleteallannotationsexistingpdf</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Annotations from an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+All+Annotations+from+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Export Annotations From PDF File To XFDF</Title>
+                  <Description>In this example, we will see how we can export the annotations to XFDF file using Aspose.Pdf.</Description>
+                  <FolderName>exportannotations</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Export Annotations from PDF File to XFDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Export+Annotations+from+PDF+File+to+XFDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\annotations.xfdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Annotations From An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can extract the annotations from PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extractannotations</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Extract Annotations from an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Annotations+from+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Import Annotations From XFDF Into PDF File</Title>
+                  <Description>In this example, we will see how we can import the annotations from XFDF into PDF file using Aspose.Pdf.</Description>
+                  <FolderName>importannotations</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Import Annotations from XFDF into PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Import+Annotations+from+XFDF+into+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\annotations.xfdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Update Annotations In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can update annotation in an existing PDF file using Aspose.Pdf.</Description>
+                  <FolderName>updateannotations</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Update Annotations in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Update+Annotations+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Add Annotation In An Existing PDF File (Facades)</Title>
+                  <Description>This section consists of the following examples:
+
+ - Add FreeText Annotation
+ - Create File Annotation Without Icon</Description>
+                  <FolderName>addannotationinexistingpdffile</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Add FreeText Annotation</Title>
+                      <Description>PdfContentEditor allows you to add annotations of different types in an existing PDF file. You can use the respective method to add a particular annotation. Any type of annotations can be added to the PDF file in the same way. 
+In this example, we will see how to add annotation in a PDF file.</Description>
+                      <FolderName>addfreetextannotation</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Add Annotation in an Existing PDF File (Facades)</DisplayName>
+                        <Url>http://www.aspose.com/docs/display/pdfnet/Add+Annotation+in+an+Existing+PDF+File+%28Facades%29</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\Input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\output.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Create File Annotation Without Icon</Title>
+                      <Description>In this example, we will see how we can add a file annotation without any icon using Aspose.Pdf.</Description>
+                      <FolderName>createfileannotationwithouticon</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Create File Annotation without Icon</DisplayName>
+                        <Url>http://www.aspose.com/docs/display/pdfnet/Add+Annotation+in+an+Existing+PDF+File+%28Facades%29</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\data\Input.pdf</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\data\PdfWith_Transparent_Annotation.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working With Text</Title>
+              <Description>This section includes the following topics:
+
+ - Add Text in an Existing PDF File (Facades)
+ - Extract Text from a Range of Pages (Facades)
+ - Extract Text from Individual Pages of a PDF (Facades)
+ - Extract Text from the Whole PDF File (Facades)
+ - Replace Text in an Existing PDF File (Facades)
+ - Replace Text on a Particular Page in an Existing PDF File (Facades)</Description>
+              <FolderName>workingwithtext</FolderName>
+              <Order>3</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Text In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add the text in the PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addtext</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Text in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Text+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Text From A Range Of Pages</Title>
+                  <Description>In this example, we will see how we can extract the text from a range of pages of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extracttextrangeofpages</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from a Range of Pages (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Text+from+a+Range+of+Pages+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Text From Individual Pages Of A PDF</Title>
+                  <Description>In this example, we will see how we can extract the text from individual pages of a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extracttextfromindividualpages</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from Individual Pages of a PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Text+from+Individual+Pages+of+a+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output1.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Text from the Whole PDF File</Title>
+                  <Description>In this example, we will see how we can extract the text from the whole PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extracttextfromwholepdf</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from the Whole PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Text+from+the+Whole+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Text In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can replace the text in an existing PDF file using Aspose.Pdf.</Description>
+                  <FolderName>replacetextexistingpdf</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Replace+Text+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Text on a Particular Page In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can replace text on a particular page in an existing PDF file using Aspose.Pdf.</Description>
+                  <FolderName>replacetextonparticularpage</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text on a Particular Page in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Replace+Text+on+a+Particular+Page+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\ReplaceText.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Images</Title>
+              <Description>This section includes the following topics:
+
+ - Add Image in an Existing PDF File (Facades)
+ - Convert particular page region to Image format
+ - Convert PDF File to Single TIFF Image (Facades)
+ - Convert PDF File to Single TIFF Image using Settings (Facades)
+ - Convert PDF Pages to Different Image Formats (Facades)
+ - Delete All the Images from a PDF File (Facades)
+ - Delete Images from a Particular Page of PDF (Facades)
+ - Extract Images from a Particular Page of a PDF (Facades)
+ - Extract Images from a Range of Pages of a PDF (Facades)
+ - Extract Images from the Whole PDF to Files (Facades)
+ - Extract Images from the Whole PDF to Streams (Facades)
+ - Extract Images using Image Extraction Mode (Facades)
+ - Replace Image in an Existing PDF File (Facades)</Description>
+              <FolderName>workingwithimages</FolderName>
+              <Order>4</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Image In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add an image in an existing PDF file using Aspose.Pdf,</Description>
+                  <FolderName>addimage</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Image in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Image+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert Particular Page Region To Image Format</Title>
+                  <Description>In this example, we will see how we can convert a particular page region of a PDF file to the image format using Aspose.Pdf.</Description>
+                  <FolderName>convertparticularpageregion</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Convert particular page region to Image format</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+particular+page+region+to+Image+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\SampleInput.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Specific_Region-Image1.jpeg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF File To Single TIFF Image</Title>
+                  <Description>In this example, we will see how we can convert the PDF pages to single TIFF image using Aspose.Pdf.</Description>
+                  <FolderName>convertpdffiletosingletiff</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF File to Single TIFF Image (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+PDF+File+to+Single+TIFF+Image+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.tif</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF File To Single TIFF Image Using Settings</Title>
+                  <Description>In this example, we will see how we can convert the PDF pages to single TIFF image using settings using Aspose.Pdf.</Description>
+                  <FolderName>convertpdffiletotiffusingsettings</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF File to Single TIFF Image using Settings (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+PDF+File+to+Single+TIFF+Image+using+Settings+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.tif</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert PDF Pages To Different Image Formats</Title>
+                  <Description>In this example, we will see how we can convert the PDF pages to different image formats using Aspose.Pdf.</Description>
+                  <FolderName>convertpdfpages</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF Pages to Different Image Formats (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+PDF+Pages+to+Different+Image+Formats+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473792084386552.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473792117914368.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All The Images From A PDF File</Title>
+                  <Description>In this example, we will see how we can delete all the images from a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>deleteallimages</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Delete All the Images from a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+All+the+Images+from+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete Images From A Particular Page Of PDF</Title>
+                  <Description>In this example, we will see how we can delete the images from a particular page of PDF using Aspose.Pdf,</Description>
+                  <FolderName>deleteimagesfromparticularpage</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Delete Images from a Particular Page of PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+Images+from+a+Particular+Page+of+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images From A Particular Page Of A PDF</Title>
+                  <Description>In this example, we will see how we can extract the images from a particular page of PDF to streams using Aspose.Pdf.</Description>
+                  <FolderName>extractimagesfromparticularpage</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images from a Particular Page of a PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Images+from+a+Particular+Page+of+a+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473791475348110.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images From A Range Of Pages Of A PDF (Facades)</Title>
+                  <Description>In this example, we will see how we can extract the images from a range of pages of PDF to streams using Aspose.Pdf.</Description>
+                  <FolderName>extractimagesfromrangeofpages</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images from a Range of Pages of a PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Images+from+a+Range+of+Pages+of+a+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input_new.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473791142666237.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images From The Whole PDF To Files</Title>
+                  <Description>In this example, we will see how we can extract the images from the whole PDF to files using Aspose.Pdf.</Description>
+                  <FolderName>extractimagesfromwholepdf</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images from the Whole PDF to Files (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Images+from+the+Whole+PDF+to+Files+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473790715031592.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473790716902816.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473790716982875.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images from the Whole PDF to Streams (Facades)Extract Images From The Whole PDF To Streams</Title>
+                  <Description>In this example, we will see how we can extract the images from the whole PDF to streams using Aspose.Pdf.</Description>
+                  <FolderName>extractimagestostream</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images from the Whole PDF to Streams (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Images+from+the+Whole+PDF+to+Streams+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473790222337300.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473790222407346.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473790222447384.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Images Using Image Extraction Mode</Title>
+                  <Description>In this example, we will see how we can extract images using image extraction mode using Aspose.Pdf.</Description>
+                  <FolderName>extractimageextractionmode</FolderName>
+                  <Order>12</Order>
+                  <DocLink>
+                    <DisplayName>Extract Images using Image Extraction Mode (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Images+using+Image+Extraction+Mode+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\635473789533076984.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473789586853473.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\635473789587193574.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Image In An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can replace an image in an existing PDF file using Aspose.Pdf.</Description>
+                  <FolderName>replaceimageexistingpdf</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Replace Image in an Existing PDF File</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Replace+Image+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Stamps and Watermarks</Title>
+              <Description>This section includes the following topics:
+
+ - Add Footer in a PDF File (Facades)
+ - Add Header in a PDF File (Facades)
+ - Add Image in Footer of an Existing PDF File (Facades)
+ - Add Image in Header of an Existing PDF File (Facades)
+ - Add Image Stamp on All Pages in a PDF File (Facades)
+ - Add Image Stamp on Particular Pages in a PDF File (Facades)
+ - Add Page Number in a PDF File (Facades)
+ - Add PDF Page Stamp on All Pages in a PDF File (Facades)
+ - Add PDF Page Stamp on Particular Pages in a PDF File (Facades)
+ - Add Text Stamp on All Pages in a PDF File (Facades)
+ - Add Text Stamp on Particular Pages in a PDF File (Facades)
+ - Change Position of a Stamp in a PDF file (Facades)
+ - Extract Image from an Image Stamp (Facades)</Description>
+              <FolderName>workingwithstampswatermarks</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Footer in a PDF File</Title>
+                  <Description>In this example, we will see how we can to add the footer in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addfooterinpdf</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Footer in a PDF File</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Footer+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Header In A PDF File</Title>
+                  <Description>In this example, we will see how we can add a header in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addheaderinpdf</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add Header in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Header+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Image In Footer Of An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add an image in the footer of PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addimageinfooterofexistingpdf</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Add Image in Footer of an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Image+in+Footer+of+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Image In Header Of An Existing PDF File</Title>
+                  <Description>In this example, we will see how we can add an image in header of PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addimageinheaderofexistingpdf</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Add Image in Header of an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Image+in+Header+of+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Image Stamp On All Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add an image stamp on all pages in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addimagestamponallpagesinpdf</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Add Image Stamp on All Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Image+Stamp+on+All+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Image Stamp On Particular Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add an image stamp on particular pages in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addimagestamponparticularpagesinpdf</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Add Image Stamp on Particular Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Image+Stamp+on+Particular+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\aspose-logo.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Page Number In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the page number in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addpagenumberinpdf</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Add Page Number in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Page+Number+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input_new.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add PDF Page Stamp On All Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the PDF page stamp on all pages in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addpagestamponallpages</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Add PDF Page Stamp on All Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+PDF+Page+Stamp+on+All+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\temp.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add PDF Page Stamp On Particular Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the PDF page stamp on particular pages in a PDF file uisng Aspose.Pdf.</Description>
+                  <FolderName>addpagestamponparticularpagesinpdf</FolderName>
+                  <Order>9</Order>
+                  <DocLink>
+                    <DisplayName>Add PDF Page Stamp on Particular Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+PDF+Page+Stamp+on+Particular+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\temp.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Text Stamp On All Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the text stamp on all pages in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addtextstamponallpagesinpdf</FolderName>
+                  <Order>10</Order>
+                  <DocLink>
+                    <DisplayName>Add Text Stamp on All Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Text+Stamp+on+All+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Text Stamp On Particular Pages In A PDF File</Title>
+                  <Description>In this example, we will see how we can add the text stamp on particular pages in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>addtextstamponparticularpages</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Add Text Stamp on Particular Pages in a PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Text+Stamp+on+Particular+Pages+in+a+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Change Position Of A Stamp In A PDF file</Title>
+                  <Description>In this example, we will see how can move a stamp in a particular page in PDF file using Aspose.Pdf.</Description>
+                  <FolderName>changepositionofastamp</FolderName>
+                  <Order>12</Order>
+                  <DocLink>
+                    <DisplayName>Change Position of a Stamp in a PDF file (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Change+Position+of+a+Stamp+in+a+PDF+file+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract Image From An Image Stamp</Title>
+                  <Description>In this example, we will see how we can extract the image from an image stamp in a PDF file using Aspose.Pdf.</Description>
+                  <FolderName>extractimagefromimagestamp</FolderName>
+                  <Order>13</Order>
+                  <DocLink>
+                    <DisplayName>Extract Image from an Image Stamp (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Image+from+an+Image+Stamp+%28Facades%29</Url>
+                  </DocLink>
                   <Type>Console</Type>
                 </Example>
               </Examples>

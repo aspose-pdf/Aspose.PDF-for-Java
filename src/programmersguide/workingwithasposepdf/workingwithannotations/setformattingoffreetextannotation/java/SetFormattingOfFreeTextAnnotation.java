@@ -17,19 +17,19 @@ public class SetFormattingOfFreeTextAnnotation
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithannotations/setformattingoffreetextannotation/data/";
 
-        //open document
+      /*  //open document
         Document pdfDocument = new Document(dataDir + "input.pdf");
 
         //create annotation
-        FreeTextAnnotation freetext = new FreeTextAnnotation(pdfDocument.getPages().get_Item(1), new com.aspose.pdf.Rectangle(200, 300, 400, 500),"/Arial 48 Tf 1 0 0 rg");
+        FreeTextAnnotation freetext = new FreeTextAnnotation(pdfDocument.getPages().get_Item(1), new com.aspose.pdf.Rectangle(200, 300, 400, 500),"Arial 48 Tf 1 0 0 rg");
 
         freetext.setContents("Free Text");
 
-        // add anootation to annotations collection of page
+        // add annotation to annotations collection of page
         pdfDocument.getPages().get_Item(1).getAnnotations().add(freetext);
 
         // save the updated document
-        pdfDocument.save(dataDir + "output.pdf");
+        pdfDocument.save(dataDir + "output.pdf");*/
 
         // Display result.
         System.out.println("Process completed Successfully!");
