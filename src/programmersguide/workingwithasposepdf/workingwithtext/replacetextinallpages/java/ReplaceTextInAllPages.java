@@ -19,7 +19,7 @@ public class ReplaceTextInAllPages
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithtext/replacetextinallpages/data/";
 
         // Open document
-        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(dataDir+ "source.pdf");
+        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(dataDir+ "input.pdf");
 
 // Create TextAbsorber object to find all instances of the input search phrase
         com.aspose.pdf.TextFragmentAbsorber textFragmentAbsorber = new com.aspose.pdf.TextFragmentAbsorber("sample");
@@ -41,7 +41,7 @@ public class ReplaceTextInAllPages
             textFragment.getTextState().setBackgroundColor(com.aspose.pdf.Color.getGray());
         }
 // Save the updated PDF file
-        pdfDocument.save(dataDir+ "Updated_Text.pdf");
+        pdfDocument.save(dataDir+ "output.pdf");
 
     }
 }
