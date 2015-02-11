@@ -757,6 +757,27 @@
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Search Text Based On Regex And Replace With Hyperlink</Title>
+                  <Description>In this example, we will see how we can search text inside PDF file using a regular expression and replacing the matches with a hyperlink using Aspose.Pdf.</Description>
+                  <FolderName>searchtextbasedonregex</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Search Text Based on Regex and Replace with Hyperlink</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Search+Text+Based+on+Regex+and+Replace+with+Hyperlink</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input_new.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\TextReplaced_with_Links.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -1002,7 +1023,94 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Convert PDF To XML</Title>
+                  <Description>In this example, we will see how to convert the PDF documents to XML using Aspose.Pdf for .NET.</Description>
+                  <FolderName>convertpdftoxml</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Convert PDF to XML</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+PDF+to+XML</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input_new.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\Output.xml</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_font1.ttf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_font2.ttf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_font3.ttf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_pic1.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_pic2.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Output_pic3.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert CGM File To PDF Format</Title>
+                  <Description>In this example, we will see how we can convert the CGM file to the PDF format using Aspose.Pdf for .NET.</Description>
+                  <FolderName>convertcgmfiletopdf</FolderName>
+                  <Order>12</Order>
+                  <DocLink>
+                    <DisplayName>Convert CGM file to PDF format</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Convert+CGM+file+to+PDF+format</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\TECHDRAW.CGM</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\TECHDRAW.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Convert HTML To PDF Format</Title>
+                  <Description>This section includes the following topics:
+
+ - Convert HTML string to PDF
+ - Convert HTML File to PDF
+ - Convert HTML to PDF - Resource Loading Callback
+ - Convert Web Page to PDF
+ - Provide credentials during HTML to PDF conversion</Description>
+                  <FolderName>converthtmltopdf</FolderName>
+                  <Order>13</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Convert HTML File To PDF</Title>
+                      <Description>In this example, we will see how to convert the HTML file to PDF format using Aspose.Pdf for .NET.</Description>
+                      <FolderName>converthtmlfiletopdf</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Convert HTML to PDF Format</DisplayName>
+                        <Url>http://www.aspose.com/docs/display/pdfnet/Convert+HTML+to+PDF+Format</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
             <Folder>
               <Title>Working with Annotations</Title>
@@ -1276,6 +1384,27 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                       <Path>..\data\input.pdf</Path>
                     </DataFile>
                   </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Disable Files Compression When Adding As Embedded Resources</Title>
+                  <Description>In this example, we will see how we can add an attachment to a PDF file using Aspose.PDF.</Description>
+                  <FolderName>disablefilescompression</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Disable Files Compression when Adding as Embedded Resources</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Disable+Files+Compression+when+Adding+as+Embedded+Resources</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\Input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>
@@ -1647,6 +1776,24 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Add Layers To PDF File</Title>
+                  <Description>Layers can be used in PDF documents in many ways. You might have a multilingual file that you want to distribute and have text in each language appear on different layers, with the background design appearing on a separate layer. You might also create documents with animation that appears on a separate layer.
+
+In this example, we will see how we can add the layers to the PDF file using Aspose.PDF,</Description>
+                  <FolderName>addlayerstopdffile</FolderName>
+                  <Order>11</Order>
+                  <DocLink>
+                    <DisplayName>Add Layers to PDF File</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Layers+to+PDF+File</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
               <Folders>
                 <Folder>
@@ -1903,6 +2050,9 @@ In order to convert XPS to PDF with the help of Aspose.Pdf, we have introduced a
                   <InputFiles>
                     <DataFile>
                       <Path>..\data\Dynamic_XFA.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\Contact Form - xfa.pdf</Path>
                     </DataFile>
                   </InputFiles>
                   <OutputFiles>
@@ -4562,6 +4712,400 @@ In this example, we will see how to add annotation in a PDF file.</Description>
                     <DisplayName>Extract Image from an Image Stamp (Facades)</DisplayName>
                     <Url>http://www.aspose.com/docs/display/pdfnet/Extract+Image+from+an+Image+Stamp+%28Facades%29</Url>
                   </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With PDF Printing (Facades)</Title>
+              <Description>This section includes the following topics:
+
+ - Checking Print Job Status
+ - PDF to PostScript conversion
+ - Printing Different Page Range to Different Paper Sourcetrays
+ - Printing pages in Simplex and Duplex mode
+ - Printing PDF File to Default Printer using Printer and Page Settings (Facades)
+ - Printing PDF to an XPS File and Hiding Print Dialog (Facades)
+ - Printing PDF to an XPS Printer (Facades)</Description>
+              <FolderName>workingwithpdfprinting(facades)</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Printing Different Page Range To Different Paper Sourcetrays</Title>
+                  <Description>In this example, we will see how we can print even and odd page numbers to different sources using Aspose.Pdf.</Description>
+                  <FolderName>printingdifferentpagerange</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Printing Different Page Range to Different Paper Sourcetrays</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Printing+Different+Page+Range+to+Different+Paper+Sourcetrays</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\NewInput.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\temp.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Attachments (Facades)</Title>
+              <Description>This section includes the following topics:
+
+ - Add Attachment from a File in an Existing PDF (Facades)
+ - Add Attachment from a Stream in an Existing PDF (Facades)
+ - Delete All Attachments from an Existing PDF File (Facades)
+ - Extract All Attachments to Disk from Existing PDF File (Facades)
+ - Get Attachment Names from a PDF Document (Facades)</Description>
+              <FolderName>workingwithattachments(facades)</FolderName>
+              <Order>7</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Attachment From A File In An Existing PDF (Facades)</Title>
+                  <Description>In this example, we will see how we can add the attachement in an existing PDF file using Aspose.PDF for .NET.</Description>
+                  <FolderName>addattachment</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Attachment from a File in an Existing PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Attachment+from+a+File+in+an+Existing+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\test.txt</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add Attachment From A Stream In An Existing PDF (Facades)</Title>
+                  <Description>In this example, we will see how we can add attachment from a stream to an existing PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>addattachmentfromstream</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add Attachment from a Stream in an Existing PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Attachment+from+a+Stream+in+an+Existing+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\test.txt</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Delete All Attachments From An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can delete all attachments from an existing PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>deleteallattachments</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Delete All Attachments from an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Delete+All+Attachments+from+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extract All Attachments To Disk From Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can extract all the attachments from existing PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>extractallattachmentstodisk</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Extract All Attachments to Disk from Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Extract+All+Attachments+to+Disk+from+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output\test.txt</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get Attachment Names From A PDF Document (Facades)</Title>
+                  <Description>In this example, we will see how we can get attachment names from the PDF document using Aspose.Pdf for .NET.</Description>
+                  <FolderName>getattachmentnames</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Get Attachment Names from a PDF Document (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Get+Attachment+Names+from+a+PDF+Document+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Document (Facades)</Title>
+              <Description>This section includes the following topics:
+
+ - Get PDF file information (Facades)
+ - Set PDF File Information (Facades)
+ - Set Viewer Preference of an existing PDF File (Facades)
+ - Get XMP Metadata of an Existing PDF File (Facades)
+ - Set XMP Metadata of an existing PDF (Facades)</Description>
+              <FolderName>workingwithdocument(facades)</FolderName>
+              <Order>8</Order>
+              <Examples>
+                <Example>
+                  <Title>Get PDF File Information (Facades)</Title>
+                  <Description>In this exsmple, we will see how we can get file specific information of a PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>getpdffileinformation</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Get PDF file information (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Get+PDF+file+information+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set PDF File Information (Facades)</Title>
+                  <Description>In this example, we will see how we canset the file specific information of a PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>setpdffileinformation</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Set PDF File Information (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Set+PDF+File+Information+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Viewer Preference Of An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can change the viewer preference in an existing PDF file using Aspose.Pdf for .NET,</Description>
+                  <FolderName>setviewerpreference</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Set Viewer Preference of an existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Set+Viewer+Preference+of+an+existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Get XMP Metadata Of An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can get XMP metadata from a PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>getxmpmetadata</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Get XMP Metadata of an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Get+XMP+Metadata+of+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set XMP Metadata Of An existing PDF (Facades)</Title>
+                  <Description>In this example, we will see how we can add the XMP metadata in a PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>setxmpmetadata</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Set XMP Metadata of an existing PDF (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Set+XMP+Metadata+of+an+existing+PDF+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working With Forms (Facades)</Title>
+              <Description>This section includes the following topics:
+
+ - Add Form Field in an Existing PDF file (Facades)
+ - Add List Item in an Existing PDF File (Facades)
+ - Copy Inner Field in an Existing PDF File (Facades)
+ - Copy Outer Field in an Existing PDF File (Facades)
+ - Decorate All Fields of a Particular Type in an Existing PDF File (Facades)
+ - Decorate a Particular Form Field in an Existing PDF File (Facades)
+ - Delete Form Field from an Existing PDF File (Facades)
+ - Delete List Item from an Existing PDF File (Facades)
+ - Export Data to FDF from a PDF File (Facades)
+ - Export Data to XFDF from a PDF File (Facades)
+ - Export Data to XML from a PDF File (Facades)
+ - Fill Form Fields in an Existing PDF File (Facades)
+ - Fill Form fields using DataTable
+ - Flatten All Fields in an Existing PDF File (Facades)
+ - Get Button Option Values from an Existing PDF File (Facades)
+ - Get Current Button Option Value from an Existing PDF File (Facades)
+ - Get Form Field Facade Values from Existing PDF File (Facades)
+ - Get Value of a Form Field from a PDF Document (Facades)
+ - Import Data from FDF into a PDF File (Facades)
+ - Import Data from XFDF into a PDF File (Facades)
+ - Import Data from XML into a PDF File (Facades)
+ - Move Form Field to a New Location in Existing PDF File (Facades)
+ - Set JavaScript for Push Button (Facades)
+ - Set Submit Button URL in an Existing PDF File (Facades)</Description>
+              <FolderName>workingwithforms(facades)</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Add Form Field In An Existing PDF file (Facades)</Title>
+                  <Description>In this example, we will see how we can add the form field in an existing PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>addformfield</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Add Form Field in an Existing PDF file (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+Form+Field+in+an+Existing+PDF+file+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Add List Item In An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can add the list items in a PDF file using Aspose.Pdf for .NET,</Description>
+                  <FolderName>addlistitem</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Add List Item in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Add+List+Item+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Copy Inner Field In An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can copy the field at the same location in the same file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>copyinnerfield</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Copy Inner Field in an Existing PDF File (Facades)</DisplayName>
+                    <Url>www.aspose.com/docs/display/pdfnet/Copy+Inner+Field+in+an+Existing+PDF+File+(Facades)</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Copy Outer Field In An Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can copy a form field from an external PDF file and then add it to the input PDF file at the same location and the specified page number using Aspose.Pdf for .NET.</Description>
+                  <FolderName>copyouterfield</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Copy Outer Field in an Existing PDF File (Facades)</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/pdfnet/Copy+Outer+Field+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input_form.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Decorate All Fields of a Particular Type in an Existing PDF File (Facades)</Title>
+                  <Description>In this example, we will see how we can decorate all the form fields of a particular type in a PDF file using Aspose.Pdf for .NET.</Description>
+                  <FolderName>decorateallfieldsofparticulartype</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Decorate All Fields of a Particular Type in an Existing PDF File (Facades)</DisplayName>
+                    <Url> http://www.aspose.com/docs/display/pdfnet/Decorate+All+Fields+of+a+Particular+Type+in+an+Existing+PDF+File+%28Facades%29</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\input_form.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
               </Examples>

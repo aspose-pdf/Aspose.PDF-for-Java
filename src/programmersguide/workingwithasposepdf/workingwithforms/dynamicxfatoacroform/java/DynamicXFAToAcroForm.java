@@ -16,8 +16,13 @@ public class DynamicXFAToAcroForm
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithasposepdf/workingwithforms/dynamicxfatoacroform/data/";
-        
-        
+
+        // Load dynamic XFA form
+        Document document = new Document(dataDir + "Contact Form - xfa.pdf");
+        // Set the form fields type as standard AcroForm
+        document.getForm().setType(FormType.Standard);
+        // Save the resultant PDF
+        document.save(dataDir + "Standard_AcroForm.pdf");
     }
 }
 
