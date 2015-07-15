@@ -1,0 +1,5 @@
+require_relative 'helloworld'
+require_relative 'document'
+require_relative 'pages'
+require_relative 'text'
+require_relative 'converter'
