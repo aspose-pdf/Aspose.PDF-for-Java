@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
  
-package programmersguide.workingwithasposepdf.workingwithstampsandwatermarks.addpagenumberstamp.java;
+package com.aspose.pdf.examples.asposepdf.stampsandwatermarks;
 
 import com.aspose.pdf.*;
 import com.aspose.pdf.examples.Utils;
