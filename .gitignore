@@ -5,10 +5,10 @@
 test-output/
 
 # IntelliJ project files
-#.idea/
-#*.iws
+.idea/
+*.iws
 *.iml
-#*.ipr
+*.ipr
 
 # Mac
 .DS_Store
