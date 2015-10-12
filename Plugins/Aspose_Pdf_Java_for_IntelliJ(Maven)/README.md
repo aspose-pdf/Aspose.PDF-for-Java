@@ -29,7 +29,7 @@ For the complete documentation of this Intellij IDEA plugin, [please go through 
 ## Download Latest Versions?
 
 
-* [Latest Releases on Codeplex](https://asposebarcodejavaintellij.codeplex.com/releases/view/617769)
+* [Latest Releases on Codeplex](https://asposepdfjavaintellij.codeplex.com/releases)
 
 
 ## Clone Plugin SourceCodes?
@@ -38,4 +38,4 @@ For the complete documentation of this Intellij IDEA plugin, [please go through 
 This project is also hosted and maintained at CodePlex. To clone navigate to: 
 
 
-* [Aspose.Barcode Java for IntelliJ Maven on CodePlex - click here](https://asposebarcodejavaintellij.codeplex.com/SourceControl/latest)
+* [Aspose.Pdf Java for IntelliJ Maven on CodePlex - click here](https://asposepdfjavaintellij.codeplex.com/SourceControl/latest)
