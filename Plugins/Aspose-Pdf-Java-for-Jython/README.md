@@ -4,15 +4,13 @@ Aspose.Pdf Java for Jython is a project that demonstrates / provides the Aspose.
 
 ## Download
 
-* To download Aspose.Pdf for Java API to be used with these examples, Please navigate to: http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/
+* To download Aspose.Pdf for Java API to be used with these examples, Please navigate to: [Aspose.Pdf for Java](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/) 
 * Place downloaded jar file into "lib" directory. 
 * Replace "your-lib" with the jar filename.
 
 ## Documentation
 
-For most complete documentation of the project, check Aspose.Pdf Java For Jython confluence wiki link:
-
-http://www.aspose.com/docs/display/pdfjava/Aspose.Pdf+Java+for+Jython
+For most complete documentation of the project, check [Aspose.Pdf Java For Jython confluence wiki](http://www.aspose.com/docs/display/pdfjava/Aspose.Pdf+Java+for+Jython).
 
 ## Download Latest Versions?
 
