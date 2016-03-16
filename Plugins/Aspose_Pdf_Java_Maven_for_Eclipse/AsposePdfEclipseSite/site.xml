@@ -7,7 +7,7 @@ Aspose.Pdf for Java offers an incredible wealth of features, these include: PDF 
 Aspose.Pdf Maven Project wizard fetch and configures the latest Maven dependency reference of Aspose.Pdf for Java from the Aspose Cloud Maven Repository.
 The wizard also gives you option to download the Code Examples to use Aspose.Pdf for Java API.
    </description>
-   <feature url="features/com.aspose.pdf.java.maven_1.0.0.1.jar" id="com.aspose.pdf.java.maven" version="1.0.0.1">
+   <feature url="features/com.aspose.pdf.java.maven_1.0.0.jar" id="com.aspose.pdf.java.maven" version="1.0">
       <category name="com.aspose.pdf.java.maven.category"/>
    </feature>
    <category-def name="com.aspose.pdf.java.maven.category" label="Aspose.Pdf Java (Maven) for Eclipse"/>
