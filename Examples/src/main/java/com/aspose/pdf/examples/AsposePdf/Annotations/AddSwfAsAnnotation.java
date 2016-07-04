@@ -1,11 +1,4 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
- *
- * This file is part of Aspose.Pdf. The source code in this file
- * is only intended as a supplement to the documentation, and is provided
- * "as is", without warranty of any kind, either expressed or implied.
- */
- 
+
 package com.aspose.pdf.examples.AsposePdf.Annotations;
 
 import com.aspose.pdf.Document;
@@ -39,7 +32,3 @@ public class AddSwfAsAnnotation
         System.out.println("Process completed Successfully!");
     }
 }
-
-
-
-
