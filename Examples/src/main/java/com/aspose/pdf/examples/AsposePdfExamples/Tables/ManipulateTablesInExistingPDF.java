@@ -6,13 +6,11 @@ import com.aspose.pdf.TableAbsorber;
 import com.aspose.pdf.TextFragment;
 
 public class ManipulateTablesInExistingPDF {
-
+	
+	/*
+	 * Update contents in particular table cell
+	 */
 	public static void main(String[] args) {
-		generalCode();
-		futureEnhancements();
-	}
-
-	public static void generalCode() {
 		// load existing PDF file
 		Document pdfDocument = new Document("table.pdf");
 		// Create TableAbsorber object to find tables
@@ -27,14 +25,4 @@ public class ManipulateTablesInExistingPDF {
 		// save updated document
 		pdfDocument.save("Table_Manipulated.pdf");
 	}
-
-	public static void futureEnhancements() {
-		for (Row row : (Iterable<Row>) table.getRows()) {
-			TextFragment updatedfragment = (TextFragment) row.getCells().get_Item(1).getParagraphs().get_Item(1);
-			String text;
-			if (updatedfragment != null)
-				text = updatedfragment.getText();
-		}
-	}
-
 }

@@ -17,9 +17,9 @@ public class LoadImageFromLocalDisk {
 		// Add image object into the Paragraphs collection of the section
 		sec1.getParagraphs().add(img1);
 		// Specify the Image file type as JPEG
-		img1.getImageInfo().setImageFileType(ImageFileType.Jpeg);
+		img1.getImageInfo().setImageFileType(ImageFileType.Png);
 		// Set the path of image file
-		img1.getImageInfo().setFile("Apple.jpg");
+		img1.getImageInfo().setFile("apple.png");
 		// Set the path of image file
 		img1.getImageInfo().setTitle("JPEG image");
 		// Save the Pdf
