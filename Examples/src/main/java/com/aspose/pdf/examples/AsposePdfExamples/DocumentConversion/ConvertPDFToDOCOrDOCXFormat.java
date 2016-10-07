@@ -3,37 +3,40 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 import com.aspose.pdf.DocSaveOptions;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.SaveFormat;
+import com.aspose.pdf.examples.Utils;
 
 public class ConvertPDFToDOCOrDOCXFormat {
-
+	
+	private static final String dataDir = Utils.getSharedDataDir(ConvertPDFToDOCOrDOCXFormat.class) + "DocumentConversion/";
+	
 	public static void main(String[] args) {
-		savingToDoc();
+		//savingToDoc();
 		savingToDOCX();
-		usingTheDocSaveOptionsClass();
+		//usingTheDocSaveOptionsClass();
 	}
 
 	public static void savingToDoc() {
 		// Open the source PDF document
-		Document pdfDocument = new Document("SampleDataTable.pdf");
+		Document pdfDocument = new Document(dataDir + "SampleDataTable.pdf");
 		// Save the file into Microsoft document format
-		pdfDocument.save("TableHeightIssue.doc", SaveFormat.Doc);
+		pdfDocument.save(dataDir + "TableHeightIssue.doc", SaveFormat.Doc);
 	}
 
 	public static void savingToDOCX() {
 		// Load source PDF file
-		Document doc = new Document("input.pdf");
+		Document doc = new Document(dataDir + "input.pdf");
 		// Instantiate Doc SaveOptions instance
 		DocSaveOptions saveOptions = new DocSaveOptions();
 		// Set output file format as DOCX
 		saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
 		// Save resultant DOCX file
-		doc.save("resultant.docx", saveOptions);
+		doc.save(dataDir + "resultant.docx", saveOptions);
 	}
 
 	public static void usingTheDocSaveOptionsClass() {
 		// Open a document
 		// Path of input PDF document
-		String filePath = "source.pdf";
+		String filePath = dataDir + "source.pdf";
 		// Instantiate the Document object
 		Document document = new Document(filePath);
 		// Create DocSaveOptions object
@@ -45,7 +48,7 @@ public class ConvertPDFToDOCOrDOCXFormat {
 		// Enable the value to recognize bullets during conversion process
 		saveOption.setRecognizeBullets(true);
 		// Save the resultant DOC file
-		document.save("Resultant.doc", saveOption);
+		document.save(dataDir + "Resultant.doc", saveOption);
 	}
 
 }

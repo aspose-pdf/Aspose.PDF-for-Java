@@ -9,12 +9,15 @@ import com.aspose.pdf.GoToURIAction;
 import com.aspose.pdf.LinkAnnotation;
 import com.aspose.pdf.Page;
 import com.aspose.pdf.Rectangle;
+import com.aspose.pdf.examples.Utils;
 
 public class AddHyperlinkInPDFFile {
-
+	
+	private static final String dataDir = Utils.getSharedDataDir(AddHyperlinkInPDFFile.class) + "LinksAndActions/";
+	
 	public static void main(String[] args) {
 		// Open document
-		Document document = new Document("input.pdf");
+		Document document = new Document(dataDir + "input.pdf");
 		// Create link
 		Page page = document.getPages().get_Item(1);
 		// Create Link annotation object
@@ -38,7 +41,7 @@ public class AddHyperlinkInPDFFile {
 		// Add FreeText annotation to annotations collection of first page of Document
 		document.getPages().get_Item(1).getAnnotations().add(textAnnotation);
 		// Save updated document
-		document.save("Annotation_output.pdf");
+		document.save(dataDir + "Annotation_output.pdf");
 	}
 
 }
