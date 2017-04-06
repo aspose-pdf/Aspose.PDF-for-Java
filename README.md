@@ -20,6 +20,6 @@ Directory | Description
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Pdf for Java](http://www.aspose.com/java/pdf-component.aspx)
 + **Download:** [Download Aspose.Pdf for Java](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx)
-+ **Documentation:** [Aspose.Pdf for Java Documentation](http://www.aspose.com/docs/display/pdfjava/Home)
++ **Documentation:** [Aspose.Pdf for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
 + **Forum:** [Aspose.Pdf for Java Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/75/showforum.aspx)
-+ **Blog:** [Aspose.Pdf for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-pdf-product-family.html)
++ **Blog:** [Aspose.Pdf for Java Blog](https://blog.aspose.com/aspose-products/aspose-pdf-product-family.html)
