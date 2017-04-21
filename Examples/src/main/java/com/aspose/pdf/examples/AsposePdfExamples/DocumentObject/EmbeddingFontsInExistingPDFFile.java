@@ -16,7 +16,7 @@ public class EmbeddingFontsInExistingPDFFile {
 				for (Font pageFont : (Iterable<Font>) page.getResources().getFonts()) {
 					// Check if font is already embedded
 					if (!pageFont.isEmbedded())
-						pageFont.isEmbedded();
+						pageFont.setEmbedded(true);
 				}
 			}
 			// Check for the Form objects
@@ -25,7 +25,7 @@ public class EmbeddingFontsInExistingPDFFile {
 					for (Font formFont : (Iterable<Font>) form.getResources().getFonts()) {
 						// Check if the font is embedded
 						if (!formFont.isEmbedded())
-							formFont.isEmbedded();
+							formFont.setEmbedded(true);
 					}
 				}
 			}
