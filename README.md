@@ -19,7 +19,8 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Pdf for Java](http://www.aspose.com/java/pdf-component.aspx)
-+ **Download:** [Download Aspose.Pdf for Java](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/default.aspx)
++ **Download:** [Download Aspose.Pdf for Java](https://downloads.aspose.com/pdf/java)
 + **Documentation:** [Aspose.Pdf for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
-+ **Forum:** [Aspose.Pdf for Java Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/75/showforum.aspx)
++ **Free Support:** [Aspose.Pdf for Java Forum](https://forum.aspose.com/c/pdf)
++ **Paid Support:** [Aspose.Pdf for Java Forum](https://helpdesk.aspose.com/)
 + **Blog:** [Aspose.Pdf for Java Blog](https://blog.aspose.com/aspose-products/aspose-pdf-product-family.html)
