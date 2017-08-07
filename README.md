@@ -1,6 +1,6 @@
-##Aspose.Pdf for Java
+## Aspose.Pdf for Java
 
-This package contains [Examples](https://github.com/asposepdf/Aspose_Pdf_Java/tree/master/Examples) and Showcase projects for [Aspose.Pdf for Java](http://www.aspose.com/categories/java-components/aspose.pdf-for-java/default.aspx) and will help you write your own applications.
+This package contains [Examples](https://github.com/asposepdf/Aspose_Pdf_Java/tree/master/Examples) and Showcase projects for [Aspose.Pdf for Java](https://www.aspose.com/products/pdf/java) and will help you write your own applications.
 
 Aspose.Pdf for Java is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
 
@@ -18,7 +18,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Pdf for Java](http://www.aspose.com/java/pdf-component.aspx)
++ **Product Home:** [Aspose.Pdf for Java](https://www.aspose.com/products/pdf/java)
 + **Download:** [Download Aspose.Pdf for Java](https://downloads.aspose.com/pdf/java)
 + **Documentation:** [Aspose.Pdf for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
 + **Free Support:** [Aspose.Pdf for Java Free Support Forum](https://forum.aspose.com/c/pdf)
