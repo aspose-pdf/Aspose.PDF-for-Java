@@ -23,4 +23,4 @@ Directory | Description
 + **Documentation:** [Aspose.Pdf for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
 + **Free Support:** [Aspose.Pdf for Java Free Support Forum](https://forum.aspose.com/c/pdf)
 + **Paid Support:** [Aspose.Pdf for Java Paid Support Forum](https://helpdesk.aspose.com/)
-+ **Blog:** [Aspose.Pdf for Java Blog](https://blog.aspose.com/aspose-products/aspose-pdf-product-family.html)
++ **Blog:** [Aspose.Pdf for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)
