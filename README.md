@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Pdf for Java](https://www.aspose.com/products/pdf/java)
-+ **Download:** [Download Aspose.Pdf for Java](https://downloads.aspose.com/pdf/java)
++ **Download:** [Download Aspose.Pdf for Java](http://maven.aspose.com/artifactory/simple/ext-release-local/com/aspose/aspose-pdf/)
 + **Documentation:** [Aspose.Pdf for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
 + **Free Support:** [Aspose.Pdf for Java Free Support Forum](https://forum.aspose.com/c/pdf)
 + **Paid Support:** [Aspose.Pdf for Java Paid Support Forum](https://helpdesk.aspose.com/)
