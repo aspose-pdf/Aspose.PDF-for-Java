@@ -1,6 +1,6 @@
 ## Aspose.Pdf for Java Examples
 
-This package contains Java Example Project for [Aspose.Pdf for Java](http://www.aspose.com/java/pdf-component.aspx).
+This package contains Java Example Project for [Aspose.Pdf for Java](http://products.aspose.com/pdf/java).
 
 <p align="center">
   <a title="Download complete Aspose.Pdf for Java source code" href="https://github.com/asposepdf/Aspose_Pdf_Java/archive/master.zip">
