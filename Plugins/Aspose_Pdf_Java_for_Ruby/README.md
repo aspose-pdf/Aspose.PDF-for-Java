@@ -1,5 +1,5 @@
-# Aspose_Pdf_Java_for_Ruby
-Aspose.Pdf Java for Ruby is a gem that demonstrates / provides the Aspose.Pdf for Java API usage examples in Ruby by using Rjb - Ruby Java Bridge.
+# Aspose_PDF_Java_for_Ruby
+Aspose.PDF Java for Ruby is a gem that demonstrates / provides the Aspose.PDF for Java API usage examples in Ruby by using Rjb - Ruby Java Bridge.
 
 ## Installation
 
@@ -7,15 +7,15 @@ Execute following command.
 
     $ gem install asposepdfjava
 
-To download Aspose.Pdf for Java API to be used with these examples through RJB, Please navigate to:
+To download Aspose.PDF for Java API to be used with these examples through RJB, Please navigate to:
 
-http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/
+http://maven.aspose.com/artifactory/simple/ext-release-local/com/aspose/aspose-pdf/
 
-Note: Create jars folder at root of the gem and copy downloaded Aspose.Pdf for java component into it.
+Note: Create jars folder at root of the gem and copy downloaded Aspose.PDF for java component into it.
 
-For most complete documentation of the project, check Aspose.Pdf Java for Ruby confluence wiki link:
+For most complete documentation of the project, check Aspose.PDF Java for Ruby confluence wiki link:
 
-http://www.aspose.com/docs/display/pdfjava/2.+Aspose.Pdf+Java+For+Ruby
+https://docs.aspose.com/display/pdfjava/Aspose.Pdf+Java+for+Ruby
 
 ## Usage
 
