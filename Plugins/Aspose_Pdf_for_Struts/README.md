@@ -1,4 +1,4 @@
-# Aspose.Pdf Java for Struts 1.3
+# Aspose.PDF Java for Struts 1.3
 Aspose.PDF Java for Struts is a Maven based struts 1.3 web project that demonstrates the Aspose.PDF for Java API usage example within Struts 1.3 and Maven framework.
 
 The project is initially Eclipse based but can be built through mvn command line without any IDE support.
