@@ -22,8 +22,19 @@ public class PDFToHTMLAllResourceEmbeddedInSingleResultantStream {
 		newOptions.CustomHtmlSavingStrategy = new HtmlSaveOptions.HtmlPageMarkupSavingStrategy() {
 			public void invoke(HtmlSaveOptions.HtmlPageMarkupSavingInfo htmlSavingInfo) {
 				// TODO Auto-generated method stub
-				byte[] resultHtmlAsBytes = new byte[(int) htmlSavingInfo.ContentStream.getLength()];
-				htmlSavingInfo.ContentStream.read(resultHtmlAsBytes, 0, resultHtmlAsBytes.length);
+				byte[] resultHtmlAsBytes = null;
+				try {
+					resultHtmlAsBytes = org.apache.commons.io.IOUtils.toByteArray(htmlSavingInfo.ContentStream);
+				} catch (IOException e2) {
+					// TODO Auto-generated catch block
+					e2.printStackTrace();
+				}
+				try {
+					htmlSavingInfo.ContentStream.read(resultHtmlAsBytes, 0, resultHtmlAsBytes.length);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				// here You can use any writable stream, file stream is taken just as example
 				FileOutputStream fos;
 				try {

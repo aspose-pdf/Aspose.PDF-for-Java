@@ -1,14 +1,17 @@
 package com.aspose.pdf.examples.AsposePdfExamples.QuickStart;
 
 public class ApplyMeteredLicense {
-	String publicKey = "";
-	String privateKey = "";
-
-	Metered m = new Metered();
-	m.setMeteredKey(publicKey, privateKey);
-
-	// Optionally, the following two lines returns true if a valid license has been applied;
-	// false if the component is running in evaluation mode.
-	License lic = new License();
-	System.out.println("License is set = " + lic.isLicensed());
+	public void Run()
+	{
+		String publicKey = "";
+		String privateKey = "";
+	
+		com.aspose.pdf.Metered m = new com.aspose.pdf.Metered();
+		m.setMeteredKey(publicKey, privateKey);
+	
+		// Optionally, the following two lines returns true if a valid license has been applied;
+		// false if the component is running in evaluation mode.
+		com.aspose.pdf.Document lic = new com.aspose.pdf.Document();
+		System.out.println("License is set = " + lic.isLicensed());
+	}
 }
