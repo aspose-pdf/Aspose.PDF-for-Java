@@ -1,6 +1,6 @@
 package com.aspose.pdf.examples.AsposePdfExamples.Miscellaneous;
 
-import aspose.pdf.BuildVersionInfo;
+import com.aspose.pdf.BuildVersionInfo;
 
 public class GettingProductAndBuildInformation {
 

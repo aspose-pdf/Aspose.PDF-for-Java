@@ -1,6 +1,8 @@
 package com.aspose.pdf.examples.AsposePdfExamples.QuickStart;
 
 public class UsingMultipleProducts {
+    
+    public static void main(String[] args) {
 	// Instantiate the License class of Aspose.Pdf
 	com.aspose.pdf.License license = new com.aspose.pdf.License();
 	// Set the license
@@ -12,4 +14,5 @@ public class UsingMultipleProducts {
 	com.aspose.words.License licenseaw = new com.aspose.words.License();
 	// Set the license
 	licenseaw.setLicense("Aspose.Total.Java.lic");
+    }
 }
