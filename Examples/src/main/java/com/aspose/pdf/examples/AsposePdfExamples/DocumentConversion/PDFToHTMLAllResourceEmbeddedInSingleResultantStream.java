@@ -23,25 +23,6 @@ public class PDFToHTMLAllResourceEmbeddedInSingleResultantStream {
 		newOptions.setSplitIntoPages(false);// force write HTMLs of all pages into one output document
 		newOptions.CustomHtmlSavingStrategy = new HtmlSaveOptions.HtmlPageMarkupSavingStrategy() {
 			public void invoke(HtmlSaveOptions.HtmlPageMarkupSavingInfo htmlSavingInfo) {
-<<<<<<< HEAD
-=======
-				// TODO Auto-generated method stub
-				byte[] resultHtmlAsBytes = null;
-				try {
-					resultHtmlAsBytes = org.apache.commons.io.IOUtils.toByteArray(htmlSavingInfo.ContentStream);
-				} catch (IOException e2) {
-					// TODO Auto-generated catch block
-					e2.printStackTrace();
-				}
-				try {
-					htmlSavingInfo.ContentStream.read(resultHtmlAsBytes, 0, resultHtmlAsBytes.length);
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				// here You can use any writable stream, file stream is taken just as example
-				FileOutputStream fos;
->>>>>>> origin/master
 				try {
                                     // TODO Auto-generated method stub
                                     byte[] resultHtmlAsBytes = new byte[(int) htmlSavingInfo.ContentStream.available()];

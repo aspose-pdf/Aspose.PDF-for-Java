@@ -31,15 +31,9 @@ public class AddingJavaScriptDOM {
 		String path = "pathTodir";
 		Document doc = new Document(path + "PdfWithAcroForm.pdf");
 		TextBoxField text = (TextBoxField) doc.getForm().get_Item("textField");
-<<<<<<< HEAD
 		text.getAnnotationActions().setOnFormat(new JavascriptAction("AFNumber_Format(2, 0, 0, \"\", true);"));
 		text.getAnnotationActions().setOnModifyCharacter(new JavascriptAction("AFNumber_Keystroke(2, 0, 0, \"\", true);"));
 		text.getAnnotationActions().setOnValidate(new JavascriptAction("AFRange_Validate(true, 1, true, 100);"));
-=======
-//		text.getActions().setOnFormat(new JavascriptAction("AFNumber_Format(2, 0, 0, \"\", true);"));
-//		text.getActions().setOnModifyCharacter(new JavascriptAction("AFNumber_Keystroke(2, 0, 0, \"\", true);"));
-//		text.getActions().setOnValidate(new JavascriptAction("AFRange_Validate(true, 1, true, 100);"));
->>>>>>> origin/master
 		text.setValue("100");
 		doc.save(path + "formatted.pdf");
 	}
