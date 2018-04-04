@@ -9,7 +9,7 @@ Execute following command.
 
 To download Aspose.PDF for Java API to be used with these examples through RJB, Please navigate to:
 
-http://maven.aspose.com/artifactory/simple/ext-release-local/com/aspose/aspose-pdf/
+https://artifact.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf
 
 Note: Create jars folder at root of the gem and copy downloaded Aspose.PDF for java component into it.
 

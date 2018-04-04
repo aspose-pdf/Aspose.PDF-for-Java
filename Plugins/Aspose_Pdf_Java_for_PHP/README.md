@@ -10,7 +10,7 @@ http://php-java-bridge.sourceforge.net/pjb/index.php
 To download Aspose.PDF for Java API to be used with these examples through PHP/Java Bridge
 Please navigate to:
 
-http://maven.aspose.com/artifactory/simple/ext-release-local/com/aspose/aspose-pdf/
+https://artifact.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf
 
 For most complete documentation of the project, check Aspose.PDF Java for PHP confluence wiki link:
 

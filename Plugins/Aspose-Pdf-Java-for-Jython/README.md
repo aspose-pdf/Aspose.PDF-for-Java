@@ -4,7 +4,7 @@ Aspose.PDF Java for Jython is a project that demonstrates / provides the Aspose.
 
 ## Download
 
-* To download Aspose.PDF for Java API to be used with these examples, Please navigate to [Aspose.PDF for Java](http://maven.aspose.com/artifactory/simple/ext-release-local/com/aspose/aspose-pdf/) 
+* To download Aspose.PDF for Java API to be used with these examples, Please navigate to [Aspose.PDF for Java](https://artifact.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) 
 * Place downloaded jar file into "lib" directory. 
 * Replace "your-lib" with the jar filename.
 
