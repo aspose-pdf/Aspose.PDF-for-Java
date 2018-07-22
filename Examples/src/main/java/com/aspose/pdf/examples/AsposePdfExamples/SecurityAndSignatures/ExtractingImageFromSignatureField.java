@@ -16,8 +16,8 @@ public class ExtractingImageFromSignatureField {
 		Document pdfDocument = new Document(myDir + "test.pdf");
 		int i = 0;
 		try {
-			for (Field field : (Iterable<Field>) pdfDocument.getForm()) {
-				SignatureField sf = (SignatureField) field;
+			foreach (Field field : (Iterable<Field>)pdfDocument.getForm()) {
+				SignatureField sf = (SignatureField)field;
 				if (sf != null) {
 					FileOutputStream output = new FileOutputStream(myDir + "im" + i + ".jpeg");
 					InputStream tempStream = sf.extractImage();

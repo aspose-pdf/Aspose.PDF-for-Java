@@ -1,6 +1,5 @@
 package com.aspose.pdf.examples.AsposePdfExamples.Annotations;
 
-import com.aspose.pdf.AnnotationFlags;
 import com.aspose.pdf.AnnotationState;
 import com.aspose.pdf.Border;
 import com.aspose.pdf.Dash;
@@ -20,14 +19,14 @@ public class AddAnnotationToPDF {
 
 	public static void addAnnotationToPDF() {
 		// Open the source PDF document
-		Document pdfDocument = new Document("input.pdf");
+		com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("input.pdf");
 		// Create annotation
-		TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.getPages().get_Item(1), new Rectangle(200, 400, 400, 600));
+		com.aspose.pdf.TextAnnotation textAnnotation = new com.aspose.pdf.TextAnnotation(pdfDocument.getPages().get_Item(1), new Rectangle(200, 400, 400, 600));
 		// Set annotation title
 		textAnnotation.setTitle("Sample Annotation Title");
 		// Set annotation subject
 		textAnnotation.setSubject("Sample Subject");
-		textAnnotation.setState(AnnotationState.Accepted);
+		textAnnotation.setState(com.aspose.pdf.AnnotationState.Accepted);
 		// Specify the annotation contents
 		textAnnotation.setContents("Sample contents for the annotation");
 		textAnnotation.setOpen(true);
@@ -49,7 +48,7 @@ public class AddAnnotationToPDF {
 		FreeTextAnnotation annotation = new FreeTextAnnotation(doc.getPages().get_Item(1), new Rectangle(50, 600, 250, 650), new DefaultAppearance("Helvetica", 16, java.awt.Color.RED));
 		annotation.setContents("ABCDEFG");
 		annotation.getCharacteristics().setBorder(java.awt.Color.RED);
-		annotation.setFlags(AnnotationFlags.Print | AnnotationFlags.NoView);
+		annotation.setFlags(com.aspose.pdf.AnnotationFlags.Print | com.aspose.pdf.AnnotationFlags.NoView);
 		doc.getPages().get_Item(1).getAnnotations().add(annotation);
 		doc.save("Invisible_Annotation.pdf");
 	}

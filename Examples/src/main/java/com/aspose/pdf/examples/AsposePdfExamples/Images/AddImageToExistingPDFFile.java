@@ -35,18 +35,18 @@ public class AddImageToExistingPDFFile {
 		// Add an image to the Images collection of the page resources
 		page.getResources().getImages().add(imageStream);
 		// Using the GSave operator: this operator saves current graphics state
-		page.getContents().add(new Operator.GSave());
+		page.getContents().add(new com.aspose.pdf.operators.GSave());
 		// Create Rectangle and Matrix objects
 		Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
 		Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
 		// Using ConcatenateMatrix (concatenate matrix) operator: defines how
 		// image must be placed
-		page.getContents().add(new Operator.ConcatenateMatrix(matrix));
+		page.getContents().add(new com.aspose.pdf.operators.ConcatenateMatrix(matrix));
 		XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
 		// Using Do operator: this operator draws image
-		page.getContents().add(new Operator.Do(ximage.getName()));
+		page.getContents().add(new com.aspose.pdf.operators.Do(ximage.getName()));
 		// Using GRestore operator: this operator restores graphics state
-		page.getContents().add(new Operator.GRestore());
+		page.getContents().add(new com.aspose.pdf.operators.GRestore());
 		// Save the new PDF
 		pdfDocument1.save("Updated_document.pdf");
 		// Close image stream

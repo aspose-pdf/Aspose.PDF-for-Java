@@ -8,9 +8,9 @@ public class RemoveMetadataFromPDF {
 		// Instantiate Document object
 		Document doc = new Document("testFile.pdf");
 		if (doc.getMetadata().contains("pdfaid:part"))
-			doc.getMetadata().removeItem("pdfaid:part");
+			doc.getMetadata().removeItemByKey("pdfaid:part");
 		if (doc.getMetadata().contains("dc:format"))
-			doc.getMetadata().removeItem("dc:format");
+			doc.getMetadata().removeItemByKey("dc:format");
 		// Save updated document
 		doc.save("output.pdf");
 	}

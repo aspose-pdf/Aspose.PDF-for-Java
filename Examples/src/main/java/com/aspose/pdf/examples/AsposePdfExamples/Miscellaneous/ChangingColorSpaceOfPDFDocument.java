@@ -12,18 +12,18 @@ public class ChangingColorSpaceOfPDFDocument {
 		System.out.println("Values of RGB color operators in the pdf document");
 		for (int j = 1; j <= contents.size(); j++) {
 			Operator oper = contents.get_Item(j);
-			if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
+			if (oper instanceof com.aspose.pdf.operators.SetRGBColor || oper instanceof com.aspose.pdf.operators.SetRGBColorStroke)
 				try {
 					// Converting RGB to CMYK color
 					System.out.println(oper.toString());
 					double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
 					double[] cmyk = new double[4];
-					if (oper instanceof Operator.SetRGBColor) {
-						((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
-						contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-					} else if (oper instanceof Operator.SetRGBColorStroke) {
-						((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
-						contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
+					if (oper instanceof com.aspose.pdf.operators.SetRGBColor) {
+						((com.aspose.pdf.operators.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
+						contents.set_Item(j, new com.aspose.pdf.operators.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
+					} else if (oper instanceof com.aspose.pdf.operators.SetRGBColorStroke) {
+						((com.aspose.pdf.operators.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
+						contents.set_Item(j, new com.aspose.pdf.operators.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
 					} else
 						throw new java.lang.Throwable("Unsupported command");
 				} catch (Throwable e) {
@@ -37,7 +37,7 @@ public class ChangingColorSpaceOfPDFDocument {
 		contents = doc.getPages().get_Item(1).getContents();
 		for (int j = 1; j <= contents.size(); j++) {
 			Operator oper = contents.get_Item(j);
-			if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
+			if (oper instanceof com.aspose.pdf.operators.SetCMYKColor || oper instanceof com.aspose.pdf.operators.SetCMYKColorStroke) {
 				System.out.println(oper.toString());
 			}
 		}
