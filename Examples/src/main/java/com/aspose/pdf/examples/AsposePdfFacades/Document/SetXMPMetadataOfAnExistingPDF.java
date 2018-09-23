@@ -11,15 +11,15 @@ public class SetXMPMetadataOfAnExistingPDF {
 		// bind pdf file to the object
 		xmpMetaData.bindPdf("input.pdf");
 		// add create date
-		xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.CreateDate, new java.util.Date());
+		//xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.CreateDate, new java.util.Date());
 		// change meta data date
-		xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.MetadataDate, new java.util.Date());
+		//xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.MetadataDate, new java.util.Date());
 		// add creator tool
-		xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.CreatorTool, "Creator tool name");
+		//xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.CreatorTool, "Creator tool name");
 		// add Nick for MetaData
-		xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.Nickname, "Aspose Nick");
+		//xmpMetaData.setByDefaultMetadataProperties(DefaultMetadataProperties.Nickname, "Aspose Nick");
 		// remove modify date
-		xmpMetaData.remove(DefaultMetadataProperties.ModifyDate);
+		//xmpMetaData.removeItemByKey(DefaultMetadataProperties.ModifyDate);
 		// add user defined property
 		// step #1: register namespace prefix and URI
 		xmpMetaData.registerNamespaceURI("customNamespace", "http://www.customNameSpaces.com/ns/");
