@@ -2,6 +2,7 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 
 import com.aspose.pdf.Document;
 import com.aspose.pdf.EpubLoadOptions;
+import com.aspose.pdf.taggedpdf.TaggedPdfBlockLevelTextElement;
 
 public class CreatePDFwithTaggedText {
 	public static void main(String[] args) {
@@ -17,14 +18,14 @@ public class CreatePDFwithTaggedText {
 
 		// Creating tagged text element
 		// Supported tags P, H,H1-H6
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement1 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "text", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement2 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test1", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement3 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test2", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement4 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test3", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement5 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test4", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement6 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test5", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement7 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test6", ts);
-		com.aspose.pdf.taggedpdf.TaggedPdfTextElement textElement8 = new com.aspose.pdf.taggedpdf.TaggedPdfTextElement(doc, "P", "test7", ts);
+		TaggedPdfBlockLevelTextElement textElement1 = new TaggedPdfBlockLevelTextElement(doc, "P", "text", ts);
+		TaggedPdfBlockLevelTextElement textElement2 = new TaggedPdfBlockLevelTextElement(doc, "P", "test1", ts);
+		TaggedPdfBlockLevelTextElement textElement3 = new TaggedPdfBlockLevelTextElement(doc, "P", "test2", ts);
+		TaggedPdfBlockLevelTextElement textElement4 = new TaggedPdfBlockLevelTextElement(doc, "P", "test3", ts);
+		TaggedPdfBlockLevelTextElement textElement5 = new TaggedPdfBlockLevelTextElement(doc, "P", "test4", ts);
+		TaggedPdfBlockLevelTextElement textElement6 = new TaggedPdfBlockLevelTextElement(doc, "P", "test5", ts);
+		TaggedPdfBlockLevelTextElement textElement7 = new TaggedPdfBlockLevelTextElement(doc, "P", "test6", ts);
+		TaggedPdfBlockLevelTextElement textElement8 = new TaggedPdfBlockLevelTextElement(doc, "P", "test7", ts);
 
 		// Add tagged text element to content
 		page1.getTaggedPdfContent().add(textElement1);
