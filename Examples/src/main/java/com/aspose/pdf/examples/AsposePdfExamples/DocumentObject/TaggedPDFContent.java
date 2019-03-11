@@ -5,7 +5,7 @@ import com.aspose.pdf.tagged.ITaggedContent;
 
 public class TaggedPDFContent {
     public static void main(String[] args) {
-        // ExStart:StructureElementsProperties
+        // ExStart:TaggedPDFContent
         // The path to the documents directory.
         String path = "pathTodir";
 
@@ -25,5 +25,6 @@ public class TaggedPDFContent {
 
         // Save Tagged Pdf Document
         document.save(path + "TaggedPDFContent.pdf");
+        // ExEnd:TaggedPDFContent
     }
 }

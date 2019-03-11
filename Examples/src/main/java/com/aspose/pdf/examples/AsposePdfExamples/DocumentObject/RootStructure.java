@@ -7,7 +7,7 @@ import com.aspose.pdf.tagged.logicalstructure.elements.StructureElement;
 
 public class RootStructure {
     public static void main(String[] args) {
-        // ExStart:InlineStructureElements
+        // ExStart:RootStructure
         // The path to the documents directory.
         String path = "pathTodir";
         // Create Pdf Document

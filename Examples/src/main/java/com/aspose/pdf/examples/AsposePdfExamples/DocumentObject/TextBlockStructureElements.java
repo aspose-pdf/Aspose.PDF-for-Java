@@ -8,7 +8,7 @@ import com.aspose.pdf.tagged.logicalstructure.elements.bls.ParagraphElement;
 
 public class TextBlockStructureElements {
     public static void main(String[] args) {
-        // ExStart:StructureElementsProperties
+        // ExStart:TextBlockStructureElements
         // The path to the documents directory.
         String path = "pathTodir";
 

@@ -64,7 +64,7 @@ public class CreateStructureElementTree {
 
         // Save Tagged Pdf Document
         document.save(path + "StructureElementsTree.pdf");
-        // ExEnd:CreateStructureElementsTree
+        // ExEnd:CreateStructureElementTree
     }
 
 }
