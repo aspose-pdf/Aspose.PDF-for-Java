@@ -2,6 +2,7 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 
 import com.aspose.pdf.Document;
 import com.aspose.pdf.EpubLoadOptions;
+import com.aspose.pdf.Operator;
 import com.aspose.pdf.taggedpdf.TaggedPdfBlockLevelTextElement;
 
 public class CreatePDFwithTaggedText {
@@ -28,15 +29,14 @@ public class CreatePDFwithTaggedText {
 		TaggedPdfBlockLevelTextElement textElement8 = new TaggedPdfBlockLevelTextElement(doc, "P", "test7", ts);
 
 		// Add tagged text element to content
-		page1.getTaggedPdfContent().add(textElement1);
-		page1.getTaggedPdfContent().add(textElement2);
-		page1.getTaggedPdfContent().add(textElement3);
-		page2.getTaggedPdfContent().add(textElement4);
-		page2.getTaggedPdfContent().add(textElement5);
-		page3.getTaggedPdfContent().add(textElement6);
-		page3.getTaggedPdfContent().add(textElement7);
-		page3.getTaggedPdfContent().add(textElement8);
-
+		page1.getContents().add((Iterable<Operator>) textElement1);
+		page1.getContents().add((Iterable<Operator>) textElement2);
+		page1.getContents().add((Iterable<Operator>) textElement3);
+		page1.getContents().add((Iterable<Operator>) textElement4);
+		page1.getContents().add((Iterable<Operator>) textElement5);
+		page1.getContents().add((Iterable<Operator>) textElement6);
+		page1.getContents().add((Iterable<Operator>) textElement7);
+		page1.getContents().add((Iterable<Operator>) textElement8);
 		// Save PDF Document
 		doc.save("PDFwithTaggedText_out.pdf");
 	}
