@@ -1,6 +1,7 @@
 package com.aspose.pdf.examples.AsposePdfExamples.DocumentObject;
 
 import com.aspose.pdf.Document;
+import com.aspose.pdf.optimization.OptimizationOptions;
 
 public class OptimizePDFFileSize {
 
@@ -13,7 +14,7 @@ public class OptimizePDFFileSize {
 		// Load source PDF file
 		Document doc = new Document("source.pdf");
 		// Optimize the file size by removing unused objects
-		Document.OptimizationOptions opt = new Document.OptimizationOptions();
+		OptimizationOptions opt = new OptimizationOptions();
 		opt.setRemoveUnusedObjects(true);
 		opt.setRemoveUnusedStreams(true);
 		opt.setLinkDuplcateStreams(true);
@@ -25,13 +26,13 @@ public class OptimizePDFFileSize {
 	public static void compressingPDFWithImages() {
 		// Load source PDF file
 		Document doc = new Document("input.htm");
-		Document.OptimizationOptions opt = new Document.OptimizationOptions();
+		OptimizationOptions opt = new OptimizationOptions();
 		opt.setRemoveUnusedObjects(false);
 		opt.setLinkDuplcateStreams(false);
 		opt.setRemoveUnusedStreams(false);
 		// Enable image compression
-		opt.setCompressImages(true);
+		opt.getImageCompressionOptions().setCompressImages(true);
 		// Set the quality of images in PDF file
-		opt.setImageQuality(10);
+		opt.getImageCompressionOptions().setImageQuality(10);
 	}
 }

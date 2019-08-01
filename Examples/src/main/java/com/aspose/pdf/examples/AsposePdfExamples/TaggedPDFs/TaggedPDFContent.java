@@ -1,13 +1,14 @@
-package com.aspose.pdf.examples.AsposePdfExamples.DocumentObject;
+package com.aspose.pdf.examples.AsposePdfExamples.TaggedPDFs;
 
 import com.aspose.pdf.Document;
+import com.aspose.pdf.examples.AsposePdfExamples.Utilities.Utils;
 import com.aspose.pdf.tagged.ITaggedContent;
 
 public class TaggedPDFContent {
     public static void main(String[] args) {
         // ExStart:TaggedPDFContent
         // The path to the documents directory.
-        String path = "pathTodir";
+        String path = Utils.getDataDir() + "TaggedPDFs\\";
 
         // Create Pdf Document
         Document document = new Document();

@@ -1,6 +1,7 @@
-package com.aspose.pdf.examples.AsposePdfExamples.DocumentObject;
+package com.aspose.pdf.examples.AsposePdfExamples.TaggedPDFs;
 
 import com.aspose.pdf.Document;
+import com.aspose.pdf.examples.AsposePdfExamples.Utilities.Utils;
 import com.aspose.pdf.tagged.ITaggedContent;
 import com.aspose.pdf.tagged.logicalstructure.ElementList;
 import com.aspose.pdf.tagged.logicalstructure.elements.Element;
@@ -9,7 +10,7 @@ import com.aspose.pdf.tagged.logicalstructure.elements.StructureElement;
 public class AccessChildrenElements {
     public static void main(String[] args) {
         // ExStart:AccessChildrenElements
-        String path = "pathTodir";
+        String path = Utils.getDataDir() + "TaggedPDFs\\";
         // Open Pdf Document
         Document document = new Document( path +"StructureElements.pdf");
 

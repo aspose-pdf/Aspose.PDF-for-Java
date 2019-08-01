@@ -9,20 +9,20 @@ public class GetDocumentWindowAndPageDisplayProperties {
 		Document pdfDocument = new Document("Original.pdf");
 		// Get different document properties
 		// Position of document's window - Default: false
-		System.out.printf("CenterWindow :- " + pdfDocument.getCenterWindow());
+		System.out.printf("CenterWindow :- " + pdfDocument.isCenterWindow());
 		// Predominant reading order; determine the position of page when displayed side by side - Default: L2R
 		System.out.printf("Direction :- " + pdfDocument.getDirection());
 		// Whether window's title bar should display document title.
 		// If false, title bar displays PDF file name - Default: false
-		System.out.printf("DisplayDocTitle :- " + pdfDocument.getDisplayDocTitle());
+		System.out.printf("DisplayDocTitle :- " + pdfDocument.isDisplayDocTitle());
 		// Whether to resize the document's window to fit the size of first displayed page - Default: false
-		System.out.printf("FitWindow :- " + pdfDocument.getFitWindow());
+		System.out.printf("FitWindow :- " + pdfDocument.isFitWindow());
 		// Whether to hide menu bar of the viewer application - Default: false
-		System.out.printf("HideMenuBar :-" + pdfDocument.getHideMenubar());
+		System.out.printf("HideMenuBar :-" + pdfDocument.isHideMenubar());
 		// Whether to hide tool bar of the viewer application - Default: false
-		System.out.printf("HideToolBar :-" + pdfDocument.getHideToolBar());
+		System.out.printf("HideToolBar :-" + pdfDocument.isHideToolBar());
 		// Whether to hide UI elements like scroll bars and leaving only the page contents displayed - Default: false
-		System.out.printf("HideWindowUI :-" + pdfDocument.getHideWindowUI());
+		System.out.printf("HideWindowUI :-" + pdfDocument.isHideWindowUI());
 		// The document's page mode. How to display document on exiting full-screen mode.
 		System.out.printf("NonFullScreenPageMode :-" + pdfDocument.getNonFullScreenPageMode());
 		// The page layout i.e. single page, one column
