@@ -3,17 +3,22 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.HtmlLoadOptions;
 import com.aspose.pdf.LoadOptions;
+import com.aspose.pdf.examples.AsposePdfExamples.Utilities.Utils;
+
+import javax.swing.text.Utilities;
 
 public class ConvertHTMLToPDFFormat {
 
 	public static void main(String[] args) {
-		settingToNotPullDownRemoteResourcesDuringConversion();
-		convertHTMLFileToPDF();
+		//settingToNotPullDownRemoteResourcesDuringConversion();
+		//convertHTMLFileToPDF();
+		//renderContentToSamePage();
+		renderHTMLwithSVGData();
 	}
 
 	public static void convertHTMLFileToPDF() {
 		// Specify the The base path/url for the html file which serves as images database
-		String basePath = "pdftest";
+		String basePath = Utils.getDataDir() + "DocumentConversion\\" ;
 		HtmlLoadOptions htmloptions = new HtmlLoadOptions(basePath);
 		// Load HTML file
 		Document doc = new Document(basePath + "EmailDemo_updated.html", htmloptions);
@@ -41,5 +46,37 @@ public class ConvertHTMLToPDFFormat {
 		Document pdfDocument = new Document("in.html", options);
 		pdfDocument.save("out.pdf");
 	}
+	public static void renderContentToSamePage() {
+		// ExStart:RenderContentToSamePage
+
+		// The path to the documents directory.
+		String datadir = Utils.getDataDir() + "DocumentConversion\\" ;
+		// Initialize HTMLLoadSave Options
+		HtmlLoadOptions options = new HtmlLoadOptions();
+		// Set Render to single page property
+		options.setRenderToSinglePage(true);
+		// Load document
+		Document doc = new Document(datadir + "HTMLToPDF.html", options);
+		// Save
+		doc.save(datadir + "RenderContentToSamePage.pdf");
+		// ExEnd:RenderContentToSamePage
+	}
+	public static void renderHTMLwithSVGData() {
+		// ExStart:RenderHTMLwithSVGData
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir() + "DocumentConversion\\" ;
+		// Set input file path
+		String inFile = dataDir + "HTMLSVG.html";
+		// Set output file path
+		String outFile = dataDir + "RenderHTMLwithSVGData.pdf";
+		// Initialize HtmlLoadOptions
+		HtmlLoadOptions options = new HtmlLoadOptions(inFile);
+		// Initialize Document object
+		Document pdfDocument = new Document(inFile, options);
+		// save
+		pdfDocument.save(outFile);
+		// ExEnd:RenderHTMLwithSVGData
+	}
+
 
 }

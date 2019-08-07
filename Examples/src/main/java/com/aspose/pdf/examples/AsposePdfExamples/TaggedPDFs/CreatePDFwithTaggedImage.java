@@ -26,5 +26,6 @@ public class CreatePDFwithTaggedImage {
 
         // Save PDF Document
         document.save(dataDir + "PDFwithTaggedImage.pdf");
+        // ExEnd:1
     }
 }
