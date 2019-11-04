@@ -17,5 +17,4 @@ public class ConvertPDFToSVGFormat {
 		// save the output in SVG files
 		doc.save(outFileName, saveOptions);
 	}
-
 }
