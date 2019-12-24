@@ -15,17 +15,20 @@ public class RedactCertainPageRegionWithRedactionAnnotation {
 	}
 
 	public static void redactCertainPageRegionWithRedactionAnnotation() {
+		//ExStart: RedactCertainPageRegionWithRedactionAnnotation
 		Document doc = new Document("HelloWorld.pdf");
 		Rectangle rect = new Rectangle(200, 500, 300, 600);
 		RedactionAnnotation annot = new RedactionAnnotation(doc.getPages().get_Item(1), rect);
 		annot.setFillColor(Color.getBlack());
 		annot.setBorderColor(Color.getYellow());
 		annot.setColor(Color.getBlue());
+		annot.setFontSize(20);
 		annot.setOverlayText("REDACTED");
 		annot.setTextAlignment(HorizontalAlignment.Center);
 		annot.setRepeat(true);
 		doc.getPages().get_Item(1).getAnnotations().add(annot);
 		doc.save("Redaction_out.pdf");
+		//ExEnd: RedactCertainPageRegionWithRedactionAnnotation
 	}
 
 	public static void facadesApproach() {

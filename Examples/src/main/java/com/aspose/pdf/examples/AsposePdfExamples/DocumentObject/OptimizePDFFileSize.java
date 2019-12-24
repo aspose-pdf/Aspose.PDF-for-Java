@@ -21,6 +21,7 @@ public class OptimizePDFFileSize {
 		// Set RemoveUsedObject option
 		OptimizationOptions optimizeOptions = new OptimizationOptions();
 		optimizeOptions.setRemoveUnusedObjects(true);
+		optimizeOptions.setSubsetFonts(true);
 		// Optimize PDF document using OptimizationOptions
 		pdfDocument.optimizeResources(optimizeOptions);
 		// Save updated document
