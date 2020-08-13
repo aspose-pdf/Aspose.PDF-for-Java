@@ -25,14 +25,14 @@ Directory | Description
 + Run the file in your IDE (method may vary depending on the IDE you use).
 + The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.
 
-Please find more details on how to run the examples [here](https://docs.aspose.com/display/pdfjava/How+to+Run+the+Examples).
+Please find more details on how to run the examples [here](https://docs.aspose.com/pdf/java/how-to-run-the-examples/).
 
 ## Resources
 
 + **Website:** [www.aspose.com](https://www.aspose.com)
 + **Product Home:** [Aspose.PDF for Java](https://products.aspose.com/pdf/java)
 + **Download:** [Download Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
-+ **Documentation:** [Aspose.PDF for Java Documentation](https://docs.aspose.com/display/pdfjava/Home)
++ **Documentation:** [Aspose.PDF for Java Documentation](https://docs.aspose.com/pdf/java/)
 + **Free Support:** [Aspose.PDF for Java Free Support Forum](https://forum.aspose.com/c/pdf)
 + **Paid Support:** [Aspose.PDF for Java Paid Support Forum](https://helpdesk.aspose.com/)
 + **Blog:** [Aspose.PDF for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)
