@@ -28,25 +28,19 @@ This page contains release notes for [Aspose.PDF for Java 19.9](https://downloa
 -----
 See the list of any changes made to the public API such as added, renamed, removed or deprecated members as well as any non-backward compatible change made to Aspose.PDF for Java. If you have concerns about any change listed, please raise it on the [Aspose.PDF support forum](https://forum.aspose.com/c/pdf).
 ### **New Methods**
-com.aspose.pdf.**CheckboxField**.getExportValue()
-com.aspose.pdf.**CheckboxField**.setExportValue(String)
-
-com.aspose.pdf.**Document**.isManualDisposeEnabled()
-com.aspose.pdf.**Document**.setManualDisposeEnabled(boolean)
-
-com.aspose.pdf.**FloatingBox**.getBackgroundImage()
-com.aspose.pdf.**FloatingBox**.setBackgroundImage(Image)
-
-com.aspose.pdf.**FreeTextAnnotation**.getTextRectangle()
-com.aspose.pdf.**FreeTextAnnotation**.setTextRectangle(Rectangle)
-
-com.aspose.pdf.**Rectangle**.isInclude(Rectangle,double)
-
-com.aspose.pdf.**TextEditOptions**.getClippingPathsProcessing()
-com.aspose.pdf.**TextEditOptions**.setClippingPathsProcessing(int)
-
-com.aspose.pdf.**IDocument**.isManualDisposeEnabled()
-com.aspose.pdf.**IDocument**.setManualDisposeEnabled(boolean)
+com.aspose.pdf.**CheckboxField**.getExportValue()   
+com.aspose.pdf.**CheckboxField**.setExportValue(String)   
+com.aspose.pdf.**Document**.isManualDisposeEnabled()   
+com.aspose.pdf.**Document**.setManualDisposeEnabled(boolean)   
+com.aspose.pdf.**FloatingBox**.getBackgroundImage()   
+com.aspose.pdf.**FloatingBox**.setBackgroundImage(Image)   
+com.aspose.pdf.**FreeTextAnnotation**.getTextRectangle()   
+com.aspose.pdf.**FreeTextAnnotation**.setTextRectangle(Rectangle)   
+com.aspose.pdf.**Rectangle**.isInclude(Rectangle,double)   
+com.aspose.pdf.**TextEditOptions**.getClippingPathsProcessing()   
+com.aspose.pdf.**TextEditOptions**.setClippingPathsProcessing(int)   
+com.aspose.pdf.**IDocument**.isManualDisposeEnabled()   
+com.aspose.pdf.**IDocument**.setManualDisposeEnabled(boolean)   
 
 By default any method "save" in the Document class will close internal streams and free up memory resources. We can do some operations and continue work with the document instance after execute method "save" if this ManualDispose parameter is enabled. But it is strongly recommended to call the "dispose" method when the Document instance is no longer needed.
 ### **New Fields**

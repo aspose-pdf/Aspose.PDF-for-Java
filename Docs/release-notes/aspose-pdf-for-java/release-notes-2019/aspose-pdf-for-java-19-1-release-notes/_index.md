@@ -25,22 +25,22 @@ This page contains release notes for [Aspose.PDF for Java 19.1](https://reposit
 
 Added new methods:
 
-com.aspose.pdf.**ImagePlacementAbsorber**.isReadOnlyMode()
-com.aspose.pdf.**ImagePlacementAbsorber**.setReadOnlyMode(boolean)
-com.aspose.pdf.tagged.**ITaggedContent**.getStructureTextState()
-com.aspose.pdf.tagged.logicalstructure.elements.**Element**.getTaggedContent()
-com.aspose.pdf.tagged.logicalstructure.elements.**ITextElement**.getStructureTextState()
-com.aspose.pdf.tagged.logicalstructure.**StructureTypeStandard**.getCategory()
-com.aspose.pdf.tagged.**TaggedContent**.getStructureTextState()
-com.aspose.pdf.text.**TextProcessingContext**.getLastEmcOpIndex()
-com.aspose.pdf.text.**TextProcessingContext**.setLastEmcOpIndex(int)
-com.aspose.pdf.text.**TextProcessingContext**.getMcName()
-com.aspose.pdf.text.**TextProcessingContext**.setMcName(String)
-com.aspose.pdf.text.**TextProcessingContext**.getMcId()
-com.aspose.pdf.text.**TextProcessingContext**.setMcId(int)
-com.aspose.pdf.text.**TextProcessingContext**.initializeMcProperties()
+com.aspose.pdf.**ImagePlacementAbsorber**.isReadOnlyMode()   
+com.aspose.pdf.**ImagePlacementAbsorber**.setReadOnlyMode(boolean)   
+com.aspose.pdf.tagged.**ITaggedContent**.getStructureTextState()   
+com.aspose.pdf.tagged.logicalstructure.elements.**Element**.getTaggedContent()   
+com.aspose.pdf.tagged.logicalstructure.elements.**ITextElement**.getStructureTextState()   
+com.aspose.pdf.tagged.logicalstructure.**StructureTypeStandard**.getCategory()   
+com.aspose.pdf.tagged.**TaggedContent**.getStructureTextState()   
+com.aspose.pdf.text.**TextProcessingContext**.getLastEmcOpIndex()   
+com.aspose.pdf.text.**TextProcessingContext**.setLastEmcOpIndex(int)   
+com.aspose.pdf.text.**TextProcessingContext**.getMcName()   
+com.aspose.pdf.text.**TextProcessingContext**.setMcName(String)   
+com.aspose.pdf.text.**TextProcessingContext**.getMcId()   
+com.aspose.pdf.text.**TextProcessingContext**.setMcId(int)   
+com.aspose.pdf.text.**TextProcessingContext**.initializeMcProperties()   
 
 Renamed methods:
 
-com.aspose.pdf.tagged.logicalstructure.elements.bls.**BLSTextElement**.getTextState() -> getStructureTextState()
-com.aspose.pdf.tagged.logicalstructure.elements.ils.**ILSTextElement**.getTextState() -> getStructureTextState()
+com.aspose.pdf.tagged.logicalstructure.elements.bls.**BLSTextElement**.getTextState() -> getStructureTextState()   
+com.aspose.pdf.tagged.logicalstructure.elements.ils.**ILSTextElement**.getTextState() -> getStructureTextState()   

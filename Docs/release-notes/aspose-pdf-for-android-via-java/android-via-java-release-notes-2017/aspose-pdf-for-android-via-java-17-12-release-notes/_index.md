@@ -14,7 +14,7 @@ url: /java/aspose-pdf-for-android-via-java-17-12-release-notes/
 |PDFANDROID-491|Handle extracted text based on columns|New Feature|
 |PDFANDROID-499|PatternColorSpace support in new generator|New Feature|
 |PDFANDROID-500|Checking the status of Concatenation|New Feature|
-|PDFANDROID-486|java.lang.NullPointerException when creating com.aspose.pdf.engine.commondata.text.segmenting.TextSegmenter|Bug|
+|PDFANDROID-486|java.lang.NullPointerException when creating <br>com.aspose.pdf.engine.commondata.text.segmenting.TextSegmenter|Bug|
 |PDFANDROID-490|Adopted TextFragmentCollection for Java Iterable interface"|Bug|
 |PDFANDROID-492|Pdf to text: space between text increased|Bug|
 |PDFANDROID-494|The extracted text from pdf is incorrect|Bug|
