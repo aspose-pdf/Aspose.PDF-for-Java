@@ -10,7 +10,7 @@ The following table indicates the file formats that Aspose.PDF for Java can load
 
 |**Format**|**Description**|**Load**|**Save**|**Remarks**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://wiki.fileformat.com/view/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
+|[PDF](https://wiki.fileformat.com/pdf/)|Portable Document Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
 |[CGM](https://wiki.fileformat.com/page-description-language/cgm/)|Computer Graphics Metafile for 2D vector graphics|{{< emoticons/tick >}}| | |
 |[EPUB](https://wiki.fileformat.com/ebook/epub/)|Ebook file format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[HTML](https://wiki.fileformat.com/web/html/)|HTML Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
@@ -36,4 +36,3 @@ The following table indicates the file formats that Aspose.PDF for Java can load
 |[GIF](https://wiki.fileformat.com/image/gif/)|Graphic Interchange Format| |{{< emoticons/tick >}}| |
 |[TIFF](https://wiki.fileformat.com/image/tiff/)|Saves the document as Single or Multi-Page TIFF Image| |{{< emoticons/tick >}}| |
 |[Text](https://wiki.fileformat.com/specification/word-processing/txt/)|Save the document int Text Format| |{{< emoticons/tick >}}| |
-
