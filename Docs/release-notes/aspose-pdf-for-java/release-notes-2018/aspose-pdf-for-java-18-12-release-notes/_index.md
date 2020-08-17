@@ -24,27 +24,27 @@ This page contains release notes for [Aspose.PDF for Java 18.12](https://reposi
 ### **Public API Changes**
 **Added new classes:**
 
-com.aspose.pdf.exceptions.PdfArgumentException
-com.aspose.pdf.optimization.ImageEncoding
-com.aspose.pdf.optimization.OptimizationOptions
-com.aspose.pdf.tagged.ITaggedContent
-com.aspose.pdf.tagged.logicalstructure.AttributeOwnerStandard
-com.aspose.pdf.tagged.logicalstructure.ElementList
-com.aspose.pdf.tagged.logicalstructure.elements.bls.BLSElement
-com.aspose.pdf.tagged.logicalstructure.elements.bls.BLSTextElement
-com.aspose.pdf.tagged.logicalstructure.elements.bls.HeaderElement
-com.aspose.pdf.tagged.logicalstructure.elements.bls.ListChildElement
-com.aspose.pdf.tagged.logicalstructure.elements.bls.ListElement
-com.aspose.pdf.tagged.logicalstructure.elements.bls.ListLblElement
+com.aspose.pdf.exceptions.PdfArgumentException   
+com.aspose.pdf.optimization.ImageEncoding   
+com.aspose.pdf.optimization.OptimizationOptions   
+com.aspose.pdf.tagged.ITaggedContent   
+com.aspose.pdf.tagged.logicalstructure.AttributeOwnerStandard   
+com.aspose.pdf.tagged.logicalstructure.ElementList   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.BLSElement   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.BLSTextElement   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.HeaderElement   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.ListChildElement   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.ListElement   
+com.aspose.pdf.tagged.logicalstructure.elements.bls.ListLblElement   
 
 **Added new field** 
 com.aspose.pdf.ImageFilterType.Flate
 
 **Added new methods:** 
-com.aspose.pdf.optimization.ImageCompressionOptions.getEncoding()
-com.aspose.pdf.optimization.ImageCompressionOptions.setEncoding(int)
-com.aspose.pdf.Page.getBackgroundImage()
-com.aspose.pdf.Page.setBackgroundImage(com.aspose.pdf.Image)
+com.aspose.pdf.optimization.ImageCompressionOptions.getEncoding()   
+com.aspose.pdf.optimization.ImageCompressionOptions.setEncoding(int)   
+com.aspose.pdf.Page.getBackgroundImage()   
+com.aspose.pdf.Page.setBackgroundImage(com.aspose.pdf.Image)   
 
 **Renamed class:** 
 com.aspose.pdf.exceptions.TaggedPdfException -> com.aspose.pdf.exceptions.TaggedException

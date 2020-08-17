@@ -16,7 +16,7 @@ This page contains release notes for [Aspose.PDF for Java 18.11](https://reposi
 | :- | :- | :- |
 |PDFJAVA-38063|Long time to extract text|Enhancement|
 |PDFJAVA-37886|Slow PDF to PPTX conversion|Enhancement|
-|PDFJAVA-37942|PDF to image test - "OutOfMemory Java heap space" exception while processing the second file in set (-Xmx is 1500m)|Bug|
+|PDFJAVA-37942|PDF to image test - "OutOfMemory Java heap space" <br>brexception while processing the second file in set (-Xmx is 1500m)|Bug|
 |PDFJAVA-37680|PDF to PPTX export - index out of bound error occurred|Bug|
 |PDFJAVA-38115|Failed to load PS document|Bug|
 |PDFJAVA-38114|Aspose.Pdf does not work with Java 7|Bug|

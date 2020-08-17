@@ -37,10 +37,10 @@ Added class:
 com.aspose.pdf.**XmpValue**
 
 Added methods:
-com.aspose.pdf.**HtmlFragment**.getRectangle()
-com.aspose.pdf.**Matrix**.getData()
-com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed()
-com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed(boolean)
+com.aspose.pdf.**HtmlFragment**.getRectangle()   
+com.aspose.pdf.**Matrix**.getData()   
+com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed()   
+com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed   (boolean)
 
 Added field:
 com.aspose.pdf.**TextReplaceOptions**.**ReplaceAdjustment**.ShiftRestOfLine

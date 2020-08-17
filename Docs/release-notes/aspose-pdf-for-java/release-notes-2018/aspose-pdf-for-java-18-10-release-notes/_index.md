@@ -22,7 +22,7 @@ This page contains release notes for [Aspose.PDF for Java 18.10](https://reposi
 |PDFJAVA-38060|NullPointerException on getNamedDestinations().getNames()|Bug|
 |PDFJAVA-37652|The FreeTextAnnotation text content isn't shown in the output document.|Bug|
 |PDFJAVA-37865|An exception occurs while applying the text stamp|Bug|
-|PDFJAVA-34868|PDF to PDFA2a: Converting PDF, generated from Aspose.Cells, to PDFA2a fails the compliance|Bug|
+|PDFJAVA-34868|PDF to PDFA2a: Converting PDF, generated from<br> Aspose.Cells, to PDFA2a fails the compliance|Bug|
 ### **Public API Changes**
 Renamed methods:
 com.aspose.pdf.**Artifact**.getContents_Rename_Namesake -> com.aspose.pdf.**Artifact**.getContents
@@ -38,17 +38,17 @@ com.aspose.pdf.**LoadOptions**.setWarningHandler(IWarningCallback) -> com.aspose
 com.aspose.pdf.**SaveOptions**.setWarningHandler(IWarningCallback) -> com.aspose.pdf.**SaveOptions**.setWarningHandler(WarningCallback)
 
 Added new methods:
-com.aspose.pdf.**CharInfoCollection**.copyTo(CharInfo[],int)
-com.aspose.pdf.**HtmlFragment**.getRectangle
-com.aspose.pdf.**Matrix**.getData
-com.aspose.pdf.nameddestinations.**NamedDestinationCollection**.isEmpty
-com.aspose.pdf.**OutlineCollection**.remove(int)
-com.aspose.pdf.**OutlineItemCollection**.remove(int)
-com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed
-com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed(boolean)
-com.aspose.pdf.**TextFragmentState**.getUnderline
-com.aspose.pdf.**TextFragmentState**.getTextHeight
-com.aspose.pdf.**TextState**.getTextHeight
+com.aspose.pdf.**CharInfoCollection**.copyTo(CharInfo[],int)   
+com.aspose.pdf.**HtmlFragment**.getRectangle   
+com.aspose.pdf.**Matrix**.getData   
+com.aspose.pdf.nameddestinations.**NamedDestinationCollection**.isEmpty   
+com.aspose.pdf.**OutlineCollection**.remove(int)   
+com.aspose.pdf.**OutlineItemCollection**.remove(int)   
+com.aspose.pdf.**PageMarkup**.isMulticolumnParagraphsAllowed   
+com.aspose.pdf.**PageMarkup**.setMulticolumnParagraphsAllowed   (boolean)
+com.aspose.pdf.**TextFragmentState**.getUnderline   
+com.aspose.pdf.**TextFragmentState**.getTextHeight   
+com.aspose.pdf.**TextState**.getTextHeight   
 
 Added new field:
 com.aspose.pdf.TextReplaceOptions.**ReplaceAdjustment**.ShiftRestOfLine

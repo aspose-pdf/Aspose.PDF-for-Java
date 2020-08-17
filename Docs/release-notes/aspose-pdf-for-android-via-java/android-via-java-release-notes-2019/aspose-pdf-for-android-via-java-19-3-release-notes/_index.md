@@ -52,24 +52,24 @@ pdfDocument.dispose();
 
 Changes in **class com.aspose.pdf.ExcelSaveOptions** 
 Added method:
-com.aspose.pdf.ExcelSaveOptions.getFormat
-com.aspose.pdf.ExcelSaveOptions.setFormat(int)
+com.aspose.pdf.ExcelSaveOptions.getFormat   
+com.aspose.pdf.ExcelSaveOptions.setFormat(int)   
 
 Added new class **com.aspose.pdf.ExcelSaveOptions.ExcelFormat** 
 fields:
-com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003
-com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XLSX
+com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003   
+com.aspose.pdf.ExcelSaveOptions.ExcelFormat.XLSX   
 
 Added new class **com.aspose.pdf.exceptions.EmptyValueException** 
 constructors:
-com.aspose.pdf.exceptions.EmptyValueException.#ctor(String)
+com.aspose.pdf.exceptions.EmptyValueException.#ctor(String)   
 
 Added new class **com.aspose.pdf.exceptions.InvalidValueFormatException** 
 constructors:
-com.aspose.pdf.exceptions.InvalidValueFormatException.#ctor(String)
+com.aspose.pdf.exceptions.InvalidValueFormatException.#ctor(String)   
 
 Added new class **com.aspose.pdf.LocaleOptions** 
 methods:
-com.aspose.pdf.LocaleOptions.setLocale(Locale)
-com.aspose.pdf.LocaleOptions.getLocale
-com.aspose.pdf.LocaleOptions.clear
+com.aspose.pdf.LocaleOptions.setLocale(Locale)   
+com.aspose.pdf.LocaleOptions.getLocale   
+com.aspose.pdf.LocaleOptions.clear   
