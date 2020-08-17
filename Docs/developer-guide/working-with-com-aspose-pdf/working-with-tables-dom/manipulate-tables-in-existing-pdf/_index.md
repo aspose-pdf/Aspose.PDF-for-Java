@@ -5,11 +5,11 @@ weight: 30
 url: /java/manipulate-tables-in-existing-pdf/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-One of the earliest features supported by Aspose.PDF for Java is its capabilities of [Working with Tables](http://www.aspose.com/docs/display/pdfjava/Working+with+Tables+\(DOM\)) and it provides great support for adding tables in PDF files being generated from scratch or any existing PDF files. You also get the capability to dynamically create tables and place them inside PDF file. Starting [Aspose.PDF for Java 10.6.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry649204.aspx), a new feature of searching and parsing simple tables that already exist in PDF document has been provided. A new class named **com.aspose.pdf.TableAbsorber** provides these capabilities. The usage of TableAbsorber is very much similar to existing TextFragmentAbsorber class.
+One of the earliest features supported by Aspose.PDF for Java is its capabilities of [Working with Tables](https://docs.aspose.com/pdf/java/working-with-tables-dom/)) and it provides great support for adding tables in PDF files being generated from scratch or any existing PDF files. You also get the capability to dynamically create tables and place them inside PDF file. Starting [Aspose.PDF for Java 10.6.0](http://www.aspose.com/community/files/72/java-components/aspose.pdf-for-java/entry649204.aspx), a new feature of searching and parsing simple tables that already exist in PDF document has been provided. A new class named **com.aspose.pdf.TableAbsorber** provides these capabilities. The usage of TableAbsorber is very much similar to existing TextFragmentAbsorber class.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 The following code snippet shows the steps to update contents in particular table cell.
 
