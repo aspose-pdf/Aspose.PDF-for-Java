@@ -19,7 +19,8 @@ public class ManipulateTablesInExistingPDF {
 		absorber.visit(pdfDocument.getPages().get_Item(1));
 		// Get access to first table on page, their first cell and text
 		// fragments in it
-		TextFragment fragment = absorber.getTableList().get_Item(0).getRowList().get_Item(0).getCellList().get_Item(0).getTextFragments().get_Item(1);
+		
+		TextFragment fragment = absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0).getTextFragments().get_Item(1);
 		// Change text of the first text fragment in the cell
 		fragment.setText("Hello World !");
 		// save updated document

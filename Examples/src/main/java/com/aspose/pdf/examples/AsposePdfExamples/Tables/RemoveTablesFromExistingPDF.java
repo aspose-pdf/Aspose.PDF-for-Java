@@ -17,9 +17,9 @@ public class RemoveTablesFromExistingPDF {
 		// Visit first page with absorber
 		absorber.visit(editor.getDocument().getPages().get_Item(1));
 		// Getting the table rectangle
-		Rectangle rect = absorber.getTableList().get_Item(0).getRectangle();
+		Rectangle rect = absorber.getTableList().get(0).getRectangle();
 		// clear text for the table
-		for (AbsorbedRow row : absorber.getTableList().get_Item(0).getRowList()) {
+		for (AbsorbedRow row : absorber.getTableList().get(0).getRowList()) {
 			for (AbsorbedCell cell : row.getCellList()) {
 				for (Object fragment : cell.getTextFragments()) {
 					((TextFragment) fragment).setText("");
