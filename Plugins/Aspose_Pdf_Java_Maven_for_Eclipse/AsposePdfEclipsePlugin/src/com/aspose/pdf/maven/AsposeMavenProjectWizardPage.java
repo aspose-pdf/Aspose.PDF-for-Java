@@ -358,7 +358,7 @@ public class AsposeMavenProjectWizardPage extends WizardPage {
 
 		chkDownloadExamples = new Button(container, SWT.CHECK);
 		chkDownloadExamples.setBounds(5, 325, 492, 16);
-		chkDownloadExamples.setText("Also Download Code Examples (for using Aspose.Pdf for Java)");
+		chkDownloadExamples.setText("Also Download Code Examples (for using Aspose.PDF for Java)");
 
 		Label lblNewLabel_1 = new Label(container, SWT.NONE);
 		lblNewLabel_1.setBounds(443, 296, 55, 15);

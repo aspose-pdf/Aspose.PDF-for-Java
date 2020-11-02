@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="Aspose.Pdf Java (Maven) for Eclipse - Eclipse Update Site" url="http://cdn.aspose.com/marketplace/eclipse/java/maven/asposepdf/">
-      Aspose.Pdf Maven Project wizard creates Maven Project for using Aspose.Pdf for Java API within Eclipse IDE.
-Aspose.Pdf for Java is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
-Aspose.Pdf for Java offers an incredible wealth of features, these include: PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
-Aspose.Pdf Maven Project wizard fetch and configures the latest Maven dependency reference of Aspose.Pdf for Java from the Aspose Cloud Maven Repository.
-The wizard also gives you option to download the Code Examples to use Aspose.Pdf for Java API.
+   <description name="Aspose.PDF Java (Maven) for Eclipse - Eclipse Update Site" url="https://repository.aspose.com/plugins/aspose-pdf/eclipse/pdf-maven/20.10/site.xml">
+      Aspose.PDF Maven Project wizard creates Maven Project for using Aspose.PDF for Java API within Eclipse IDE.
+Aspose.PDF for Java is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
+Aspose.PDF for Java offers an incredible wealth of features, these include: PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
+Aspose.PDF Maven Project wizard fetch and configures the latest Maven dependency reference of Aspose.PDF for Java from the Aspose Cloud Maven Repository.
+The wizard also gives you option to download the Code Examples to use Aspose.PDF for Java API.
    </description>
-   <feature url="features/com.aspose.pdf.java.maven_1.0.0.jar" id="com.aspose.pdf.java.maven" version="1.0">
+   <feature url="features/com.aspose.pdf.java.maven_20.10.0.jar" id="com.aspose.pdf.java.maven" version="20.10">
       <category name="com.aspose.pdf.java.maven.category"/>
    </feature>
-   <category-def name="com.aspose.pdf.java.maven.category" label="Aspose.Pdf Java (Maven) for Eclipse"/>
+   <category-def name="com.aspose.pdf.java.maven.category" label="Aspose.PDF Java (Maven) for Eclipse"/>
 </site>

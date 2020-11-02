@@ -59,8 +59,8 @@ public class AsposeExampleWizardPage extends WizardPage {
 	 */
 	public AsposeExampleWizardPage() {
 		super("wizardPage");
-		setTitle("New Aspose.Pdf Code Example");
-		setDescription("Aspose.Pdf Java API - Code Examples");
+		setTitle("New Aspose.PDF Code Example");
+		setDescription("Aspose.PDF Java API - Code Examples");
 	}
 
 	public IProject getIProject() {
@@ -224,7 +224,7 @@ public class AsposeExampleWizardPage extends WizardPage {
 		Queue<Object[]> queue = new LinkedList<>();
 		queue.add(new Object[] { null, directory });
 		TreeItem top = new TreeItem(examplesTree, 0);
-		top.setText("Aspose.Pdf");
+		top.setText("Aspose.PDF");
 
 		while (!queue.isEmpty()) {
 			Object[] _entry = queue.remove();
@@ -286,7 +286,7 @@ public class AsposeExampleWizardPage extends WizardPage {
 
 		Label lblAsposepdfForJava = new Label(container, SWT.NONE);
 		lblAsposepdfForJava.setBounds(5, 131, 170, 15);
-		lblAsposepdfForJava.setText("Aspose.Pdf for Java (version):");
+		lblAsposepdfForJava.setText("Aspose.PDF for Java (version):");
 
 		cbVersion = new Combo(container, SWT.READ_ONLY);
 		cbVersion.addModifyListener(new ModifyListener() {

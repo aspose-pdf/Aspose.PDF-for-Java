@@ -25,7 +25,7 @@ public class AsposeConstants {
     /**
      *
      */
-    public static final String API_NAME = "Aspose.Pdf";
+    public static final String API_NAME = "Aspose.PDF";
 
     /**
      *
@@ -77,7 +77,7 @@ public class AsposeConstants {
     /**
      *
      */
-    public static final String WIZARD_NAME = "Aspose.Pdf Maven Project";
+    public static final String WIZARD_NAME = "Aspose.PDF Maven Project";
 
     /**
      *
@@ -92,7 +92,7 @@ public class AsposeConstants {
     /**
      *
      */
-    public static final String ASPOSE_MAVEN_REPOSITORY = "http://maven.aspose.com";
+    public static final String ASPOSE_MAVEN_REPOSITORY = "https://repository.aspose.com";
 
     /**
      *
@@ -102,7 +102,7 @@ public class AsposeConstants {
     /**
      *
      */
-    public static final String INTERNET_REQUIRED_MSG = "Internet connectivity is not available!\nInternet connectivity is required to retrieve latest Aspose.Pdf Maven Artifact";
+    public static final String INTERNET_REQUIRED_MSG = "Internet connectivity is not available!\nInternet connectivity is required to retrieve latest Aspose.PDF Maven Artifact";
 
     /**
      *
@@ -112,12 +112,12 @@ public class AsposeConstants {
     /**
      *
      */
-    public static final String MAVEN_ARTIFACTS_RETRIEVE_FAIL = "Unknown Error!\nCould not retrieve latest Aspose.Pdf Maven Artifact!";
+    public static final String MAVEN_ARTIFACTS_RETRIEVE_FAIL = "Unknown Error!\nCould not retrieve latest Aspose.PDF Maven Artifact!";
 
     /**
      *
      */
-    public static final String EXAMPLES_DOWNLOAD_FAIL = "Unknown Error!\nCould not download Aspose.Pdf for Java API example Source codes!";
+    public static final String EXAMPLES_DOWNLOAD_FAIL = "Unknown Error!\nCould not download Aspose.PDF for Java API example Source codes!";
 
     /**
      *

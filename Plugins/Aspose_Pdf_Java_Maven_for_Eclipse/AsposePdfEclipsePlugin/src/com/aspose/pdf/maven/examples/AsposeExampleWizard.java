@@ -11,9 +11,7 @@
  */
 package com.aspose.pdf.maven.examples;
 
-import java.io.File;
 import java.lang.reflect.InvocationTargetException;
-
 import org.eclipse.core.resources.IProject;
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.viewers.IStructuredSelection;
@@ -26,7 +24,7 @@ public class AsposeExampleWizard extends Wizard implements INewWizard {
 	private AsposeExampleWizardPage wizardPage;
 
 	public AsposeExampleWizard() {
-		setWindowTitle("Aspose.Pdf Code Example");
+		setWindowTitle("Aspose.PDF Code Example");
 	}
 
 	@Override

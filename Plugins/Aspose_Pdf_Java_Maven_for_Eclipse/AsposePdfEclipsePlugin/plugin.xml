@@ -8,7 +8,7 @@
             class="com.aspose.pdf.maven.AsposeMavenProjectWizard"
             icon="resources/Aspose.png"
             id="asposeplugin.wizard.new.mavenprojectwizard"
-            name="Aspose.Pdf Maven Project"
+            name="Aspose.PDF Maven Project"
             project="true">
       </wizard>
       <wizard
@@ -16,7 +16,7 @@
             class="com.aspose.pdf.maven.examples.AsposeExampleWizard"
             icon="resources/Aspose.png"
             id="asposeplugin.wizard.new.mavenexamplewizard"
-            name="Aspose.Pdf Code Example"
+            name="Aspose.PDF Code Example"
             project="false">
       </wizard>
    </extension>

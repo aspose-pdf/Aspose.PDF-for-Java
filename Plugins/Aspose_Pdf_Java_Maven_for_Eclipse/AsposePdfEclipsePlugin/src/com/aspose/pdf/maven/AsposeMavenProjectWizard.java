@@ -23,7 +23,7 @@ public class AsposeMavenProjectWizard extends Wizard implements INewWizard {
 	private AsposeMavenProjectWizardPage wizardPage;
 
 	public AsposeMavenProjectWizard() {
-		setWindowTitle("Aspose.Pdf Maven Project");
+		setWindowTitle("Aspose.PDF Maven Project");
 	}
 
 	@Override

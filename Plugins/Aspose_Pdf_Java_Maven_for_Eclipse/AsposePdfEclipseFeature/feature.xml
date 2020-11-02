@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="com.aspose.pdf.java.maven"
-      label="Aspose.Pdf Java (Maven) for Eclipse"
-      version="1.0"
+      label="Aspose.PDF Java (Maven) for Eclipse"
+      version="20.10"
       provider-name="http://www.aspose.com">
 
    <description>
-      Aspose.Pdf Maven Project wizard creates Maven Project for using
-Aspose.Pdf for Java API within Eclipse IDE.
-Aspose.Pdf for Java is a robust PDF document creation API that
+      Aspose.PDF Maven Project wizard creates Maven Project for using
+Aspose.PDF for Java API within Eclipse IDE.
+Aspose.PDF for Java is a robust PDF document creation API that
 enables your Java applications to read, write and manipulate
 PDF documents without using Adobe Acrobat.
-Aspose.Pdf for Java offers an incredible wealth of features,
+Aspose.PDF for Java offers an incredible wealth of features,
 these include: PDF compression options, table creation and manipulation,
 graph support, image functions, extensive hyperlink functionality,
 extended security controls and custom font handling.
-Aspose.Pdf Maven Project wizard fetch and configures the latest
-Maven dependency reference of Aspose.Pdf for Java from the Aspose
+Aspose.PDF Maven Project wizard fetch and configures the latest
+Maven dependency reference of Aspose.PDF for Java from the Aspose
 Cloud Maven Repository.
 The wizard also gives you option to download the Code Examples
-to use Aspose.Pdf for Java API.
+to use Aspose.PDF for Java API.
 Once you are finished with this wizard - created Maven project
 and downloaded Code Examples, next you can insert those Code
-Examples to use Aspose.Pdf for Java API in your Project from
-File -&gt; New -&gt; Other -&gt; Aspose.Pdf Code Example
+Examples to use Aspose.PDF for Java API in your Project from
+File -&gt; New -&gt; Other -&gt; Aspose.PDF Code Example
 The newly created project and the Code Examples you added is
 now ready to be enhanced, all required resources and references
 are also automatically added.
@@ -31,7 +31,7 @@ are also automatically added.
 
    <license url="">
       The MIT License (MIT)
-Copyright (c) 2001-2016 Aspose Pty Ltd
+Copyright (c) 2001-2020 Aspose Pty Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -40,11 +40,15 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    </license>
 
+   <url>
+      <update label="Aspose.PDF Java (Maven) for Eclipse  - Eclipse Update Site" url="https://repository.aspose.com/plugins/aspose-pdf/eclipse/pdf-maven/20.10/site.xml"/>
+   </url>
+
    <plugin
          id="com.aspose.pdf.java.maven.plugin"
          download-size="0"
          install-size="0"
-         version="1.0.0"
+         version="20.10.0"
          unpack="false"/>
 
 </feature>

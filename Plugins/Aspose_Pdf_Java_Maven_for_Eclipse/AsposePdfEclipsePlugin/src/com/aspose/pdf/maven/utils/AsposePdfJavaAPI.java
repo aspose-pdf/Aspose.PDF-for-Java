@@ -24,8 +24,8 @@ package com.aspose.pdf.maven.utils;
 public class AsposePdfJavaAPI extends AsposeJavaAPI {
 
     private final String _name = AsposeConstants.API_NAME;
-    private final String _mavenRepositoryURL = "http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/";
-    private final String _remoteExamplesRepository = "https://github.com/asposepdf/Aspose_Pdf_Java";
+    private final String _mavenRepositoryURL = "https://repository.aspose.com/repo/com/aspose/aspose-pdf/";
+    private final String _remoteExamplesRepository = "https://github.com/aspose-pdf/Aspose.PDF-for-Java";
 
     /**
      * @return the _name
