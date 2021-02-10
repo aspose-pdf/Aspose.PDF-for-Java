@@ -1,3 +1,4 @@
+![GitHub all releases](https://img.shields.io/github/downloads/aspose-pdf/Aspose.pdf-for-Java/total) ![GitHub](https://img.shields.io/github/license/aspose-pdf/Aspose.pdf-for-java)
 # Java API to Process & Manipulate PDF Files
 
 [Aspose.PDF for Java](https://products.aspose.com/pdf/java) is a PDF document creation component that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
