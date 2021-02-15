@@ -15,7 +15,7 @@ public class GetPDFHyperlinkDestination {
 		// Extract actions
 		Page page = document.getPages().get_Item(1);
 		AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-		// page.accept(selector);
+		page.accept(selector);
 		List list = selector.getSelected();
 		// Iterate through individual item inside list
 		if (list.size() == 0)
