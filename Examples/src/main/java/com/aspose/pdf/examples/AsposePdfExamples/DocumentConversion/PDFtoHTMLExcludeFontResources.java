@@ -3,28 +3,34 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.HtmlSaveOptions;
 import com.aspose.pdf.LettersPositioningMethods;
-import com.aspose.pdf.examples.AsposePdfExamples.Utilities.Utils;
+import com.aspose.pdf.examples.Utils;
 
 public class PDFtoHTMLExcludeFontResources {
-    public static void main(String[] args) {
 
-    	PDFtoHTMLExcludingFontResources();
-    	
-    	PDFtoHTMLExcludeFontResourcesWithAdditionalOptions();
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Conversion/pdftohtml/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example PDFtoHTMLExcludingFontResources start");
+        PDFtoHTMLExcludingFontResources(dataDir, outputDir);
+        System.out.println("Example PDFtoHTMLExcludingFontResources end");
+
+        System.out.println("Example PDFtoHTMLExcludeFontResourcesWithAdditionalOptions start");
+        PDFtoHTMLExcludeFontResourcesWithAdditionalOptions(dataDir, outputDir);
+        System.out.println("Example PDFtoHTMLExcludeFontResourcesWithAdditionalOptions end");
     }
-    
-    private static void PDFtoHTMLExcludingFontResources()
-    {
-    	 // ExStart:ExcludeFontResources
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir() + "DocumentConversion\\";
+
+    private static void PDFtoHTMLExcludingFontResources(String dataDir, String outputDir) {
 
         String inFile = dataDir + "ExcludeFont.pdf";
-        String outMainHtmlFile = dataDir + "ExcludeFontResources.html";
+        String outMainHtmlFile = outputDir+"ExcludeFontResources.html";
         // Initialize htmlOptions
         HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 
-        htmlOptions.ExcludeFontNameList = new String[] { "Arial", "Calibri" };
+        htmlOptions.setExcludeFontNameList(new String[]{"Arial", "Calibri"});
         htmlOptions.setDefaultFontName("Arial Black");
 
         Document pdfDocument = new Document(inFile);
@@ -32,35 +38,30 @@ public class PDFtoHTMLExcludeFontResources {
         pdfDocument.save(outMainHtmlFile, htmlOptions);
         // ExEnd:ExcludeFontResources
     }
-    
+
     //Added two options in HtmlSaveOptions:
     //htmlOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.DontSave; - is for prevent exporting all the fonts
     //htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" }); - is for prevent exporting specific fonts, please specify font names without hash
     //In this example, Aspose.PDF tried to replace embedded fonts from PDF 'LJMWCD+ArialMT', 'KPACHB+SymbolMT' with system fonts 'ArialMT', 'SymbolMT' and specify them in HTML.
-    private static void PDFtoHTMLExcludeFontResourcesWithAdditionalOptions()
-    {
-    	//ExStart:PDFtoHTMLExcludeFontResourcesWithAdditionalOptions
-    	// The path to the documents directory.
-        String dataDir = Utils.getDataDir() + "DocumentConversion\\";
-        
-    	HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-        htmlOptions.setExplicitListOfSavedPages(new int[] { 1 });
+    private static void PDFtoHTMLExcludeFontResourcesWithAdditionalOptions(String dataDir, String outputDir) {
+        HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
+        htmlOptions.setExplicitListOfSavedPages(new int[]{1});
         htmlOptions.setFixedLayout(true);
         htmlOptions.setCompressSvgGraphicsIfAny(false);
-        htmlOptions.SaveTransparentTexts=true;
-        htmlOptions.SaveShadowedTextsAsTransparentTexts=true;
-        htmlOptions.ExcludeFontNameList= (new String[] { "ArialMT", "SymbolMT" });
-    	//htmlOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.DontSave;
+        htmlOptions.setSaveTransparentTexts(true);
+        htmlOptions.setSaveShadowedTextsAsTransparentTexts(true);
+        htmlOptions.setExcludeFontNameList((new String[]{"ArialMT", "SymbolMT"}));
+//        htmlOptions.setFontSavingMode(HtmlSaveOptions.FontSavingModes.DontSave);
         htmlOptions.setDefaultFontName("Comic Sans MS");
         htmlOptions.setUseZOrder(true);
-        htmlOptions.LettersPositioningMethod = LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
-        htmlOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.NoEmbedding;
-        htmlOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+        htmlOptions.setLettersPositioningMethod(LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss);
+        htmlOptions.setPartsEmbeddingMode(HtmlSaveOptions.PartsEmbeddingModes.NoEmbedding);
+        htmlOptions.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
         htmlOptions.setSplitIntoPages(false);
 
-    	Document pdfDocument = new Document(dataDir + "PDFJAVA-39123.pdf");
-    	pdfDocument.save(dataDir + "output_out.html", htmlOptions);
-    	//ExEnd:PDFtoHTMLExcludeFontResourcesWithAdditionalOptions
+        Document pdfDocument = new Document(dataDir + "ExcludeFontResourcesWithAdditionalOptions.pdf");
+        pdfDocument.save(outputDir+"ExcludeFontResourcesWithAdditionalOptions.html", htmlOptions);
+        //ExEnd:PDFtoHTMLExcludeFontResourcesWithAdditionalOptions
     }
-    
+
 }

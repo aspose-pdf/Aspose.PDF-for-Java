@@ -13,14 +13,16 @@ import com.aspose.pdf.examples.Utils;
 public class AddTableInExistingPDFDocument {
 
 	public static void main(String[] args) {
-		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(AddTableInExistingPDFDocument.class) + "AsposePdfExamples/Tables/";
-		
-		addTableInExistingPDFDocument(dataDir);
-		setAutoFitToWindowPropertyInColumnAdjustmentTypeEnumeration(dataDir);
+		// The paths to resources and output directories.
+		String testID = "AsposePdfExamples/Tables/";
+		String dataDir = Utils.getDataDir(Utils.class, testID);
+		String outputDir = Utils.getOutDir(Utils.class, testID);
+
+		addTableInExistingPDFDocument(dataDir, outputDir);
+		setAutoFitToWindowPropertyInColumnAdjustmentTypeEnumeration(dataDir, outputDir);
 	}
 
-	public static void addTableInExistingPDFDocument(String dataDir) {
+	public static void addTableInExistingPDFDocument(String dataDir, String outputDir) {
 		// Load source PDF document
 		Document doc = new Document(dataDir + "input.pdf");
 		// Initializes a new instance of the Table
@@ -44,7 +46,7 @@ public class AddTableInExistingPDFDocument {
 		doc.save(dataDir + "document_with_table.pdf");
 	}
 
-	public static void setAutoFitToWindowPropertyInColumnAdjustmentTypeEnumeration(String dataDir) {
+	public static void setAutoFitToWindowPropertyInColumnAdjustmentTypeEnumeration(String dataDir, String outputDir) {
 		//Instantiate the PDF object by calling its empty constructor
 		Document doc = new Document();
 		//Create the section in the PDF object

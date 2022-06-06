@@ -8,7 +8,7 @@ import com.aspose.pdf.Image;
 import com.aspose.pdf.TextFragment;
 import com.aspose.pdf.examples.Utils;
 import com.aspose.pdf.examples.AsposePdfExamples.Tables.AddTableInExistingPDFDocument;
-import com.aspose.pdf.internal.html.drawing.Page;
+
 
 public class AddImageStampAsBackgroundInFloatingBox {
 

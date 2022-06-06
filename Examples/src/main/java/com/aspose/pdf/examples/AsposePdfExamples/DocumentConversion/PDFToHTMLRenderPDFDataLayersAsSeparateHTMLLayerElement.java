@@ -6,17 +6,27 @@ import com.aspose.pdf.examples.Utils;
 
 public class PDFToHTMLRenderPDFDataLayersAsSeparateHTMLLayerElement {
 
-	public static void main(String[] args) {
-		// The path to the resource directory.
-		String dataDir = Utils.getSharedDataDir(PDFToHTMLRenderPDFDataLayersAsSeparateHTMLLayerElement.class) + "PDFToHTML/";
-		// Open the PDF file
-		Document doc = new Document(dataDir + "input.pdf");
-		// Instantiate HTML SaveOptions object
-		HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-		// Specify to render PDF document layers separately in output HTML
-		htmlOptions.setConvertMarkedContentToLayers(true);
-		// Save the document
-		doc.save(dataDir + "output.html", htmlOptions);
-	}
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Conversion/pdftohtml/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example renderPDFDataLayersAsSeparateHTMLLayerElement start");
+        renderPDFDataLayersAsSeparateHTMLLayerElement(dataDir, outputDir);
+        System.out.println("Example renderPDFDataLayersAsSeparateHTMLLayerElement end");
+    }
+
+    public static void renderPDFDataLayersAsSeparateHTMLLayerElement(String dataDir, String outputDir) {
+        // Open the PDF file
+        Document doc = new Document(dataDir + "input2.pdf");
+        // Instantiate HTML SaveOptions object
+        HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
+        // Specify to render PDF document layers separately in output HTML
+        htmlOptions.setConvertMarkedContentToLayers(true);
+        // Save the document
+        doc.save(outputDir+"renderPDFDataLayersAsSeparateHTMLLayerElement.html", htmlOptions);
+    }
 
 }

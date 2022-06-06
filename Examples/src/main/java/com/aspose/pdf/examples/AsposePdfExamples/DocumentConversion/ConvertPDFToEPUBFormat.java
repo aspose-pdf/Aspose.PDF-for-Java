@@ -2,18 +2,31 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 
 import com.aspose.pdf.Document;
 import com.aspose.pdf.EpubSaveOptions;
+import com.aspose.pdf.examples.Utils;
 
 public class ConvertPDFToEPUBFormat {
 
-	public static void main(String[] args) {
-		// Load PDF document
-		Document pdfDocument = new Document("BlueBackground.pdf");
-		// Instantiate EPUB Save options
-		EpubSaveOptions options = new EpubSaveOptions();
-		// Specify the layout for contents
-		options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-		// Save the EPUB document
-		pdfDocument.save("BlueBackground.epub", options);
-	}
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Conversion/pdftoepub/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example convertPDFToEPUBFormat start");
+        convertPDFToEPUBFormat(dataDir, outputDir);
+        System.out.println("Example convertPDFToEPUBFormat end");
+    }
+
+    private static void convertPDFToEPUBFormat(String dataDir, String outputDir) {
+        // Load PDF document
+        Document pdfDocument = new Document(dataDir + "input.pdf");
+        // Instantiate EPUB Save options
+            EpubSaveOptions options = new EpubSaveOptions();
+        // Specify the layout for contents
+        options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+        // Save the EPUB document
+        pdfDocument.save(outputDir+"convertPDFToEPUBFormat.epub", options);
+    }
 
 }
