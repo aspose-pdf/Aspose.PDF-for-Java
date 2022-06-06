@@ -23,7 +23,7 @@ public class ConvertPDFToXML {
         Document doc = new Document(dataDir + "input.pdf");
 
         // save the output in XML format
-        doc.save(outputDir+"resultant.xml", SaveFormat.Xml);
+        doc.save(outputDir + "resultant.xml", SaveFormat.Xml);
     }
 
 }

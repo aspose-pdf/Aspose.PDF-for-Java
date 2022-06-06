@@ -35,7 +35,7 @@ public class CreatePDFwithTaggedImage {
         // Add image with resolution 300 DPI (by default)
         figure1.setImage(dataDir + "aspose-logo.jpg");
         // Save PDF Document
-        document.save(outputDir+"PDFwithTaggedImage.pdf");
+        document.save(outputDir + "PDFwithTaggedImage.pdf");
         // ExEnd:CreatePDFWithTaggedImage
     }
 

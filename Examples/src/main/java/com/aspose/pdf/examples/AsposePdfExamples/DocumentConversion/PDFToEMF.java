@@ -25,7 +25,7 @@ public class PDFToEMF {
         // load existing PDF file
         Document doc = new Document(dataDir + "Input.pdf");
         // save first page of PDF file as Emf image
-        device.process(doc.getPages().get_Item(1), outputDir+"output.emf");
+        device.process(doc.getPages().get_Item(1), outputDir + "output.emf");
     }
 
 }

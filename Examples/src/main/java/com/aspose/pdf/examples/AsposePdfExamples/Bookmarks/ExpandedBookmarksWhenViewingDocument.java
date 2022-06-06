@@ -32,7 +32,7 @@ public class ExpandedBookmarksWhenViewingDocument {
             doc.getOutlines().get_Item(counter).setOpen(true);
         }
         // save the PDF file
-        doc.save(outputDir+"Bookmarks_Expanded.pdf");
+        doc.save(outputDir + "Bookmarks_Expanded.pdf");
     }
 
 }

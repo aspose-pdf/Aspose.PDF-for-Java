@@ -21,7 +21,7 @@ public class PDFToHTMLAvoidSavingImagesInSVGFormat {
     public static void avoidSavingImagesInSVGFormat(String dataDir, String outputDir) {
         // Open source PDF document
         Document pdfDocument = new Document(dataDir + "input.pdf");
-        String outHtmlFile = outputDir+"avoidSavingImagesInSVGFormat.html";
+        String outHtmlFile = outputDir + "avoidSavingImagesInSVGFormat.html";
         // Create HtmlSaveOption with tested feature
         HtmlSaveOptions saveOptions = new HtmlSaveOptions();
         saveOptions.setFixedLayout(true);

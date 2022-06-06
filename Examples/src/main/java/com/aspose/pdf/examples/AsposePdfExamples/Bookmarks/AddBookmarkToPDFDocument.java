@@ -32,7 +32,7 @@ public class AddBookmarkToPDFDocument {
         // Add a bookmark in the document's outline collection.
         pdfDocument.getOutlines().add(pdfOutline);
         // Save the update document
-        pdfDocument.save(outputDir+"output.pdf");
+        pdfDocument.save(outputDir + "output.pdf");
     }
 
 }

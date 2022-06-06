@@ -43,7 +43,7 @@ public class PDFToHTMLAllResourceEmbeddedInSingleResultantStream {
                     // here You can use any writable stream, file stream is taken just as example
                     FileOutputStream fos;
                     try {
-                        fos = new FileOutputStream(outputDir+"allResourceEmbeddedInSingleResultantStream.html");
+                        fos = new FileOutputStream(outputDir + "allResourceEmbeddedInSingleResultantStream.html");
                         fos.write(resultHtmlAsBytes);
                         fos.close();
                     } catch (FileNotFoundException e) {
@@ -59,7 +59,7 @@ public class PDFToHTMLAllResourceEmbeddedInSingleResultantStream {
             }
         });
         // we can use some non-existing file name all real saving will be done in CustomerHtmlSavingStrategy
-        String outHtmlFile = outputDir+"ThisFileWillNotAppearOnDisk.html";
+        String outHtmlFile = outputDir + "ThisFileWillNotAppearOnDisk.html";
         doc.save(outHtmlFile, newOptions);
     }
 }

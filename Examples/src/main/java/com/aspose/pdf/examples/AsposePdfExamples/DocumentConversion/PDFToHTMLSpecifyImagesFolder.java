@@ -24,9 +24,9 @@ public class PDFToHTMLSpecifyImagesFolder {
         // Instantiate HtmlSaveOptions instance
         HtmlSaveOptions saveOptions = new HtmlSaveOptions();
         // Specify the folder (that exist) to save images during conversion process
-        saveOptions.setSpecialFolderForAllImages(outputDir+"imageFolder/");
+        saveOptions.setSpecialFolderForAllImages(outputDir + "imageFolder/");
         // Save the resultant HTML file
-        pdfDocument.save(outputDir+"resultant.html", saveOptions);
+        pdfDocument.save(outputDir + "resultant.html", saveOptions);
     }
 
 }

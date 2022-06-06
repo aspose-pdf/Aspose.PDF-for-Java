@@ -34,7 +34,7 @@ public class ConvertPDFToDOCOrDOCXFormat {
         // Open the source PDF document
         Document pdfDocument = new Document(dataDir + "input2.pdf");
         // Save the file into Microsoft document format
-        pdfDocument.save(outputDir+"TableHeightIssue.doc", SaveFormat.Doc);
+        pdfDocument.save(outputDir + "TableHeightIssue.doc", SaveFormat.Doc);
     }
 
     public static void savingToDOCX(String dataDir, String outputDir) {
@@ -45,7 +45,7 @@ public class ConvertPDFToDOCOrDOCXFormat {
         // Set output file format as DOCX
         saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
         // Save resultant DOCX file
-        doc.save(outputDir+"savingToDOCX.docx", saveOptions);
+        doc.save(outputDir + "savingToDOCX.docx", saveOptions);
     }
 
     public static void usingTheDocSaveOptionsClass(String dataDir, String outputDir) {
@@ -63,7 +63,7 @@ public class ConvertPDFToDOCOrDOCXFormat {
         // Enable the value to recognize bullets during conversion process
         saveOption.setRecognizeBullets(true);
         // Save the resultant DOC file
-        document.save(outputDir+"usingTheDocSaveOptionsClass.doc", saveOption);
+        document.save(outputDir + "usingTheDocSaveOptionsClass.doc", saveOption);
     }
 
 }

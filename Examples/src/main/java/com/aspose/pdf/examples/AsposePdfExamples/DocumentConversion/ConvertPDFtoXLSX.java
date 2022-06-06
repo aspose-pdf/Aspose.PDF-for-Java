@@ -25,6 +25,6 @@ public class ConvertPDFtoXLSX {
         // Set output format
         options.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
         // Save output file
-        doc.save(outputDir+"ouput.xlsx", options);
+        doc.save(outputDir + "ouput.xlsx", options);
     }
 }

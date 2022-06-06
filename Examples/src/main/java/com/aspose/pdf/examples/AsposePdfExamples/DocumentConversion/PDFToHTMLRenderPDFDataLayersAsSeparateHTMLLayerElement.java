@@ -26,7 +26,7 @@ public class PDFToHTMLRenderPDFDataLayersAsSeparateHTMLLayerElement {
         // Specify to render PDF document layers separately in output HTML
         htmlOptions.setConvertMarkedContentToLayers(true);
         // Save the document
-        doc.save(outputDir+"renderPDFDataLayersAsSeparateHTMLLayerElement.html", htmlOptions);
+        doc.save(outputDir + "renderPDFDataLayersAsSeparateHTMLLayerElement.html", htmlOptions);
     }
 
 }

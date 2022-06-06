@@ -1,9 +1,44 @@
 package com.aspose.pdf.examples;
 
-import com.aspose.pdf.examples.AsposePdfExamples.Annotations.*;
-import com.aspose.pdf.examples.AsposePdfExamples.Attachments.*;
-import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.*;
-import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.*;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.AddAnnotationToPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.DeleteAllAnnotationsFromPageOfPDFFile;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.DeleteParticularAnnotationFromThePDFFile;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.GetAllAnnotationsFromPageInPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.GetParticularAnnotationFromPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.RedactCertainPageRegionWithRedactionAnnotation;
+import com.aspose.pdf.examples.AsposePdfExamples.Annotations.StrikeOutWordsUsingStrikeOutAnnotation;
+import com.aspose.pdf.examples.AsposePdfExamples.Attachments.AddAttachmentToPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.Attachments.DeleteAllAttachmentsFromPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.Attachments.DisableFilesCompressionWhenAddingAsEmbeddedResources;
+import com.aspose.pdf.examples.AsposePdfExamples.Attachments.GetAttachmentInformation;
+import com.aspose.pdf.examples.AsposePdfExamples.Attachments.GetAttachmentsFromPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.AddBookmarkToPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.AddChildBookmarkToPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.BookmarkShouldPointToStartOfPage;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.DeleteBookmarksFromPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.ExpandedBookmarksWhenViewingDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.GetBookmarksFromPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.Bookmarks.UpdateBookmarksInPDFDocument;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertEPUBFileToPDFFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertHTMLToPDFFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPCLToPDFFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFFileIntoXPSFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToDOCOrDOCXFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToEPUBFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToExcelWorkbook;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToPDFAFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToSVGFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFToXML;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertSVGFileToPDFFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertXMLFileToPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertXSLFOToPDF;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.CreatePDFwithTaggedText;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToEMF;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLAvoidSavingImagesInSVGFormat;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLGetWarningForFontSubstitution;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLSingleHTMLWithAllResourcesEmbedded;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLSplittingOutputToMultipageHTML;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ValidatePDFUAStandards;
 
 import java.io.File;
 
@@ -64,35 +99,17 @@ public class Utils {
     }
 
     private static File dir = null;
-//    public static String getDataDir(Class c) {
-//
-//        if (dir == null) {
-//            dir = new File(System.getProperty("user.dir"));
-//            dir = new File(dir, "src");
-//            dir = new File(dir, "main");
-//            dir = new File(dir, "resources");
-//
-//            for (String s : c.getName().split("\\.")) {
-//                dir = new File(dir, s);
-//                if (dir.isDirectory() == false)
-//                    dir.mkdir();
-//            }
-//            System.out.println("Using data directory: " + dir.toString());
-//        }
-//        return dir.toString() + File.separator;
-//    }
+
     public static String getDataDir(Class c, String testID) {
         return getSharedDataDir(c) + testID;
     }
+
     public static String getOutDir(Class c, String testID) {
         return getSharedDataDir(c) + "../../../testout/" + testID;
     }
 
     public static String getSharedDataDir(Class c) {
         if (dir == null) {
-            dir = new File(System.getProperty("user.dir"));
-            dir = new File(dir, "src");
-            dir = new File(dir, "main");
             dir = new File(dir, "resources");
         }
         return dir.toString() + File.separator;

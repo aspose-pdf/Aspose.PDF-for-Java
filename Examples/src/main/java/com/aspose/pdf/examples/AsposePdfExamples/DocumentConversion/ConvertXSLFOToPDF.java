@@ -24,7 +24,7 @@ public class ConvertXSLFOToPDF {
         // Open document
         Document doc = new Document(dataDir + "test.fo", xslLoadOptions);
         // Save PDF document
-        doc.save(outputDir+"XSL_FO.pdf");
+        doc.save(outputDir + "XSL_FO.pdf");
     }
 
 }

@@ -33,7 +33,7 @@ public class ConvertXMLFileToPDF {
         // update TextSegement text
         segment.setText("TestSegment");
         // save resultant PDF file
-        doc.save(outputDir+"Resultant.pdf");
+        doc.save(outputDir + "Resultant.pdf");
     }
 
 }

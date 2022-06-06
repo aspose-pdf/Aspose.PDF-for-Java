@@ -30,7 +30,7 @@ public class GetBookmarksFromPDFDocument {
         // Open document
         Document pdfDocument = new Document(dataDir + "input.pdf");
         // Loop through all the bookmarks
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
+        for (OutlineItemCollection outlineItem : pdfDocument.getOutlines()) {
             System.out.println("Title :- " + outlineItem.getTitle());
             System.out.println("Is Italic :- " + outlineItem.getItalic());
             System.out.println("Is Bold :- " + outlineItem.getBold());
@@ -45,7 +45,7 @@ public class GetBookmarksFromPDFDocument {
         bookmarkEditor.bindPdf(dataDir + "input.pdf");
         // Extract bookmarks
         Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
+        for (Bookmark bookmark : bookmarks) {
             String strLevelSeprator = "";
             for (int i = 1; i < bookmark.getLevel(); i++) {
                 strLevelSeprator += "---- ";

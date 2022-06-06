@@ -24,7 +24,7 @@ public class DeleteAllAnnotationsFromPageOfPDFFile {
         // Delete all annotation
         pdfDocument.getPages().get_Item(1).getAnnotations().delete();
         // Save the update document
-        pdfDocument.save(outputDir+"output.pdf");
+        pdfDocument.save(outputDir + "output.pdf");
     }
 
 }

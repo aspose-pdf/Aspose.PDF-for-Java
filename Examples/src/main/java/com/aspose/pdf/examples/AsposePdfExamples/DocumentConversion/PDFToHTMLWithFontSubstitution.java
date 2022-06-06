@@ -34,7 +34,7 @@ public class PDFToHTMLWithFontSubstitution {
             }
         });
         HtmlSaveOptions htmlSaveOps = new HtmlSaveOptions();
-        pdf.save(outputDir+"pdfToHTMLWithFontSubstitution.html", htmlSaveOps);
+        pdf.save(outputDir + "pdfToHTMLWithFontSubstitution.html", htmlSaveOps);
     }
 
     /**

@@ -23,7 +23,7 @@ public class DeleteAllAttachmentsFromPDF {
         // Delete all attachments
         pdfDocument.getEmbeddedFiles().delete();
         // Save the updated file
-        pdfDocument.save(outputDir+"output.pdf");
+        pdfDocument.save(outputDir + "output.pdf");
     }
 
 }

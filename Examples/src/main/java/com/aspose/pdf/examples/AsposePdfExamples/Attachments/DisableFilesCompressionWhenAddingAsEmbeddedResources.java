@@ -43,7 +43,7 @@ public class DisableFilesCompressionWhenAddingAsEmbeddedResources {
         // add attachment to document's attachment collection
         pdfDocument.getEmbeddedFiles().add(fileSpecification);
         // save new output
-        pdfDocument.save(outputDir+"outputNoCompression.pdf");
+        pdfDocument.save(outputDir + "outputNoCompression.pdf");
         is.close();
     }
 

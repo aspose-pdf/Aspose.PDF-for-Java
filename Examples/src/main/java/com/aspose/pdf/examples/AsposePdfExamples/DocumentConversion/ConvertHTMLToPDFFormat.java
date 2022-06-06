@@ -37,7 +37,7 @@ public class ConvertHTMLToPDFFormat {
         // Load HTML file
         Document doc = new Document(dataDir + "EmailDemo_updated.html", htmloptions);
         // Save HTML file
-        doc.save(outputDir+"Web+URL_output.pdf");
+        doc.save(outputDir + "Web+URL_output.pdf");
     }
 
     public static void renderContentToSamePage(String dataDir, String outputDir) {
@@ -48,7 +48,7 @@ public class ConvertHTMLToPDFFormat {
         // Load document
         Document doc = new Document(dataDir + "HTMLToPDF.html", options);
         // Save
-        doc.save(outputDir+"RenderContentToSamePage_out.pdf");
+        doc.save(outputDir + "RenderContentToSamePage_out.pdf");
         // ExEnd:RenderContentToSamePage
     }
 
@@ -56,7 +56,7 @@ public class ConvertHTMLToPDFFormat {
         // Set input file path
         String inFile = dataDir + "HTMLSVG.html";
         // Set output file path
-        String outFile = outputDir+"RenderHTMLwithSVGData_out.pdf";
+        String outFile = outputDir + "RenderHTMLwithSVGData_out.pdf";
         // Initialize HtmlLoadOptions
         HtmlLoadOptions options = new HtmlLoadOptions(inFile);
         // Initialize Document object

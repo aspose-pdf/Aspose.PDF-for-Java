@@ -26,7 +26,7 @@ public class PDFtoHTMLExcludeFontResources {
     private static void PDFtoHTMLExcludingFontResources(String dataDir, String outputDir) {
 
         String inFile = dataDir + "ExcludeFont.pdf";
-        String outMainHtmlFile = outputDir+"ExcludeFontResources.html";
+        String outMainHtmlFile = outputDir + "ExcludeFontResources.html";
         // Initialize htmlOptions
         HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 
@@ -60,7 +60,7 @@ public class PDFtoHTMLExcludeFontResources {
         htmlOptions.setSplitIntoPages(false);
 
         Document pdfDocument = new Document(dataDir + "ExcludeFontResourcesWithAdditionalOptions.pdf");
-        pdfDocument.save(outputDir+"ExcludeFontResourcesWithAdditionalOptions.html", htmlOptions);
+        pdfDocument.save(outputDir + "ExcludeFontResourcesWithAdditionalOptions.html", htmlOptions);
         //ExEnd:PDFtoHTMLExcludeFontResourcesWithAdditionalOptions
     }
 

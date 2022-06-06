@@ -23,6 +23,6 @@ public class ConvertPCLToPDFFormat {
         // Create Document object
         Document doc = new Document(dataDir + "test.pcl", loadoptions);
         // Save the resultant PDF document
-        doc.save(outputDir+"test1-converted.pdf");
+        doc.save(outputDir + "test1-converted.pdf");
     }
 }

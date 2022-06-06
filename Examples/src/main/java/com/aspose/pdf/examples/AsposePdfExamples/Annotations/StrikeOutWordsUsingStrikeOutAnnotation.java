@@ -1,6 +1,14 @@
 package com.aspose.pdf.examples.AsposePdfExamples.Annotations;
 
-import com.aspose.pdf.*;
+import com.aspose.pdf.Border;
+import com.aspose.pdf.Color;
+import com.aspose.pdf.Document;
+import com.aspose.pdf.Page;
+import com.aspose.pdf.Rectangle;
+import com.aspose.pdf.StrikeOutAnnotation;
+import com.aspose.pdf.TextFragment;
+import com.aspose.pdf.TextFragmentAbsorber;
+import com.aspose.pdf.TextFragmentCollection;
 import com.aspose.pdf.examples.Utils;
 
 public class StrikeOutWordsUsingStrikeOutAnnotation {
@@ -48,7 +56,7 @@ public class StrikeOutWordsUsingStrikeOutAnnotation {
             textFragment.getPage().getAnnotations().add(strikeOut);
         }
         // Save updated document
-        document.save(outputDir+"StrikeOut.pdf");
+        document.save(outputDir + "StrikeOut.pdf");
 /*
 		// extra Info
 		for (TextSegment ts : (Iterable<TextSegment>) textFragment.getSegments()) {

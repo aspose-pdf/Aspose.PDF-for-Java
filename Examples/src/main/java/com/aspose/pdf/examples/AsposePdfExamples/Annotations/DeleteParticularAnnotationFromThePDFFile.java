@@ -23,7 +23,7 @@ public class DeleteParticularAnnotationFromThePDFFile {
         // Delete particular annotation
         pdfDocument.getPages().get_Item(1).getAnnotations().delete(1);
         // Save the update document
-        pdfDocument.save(outputDir+"output.pdf");
+        pdfDocument.save(outputDir + "output.pdf");
     }
 
 }

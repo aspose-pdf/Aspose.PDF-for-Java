@@ -26,7 +26,7 @@ public class PDFToHTMLSplittingOutputToMultipageHTML {
         // Specify the folder to save images during conversion process
         html.setSplitIntoPages(true);
         // Save the resultant HTML file
-        doc.save(outputDir+"splittingOutputToMultipageHTML.html", html);
+        doc.save(outputDir + "splittingOutputToMultipageHTML.html", html);
     }
 
 }

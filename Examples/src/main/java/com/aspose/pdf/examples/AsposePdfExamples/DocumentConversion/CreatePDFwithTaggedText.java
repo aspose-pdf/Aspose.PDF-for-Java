@@ -50,7 +50,7 @@ public class CreatePDFwithTaggedText {
         paragraphElement7.setActualText("test 7");
 
         // Save PDF Document
-        document.save(outputDir+"PDFwithTaggedText.pdf");
+        document.save(outputDir + "PDFwithTaggedText.pdf");
         // ExEnd:CreatePDFwithTaggedImage
     }
 

@@ -30,7 +30,7 @@ public class EscapeHTMLTagsAndSpecialCharacters {
         // add HTMLFragment to paragraphs collection of PDF page
         page.getParagraphs().add(new com.aspose.pdf.HtmlFragment(CSS + HTML));
         // save resultant PDF file
-        doc.save(outputDir+"escapeHTMLTagsAndSpecialCharacters.pdf");
+        doc.save(outputDir + "escapeHTMLTagsAndSpecialCharacters.pdf");
     }
 
 }

@@ -31,7 +31,7 @@ public class PDFToHTMLSingleHTMLWithAllResourcesEmbedded {
         newOptions.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
         newOptions.setFontSavingMode(HtmlSaveOptions.FontSavingModes.SaveInAllFormats);
         // Output file path
-        String outHtmlFile = outputDir+"Single_output.html";
+        String outHtmlFile = outputDir + "Single_output.html";
         // Save the output file
         doc.save(outHtmlFile, newOptions);
     }

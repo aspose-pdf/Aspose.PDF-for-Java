@@ -41,7 +41,7 @@ public class AddChildBookmarkToPDFDocument {
         // Add parent bookmark to the document's outline collection.
         pdfDocument.getOutlines().add(pdfOutline);
         // Save output
-        pdfDocument.save(outputDir+"PDF_with_ChildBookmarks.pdf");
+        pdfDocument.save(outputDir + "PDF_with_ChildBookmarks.pdf");
     }
 
 }

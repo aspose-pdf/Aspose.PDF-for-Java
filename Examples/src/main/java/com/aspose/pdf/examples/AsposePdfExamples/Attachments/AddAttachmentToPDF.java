@@ -27,7 +27,7 @@ public class AddAttachmentToPDF {
         // Add an attachment to document's attachment collection
         pdfDocument.getEmbeddedFiles().add(fileSpecification);
         // Save the updated document
-        pdfDocument.save(outputDir+"output.pdf");
+        pdfDocument.save(outputDir + "output.pdf");
     }
 
 }

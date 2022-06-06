@@ -24,7 +24,7 @@ public class ConvertPDFToExcelWorkbook {
         // Instantiate ExcelSave Option object
         ExcelSaveOptions excelsave = new ExcelSaveOptions();
         // Save the output to XLS format
-        pdfDocument.save(outputDir+"ConvertedFile.xls", excelsave);
+        pdfDocument.save(outputDir + "ConvertedFile.xls", excelsave);
     }
 
 }

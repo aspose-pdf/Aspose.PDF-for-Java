@@ -22,11 +22,11 @@ public class ConvertPDFToEPUBFormat {
         // Load PDF document
         Document pdfDocument = new Document(dataDir + "input.pdf");
         // Instantiate EPUB Save options
-            EpubSaveOptions options = new EpubSaveOptions();
+        EpubSaveOptions options = new EpubSaveOptions();
         // Specify the layout for contents
         options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
         // Save the EPUB document
-        pdfDocument.save(outputDir+"convertPDFToEPUBFormat.epub", options);
+        pdfDocument.save(outputDir + "convertPDFToEPUBFormat.epub", options);
     }
 
 }

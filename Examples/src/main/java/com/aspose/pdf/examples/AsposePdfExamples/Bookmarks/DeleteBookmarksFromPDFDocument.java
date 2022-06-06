@@ -28,7 +28,7 @@ public class DeleteBookmarksFromPDFDocument {
         // Delete all bookmarks
         pdfDocument.getOutlines().delete();
         // Save output
-        pdfDocument.save(outputDir+"deleteBookmarksFromPDFDocument.pdf");
+        pdfDocument.save(outputDir + "deleteBookmarksFromPDFDocument.pdf");
     }
 
     public static void deleteParticularBookmark(String dataDir, String outputDir) {
@@ -37,7 +37,7 @@ public class DeleteBookmarksFromPDFDocument {
         // Delete a specific bookmarks
         pdfDocument.getOutlines().delete("Child Outline");
         // Save output
-        pdfDocument.save(outputDir+"deleteParticularBookmark.pdf");
+        pdfDocument.save(outputDir + "deleteParticularBookmark.pdf");
     }
 
 }

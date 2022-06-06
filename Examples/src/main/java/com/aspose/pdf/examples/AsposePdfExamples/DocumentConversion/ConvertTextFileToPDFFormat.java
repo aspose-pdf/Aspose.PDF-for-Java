@@ -63,7 +63,7 @@ public class ConvertTextFileToPDFFormat {
                 // Add a new text paragraph in paragraphs collection and pass the TextFragment object
                 page.getParagraphs().add(text);
                 // Save resultant PDF file
-                doc.save(outputDir+"TExtFile_TexttoPDF.pdf");
+                doc.save(outputDir + "TExtFile_TexttoPDF.pdf");
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

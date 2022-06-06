@@ -1,6 +1,10 @@
 package com.aspose.pdf.examples.AsposePdfExamples.Annotations;
 
-import com.aspose.pdf.*;
+import com.aspose.pdf.Color;
+import com.aspose.pdf.Document;
+import com.aspose.pdf.HorizontalAlignment;
+import com.aspose.pdf.Rectangle;
+import com.aspose.pdf.RedactionAnnotation;
 import com.aspose.pdf.examples.Utils;
 import com.aspose.pdf.facades.PdfAnnotationEditor;
 
@@ -37,7 +41,7 @@ public class RedactCertainPageRegionWithRedactionAnnotation {
         annot.setTextAlignment(HorizontalAlignment.Center);
         annot.setRepeat(true);
         doc.getPages().get_Item(1).getAnnotations().add(annot);
-        doc.save(outputDir+"Redaction_out.pdf");
+        doc.save(outputDir + "Redaction_out.pdf");
         //ExEnd: RedactCertainPageRegionWithRedactionAnnotation
     }
 
@@ -46,7 +50,7 @@ public class RedactCertainPageRegionWithRedactionAnnotation {
         editor.bindPdf(dataDir + "input.pdf");
         // redact certain page region
         editor.redactArea(1, new Rectangle(100, 100, 20, 70), java.awt.Color.WHITE);
-        editor.save(outputDir+"Redaction_out.pdf");
+        editor.save(outputDir + "Redaction_out.pdf");
     }
 
 }

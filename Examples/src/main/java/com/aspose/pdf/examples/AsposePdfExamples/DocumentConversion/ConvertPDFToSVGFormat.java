@@ -26,7 +26,7 @@ public class ConvertPDFToSVGFormat {
         // do not compress SVG image to Zip archive
         saveOptions.setCompressOutputToZipArchive(false);
         // resultant file name
-        String outFileName = outputDir+"Output.svg";
+        String outFileName = outputDir + "Output.svg";
         // save the output in SVG files
         doc.save(outFileName, saveOptions);
     }

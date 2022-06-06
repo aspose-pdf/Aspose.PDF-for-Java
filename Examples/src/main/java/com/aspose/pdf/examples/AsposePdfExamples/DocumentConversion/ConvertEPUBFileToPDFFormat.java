@@ -24,7 +24,7 @@ public class ConvertEPUBFileToPDFFormat {
         // Create Document object
         Document docEpub = new Document(dataDir + "Sample.epub", optionsEpub);
         // Save the resultant PDF document
-        docEpub.save(outputDir+"wasteland.pdf");
+        docEpub.save(outputDir + "wasteland.pdf");
     }
 
 }

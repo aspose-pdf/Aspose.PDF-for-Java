@@ -27,7 +27,7 @@ public class UpdateBookmarksInPDFDocument {
         // Set the target page as 10
         pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(1)));
         // Save output
-        pdfDocument.save(outputDir+"Bookmarkupdated_output.pdf");
+        pdfDocument.save(outputDir + "Bookmarkupdated_output.pdf");
     }
 
 }

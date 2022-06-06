@@ -1,6 +1,12 @@
 package com.aspose.pdf.examples.AsposePdfExamples.Annotations;
 
-import com.aspose.pdf.*;
+import com.aspose.pdf.Border;
+import com.aspose.pdf.Dash;
+import com.aspose.pdf.DefaultAppearance;
+import com.aspose.pdf.Document;
+import com.aspose.pdf.FreeTextAnnotation;
+import com.aspose.pdf.Rectangle;
+import com.aspose.pdf.TextIcon;
 import com.aspose.pdf.examples.Utils;
 
 public class AddAnnotationToPDF {
@@ -44,7 +50,7 @@ public class AddAnnotationToPDF {
         // Add annotation in the annotations collection of the page
         pdfDocument.getPages().get_Item(1).getAnnotations().add(textAnnotation);
         // Save the output file
-        pdfDocument.save(outputDir+"addAnnotationToPDF.pdf");
+        pdfDocument.save(outputDir + "addAnnotationToPDF.pdf");
     }
 
     public static void invisibleAnnotation(String dataDir, String outputDir) {

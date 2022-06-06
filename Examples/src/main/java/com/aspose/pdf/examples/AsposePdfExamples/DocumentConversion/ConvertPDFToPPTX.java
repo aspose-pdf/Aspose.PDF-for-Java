@@ -24,7 +24,7 @@ public class ConvertPDFToPPTX {
         // Instantiate PptxSaveOptions instance
         PptxSaveOptions pptx_save = new PptxSaveOptions();
         // Save the output in PPTX format
-        doc.save(outputDir+"output.pptx", pptx_save);
+        doc.save(outputDir + "output.pptx", pptx_save);
     }
 
 }

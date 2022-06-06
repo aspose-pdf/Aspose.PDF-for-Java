@@ -45,10 +45,10 @@ public class ConvertPDFToPDFAFormat {
         // Open document
         Document pdfDocument = new Document(dataDir + "input.pdf");
         // Convert to PDF/A compliant document
-        pdfDocument.validate(outputDir+"pdfTopdfA1bConversion_Validation_log.xml", PdfFormat.PDF_A_1B);
-        pdfDocument.convert(outputDir+"pdfTopdfA1bConversion_Conversion_log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+        pdfDocument.validate(outputDir + "pdfTopdfA1bConversion_Validation_log.xml", PdfFormat.PDF_A_1B);
+        pdfDocument.convert(outputDir + "pdfTopdfA1bConversion_Conversion_log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
         // Save updated document
-        pdfDocument.save(outputDir+"pdfTopdfA1bConversion.pdf");
+        pdfDocument.save(outputDir + "pdfTopdfA1bConversion.pdf");
     }
 
     public static void pdfTopdfA3bConversion(String dataDir, String outputDir) {
@@ -56,9 +56,9 @@ public class ConvertPDFToPDFAFormat {
         // Open document
         Document doc = new Document(dataDir + "input.pdf");
         // Convert to PDF/A3 compliant document
-        doc.convert(outputDir+"pdfTopdfA3bConversion.log", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
+        doc.convert(outputDir + "pdfTopdfA3bConversion.log", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
         // Save resultant document
-        doc.save(outputDir+"pdfTopdfA3bConversion.pdf");
+        doc.save(outputDir + "pdfTopdfA3bConversion.pdf");
     }
 
     public static void pdfTopdfA3aConversion(String dataDir, String outputDir) {
@@ -66,9 +66,9 @@ public class ConvertPDFToPDFAFormat {
         // Open document
         Document doc = new Document(dataDir + "input.pdf");
         // Convert to PDF/A3 compliant document
-        doc.convert(outputDir+"pdfTopdfA3aConversion.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+        doc.convert(outputDir + "pdfTopdfA3aConversion.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
         // Save resultant document
-        doc.save(outputDir+"pdfTopdfA3aConversion.pdf");
+        doc.save(outputDir + "pdfTopdfA3aConversion.pdf");
     }
 
     public static void pdfTopdfA2aConversion(String dataDir, String outputDir) {
@@ -76,9 +76,9 @@ public class ConvertPDFToPDFAFormat {
         // Open document
         Document doc = new Document(dataDir + "input.pdf");
         // Convert to PDF/A2_a compliant document
-        doc.convert(outputDir+"pdfTopdfA2aConversion.log", PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
+        doc.convert(outputDir + "pdfTopdfA2aConversion.log", PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
         // Save resultant document
-        doc.save(outputDir+"pdfTopdfA2aConversion.pdf");
+        doc.save(outputDir + "pdfTopdfA2aConversion.pdf");
     }
 
     public static void createPDFA3AndAttachXMLFile(String dataDir, String outputDir) {
@@ -92,8 +92,8 @@ public class ConvertPDFToPDFAFormat {
         // Add attachment to document's attachment collection
         doc.getEmbeddedFiles().add(fileSpecification);
         // perform PDF/A_3a conversion
-        doc.convert(outputDir+"createPDFA3AndAttachXMLFile.xml", PdfFormat.PDF_A_3A/* or PDF_A_3B */, ConvertErrorAction.Delete);
+        doc.convert(outputDir + "createPDFA3AndAttachXMLFile.xml", PdfFormat.PDF_A_3A/* or PDF_A_3B */, ConvertErrorAction.Delete);
         // save final PDF file
-        doc.save(outputDir+"createPDFA3AndAttachXMLFile.pdf");
+        doc.save(outputDir + "createPDFA3AndAttachXMLFile.pdf");
     }
 }

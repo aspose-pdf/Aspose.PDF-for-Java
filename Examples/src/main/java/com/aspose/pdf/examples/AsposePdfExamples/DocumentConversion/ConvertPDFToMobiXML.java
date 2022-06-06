@@ -22,7 +22,7 @@ public class ConvertPDFToMobiXML {
         // instantiate Document object
         Document doc = new Document(dataDir + "input.pdf");
         // save the output in XML format
-        doc.save(outputDir+"resultant.xml", SaveFormat.MobiXml);
+        doc.save(outputDir + "resultant.xml", SaveFormat.MobiXml);
     }
 
 }

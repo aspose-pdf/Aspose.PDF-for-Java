@@ -30,7 +30,7 @@ public class ConvertPDFFileIntoXPSFormat {
         // Instantiate XPS Save options
         XpsSaveOptions saveOptions = new XpsSaveOptions();
         // Save the XPS document
-        pdfDocument.save(outputDir+"ConvertPDFtoXPS_out.xps", saveOptions);
+        pdfDocument.save(outputDir + "ConvertPDFtoXPS_out.xps", saveOptions);
         //ExEnd: ConvertPDFToXPS
     }
 
@@ -42,7 +42,7 @@ public class ConvertPDFFileIntoXPSFormat {
         // Allow text selectable in output XPS
         saveOptions.setSaveTransparentTexts(true);
         // save the output in XPS files
-        doc.save(outputDir+"KeepingTextSelectableInConvertedXPS_out.xps", saveOptions);
+        doc.save(outputDir + "KeepingTextSelectableInConvertedXPS_out.xps", saveOptions);
         //ExEnd: KeepingTextSelectableInConvertedXPS
     }
 }

@@ -37,7 +37,7 @@ public class PDFToHTMLGetWarningForFontSubstitution {
         // instantiate HTMLSave option to save output in HTML
         HtmlSaveOptions htmlSaveOps = new HtmlSaveOptions();
         // save resultant file
-        pdfDoc.save(outputDir+"getWarningForFontSubstitution.html", htmlSaveOps);
+        pdfDoc.save(outputDir + "getWarningForFontSubstitution.html", htmlSaveOps);
     }
 
 }

@@ -26,7 +26,7 @@ public class ConvertSVGFileToPDFFormat {
         // Create Document object
         Document document = new Document(file, options);
         // Save the resultant PDF document
-        document.save(outputDir+"Result.pdf");
+        document.save(outputDir + "Result.pdf");
     }
 
 }

@@ -21,7 +21,7 @@ public class ValidatePDFUAStandards {
         // Load existing PDF document
         com.aspose.pdf.Document doc = new com.aspose.pdf.Document(dataDir + "input.pdf");
         // Validate PDF/UA Standards
-        boolean validate = doc.validate(outputDir+"logfile.xml", com.aspose.pdf.PdfFormat.PDF_UA_1);
+        boolean validate = doc.validate(outputDir + "logfile.xml", com.aspose.pdf.PdfFormat.PDF_UA_1);
         if (validate)
             System.out.println("Document is compliant with PDF_UA_1");
         else

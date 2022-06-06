@@ -25,7 +25,7 @@ public class ConvertXPSFileToPDFFormat {
         // Create document object
         Document document = new Document(dataDir + "test.xps", options);
         // Save the resultant PDF document
-        document.save(outputDir+"resultant.pdf");
+        document.save(outputDir + "resultant.pdf");
     }
 
 }
