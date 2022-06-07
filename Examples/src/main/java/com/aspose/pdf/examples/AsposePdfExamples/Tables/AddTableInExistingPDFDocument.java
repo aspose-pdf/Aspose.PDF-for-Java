@@ -15,8 +15,8 @@ public class AddTableInExistingPDFDocument {
     public static void main(String[] args) {
         // The paths to resources and output directories.
         String testID = "AsposePdfExamples/Tables/";
-        String dataDir = Utils.getDataDir(Utils.class, testID);
-        String outputDir = Utils.getOutDir(Utils.class, testID);
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
 
         addTableInExistingPDFDocument(dataDir, outputDir);
         setAutoFitToWindowPropertyInColumnAdjustmentTypeEnumeration(dataDir, outputDir);

@@ -12,10 +12,13 @@ import java.io.InputStream;
 public class DisableFilesCompressionWhenAddingAsEmbeddedResources {
 
     public static void main(String[] args) {
+        runExamples();
+    }
+    public static void runExamples() {
         // The paths to resources and output directories.
         String testID = "com/aspose/pdf/examples/AsposePdf/Attachments/addattachment/";
-        String dataDir = Utils.getDataDir(Utils.class, testID);
-        String outputDir = Utils.getOutDir(Utils.class, testID);
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
 
         System.out.println("============================");
         System.out.println("Example disableFilesCompressionWhenAddingAsEmbeddedResources start");
