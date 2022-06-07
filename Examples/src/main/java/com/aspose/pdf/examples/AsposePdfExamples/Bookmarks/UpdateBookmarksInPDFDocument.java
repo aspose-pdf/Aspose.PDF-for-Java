@@ -3,18 +3,31 @@ package com.aspose.pdf.examples.AsposePdfExamples.Bookmarks;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.GoToAction;
 import com.aspose.pdf.OutlineItemCollection;
+import com.aspose.pdf.examples.Utils;
 
 public class UpdateBookmarksInPDFDocument {
 
-	public static void main(String[] args) {
-		// Open document
-		Document pdfDocument = new Document("BookmarkInheritZoom.pdf");
-		// Get a bookmark object
-		OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-		// Set the target page as 10
-		pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-		// Save output
-		pdfDocument.save("Bookmarkupdated_output.pdf");
-	}
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Bookmarks/updatebookmarks/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example updateBookmarksInPDFDocument start");
+        updateBookmarksInPDFDocument(dataDir, outputDir);
+        System.out.println("Example updateBookmarksInPDFDocument end");
+    }
+
+    private static void updateBookmarksInPDFDocument(String dataDir, String outputDir) {
+        // Open document
+        Document pdfDocument = new Document(dataDir + "input.pdf");
+        // Get a bookmark object
+        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
+        // Set the target page as 10
+        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(1)));
+        // Save output
+        pdfDocument.save(outputDir + "Bookmarkupdated_output.pdf");
+    }
 
 }

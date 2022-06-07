@@ -1,12 +1,27 @@
 package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
+
 import com.aspose.pdf.Document;
+import com.aspose.pdf.examples.Utils;
 import com.aspose.pdf.tagged.ITaggedContent;
 import com.aspose.pdf.tagged.logicalstructure.elements.bls.HeaderElement;
 import com.aspose.pdf.tagged.logicalstructure.elements.bls.ParagraphElement;
 
 
 public class CreatePDFwithTaggedText {
-	public static void main(String[] args) {
+
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdfGenerator/CreatePDFwithTaggedText/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example createPDFwithTaggedText start");
+        createPDFwithTaggedText(dataDir, outputDir);
+        System.out.println("Example createPDFwithTaggedText end");
+    }
+
+    public static void createPDFwithTaggedText(String dataDir, String outputDir) {
         // Create Pdf Document
         Document document = new Document();
         // Get Content for work with TaggedPdf
@@ -35,8 +50,8 @@ public class CreatePDFwithTaggedText {
         paragraphElement7.setActualText("test 7");
 
         // Save PDF Document
-        document.save(  "PDFwithTaggedText.pdf");
+        document.save(outputDir + "PDFwithTaggedText.pdf");
         // ExEnd:CreatePDFwithTaggedImage
-	}
+    }
 
 }

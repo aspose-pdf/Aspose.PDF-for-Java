@@ -20,14 +20,14 @@ public class ExtractImageProperties {
         for (XImage image: documet.getPages().get_Item(1).getResources().getImages())
         {
             XImage.RawParameters rawParameters = image.getRawParameters();
-            System.out.println(rawParameters.Type);
-            System.out.println(rawParameters.Name);
-            System.out.println(rawParameters.BitsPerComponent);
-            System.out.println(rawParameters.DecodeParms);
-            System.out.println(rawParameters.Filter);
-            System.out.println(rawParameters.Height);
-            System.out.println(rawParameters.Width);
-            System.out.println(rawParameters.Length);
+            System.out.println(rawParameters.getType());
+            System.out.println(rawParameters.getName());
+            System.out.println(rawParameters.getBitsPerComponent());
+            System.out.println(rawParameters.getDecodeParms());
+            System.out.println(rawParameters.getFilter());
+            System.out.println(rawParameters.getHeight());
+            System.out.println(rawParameters.getWidth());
+            System.out.println(rawParameters.getLength());
             System.out.println(image.toString());
         }
 	}

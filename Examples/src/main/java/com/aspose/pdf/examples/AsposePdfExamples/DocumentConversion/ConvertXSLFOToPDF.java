@@ -2,16 +2,29 @@ package com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion;
 
 import com.aspose.pdf.Document;
 import com.aspose.pdf.XslFoLoadOptions;
+import com.aspose.pdf.examples.Utils;
 
 public class ConvertXSLFOToPDF {
 
-	public static void main(String[] args) {
-		// Instantiate XSLFO load options instance
-		XslFoLoadOptions xslLoadOptions = new XslFoLoadOptions();
-		// Open document
-		Document doc = new Document("samplefile.fo", xslLoadOptions);
-		// Save PDF document
-		doc.save("XSL_FO.pdf");
-	}
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Conversion/xslfotopdf/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
+
+        System.out.println("============================");
+        System.out.println("Example ConvertXSLFOToPDF start");
+        ConvertXSLFOToPDF(dataDir, outputDir);
+        System.out.println("Example ConvertXSLFOToPDF end");
+    }
+
+    public static void ConvertXSLFOToPDF(String dataDir, String outputDir) {
+        // Instantiate XSLFO load options instance
+        XslFoLoadOptions xslLoadOptions = new XslFoLoadOptions();
+        // Open document
+        Document doc = new Document(dataDir + "test.fo", xslLoadOptions);
+        // Save PDF document
+        doc.save(outputDir + "XSL_FO.pdf");
+    }
 
 }

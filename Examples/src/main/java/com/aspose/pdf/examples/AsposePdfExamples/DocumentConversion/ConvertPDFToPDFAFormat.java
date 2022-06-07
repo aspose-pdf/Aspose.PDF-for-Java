@@ -4,71 +4,96 @@ import com.aspose.pdf.ConvertErrorAction;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.FileSpecification;
 import com.aspose.pdf.PdfFormat;
+import com.aspose.pdf.examples.Utils;
 
 public class ConvertPDFToPDFAFormat {
 
-	public static void main(String[] args) {
-		pdfTopdfA1bConversion();
-		pdfTopdfA3bConversion();
-		pdfTopdfA3aConversion();
-		pdfTopdfA2aConversion();
-		createPDFA3AndAttachXMLFile();
-	}
+    public static void main(String[] args) {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Conversion/pdftopdfa/";
+        String dataDir = Utils.getDataDir(Utils.class, testID);
+        String outputDir = Utils.getOutDir(Utils.class, testID);
 
-	public static void pdfTopdfA1bConversion() {
-		String myDir = "pathToDir";
-		// Open document
-		Document pdfDocument = new Document(myDir + "input.pdf");
-		// Convert to PDF/A compliant document
-		pdfDocument.validate("Validation_log.xml", PdfFormat.PDF_A_1B);
-		pdfDocument.convert("Conversion_log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
-		// Save updated document
-		pdfDocument.save(myDir + "output.pdf");
-	}
+        System.out.println("============================");
+        System.out.println("Example pdfTopdfA1bConversion start");
+        pdfTopdfA1bConversion(dataDir, outputDir);
+        System.out.println("Example pdfTopdfA1bConversion end");
 
-	public static void pdfTopdfA3bConversion() {
-		String myDir = "pathToDir";
-		// Open document
-		Document doc = new Document(myDir + "input.pdf");
-		// Convert to PDF/A3 compliant document
-		doc.convert("file.log", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
-		// Save resultant document
-		doc.save(myDir + "output.pdf");
-	}
+        System.out.println("============================");
+        System.out.println("Example pdfTopdfA3bConversion start");
+        pdfTopdfA3bConversion(dataDir, outputDir);
+        System.out.println("Example pdfTopdfA3bConversion end");
 
-	public static void pdfTopdfA3aConversion() {
-		String myDir = "pathToDir";
-		// Open document
-		Document doc = new Document(myDir + "input.pdf");
-		// Convert to PDF/A3 compliant document
-		doc.convert("file.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
-		// Save resultant document
-		doc.save(myDir + "output.pdf");
-	}
+        System.out.println("============================");
+        System.out.println("Example pdfTopdfA3aConversion start");
+        pdfTopdfA3aConversion(dataDir, outputDir);
+        System.out.println("Example pdfTopdfA3aConversion end");
 
-	public static void pdfTopdfA2aConversion() {
-		String myDir = "pathToDir";
-		// Open document
-		Document doc = new Document(myDir + "input.pdf");
-		// Convert to PDF/A2_a compliant document
-		doc.convert("file.log", PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
-		// Save resultant document
-		doc.save(myDir + "output.pdf");
-	}
+        System.out.println("============================");
+        System.out.println("Example pdfTopdfA2aConversion start");
+        pdfTopdfA2aConversion(dataDir, outputDir);
+        System.out.println("Example pdfTopdfA2aConversion end");
 
-	public static void createPDFA3AndAttachXMLFile() {
-		String myDir = "pathToDir";
-		// instantiate Document instance
-		Document doc = new Document();
-		// add page to PDF file
-		doc.getPages().add();
-		// load XML file
-		FileSpecification fileSpecification = new FileSpecification(myDir + "attachment.xml", "Sample xml file");
-		// Add attachment to document's attachment collection
-		doc.getEmbeddedFiles().add(fileSpecification);
-		// perform PDF/A_3a conversion
-		doc.convert(myDir + "log.xml", PdfFormat.PDF_A_3A/* or PDF_A_3B */, ConvertErrorAction.Delete);
-		// save final PDF file
-		doc.save(myDir + "attached_PDFA_3A.pdf");
-	}
+        System.out.println("============================");
+        System.out.println("Example createPDFA3AndAttachXMLFile start");
+        createPDFA3AndAttachXMLFile(dataDir, outputDir);
+        System.out.println("Example createPDFA3AndAttachXMLFile end");
+    }
+
+    public static void pdfTopdfA1bConversion(String dataDir, String outputDir) {
+
+        // Open document
+        Document pdfDocument = new Document(dataDir + "input.pdf");
+        // Convert to PDF/A compliant document
+        pdfDocument.validate(outputDir + "pdfTopdfA1bConversion_Validation_log.xml", PdfFormat.PDF_A_1B);
+        pdfDocument.convert(outputDir + "pdfTopdfA1bConversion_Conversion_log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+        // Save updated document
+        pdfDocument.save(outputDir + "pdfTopdfA1bConversion.pdf");
+    }
+
+    public static void pdfTopdfA3bConversion(String dataDir, String outputDir) {
+
+        // Open document
+        Document doc = new Document(dataDir + "input.pdf");
+        // Convert to PDF/A3 compliant document
+        doc.convert(outputDir + "pdfTopdfA3bConversion.log", PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
+        // Save resultant document
+        doc.save(outputDir + "pdfTopdfA3bConversion.pdf");
+    }
+
+    public static void pdfTopdfA3aConversion(String dataDir, String outputDir) {
+
+        // Open document
+        Document doc = new Document(dataDir + "input.pdf");
+        // Convert to PDF/A3 compliant document
+        doc.convert(outputDir + "pdfTopdfA3aConversion.log", PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+        // Save resultant document
+        doc.save(outputDir + "pdfTopdfA3aConversion.pdf");
+    }
+
+    public static void pdfTopdfA2aConversion(String dataDir, String outputDir) {
+
+        // Open document
+        Document doc = new Document(dataDir + "input.pdf");
+        // Convert to PDF/A2_a compliant document
+        doc.convert(outputDir + "pdfTopdfA2aConversion.log", PdfFormat.PDF_A_2A, ConvertErrorAction.Delete);
+        // Save resultant document
+        doc.save(outputDir + "pdfTopdfA2aConversion.pdf");
+    }
+
+    public static void createPDFA3AndAttachXMLFile(String dataDir, String outputDir) {
+
+        // instantiate Document instance
+        Document doc = new Document();
+        // add page to PDF file
+        doc.getPages().add();
+        // load XML file
+        FileSpecification fileSpecification = new FileSpecification(dataDir + "attachment.xml", "Sample xml file");
+        // Add attachment to document's attachment collection
+        doc.getEmbeddedFiles().add(fileSpecification);
+        // perform PDF/A_3a conversion
+        doc.convert(outputDir + "createPDFA3AndAttachXMLFile.xml", PdfFormat.PDF_A_3A/* or PDF_A_3B */, ConvertErrorAction.Delete);
+        // save final PDF file
+        doc.save(outputDir + "createPDFA3AndAttachXMLFile.pdf");
+    }
 }

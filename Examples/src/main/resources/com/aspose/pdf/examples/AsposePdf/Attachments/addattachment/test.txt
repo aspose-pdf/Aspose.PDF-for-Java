@@ -1,1 +1,1 @@
-Aspose.Pdf for .NET
+Aspose.PDF for Java
