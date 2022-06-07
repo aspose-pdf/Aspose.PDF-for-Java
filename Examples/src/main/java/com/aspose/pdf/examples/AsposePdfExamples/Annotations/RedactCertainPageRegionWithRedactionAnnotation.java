@@ -11,10 +11,13 @@ import com.aspose.pdf.facades.PdfAnnotationEditor;
 public class RedactCertainPageRegionWithRedactionAnnotation {
 
     public static void main(String[] args) {
+        runExamples();
+    }
+    public static void runExamples() {
         // The paths to resources and output directories.
         String testID = "com/aspose/pdf/examples/AsposePdf/Annotations/redactCertainPageRegionWithRedactionAnnotation/";
-        String dataDir = Utils.getDataDir(Utils.class, testID);
-        String outputDir = Utils.getOutDir(Utils.class, testID);
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
 
         System.out.println("============================");
         System.out.println("Example redactCertainPageRegionWithRedactionAnnotation start");

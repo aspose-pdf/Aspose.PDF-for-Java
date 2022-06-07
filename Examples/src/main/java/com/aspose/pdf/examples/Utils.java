@@ -49,69 +49,70 @@ public class Utils {
         //run all examples in evaluation mode:
 
         //AsposePdfExamples.Annotations
-        AddAnnotationToPDF.main(null);
-        DeleteAllAnnotationsFromPageOfPDFFile.main(null);
-        DeleteParticularAnnotationFromThePDFFile.main(null);
-        GetAllAnnotationsFromPageInPDF.main(null);
-        GetParticularAnnotationFromPDF.main(null);
-        RedactCertainPageRegionWithRedactionAnnotation.main(null);
-        StrikeOutWordsUsingStrikeOutAnnotation.main(null);
+        AddAnnotationToPDF.runExamples();
+        DeleteAllAnnotationsFromPageOfPDFFile.runExamples();
+        DeleteParticularAnnotationFromThePDFFile.runExamples();
+        GetAllAnnotationsFromPageInPDF.runExamples();
+        GetParticularAnnotationFromPDF.runExamples();
+        RedactCertainPageRegionWithRedactionAnnotation.runExamples();
+        StrikeOutWordsUsingStrikeOutAnnotation.runExamples();
 
         //AsposePdfExamples.Attachments
-        AddAttachmentToPDF.main(null);
-        DeleteAllAttachmentsFromPDF.main(null);
-        DisableFilesCompressionWhenAddingAsEmbeddedResources.main(null);
-        GetAttachmentInformation.main(null);
-        GetAttachmentsFromPDFDocument.main(null);
+        AddAttachmentToPDF.runExamples();
+        DeleteAllAttachmentsFromPDF.runExamples();
+        DisableFilesCompressionWhenAddingAsEmbeddedResources.runExamples();
+        GetAttachmentInformation.runExamples();
+        GetAttachmentsFromPDFDocument.runExamples();
 
         //AsposePdfExamples.Bookmarks
-        AddBookmarkToPDFDocument.main(null);
-        AddChildBookmarkToPDFDocument.main(null);
-        BookmarkShouldPointToStartOfPage.main(null);
-        DeleteBookmarksFromPDFDocument.main(null);
-        ExpandedBookmarksWhenViewingDocument.main(null);
-        GetBookmarksFromPDFDocument.main(null);
-        UpdateBookmarksInPDFDocument.main(null);
+        AddBookmarkToPDFDocument.runExamples();
+        AddChildBookmarkToPDFDocument.runExamples();
+        BookmarkShouldPointToStartOfPage.runExamples();
+        DeleteBookmarksFromPDFDocument.runExamples();
+        ExpandedBookmarksWhenViewingDocument.runExamples();
+        GetBookmarksFromPDFDocument.runExamples();
+        UpdateBookmarksInPDFDocument.runExamples();
 
         //DocumentConversion
-        ConvertEPUBFileToPDFFormat.main(null);
-        ConvertHTMLToPDFFormat.main(null);
-        ConvertPCLToPDFFormat.main(null);
-        ConvertPDFFileIntoXPSFormat.main(null);
-        ConvertPDFToDOCOrDOCXFormat.main(null);
-        ConvertPDFToEPUBFormat.main(null);
-        ConvertPDFToExcelWorkbook.main(null);
-        ConvertPDFToPDFAFormat.main(null);
-        ConvertPDFToSVGFormat.main(null);
-        ConvertPDFToXML.main(null);
-        ConvertSVGFileToPDFFormat.main(null);
-        ConvertXMLFileToPDF.main(null);
-        ConvertXSLFOToPDF.main(null);
-        CreatePDFwithTaggedText.main(null);
-        PDFToEMF.main(null);
-        PDFToHTMLAvoidSavingImagesInSVGFormat.main(null);
-        PDFToHTMLGetWarningForFontSubstitution.main(null);
-        PDFToHTMLSingleHTMLWithAllResourcesEmbedded.main(null);
-        PDFToHTMLSplittingOutputToMultipageHTML.main(null);
-        ValidatePDFUAStandards.main(null);
+        ConvertEPUBFileToPDFFormat.runExamples();
+        ConvertHTMLToPDFFormat.runExamples();
+        ConvertPCLToPDFFormat.runExamples();
+        ConvertPDFFileIntoXPSFormat.runExamples();
+        ConvertPDFToDOCOrDOCXFormat.runExamples();
+        ConvertPDFToEPUBFormat.runExamples();
+        ConvertPDFToExcelWorkbook.runExamples();
+        ConvertPDFToPDFAFormat.runExamples();
+        ConvertPDFToSVGFormat.runExamples();
+        ConvertPDFToXML.runExamples();
+        ConvertSVGFileToPDFFormat.runExamples();
+        ConvertXMLFileToPDF.runExamples();
+        ConvertXSLFOToPDF.runExamples();
+        CreatePDFwithTaggedText.runExamples();
+        PDFToEMF.runExamples();
+        PDFToHTMLAvoidSavingImagesInSVGFormat.runExamples();
+        PDFToHTMLGetWarningForFontSubstitution.runExamples();
+        PDFToHTMLSingleHTMLWithAllResourcesEmbedded.runExamples();
+        PDFToHTMLSplittingOutputToMultipageHTML.runExamples();
+        ValidatePDFUAStandards.runExamples();
 
 
     }
 
     private static File dir = null;
 
-    public static String getDataDir(Class c, String testID) {
-        return getSharedDataDir(c) + testID;
+    public static String getDataDir(String testID) {
+        return getSharedDataDir() + testID;
     }
 
-    public static String getOutDir(Class c, String testID) {
-        return getSharedDataDir(c) + "../../../testout/" + testID;
+    public static String getOutDir(String testID) {
+        return getSharedDataDir() + "../../../testout/" + testID;
     }
 
-    public static String getSharedDataDir(Class c) {
+    public static String getSharedDataDir() {
         if (dir == null) {
-            dir = new File(dir, "resources");
+            dir = new File(dir, "src/main/resources/");
         }
+        
         return dir.toString() + File.separator;
     }
 }

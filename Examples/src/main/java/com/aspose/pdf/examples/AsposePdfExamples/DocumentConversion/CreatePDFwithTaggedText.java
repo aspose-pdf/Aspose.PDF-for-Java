@@ -10,10 +10,13 @@ import com.aspose.pdf.tagged.logicalstructure.elements.bls.ParagraphElement;
 public class CreatePDFwithTaggedText {
 
     public static void main(String[] args) {
+        runExamples();
+    }
+    public static void runExamples() {
         // The paths to resources and output directories.
         String testID = "com/aspose/pdf/examples/AsposePdfGenerator/CreatePDFwithTaggedText/";
-        String dataDir = Utils.getDataDir(Utils.class, testID);
-        String outputDir = Utils.getOutDir(Utils.class, testID);
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
 
         System.out.println("============================");
         System.out.println("Example createPDFwithTaggedText start");
