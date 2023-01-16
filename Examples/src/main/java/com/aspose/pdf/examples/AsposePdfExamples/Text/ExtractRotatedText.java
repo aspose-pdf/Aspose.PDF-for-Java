@@ -10,7 +10,7 @@ public class ExtractRotatedText {
 		com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document("PdfWithRotatedText.pdf");
 
         TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Ｒ");
-        // Accept the absorber for first page of document
+        // Accept the absorber for 4th page of document
         pdfDocument.getPages().get_Item(4).accept(textFragmentAbsorber);
         // Get the extracted text fragments into collection
         TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();

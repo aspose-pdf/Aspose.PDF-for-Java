@@ -16,7 +16,7 @@ public class ReplaceOnlyFirstOccurrenceOfThePhrase {
 		// phrase
 		TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("line");
 		// accept the absorber for first page of document
-		pdfDocument.getPages().accept(textFragmentAbsorber);
+		pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
 		// get the extracted text fragments into collection
 		TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
 		// get first occurrence of text and replace
