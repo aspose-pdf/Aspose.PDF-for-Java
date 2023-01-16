@@ -11,12 +11,27 @@ import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ConvertPDFFi
 
 public class HideSpannedCellBorder {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+
+    public static void main(String[] args) {
+        runExamples();
+    }
+    public static void runExamples() {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/WorkingWithTables/";
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
+
+        System.out.println("============================1");
+        System.out.println("Example hideSpannedCellBorder start");
+        hideSpannedCellBorder(dataDir, outputDir);
+        System.out.println("Example hideSpannedCellBorder end");
+    }
+
+	public static void hideSpannedCellBorder(String dataDir, String outputDir) {
 
 		//ExStart: HideSpannedCellBorder
-		String dataDir = Utils.getSharedDataDir(HideSpannedCellBorder.class) + "WorkingWithTables/";	
-		
+
         Document doc = new Document();
         com.aspose.pdf.Page page = doc.getPages().add();
 
@@ -73,7 +88,7 @@ public class HideSpannedCellBorder {
             row1.getCells().add("col "+rowCounter+", 16");
             row1.getCells().add("col "+rowCounter+", 17");
         }
-        doc.save(dataDir + "3_out.pdf");
+        doc.save(outputDir + "3_out.pdf");
 		//ExEnd: HideSpannedCellBorder
 	}
 

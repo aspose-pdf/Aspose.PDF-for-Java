@@ -8,12 +8,26 @@ import com.aspose.pdf.examples.AsposePdfExamples.StampsAndWatermarks.AddImageSta
 
 public class UseLatexScript3 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
+    public static void main(String[] args) {
+        runExamples();
+    }
+    public static void runExamples() {
+        // The paths to resources and output directories.
+        String testID = "com/aspose/pdf/examples/AsposePdf/Text/";
+        String dataDir = Utils.getDataDir(testID);
+        String outputDir = Utils.getOutDir(testID);
+
+        System.out.println("============================1");
+        System.out.println("Example useLatexScript3 start");
+        useLatexScript3(dataDir, outputDir);
+        System.out.println("Example useLatexScript3 end");
+    }
+
+    public static void useLatexScript3(String dataDir, String outputDir) {
+
 		//ExStart: UseLatexScript3
-		String dataDir = Utils.getSharedDataDir(UseLatexScript3.class) + "Text/";		
-		
+
 		String s =
                 "\\usepackage{amsmath,amsthm}" +
                 "\\begin{document}" +
@@ -33,7 +47,7 @@ public class UseLatexScript3 {
 
         page.getParagraphs().add(latex);
         
-        doc.save(dataDir + "Script_out.pdf");
+        doc.save(outputDir + "Script_out.pdf");
 		//ExEnd: UseLatexScript3
 	}
 

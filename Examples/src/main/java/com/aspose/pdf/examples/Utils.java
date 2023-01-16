@@ -39,6 +39,7 @@ import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLGet
 import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLSingleHTMLWithAllResourcesEmbedded;
 import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.PDFToHTMLSplittingOutputToMultipageHTML;
 import com.aspose.pdf.examples.AsposePdfExamples.DocumentConversion.ValidatePDFUAStandards;
+import com.aspose.pdf.examples.AsposePdfExamples.DocumentObject.AddingJavaScriptDOM;
 
 import java.io.File;
 
@@ -94,6 +95,9 @@ public class Utils {
         PDFToHTMLSingleHTMLWithAllResourcesEmbedded.runExamples();
         PDFToHTMLSplittingOutputToMultipageHTML.runExamples();
         ValidatePDFUAStandards.runExamples();
+
+        //DocumentObject
+        AddingJavaScriptDOM.runExamples();
 
 
     }

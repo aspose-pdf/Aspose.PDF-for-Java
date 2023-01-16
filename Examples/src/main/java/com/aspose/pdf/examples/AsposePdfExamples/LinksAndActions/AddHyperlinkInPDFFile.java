@@ -13,9 +13,22 @@ import com.aspose.pdf.examples.Utils;
 
 public class AddHyperlinkInPDFFile {
 	
-	private static final String dataDir = Utils.getSharedDataDir(AddHyperlinkInPDFFile.class) + "LinksAndActions/";
-	
 	public static void main(String[] args) {
+		runExamples();
+	}
+	public static void runExamples() {
+		// The paths to resources and output directories.
+		String testID = "com/aspose/pdf/examples/AsposePdf/LinksAndActions/";
+		String dataDir = Utils.getDataDir(testID);
+		String outputDir = Utils.getOutDir(testID);
+
+		System.out.println("============================1");
+		System.out.println("Example addHyperlinkInPDFFile start");
+		addHyperlinkInPDFFile(dataDir, outputDir);
+		System.out.println("Example addHyperlinkInPDFFile end");
+	}
+
+	public static void addHyperlinkInPDFFile(String dataDir, String outputDir) {
 		// Open document
 		Document document = new Document(dataDir + "input.pdf");
 		// Create link
@@ -41,7 +54,7 @@ public class AddHyperlinkInPDFFile {
 		// Add FreeText annotation to annotations collection of first page of Document
 		document.getPages().get_Item(1).getAnnotations().add(textAnnotation);
 		// Save updated document
-		document.save(dataDir + "Annotation_output.pdf");
+		document.save(outputDir + "Annotation_output.pdf");
 	}
 
 }

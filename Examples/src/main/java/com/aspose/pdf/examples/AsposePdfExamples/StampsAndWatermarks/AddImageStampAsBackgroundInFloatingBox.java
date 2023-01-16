@@ -12,10 +12,23 @@ import com.aspose.pdf.examples.AsposePdfExamples.Tables.AddTableInExistingPDFDoc
 
 public class AddImageStampAsBackgroundInFloatingBox {
 
-	public static void main(String[] args) {
+        public static void main(String[] args) {
+                runExamples();
+        }
+        public static void runExamples() {
+                // The paths to resources and output directories.
+                String testID = "com/aspose/pdf/examples/AsposePdf/Stamps-Watermarks/";
+                String dataDir = Utils.getDataDir(testID);
+                String outputDir = Utils.getOutDir(testID);
+
+                System.out.println("============================1");
+                System.out.println("Example addImageStampAsBackgroundInFloatingBox start");
+                addImageStampAsBackgroundInFloatingBox(dataDir, outputDir);
+                System.out.println("Example addImageStampAsBackgroundInFloatingBox end");
+        }
+	public static void addImageStampAsBackgroundInFloatingBox(String dataDir, String outputDir) {
 		// TODO Auto-generated method stub
 		//ExStart: AddImageStampAsBackgroundInFloatingBox
-		String dataDir = Utils.getSharedDataDir(AddImageStampAsBackgroundInFloatingBox.class) + "Stamps-Watermarks/";		
 		// Instantiate Document object
         Document doc = new Document();
         // Add page to PDF document
@@ -40,7 +53,7 @@ public class AddImageStampAsBackgroundInFloatingBox {
         // Add FloatingBox to paragraphs collection of page object
         page.getParagraphs().add(aBox);
         // Save the PDF document
-        doc.save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        doc.save(outputDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
         //ExEnd: AddImageStampAsBackgroundInFloatingBox
 	}
 }
