@@ -1,7 +1,10 @@
 package com.aspose.pdf.examples.AsposePdfExamples.DocumentObject;
 
 import com.aspose.pdf.Document;
+import com.aspose.pdf.Field;
 import com.aspose.pdf.JavascriptAction;
+import com.aspose.pdf.Page;
+import com.aspose.pdf.TeXFragment;
 import com.aspose.pdf.TextBoxField;
 import com.aspose.pdf.examples.Utils;
 
@@ -33,7 +36,10 @@ public class AddingJavaScriptDOM {
 
     public static void addingJavaScriptDOM(String dataDir, String outputDir) {
         // Open a PDF Document
-        Document doc = new Document(dataDir + "input.pdf");
+        Document doc = new Document();
+        doc.getPages().add();
+        Page p = doc.getPages().add();
+        p.getParagraphs().add(new TeXFragment("example"));
         // Adding JavaScript at Document Level
         // Instantiate JavascriptAction with desired JavaScript statement
         JavascriptAction javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
@@ -47,7 +53,12 @@ public class AddingJavaScriptDOM {
     }
 
     public static void addFormattingCodeAndValueValidation(String dataDir, String outputDir) {
-        Document doc = new Document(dataDir + "PdfWithAcroForm.pdf");
+        Document doc = new Document();
+        Page page = doc.getPages().add();
+        TextBoxField text1 = new TextBoxField(page,
+                new com.aspose.pdf.Rectangle(100, 650, 294, 700));
+        text1.setPartialName("textField");
+        doc.getForm().add(text1);
         TextBoxField text = (TextBoxField) doc.getForm().get_Item("textField");
         text.getAnnotationActions().setOnFormat(new JavascriptAction("AFNumber_Format(2, 0, 0, \"\", true);"));
         text.getAnnotationActions().setOnModifyCharacter(new JavascriptAction("AFNumber_Keystroke(2, 0, 0, \"\", true);"));
@@ -58,7 +69,8 @@ public class AddingJavaScriptDOM {
 
     public static void afterPrintingAndSaving(String dataDir, String outputDir) {
         // Open a PDF Document
-        Document doc = new Document(dataDir + "input.pdf");
+        Document doc = new Document();
+        doc.getPages().add();
         // Printing
         doc.getActions().setAfterPrinting(new JavascriptAction("app.alert('File was printed')"));
         // Saving
