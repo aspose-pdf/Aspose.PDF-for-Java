@@ -88,7 +88,7 @@ CGM, MHT, PCL, PS, XSLFO, MD
 - **Microsoft Windows:** Windows Desktop & Server (x86, x64)
 - **macOS:** Mac OS X
 - **Linux:** Ubuntu, OpenSUSE, CentOS, and others
-- **Java Versions:** `J2SE 8.0 (1.8)` or above
+- **Java Version:** JDK 21 LTS
 
 ## Get Started with Aspose.PDF for Java
 
