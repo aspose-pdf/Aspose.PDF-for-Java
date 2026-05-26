@@ -5,7 +5,8 @@
 
 Directory | Description
 --------- | -----------
-[Examples](Examples) | A collection of Java examples that help you learn the product features.
+[src/main/java/com/aspose/pdf/examples](src/main/java/com/aspose/pdf/examples) | Runnable Java examples that demonstrate product features.
+[sample-data](sample-data/) | Various samle files
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/aspose-pdf/Aspose.pdf-for-Java/archive/master.zip">
@@ -15,7 +16,7 @@ Directory | Description
 
 ## `aspose.pdf` Package Features
 
-### PDF Document Featres
+### PDF Document Features
 
 - Set basic information (e.g. author, creator) of the PDF document.
 - Configure PDF Page properties (e.g. width, height, cropbox, bleedbox etc.).
@@ -29,7 +30,7 @@ Directory | Description
 
 - PDF documents can be encrypted up to 128 bits.
 - Master and user passwords can be set for PDF encryption.
-- Apply rescriptions on content modification, copying, printing and other operations.
+- Apply restrictions on content modification, copying, printing and other operations.
 
 ### Conversion Features
 
@@ -70,7 +71,7 @@ For a more comprehensive list of features, please visit [Features of `com.aspose
 
 **Fixed Layout:** PDF, XPS\
 **Books:** EPUB\
-**Web:** HTML
+**Web:** HTML\
 **Other:** TEX, XML, SVG
 
 ## Save PDF Documents As
@@ -88,35 +89,38 @@ CGM, MHT, PCL, PS, XSLFO, MD
 - **Microsoft Windows:** Windows Desktop & Server (x86, x64)
 - **macOS:** Mac OS X
 - **Linux:** Ubuntu, OpenSUSE, CentOS, and others
-- **Java Version:** JDK 21 LTS
+- **Java Version:** JDK 25 or newer
 
 ## Get Started with Aspose.PDF for Java
 
-Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). You can easily use Aspose.PDF for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.PDF for Java from Aspose Repository](https://docs.aspose.com/pdf/java/installation/) documentation page.
+Aspose hosts Java APIs at the [Aspose Java Repository](https://releases.aspose.com/java/repo/). You can use Aspose.PDF for Java directly in Maven projects with simple configuration. For detailed setup instructions, see [Installing Aspose.PDF for Java from Aspose Repository](https://docs.aspose.com/pdf/java/installation/).
+
+Build the examples with:
+
+```bash
+mvn clean compile
+```
+
+Run one example runner with:
+
+```bash
+mvn -DskipTests exec:java -Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples
+```
 
 ## Extract text from a PDF file using Java
 
 ```java
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-Java
-// Open document
-Document pdfDocument = new Document("input.pdf");
+import com.aspose.pdf.Document;
+import com.aspose.pdf.TextAbsorber;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
-// Create TextAbsorber object to extract text
-TextAbsorber textAbsorber = new TextAbsorber();
-
-// Accept the absorber for all the pages
-pdfDocument.getPages().accept(textAbsorber);
-
-// Get the extracted text
-String extractedText = textAbsorber.getText();
-
-// Create a writer and open the file
-java.io.FileWriter writer = new java.io.FileWriter(new java.io.File("Extracted_text.txt"));
-writer.write(extractedText);
-
-// Write a line of text to the file tw.WriteLine(extractedText);
-// Close the stream
-writer.close();
+try (Document pdfDocument = new Document("input.pdf")) {
+  TextAbsorber textAbsorber = new TextAbsorber();
+  pdfDocument.getPages().accept(textAbsorber);
+  Files.writeString(Path.of("Extracted_text.txt"), textAbsorber.getText(), StandardCharsets.UTF_8);
+}
 ```
 
-[Product Page](https://products.aspose.com/pdf/java) | [Docs](https://docs.aspose.com/pdf/java/) | [Demos](https://products.aspose.app/pdf/family) | [API Reference](https://apireference.aspose.com/pdf/java) | [Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) | [Blog](https://blog.aspose.com/category/pdf/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/pdf) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Product Page](https://products.aspose.com/pdf/java) | [Docs](https://docs.aspose.com/pdf/java/) | [Demos](https://products.aspose.app/pdf/family) | [API Reference](https://apireference.aspose.com/pdf/java) | [Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/src/main/java/com/aspose/pdf/examples) | [Blog](https://blog.aspose.com/category/pdf/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/pdf) | [Temporary License](https://purchase.aspose.com/temporary-license)
