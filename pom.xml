@@ -14,8 +14,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
         <aspose.pdf.version>26.4</aspose.pdf.version>
+        <aspose.imaging.version>26.4</aspose.imaging.version>
         <junit.jupiter.version>5.11.4</junit.jupiter.version>
     </properties>
 
@@ -32,6 +33,12 @@
             <groupId>com.aspose</groupId>
             <artifactId>aspose-pdf</artifactId>
             <version>${aspose.pdf.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-imaging</artifactId>
+            <version>${aspose.imaging.version}</version>
         </dependency>
 
         <dependency>
@@ -55,15 +62,15 @@
                 <version>3.5.0</version>
                 <executions>
                     <execution>
-                        <id>enforce-java-21</id>
+                        <id>enforce-java-25-or-newer</id>
                         <goals>
                             <goal>enforce</goal>
                         </goals>
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>[21,22)</version>
-                                    <message>This project requires JDK 21 LTS.</message>
+                                    <version>[25,)</version>
+                                    <message>This project requires JDK 25 or newer.</message>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>

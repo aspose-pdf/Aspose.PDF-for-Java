@@ -9,7 +9,7 @@ This file helps AI coding agents work effectively in this repository.
 
 ## Environment and Build
 
-- Required Java version: JDK 21 (enforced by Maven Enforcer in `pom.xml`).
+- Required Java version: JDK 25 or newer (enforced by Maven Enforcer in `pom.xml`).
 - Build command: `mvn clean compile`.
 - Run one example runner:
   - `mvn -DskipTests exec:java -Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples`
@@ -55,9 +55,17 @@ This file helps AI coding agents work effectively in this repository.
 - Preserve existing output logging style (`Success:` / `Failed:`) via `ExampleRunner`.
 - Do not add heavyweight frameworks; keep dependencies minimal and Maven-based.
 
+## README Update Guidance
+
+- For `README.md` changes, keep runtime/version claims synchronized with `pom.xml` (for example Java and dependency versions).
+- Keep quick-start commands runnable and aligned with repository scripts in `tools/`.
+- Prefer linking to canonical docs (`docs.aspose.com`, API reference, and repository files) instead of duplicating long procedural content.
+- Preserve existing product positioning and support/resource links unless the task explicitly requests branding or navigation changes.
+- If README examples are changed, prefer short snippets and point to runnable examples under `src/main/java/com/aspose/pdf/examples`.
+
 ## Known Pitfalls
 
-- JDK other than 21 will fail build due to enforcer rule.
+- JDK older than 25 will fail build due to the enforcer rule.
 - Many category directories are placeholders; avoid assuming examples already exist there.
 - Input files are assumed to exist in `sample-data/<category>/input`; add missing sample files when introducing new examples.
 
@@ -66,5 +74,8 @@ This file helps AI coding agents work effectively in this repository.
 - Project overview: [README.md](README.md)
 - Build/tooling: [pom.xml](pom.xml)
 - Scripted execution: [tools/run-all-examples.ps1](tools/run-all-examples.ps1), [tools/run-all-examples.sh](tools/run-all-examples.sh)
+- Docs style instruction: [.github/instructions/docs-style.instructions.md](.github/instructions/docs-style.instructions.md)
+- README-focused instruction: [.github/instructions/readme-maintenance.instructions.md](.github/instructions/readme-maintenance.instructions.md)
+- README-focused prompt: [.github/prompts/update-readme.prompt.md](.github/prompts/update-readme.prompt.md)
 - Aspose docs: <https://docs.aspose.com/pdf/java/>
 - API reference: <https://apireference.aspose.com/pdf/java>

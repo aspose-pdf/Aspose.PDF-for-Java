@@ -26,7 +26,29 @@ while [[ $# -gt 0 ]]; do
 done
 
 EXAMPLE_CLASSES=(
+  "com.aspose.pdf.examples.getstarted.GetStartedExamples"
+  "com.aspose.pdf.examples.facades.FacadesExamples"
   "com.aspose.pdf.examples.basicoperations.BasicOperationsExamples"
+  "com.aspose.pdf.examples.convertpdfdocument.ConvertPdfDocumentExamples"
+  "com.aspose.pdf.examples.pdffilemetadata.PdfFileMetadataExamples"
+  "com.aspose.pdf.examples.compare.CompareExamples"
+  "com.aspose.pdf.examples.attachzugferd.AttachZugferdExamples"
+  "com.aspose.pdf.examples.workingwithoperators.WorkingWithOperatorsExamples"
+  "com.aspose.pdf.examples.workingwithvectorgraphics.WorkingWithVectorGraphicsExamples"
+  "com.aspose.pdf.examples.accessibilitytaggedpdf.AccessibilityTaggedPdfExamples"
+  "com.aspose.pdf.examples.navigationandinteraction.NavigationAndInteractionExamples"
+  "com.aspose.pdf.examples.parsing.ParsingExamples"
+  "com.aspose.pdf.examples.securingandsigning.SecuringAndSigningExamples"
+  "com.aspose.pdf.examples.workingwithannotations.WorkingWithAnnotationsExamples"
+  "com.aspose.pdf.examples.workingwithartifacts.WorkingWithArtifactsExamples"
+  "com.aspose.pdf.examples.workingwithattachments.WorkingWithAttachmentsExamples"
+  "com.aspose.pdf.examples.workingwithdocuments.WorkingWithDocumentsExamples"
+  "com.aspose.pdf.examples.workingwithforms.WorkingWithFormsExamples"
+  "com.aspose.pdf.examples.workingwithgraphs.WorkingWithGraphsExamples"
+  "com.aspose.pdf.examples.workingwithimages.WorkingWithImagesExamples"
+  "com.aspose.pdf.examples.workingwithpages.WorkingWithPagesExamples"
+  "com.aspose.pdf.examples.workingwithtables.WorkingWithTablesExamples"
+  "com.aspose.pdf.examples.workingwithtext.WorkingWithTextExamples"
 )
 
 if [[ -x "$REPO_ROOT/mvnw" ]]; then
@@ -49,6 +71,7 @@ for EXAMPLE_CLASS in "${EXAMPLE_CLASSES[@]}"; do
     "-DskipTests"
     "exec:java"
     "-Dexec.mainClass=$EXAMPLE_CLASS"
+    "-Dexec.cleanupDaemonThreads=false"
   )
 
   if [[ -n "$LICENSE_PATH" ]]; then
