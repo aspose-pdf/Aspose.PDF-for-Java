@@ -21,7 +21,7 @@ public final class GraphsCircleExamples {
     public static void addCircle(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 200);
+            Graph graph = new Graph(400.0, 200.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Circle circle = new Circle(100, 100, 40);
@@ -36,7 +36,7 @@ public final class GraphsCircleExamples {
     public static void addCircleFilled(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 200);
+            Graph graph = new Graph(400.0, 200.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Circle circle = new Circle(100, 100, 40);

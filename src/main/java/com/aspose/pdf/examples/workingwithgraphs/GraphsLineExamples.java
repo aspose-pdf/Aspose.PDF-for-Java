@@ -18,7 +18,7 @@ public final class GraphsLineExamples {
     public static void addLine(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(100, 400);
+            Graph graph = new Graph(100.0, 400.0);
             page.getParagraphs().add(graph);
 
             Line line = new Line(new float[]{100, 100, 200, 100});
@@ -33,7 +33,7 @@ public final class GraphsLineExamples {
     public static void addDottedDashedLine(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(100, 400);
+            Graph graph = new Graph(100.0, 400.0);
             page.getParagraphs().add(graph);
 
             Line line = new Line(new float[]{100, 100, 200, 100});

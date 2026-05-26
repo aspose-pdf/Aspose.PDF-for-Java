@@ -22,7 +22,7 @@ public final class GraphsEllipseExamples {
     public static void addEllipse(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Ellipse ellipse1 = new Ellipse(150, 100, 120, 60);
@@ -42,7 +42,7 @@ public final class GraphsEllipseExamples {
     public static void createEllipseFilled(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Ellipse ellipse1 = new Ellipse(100, 100, 120, 180);
@@ -61,7 +61,7 @@ public final class GraphsEllipseExamples {
     public static void addTextInsideEllipse(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             TextFragment textFragment = new TextFragment("Ellipse");

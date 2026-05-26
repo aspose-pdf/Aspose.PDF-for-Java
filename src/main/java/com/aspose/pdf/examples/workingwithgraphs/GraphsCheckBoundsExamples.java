@@ -21,7 +21,7 @@ public final class GraphsCheckBoundsExamples {
     public static void checkShapeBounds(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(100, 100);
+            Graph graph = new Graph(100.0, 100.0);
             graph.setTop(10);
             graph.setLeft(15);
             graph.setBorder(new BorderInfo(BorderSide.Box, 1, Color.getBlack()));

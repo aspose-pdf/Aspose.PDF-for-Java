@@ -26,7 +26,7 @@ public final class GraphsRectangleExamples {
             TextFragment textFragment = new TextFragment("Rectangle");
             page.getParagraphs().add(textFragment);
 
-            Graph graph = new Graph(400, 300);
+            Graph graph = new Graph(400.0, 300.0);
             page.getParagraphs().add(graph);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
@@ -41,7 +41,7 @@ public final class GraphsRectangleExamples {
     public static void createRectangleFilled(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(100, 400);
+            Graph graph = new Graph(100.0, 400.0);
             page.getParagraphs().add(graph);
 
             Rectangle rectangle = new Rectangle(100, 100, 200, 120);
@@ -55,7 +55,7 @@ public final class GraphsRectangleExamples {
     public static void addDrawingWithGradientFill(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             page.getParagraphs().add(graph);
 
             Rectangle rectangle = new Rectangle(0, 0, 300, 300);
@@ -74,7 +74,7 @@ public final class GraphsRectangleExamples {
     public static void createRectangleWithAlphaColorChannel(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(100, 400);
+            Graph graph = new Graph(100.0, 400.0);
             page.getParagraphs().add(graph);
 
             Rectangle rectangle = new Rectangle(100, 100, 200, 120);
@@ -90,7 +90,7 @@ public final class GraphsRectangleExamples {
     }
 
     private static void addRectangleToPage(Page page, float x, float y, float width, float height, Color color, int zindex) {
-        Graph graph = new Graph(width, height);
+        Graph graph = new Graph(((double)width), ((double)height));
         graph.setChangePosition(false);
         graph.setLeft(x);
         graph.setTop(y);

@@ -21,7 +21,7 @@ public final class GraphsArcExamples {
     public static void addArc(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Arc arc1 = new Arc(100, 100, 95, 0, 90);
@@ -44,7 +44,7 @@ public final class GraphsArcExamples {
     public static void addArcFilled(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 400);
+            Graph graph = new Graph(400.0, 400.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Arc arc = new Arc(100, 100, 95, 0, 90);

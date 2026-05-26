@@ -20,7 +20,7 @@ public final class GraphsCurveExamples {
     public static void addCurve(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 200);
+            Graph graph = new Graph(400.0, 200.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Curve curve1 = new Curve(new float[]{10, 10, 50, 60, 70, 10, 100, 120});
@@ -35,7 +35,7 @@ public final class GraphsCurveExamples {
     public static void addCurveFilled(Path outputFile) {
         try (Document document = new Document()) {
             Page page = document.getPages().add();
-            Graph graph = new Graph(400, 200);
+            Graph graph = new Graph(400.0, 200.0);
             graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
 
             Curve curve1 = new Curve(new float[]{10, 10, 50, 60, 70, 10, 100, 120});
