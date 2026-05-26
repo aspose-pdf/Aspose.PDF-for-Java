@@ -35,6 +35,7 @@ This file helps AI coding agents work effectively in this repository.
 - Naming convention:
   - Category runner class: `XxxExamples` with `runAllExamples(String licensePath)` and `main(String[] args)`.
   - Operation classes follow the same `*Examples` suffix.
+- When adding a new category runner, register its fully qualified main class in both `tools/run-all-examples.ps1` (`$exampleClasses`) and `tools/run-all-examples.sh` (`EXAMPLE_CLASSES`); unregistered runners will not be executed by the run-all scripts.
 - Typical flow inside `runAllExamples`:
   1. `ExampleConfig.setLicense(licensePath)`
   2. `ExampleConfig.initializeDataDir("category_name")`
@@ -66,8 +67,9 @@ This file helps AI coding agents work effectively in this repository.
 ## Known Pitfalls
 
 - JDK older than 25 will fail build due to the enforcer rule.
-- Many category directories are placeholders; avoid assuming examples already exist there.
+- Many category directories are placeholders; treat a category as a placeholder only when `src/main/java/com/aspose/pdf/examples/<category>` contains no `.java` files, and check for file presence before assuming examples already exist there.
 - Input files are assumed to exist in `sample-data/<category>/input`; add missing sample files when introducing new examples.
+- Before submitting, verify that every input path referenced by new example code has a corresponding committed file under `sample-data/<category>/input`. If a sample file is generated programmatically instead, document that in the example's Javadoc.
 
 ## Useful References
 
