@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xfa:data xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+  <form1>
+    <header>
+      <txtPONum>123</txtPONum>
+      <dtmDate />
+      <txtOrderedByCompanyName>Aspose</txtOrderedByCompanyName>
+      <txtOrderedByAddress />
+      <txtOrderedByCity />
+      <drpOrderedByCountry />
+      <drpOrderedByStateProv />
+      <txtOrderedByZipCode />
+      <txtOrderedByPhone />
+      <txtOrderedByFax />
+      <txtOrderedByContactName />
+      <txtDeliverToCompanyName />
+      <txtDeliverToAddress />
+      <txtDeliverToCity />
+      <drpDeliverToCountry />
+      <drpDeliverToStateProv />
+      <txtDeliverToZipCode />
+      <txtDeliverTotPhone />
+      <txtDeliverToFax />
+      <txtDeliverToContactName />
+    </header>
+    <detailHeader xfa:dataNode="dataGroup" />
+    <total>
+      <TermsConditions />
+      <drpCardType>
+      </drpCardType>
+      <txtCardNum />
+      <numTotal />
+      <chkStateTax>0</chkStateTax>
+      <numStateTaxRate />
+      <numStateTax>0.00000000</numStateTax>
+      <chkFederalTax>0</chkFederalTax>
+      <numFederalTaxRate />
+      <numFederalTax>0.00000000</numFederalTax>
+      <chkShippingCharge>0</chkShippingCharge>
+      <numShippingCharge />
+      <numGrandTotal>0.00000000</numGrandTotal>
+    </total>
+    <commentsHeader xfa:dataNode="dataGroup" />
+    <footer xfa:dataNode="dataGroup" />
+    <detail>
+      <txtPartNum />
+      <txtDescription />
+      <numQty />
+      <numUnitPrice />
+      <numAmount />
+    </detail>
+    <detail>
+      <txtPartNum />
+      <txtDescription />
+      <numQty />
+      <numUnitPrice />
+      <numAmount />
+    </detail>
+  </form1>
+</xfa:data>

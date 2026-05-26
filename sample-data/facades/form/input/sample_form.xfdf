@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+  <fields>
+    <field name="First Name">
+      <value>Alexander</value>
+    </field>
+    <field name="Last Name">
+      <value>Greenfield</value>
+    </field>
+    <field name="City">
+      <value>Yellowtown</value>
+    </field>
+    <field name="Country">
+      <value>Redland</value>
+    </field>
+  </fields>
+</xfdf>

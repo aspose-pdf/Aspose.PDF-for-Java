@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields xmlns:xfdf="http://ns.adobe.com/xfdf-transition/"
+><City
+>Yellowtown</City
+><FirstName xfdf:original="First Name"
+>Alexander</FirstName
+><LastName xfdf:original="Last Name"
+>Greenfield</LastName
+><Summary xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:contentType="text/html"
+>Aspose.PDF for Python via .NET, PDF Processing API that allows the developers to work with PDF documents without needing Microsoft Office® or Adobe Acrobat Automation. </Summary
+></fields
+>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fields>
+  <field name="First Name">
+    <value>Thomas</value>
+  </field>
+  <field name="Last Name">
+    <value>Andersson</value>
+  </field>
+  <field name="City">
+    <value>Seattle</value>
+  </field>
+  <field name="Country">
+    <value>Brownland</value>
+  </field>
+</fields>
