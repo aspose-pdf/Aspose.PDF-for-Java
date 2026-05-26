@@ -72,9 +72,9 @@ public final class ProtectDocumentExamples {
     }
 
     public static void determineCorrectPasswordFromList(Path inputFile) {
-        PdfFileInfo info = new PdfFileInfo(inputFile.toString());
-        System.out.println("File is password protected: " + info.isEncrypted());
-
+        try (PdfFileInfo info = new PdfFileInfo(inputFile.toString())) {
+            System.out.println("File is password protected: " + info.isEncrypted());
+        }
         String[] passwords = {"test", "test1", "test2", "test3", USER_PASSWORD};
         for (String password : passwords) {
             try {

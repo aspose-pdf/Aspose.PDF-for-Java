@@ -12,14 +12,10 @@ public final class MergeDocumentExamples {
     }
 
     public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
-        Document document1 = new Document(inputFile1.toString());
-        Document document2 = new Document(inputFile2.toString());
-        try {
+        try (Document document1 = new Document(inputFile1.toString());
+             Document document2 = new Document(inputFile2.toString())) {
             document1.getPages().add(document2.getPages());
             document1.save(outputFile.toString());
-        } finally {
-            document1.close();
-            document2.close();
         }
     }
 
