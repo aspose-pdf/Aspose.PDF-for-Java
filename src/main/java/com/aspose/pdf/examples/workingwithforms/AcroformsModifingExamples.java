@@ -36,10 +36,11 @@ public final class AcroformsModifingExamples {
     }
 
     public static void setFieldLimit(Path inputFile, Path outputFile) {
-        FormEditor form = new FormEditor(inputFile.toString(), outputFile.toString());
+        FormEditor form = new FormEditor();
+        form.bindPdf(inputFile.toString());
         try {
             form.setFieldLimit("First Name", 15);
-            form.save();
+            form.save(outputFile.toString());
         } finally {
             form.close();
         }
