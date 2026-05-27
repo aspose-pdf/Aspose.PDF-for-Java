@@ -20,15 +20,14 @@ public final class PdfViewerExamples {
         PdfViewer viewer = new PdfViewer();
         viewer.setCoordinateType(PageCoordinateType.MediaBox);
         viewer.setResolution(150);
-        viewer.setScaleFactor(1.0f);
-        viewer.setShowHiddenAreas(false);
+        viewer.setScaleFactor(1.0f);        
         return viewer;
     }
 
     public static void decodeAllPages(Path inputFile, Path outputDir) throws Exception {
         PdfViewer viewer = createViewer();
         try {
-            viewer.openPdfFile(inputFile.toString());
+            viewer.bindPdf(inputFile.toString());            
             BufferedImage[] pages = viewer.decodeAllPages();
             for (int index = 0; index < pages.length; index++) {
                 ImageIO.write(pages[index], "png", outputDir.resolve("decode_all_pages_" + (index + 1) + ".png").toFile());
@@ -51,7 +50,7 @@ public final class PdfViewerExamples {
     public static void inspectPdfMetadata(Path inputFile) {
         PdfViewer viewer = createViewer();
         try {
-            viewer.openPdfFile(inputFile.toString());
+            viewer.bindPdf(inputFile.toString());
             System.out.println("Page count: " + viewer.getPageCount());
             System.out.println("Coordinate type: " + viewer.getCoordinateType());
             System.out.println("Resolution: " + viewer.getResolution());
