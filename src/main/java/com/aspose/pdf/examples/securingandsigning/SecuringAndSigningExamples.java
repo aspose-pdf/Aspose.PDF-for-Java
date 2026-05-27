@@ -16,6 +16,7 @@ import com.aspose.pdf.TextAbsorber;
 import com.aspose.pdf.TextFragment;
 import com.aspose.pdf.TimestampSettings;
 import com.aspose.pdf.WidgetAnnotation;
+import com.aspose.pdf.System.Security.Cryptography.X509Certificates.X509Certificate2;
 import com.aspose.pdf.examples.ExampleConfig;
 import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
@@ -35,7 +36,6 @@ import java.io.OutputStream;
 import java.io.ByteArrayOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.security.cert.X509Certificate;
 
 public final class SecuringAndSigningExamples {
     private SecuringAndSigningExamples() {
@@ -43,7 +43,7 @@ public final class SecuringAndSigningExamples {
 
     public static void signDocument(Path inputFile, Path outputFile, Path pfxFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             PKCS7 pkcs = new PKCS7(pfxFile.toString(), "12345");
             signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
             signature.save(outputFile.toString());
@@ -52,7 +52,7 @@ public final class SecuringAndSigningExamples {
 
     public static void signDocumentPkcs7Detached(Path inputFile, Path outputFile, Path pfxFile, String password) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             PKCS7Detached pkcs = new PKCS7Detached(pfxFile.toString(), password, DigestHashAlgorithm.Sha256);
             signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
             signature.save(outputFile.toString());
@@ -61,8 +61,8 @@ public final class SecuringAndSigningExamples {
 
     public static void verify(Path inputFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
-            for (String signatureName : signature.getSignNames(true)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
+            for (SignatureName signatureName : signature.getSignatureNames(false)) {
                 if (!signature.verifySignature(signatureName)) {
                     throw new IllegalStateException("Not verified");
                 }
@@ -71,17 +71,19 @@ public final class SecuringAndSigningExamples {
     }
 
     public static void verifyWithPublicKeyCertificate(Path certificate, Path inputFile) throws Exception {
-        try (PdfFileSignature fileSign = new PdfFileSignature(inputFile.toString())) {
+        try (Document document = new Document(inputFile.toString());
+                PdfFileSignature fileSign = new PdfFileSignature(document)) {
             SignatureName signatureName = fileSign.getSignatureNames(true).get_Item(0);
-            com.aspose.pdf.System.Security.Cryptography.X509Certificates.X509Certificate2 certificate2 =
-                    new com.aspose.pdf.System.Security.Cryptography.X509Certificates.X509Certificate2(
-                            Files.readAllBytes(certificate));
+            com.aspose.pdf.System.Security.Cryptography.X509Certificates.X509Certificate2 certificate2 = 
+                new com.aspose.pdf.System.Security.Cryptography.X509Certificates.X509Certificate2(
+                    Files.readAllBytes(certificate));
             System.out.println(fileSign.verifySignature(signatureName, certificate2));
         }
     }
 
     public static void verifyWithPublicKeyCertificateFromSignature(Path inputFile) throws Exception {
-        try (PdfFileSignature fileSign = new PdfFileSignature(inputFile.toString())) {
+           try (Document document = new Document(inputFile.toString());
+                PdfFileSignature fileSign = new PdfFileSignature(document)) {
             SignatureName signatureName = fileSign.getSignatureNames(true).get_Item(0);
             OutputStream[] certificate = new OutputStream[1];
             certificate[0] = new ByteArrayOutputStream();
@@ -96,7 +98,7 @@ public final class SecuringAndSigningExamples {
 
     public static void verifySignatureWithCertificateCheck(Path inputFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             for (SignatureName signatureName : signature.getSignatureNames(true)) {
                 ValidationOptions options = new ValidationOptions();
                 options.setValidationMode(ValidationMode.Strict);
@@ -115,7 +117,7 @@ public final class SecuringAndSigningExamples {
 
     public static void signWithTimeStampServer(Path inputFile, Path outputFile, Path pfxFile, String password) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             PKCS7 pkcs = new PKCS7(pfxFile.toString(), password);
             pkcs.setTimestampSettings(new TimestampSettings("https://freetsa.org/tsr", "", DigestHashAlgorithm.Sha256));
             signature.sign(1, "Signature Reason", "Contact", "Location", true,
@@ -126,12 +128,12 @@ public final class SecuringAndSigningExamples {
 
     public static void verifyEcdsa(Path inputFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             if (!signature.containsSignature()) {
                 throw new IllegalStateException("Not contains signature");
             }
 
-            for (String signatureName : signature.getSignNames(true)) {
+            for (SignatureName signatureName : signature.getSignatureNames(true)) {
                 if (!signature.verifySignature(signatureName)) {
                     throw new IllegalStateException("Not verified");
                 }
@@ -141,7 +143,7 @@ public final class SecuringAndSigningExamples {
 
     public static void signEcdsa(Path inputFile, Path outputFile, Path pfxFile, String password) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             PKCS7Detached pkcs = new PKCS7Detached(pfxFile.toString(), password, DigestHashAlgorithm.Sha256);
             signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
             signature.save(outputFile.toString());
@@ -172,7 +174,7 @@ public final class SecuringAndSigningExamples {
     }
 
     public static void pubSecEncryption(CryptoAlgorithm cryptoAlgorithm, Path publicCertificate, Path inputPfx,
-                                        Path outputFile) throws Exception {
+            Path outputFile) throws Exception {
         String pfxPassword = "12345";
 
         try (Document document = new Document()) {
@@ -217,7 +219,7 @@ public final class SecuringAndSigningExamples {
             pdfFileInfo.close();
         }
 
-        String[] passwords = {"test", "test1", "test2", "test3", "sample"};
+        String[] passwords = { "test", "test1", "test2", "test3", "sample" };
 
         for (String password : passwords) {
             try (Document document = new Document(inputFile.toString(), password)) {
@@ -272,7 +274,7 @@ public final class SecuringAndSigningExamples {
 
     public static void extractCertificateTryExtractCertificateMethod(Path inputFile) {
         try (Document document = new Document(inputFile.toString(), "owner");
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             for (SignatureName signatureName : signature.getSignatureNames(true)) {
                 OutputStream[] certificate = new OutputStream[1];
                 certificate[0] = new ByteArrayOutputStream();
@@ -287,7 +289,7 @@ public final class SecuringAndSigningExamples {
 
     public static void getSignaturesInfo(Path inputFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature signature = new PdfFileSignature(document)) {
+                PdfFileSignature signature = new PdfFileSignature(document)) {
             for (Object signatureInfo : signature.getSignaturesInfo()) {
                 System.out.println(signatureInfo);
             }
@@ -320,7 +322,7 @@ public final class SecuringAndSigningExamples {
             SignatureField signatureField = new SignatureField(
                     document.getPages().get_Item(1),
                     new Rectangle(100, 400, 110, 410, true));
-            X509Certificate selectedCertificate = getLocalCertificate();
+            X509Certificate2 selectedCertificate = getLocalCertificate();
             if (selectedCertificate == null) {
                 System.out.println("Local certificate was not found.");
                 document.getForm().add(signatureField, 1);
@@ -328,7 +330,7 @@ public final class SecuringAndSigningExamples {
                 return;
             }
 
-            Signature externalSignature = new ExternalSignature(selectedCertificate, null);
+            Signature externalSignature = new ExternalSignature(selectedCertificate);
             externalSignature.setAuthority("Me");
             externalSignature.setReason("Reason");
             externalSignature.setContactInfo("Contact");
@@ -339,14 +341,14 @@ public final class SecuringAndSigningExamples {
         }
     }
 
-    public static X509Certificate getLocalCertificate() {
+    public static X509Certificate2 getLocalCertificate() {
         return null;
     }
 
     public static void verifyExternalSignature(Path inputFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature pdfSignature = new PdfFileSignature(document)) {
-            for (String signatureName : pdfSignature.getSignNames(true)) {
+                PdfFileSignature pdfSignature = new PdfFileSignature(document)) {
+            for (SignatureName signatureName : pdfSignature.getSignatureNames(true)) {
                 if (!pdfSignature.verifySignature(signatureName)) {
                     throw new IllegalStateException("Not verified");
                 }
@@ -356,9 +358,9 @@ public final class SecuringAndSigningExamples {
 
     public static void signWithSmartCard(Path inputFile, Path outputFile, Path pngFile) {
         try (Document document = new Document(inputFile.toString());
-             PdfFileSignature pdfSignature = new PdfFileSignature()) {
+                PdfFileSignature pdfSignature = new PdfFileSignature()) {
             pdfSignature.bindPdf(document);
-            X509Certificate selectedCertificate = getLocalCertificate();
+            X509Certificate2 selectedCertificate = getLocalCertificate();
             if (selectedCertificate == null) {
                 System.out.println("Local certificate was not found.");
                 document.save(outputFile.toString());

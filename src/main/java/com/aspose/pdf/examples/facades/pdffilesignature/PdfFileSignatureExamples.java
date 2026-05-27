@@ -8,13 +8,13 @@ import com.aspose.pdf.examples.ExampleConfig;
 import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
 import com.aspose.pdf.facades.PdfFileSignature;
+import com.aspose.pdf.facades.SignatureName;
 
 import java.awt.Rectangle;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 public final class PdfFileSignatureExamples {
     private static final String CATEGORY = "facades/pdf_file_signature";
@@ -36,15 +36,7 @@ public final class PdfFileSignatureExamples {
         return signature;
     }
 
-    private static String firstSignatureName(PdfFileSignature pdfSignature) {
-        List<String> names = pdfSignature.getSignNames();
-        if (names == null || names.isEmpty()) {
-            throw new IllegalStateException("No signatures were found in the input PDF.");
-        }
-        return names.get(0);
-    }
-
-    public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
+     public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
             pdfSignature.bindPdf(inputFile.toString());
@@ -85,12 +77,12 @@ public final class PdfFileSignatureExamples {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
             pdfSignature.bindPdf(inputFile.toString());
-            String signName = firstSignatureName(pdfSignature);
+            SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
             System.out.println("Signature Names: " + pdfSignature.getSignNames());
-            System.out.println("Signer: " + pdfSignature.getSignerName(signName));
-            System.out.println("Date: " + pdfSignature.getDateTime(signName));
-            System.out.println("Reason: " + pdfSignature.getReason(signName));
-            System.out.println("Location: " + pdfSignature.getLocation(signName));
+            System.out.println("Signer: " + pdfSignature.getSignerName(signatureName));
+            System.out.println("Date: " + pdfSignature.getDateTime(signatureName));
+            System.out.println("Reason: " + pdfSignature.getReason(signatureName));
+            System.out.println("Location: " + pdfSignature.getLocation(signatureName));
         } finally {
             pdfSignature.close();
         }
@@ -100,9 +92,9 @@ public final class PdfFileSignatureExamples {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
             pdfSignature.bindPdf(inputFile.toString());
-            String signName = firstSignatureName(pdfSignature);
-            System.out.println("Signature '" + signName + "' is valid: " + pdfSignature.verifySignature(signName));
-            System.out.println("Signature covers whole document: " + pdfSignature.coversWholeDocument(signName));
+            SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+            System.out.println("Signature '" + signatureName + "' is valid: " + pdfSignature.verifySignature(signatureName));
+            System.out.println("Signature covers whole document: " + pdfSignature.coversWholeDocument(signatureName));
         } finally {
             pdfSignature.close();
         }
@@ -112,8 +104,8 @@ public final class PdfFileSignatureExamples {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
             pdfSignature.bindPdf(inputFile.toString());
-            String signName = firstSignatureName(pdfSignature);
-            try (InputStream inputStream = pdfSignature.extractCertificate(signName);
+            SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+        try (InputStream inputStream = pdfSignature.extractCertificate(signatureName);
                     OutputStream outputStream = Files.newOutputStream(outputFile)) {
                 inputStream.transferTo(outputStream);
             }
@@ -126,7 +118,8 @@ public final class PdfFileSignatureExamples {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
             pdfSignature.bindPdf(inputFile.toString());
-            pdfSignature.removeSignature(firstSignatureName(pdfSignature));
+            SignatureName signatureName = pdfSignature.getSignatureNames().get_Item(0);
+            pdfSignature.removeSignature(signatureName);
             pdfSignature.save(outputFile.toString());
         } finally {
             pdfSignature.close();
