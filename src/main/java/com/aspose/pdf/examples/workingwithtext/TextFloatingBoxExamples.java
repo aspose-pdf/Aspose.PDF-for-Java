@@ -58,33 +58,34 @@ public final class TextFloatingBoxExamples {
     }
 
     public static void multiColumnLayout2(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
-        page.getPageInfo().setMargin(new MarginInfo(36, 18, 36, 18));
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
+            page.getPageInfo().setMargin(new MarginInfo(36, 18, 36, 18));
 
-        int columnCount = 3;
-        int spacing = 10;
-        double width = page.getPageInfo().getWidth()
-                - page.getPageInfo().getMargin().getLeft()
-                - page.getPageInfo().getMargin().getRight()
-                - (columnCount - 1) * spacing;
-        double columnWidth = width / 3;
+            int columnCount = 3;
+            int spacing = 10;
+            double width = page.getPageInfo().getWidth()
+                    - page.getPageInfo().getMargin().getLeft()
+                    - page.getPageInfo().getMargin().getRight()
+                    - (columnCount - 1) * spacing;
+            double columnWidth = width / 3;
 
-        FloatingBox box = new FloatingBox();
-        box.setNeedRepeating(true);
-        box.getColumnInfo().setColumnWidths(columnWidth + " " + columnWidth + " " + columnWidth);
-        box.getColumnInfo().setColumnSpacing(String.valueOf(spacing));
-        box.getColumnInfo().setColumnCount(3);
+            FloatingBox box = new FloatingBox();
+            box.setNeedRepeating(true);
+            box.getColumnInfo().setColumnWidths(columnWidth + " " + columnWidth + " " + columnWidth);
+            box.getColumnInfo().setColumnSpacing(String.valueOf(spacing));
+            box.getColumnInfo().setColumnCount(3);
 
-        String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
-        for (int i = 0; i < 10; i++) {
-            TextFragment text = new TextFragment(phrase);
-            text.setFirstParagraphInColumn(true);
-            box.getParagraphs().add(text);
+            String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
+            for (int i = 0; i < 10; i++) {
+                TextFragment text = new TextFragment(phrase);
+                text.setFirstParagraphInColumn(true);
+                box.getParagraphs().add(text);
+            }
+
+            page.getParagraphs().add(box);
+            document.save(outputFile.toString());
         }
-
-        page.getParagraphs().add(box);
-        document.save(outputFile.toString());
     }
 
     public static void backgroundSupport(Path outputFile) {
