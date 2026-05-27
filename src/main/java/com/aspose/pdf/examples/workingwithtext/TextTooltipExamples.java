@@ -20,6 +20,7 @@ public final class TextTooltipExamples {
         document.getPages().get_Item(1).getParagraphs()
                 .add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
         document.save(outputFile.toString());
+        document.close();
 
         document = new Document(outputFile.toString());
         TextFragmentAbsorber absorber = new TextFragmentAbsorber(
@@ -49,6 +50,7 @@ public final class TextTooltipExamples {
         }
 
         document.save(outputFile.toString());
+        document.close();
     }
 
     public static void createHiddenTextBlock(Path outputFile) {
@@ -56,6 +58,7 @@ public final class TextTooltipExamples {
         document.getPages().add().getParagraphs()
                 .add(new TextFragment("Move the mouse cursor here to display floating text"));
         document.save(outputFile.toString());
+        document.close();
 
         document = new Document(outputFile.toString());
         TextFragmentAbsorber absorber = new TextFragmentAbsorber(
@@ -84,6 +87,7 @@ public final class TextTooltipExamples {
 
         document.getForm().add(buttonField);
         document.save(outputFile.toString());
+        document.close();
     }
 
     public static void runAllExamples(String licensePath) throws Exception {

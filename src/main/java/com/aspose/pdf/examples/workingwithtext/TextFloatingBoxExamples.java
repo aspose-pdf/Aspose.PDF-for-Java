@@ -14,45 +14,47 @@ public final class TextFloatingBoxExamples {
     }
 
     public static void createAndAddFloatingBox(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        FloatingBox box = new FloatingBox(400, 30);
-        box.setBorder(new BorderInfo(BorderSide.All, 1.5f, Color.getDarkGreen()));
-        box.setNeedRepeating(false);
-        String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
-        box.getParagraphs().add(new TextFragment(phrase));
+            FloatingBox box = new FloatingBox(400, 30);
+            box.setBorder(new BorderInfo(BorderSide.All, 1.5f, Color.getDarkGreen()));
+            box.setNeedRepeating(false);
+            String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
+            box.getParagraphs().add(new TextFragment(phrase));
 
-        page.getParagraphs().add(box);
-        document.save(outputFile.toString());
+            page.getParagraphs().add(box);
+            document.save(outputFile.toString());
+        }
     }
 
     public static void multiColumnLayout(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
-        page.getPageInfo().setMargin(new MarginInfo(36, 18, 36, 18));
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
+            page.getPageInfo().setMargin(new MarginInfo(36, 18, 36, 18));
 
-        int columnCount = 3;
-        int spacing = 10;
-        double width = page.getPageInfo().getWidth()
-                - page.getPageInfo().getMargin().getLeft()
-                - page.getPageInfo().getMargin().getRight()
-                - (columnCount - 1) * spacing;
-        double columnWidth = width / 3;
+            int columnCount = 3;
+            int spacing = 10;
+            double width = page.getPageInfo().getWidth()
+                    - page.getPageInfo().getMargin().getLeft()
+                    - page.getPageInfo().getMargin().getRight()
+                    - (columnCount - 1) * spacing;
+            double columnWidth = width / 3;
 
-        FloatingBox box = new FloatingBox();
-        box.setNeedRepeating(true);
-        box.getColumnInfo().setColumnWidths(columnWidth + " " + columnWidth + " " + columnWidth);
-        box.getColumnInfo().setColumnSpacing(String.valueOf(spacing));
-        box.getColumnInfo().setColumnCount(3);
+            FloatingBox box = new FloatingBox();
+            box.setNeedRepeating(true);
+            box.getColumnInfo().setColumnWidths(columnWidth + " " + columnWidth + " " + columnWidth);
+            box.getColumnInfo().setColumnSpacing(String.valueOf(spacing));
+            box.getColumnInfo().setColumnCount(3);
 
-        String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
-        for (int i = 0; i < 10; i++) {
-            box.getParagraphs().add(new TextFragment(phrase));
+            String phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, sollicitudin ac mauris vel, suscipit pellentesque nisi.";
+            for (int i = 0; i < 10; i++) {
+                box.getParagraphs().add(new TextFragment(phrase));
+            }
+
+            page.getParagraphs().add(box);
+            document.save(outputFile.toString());
         }
-
-        page.getParagraphs().add(box);
-        document.save(outputFile.toString());
     }
 
     public static void multiColumnLayout2(Path outputFile) {
@@ -86,62 +88,65 @@ public final class TextFloatingBoxExamples {
     }
 
     public static void backgroundSupport(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        FloatingBox box = new FloatingBox(400, 30);
-        box.setBackgroundColor(Color.getLightGreen());
-        box.setNeedRepeating(false);
-        box.getParagraphs().add(new TextFragment("text example"));
+            FloatingBox box = new FloatingBox(400, 30);
+            box.setBackgroundColor(Color.getLightGreen());
+            box.setNeedRepeating(false);
+            box.getParagraphs().add(new TextFragment("text example"));
 
-        page.getParagraphs().add(box);
-        document.save(outputFile.toString());
+            page.getParagraphs().add(box);
+            document.save(outputFile.toString());
+        }
     }
 
     public static void offsetSupport(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        FloatingBox box = new FloatingBox(400, 30);
-        box.setTop(45);
-        box.setLeft(15);
-        box.setPositioningMode(ParagraphPositioningMode.Absolute);
-        box.setBorder(new BorderInfo(BorderSide.All, 1.5f, Color.getDarkGreen()));
-        box.getParagraphs().add(new TextFragment("text example 1"));
+            FloatingBox box = new FloatingBox(400, 30);
+            box.setTop(45);
+            box.setLeft(15);
+            box.setPositioningMode(ParagraphPositioningMode.Absolute);
+            box.setBorder(new BorderInfo(BorderSide.All, 1.5f, Color.getDarkGreen()));
+            box.getParagraphs().add(new TextFragment("text example 1"));
 
-        page.getParagraphs().add(new TextFragment("text example 2"));
-        page.getParagraphs().add(box);
-        page.getParagraphs().add(new TextFragment("text example 3"));
+            page.getParagraphs().add(new TextFragment("text example 2"));
+            page.getParagraphs().add(box);
+            page.getParagraphs().add(new TextFragment("text example 3"));
 
-        document.save(outputFile.toString());
+            document.save(outputFile.toString());
+        }
     }
 
     public static void alignTextToFloat(Path outputFile) {
-        Document document = new Document();
-        Page page = document.getPages().add();
+        try (Document document = new Document()) {
+            Page page = document.getPages().add();
 
-        FloatingBox floatBox = new FloatingBox(100, 100);
-        floatBox.setVerticalAlignment(VerticalAlignment.Bottom);
-        floatBox.setHorizontalAlignment(HorizontalAlignment.Right);
-        floatBox.getParagraphs().add(new TextFragment("FloatingBox_bottom"));
-        floatBox.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
-        page.getParagraphs().add(floatBox);
+            FloatingBox floatBox = new FloatingBox(100, 100);
+            floatBox.setVerticalAlignment(VerticalAlignment.Bottom);
+            floatBox.setHorizontalAlignment(HorizontalAlignment.Right);
+            floatBox.getParagraphs().add(new TextFragment("FloatingBox_bottom"));
+            floatBox.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
+            page.getParagraphs().add(floatBox);
 
-        FloatingBox floatBox2 = new FloatingBox(100, 100);
-        floatBox2.setVerticalAlignment(VerticalAlignment.Center);
-        floatBox2.setHorizontalAlignment(HorizontalAlignment.Right);
-        floatBox2.getParagraphs().add(new TextFragment("FloatingBox_center"));
-        floatBox2.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
-        page.getParagraphs().add(floatBox2);
+            FloatingBox floatBox2 = new FloatingBox(100, 100);
+            floatBox2.setVerticalAlignment(VerticalAlignment.Center);
+            floatBox2.setHorizontalAlignment(HorizontalAlignment.Right);
+            floatBox2.getParagraphs().add(new TextFragment("FloatingBox_center"));
+            floatBox2.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
+            page.getParagraphs().add(floatBox2);
 
-        FloatingBox floatBox3 = new FloatingBox(100, 100);
-        floatBox3.setVerticalAlignment(VerticalAlignment.Top);
-        floatBox3.setHorizontalAlignment(HorizontalAlignment.Right);
-        floatBox3.getParagraphs().add(new TextFragment("FloatingBox_top"));
-        floatBox3.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
-        page.getParagraphs().add(floatBox3);
+            FloatingBox floatBox3 = new FloatingBox(100, 100);
+            floatBox3.setVerticalAlignment(VerticalAlignment.Top);
+            floatBox3.setHorizontalAlignment(HorizontalAlignment.Right);
+            floatBox3.getParagraphs().add(new TextFragment("FloatingBox_top"));
+            floatBox3.setBorder(new BorderInfo(BorderSide.All, Color.getBlue()));
+            page.getParagraphs().add(floatBox3);
 
-        document.save(outputFile.toString());
+            document.save(outputFile.toString());
+        }
     }
 
     public static void runAllExamples(String licensePath) throws Exception {

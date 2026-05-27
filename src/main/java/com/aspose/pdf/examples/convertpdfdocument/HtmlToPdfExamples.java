@@ -109,6 +109,8 @@ public final class HtmlToPdfExamples {
                 () -> convertHtmlToPdfRenderContentToSamePage(dirs.inputFile("sample.html"), dirs.outputFile("sample_single.pdf")));
         ExampleRunner.run("MHTML to PDF",
                 () -> convertMhtmlToPdf(dirs.inputFile("sample.mhtml"), dirs.outputFile("sample_mhtml.pdf")));
+        ExampleRunner.run("Web Page to PDF",
+                () -> convertWebPageToPdf("https://www.fileformat.com/products/pdf/", dirs.outputFile("sample_webpage.pdf")));
 
         System.out.println();
         System.out.println("All HTML to PDF examples finished.");
