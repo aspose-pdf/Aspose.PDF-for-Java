@@ -5,6 +5,7 @@ import com.aspose.pdf.AnnotationType;
 import com.aspose.pdf.Color;
 import com.aspose.pdf.Document;
 import com.aspose.pdf.FontRepository;
+import com.aspose.pdf.Page;
 import com.aspose.pdf.Rectangle;
 import com.aspose.pdf.TextState;
 import com.aspose.pdf.WatermarkAnnotation;
@@ -13,17 +14,22 @@ import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
-public final class StickyAnnotationExamples {
-    private StickyAnnotationExamples() {
+public final class WatermarkAnnotationExamples {
+    private WatermarkAnnotationExamples() {
     }
 
     public static void watermarkAdd(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            WatermarkAnnotation watermarkAnnotation = new WatermarkAnnotation(
-                    document.getPages().get_Item(1), new Rectangle(100, 0, 400, 100, true));
+            Page page = document.getPages().get_Item(1);
 
-            document.getPages().get_Item(1).getAnnotations().add(watermarkAnnotation);
+            WatermarkAnnotation watermarkAnnotation = new WatermarkAnnotation(
+                    page,
+                    new Rectangle(100, 100, 400, 200, true));
+
+            page.getAnnotations().add(watermarkAnnotation);
 
             TextState textState = new TextState();
             textState.setForegroundColor(Color.getBlue());
@@ -37,11 +43,11 @@ public final class StickyAnnotationExamples {
         }
     }
 
-    public static void watermarkGet(Path inputFile, Path outputFile) {
+    public static void watermarkGet(Path inputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
-                if (annotation.getAnnotationType() == AnnotationType.Watermark) {
-                    System.out.println(annotation.getRect());
+            for (Annotation a : document.getPages().get_Item(1).getAnnotations()) {
+                if (a.getAnnotationType() == AnnotationType.Watermark) {
+                    System.out.println(a.getRect());
                 }
             }
         }
@@ -49,13 +55,15 @@ public final class StickyAnnotationExamples {
 
     public static void watermarkDelete(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            for (int i = document.getPages().get_Item(1).getAnnotations().size(); i >= 1; i--) {
-                Annotation annotation = document.getPages().get_Item(1).getAnnotations().get_Item(i);
-                if (annotation.getAnnotationType() == AnnotationType.Watermark) {
-                    document.getPages().get_Item(1).getAnnotations().delete(annotation);
+            List<Annotation> toDelete = new ArrayList<>();
+            for (Annotation a : document.getPages().get_Item(1).getAnnotations()) {
+                if (a.getAnnotationType() == AnnotationType.Watermark) {
+                    toDelete.add(a);
                 }
             }
-
+            for (Annotation a : toDelete) {
+                document.getPages().get_Item(1).getAnnotations().delete(a);
+            }
             document.save(outputFile.toString());
         }
     }
@@ -64,12 +72,17 @@ public final class StickyAnnotationExamples {
         ExampleConfig.setLicense(licensePath);
         ExampleDataDirs dirs = ExampleConfig.initializeDataDir("working_with_annotations");
 
-        ExampleRunner.run("watermark_add",
-                () -> watermarkAdd(dirs.inputFile("Annotations.pdf"), dirs.outputFile("watermark_add_out.pdf")));
-        ExampleRunner.run("watermark_get",
-                () -> watermarkGet(dirs.inputFile("Annotations.pdf"), dirs.outputFile("watermark_get_out.pdf")));
-        ExampleRunner.run("watermark_delete",
-                () -> watermarkDelete(dirs.inputFile("Annotations.pdf"), dirs.outputFile("watermark_delete_out.pdf")));
+        ExampleRunner.run("Add Watermark Annotation",
+                () -> watermarkAdd(dirs.inputFile("sample.pdf"),
+                        dirs.outputFile("output_watermark_add.pdf")));
+        ExampleRunner.run("Get Watermark Annotation",
+                () -> watermarkGet(dirs.inputFile("sample_watermark.pdf")));
+        ExampleRunner.run("Delete Watermark Annotation",
+                () -> watermarkDelete(dirs.inputFile("sample_watermark.pdf"),
+                        dirs.outputFile("output_watermark_delete.pdf")));
+
+        System.out.println();
+        System.out.println("All watermark annotation examples finished. Check output in " + dirs.getOutputDir());
     }
 
     public static void main(String[] args) throws Exception {

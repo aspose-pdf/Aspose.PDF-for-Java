@@ -8,12 +8,13 @@ public final class WorkingWithAnnotationsExamples {
 
     public static void runAllExamples(String licensePath) throws Exception {
         AnnotationsImportExportExamples.runAllExamples(licensePath);
-        ExtraAnnotationExamples.runAllExamples(licensePath);
-        FiguresAnnotationExamples.runAllExamples(licensePath);
-        HighlightsAnnotationExamples.runAllExamples(licensePath);
-        LinkAnnotationExamples.runAllExamples(licensePath);
-        StickyAnnotationExamples.runAllExamples(licensePath);
+        InteractiveAnnotationExamples.runAllExamples(licensePath);
+        MarkupAnnotationExamples.runAllExamples(licensePath);
+        MediaAnnotationExamples.runAllExamples(licensePath);
+        SecurityAnnotationExamples.runAllExamples(licensePath);
+        ShapeAnnotationExamples.runAllExamples(licensePath);
         TextAnnotationExamples.runAllExamples(licensePath);
+        WatermarkAnnotationExamples.runAllExamples(licensePath);
     }
 
     public static void main(String[] args) throws Exception {

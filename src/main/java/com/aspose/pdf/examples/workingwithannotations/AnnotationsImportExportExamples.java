@@ -17,11 +17,9 @@ public final class AnnotationsImportExportExamples {
         try (Document sourceDocument = new Document(inputFile.toString());
              Document destinationDocument = new Document()) {
             Page page = destinationDocument.getPages().add();
-
-            for (Annotation annotation : sourceDocument.getPages().get_Item(1).getAnnotations()) {
-                page.getAnnotations().add(annotation, true);
+            for (Annotation annot : sourceDocument.getPages().get_Item(1).getAnnotations()) {
+                page.getAnnotations().add(annot, true);
             }
-
             destinationDocument.save(outputFile.toString());
         }
     }
@@ -31,7 +29,11 @@ public final class AnnotationsImportExportExamples {
         ExampleDataDirs dirs = ExampleConfig.initializeDataDir("working_with_annotations");
 
         ExampleRunner.run("Import Export",
-                () -> importExport(dirs.inputFile("sample_annotations.pdf"), dirs.outputFile("sample_impex.pdf")));
+                () -> importExport(dirs.inputFile("sample_annotations.pdf"),
+                        dirs.outputFile("sample_impex.pdf")));
+
+        System.out.println();
+        System.out.println("All annotation import/export examples finished. Check output in " + dirs.getOutputDir());
     }
 
     public static void main(String[] args) throws Exception {
