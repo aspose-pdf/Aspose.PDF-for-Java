@@ -6,8 +6,6 @@
 Directory | Description
 --------- | -----------
 [examples/documentation](examples/documentation/) | Runnable Java examples used by Aspose.PDF documentation.
-[plugins/jython](plugins/jython/) | Jython integration examples and plugin-specific assets.
-[plugins/php](plugins/php/) | PHP integration examples and plugin-specific assets.
 [docs](docs/) | Repository structure and contribution guidance.
 
 <p align="center">
