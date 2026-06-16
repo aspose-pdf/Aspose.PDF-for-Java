@@ -5,7 +5,8 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+$examplesRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "../../..")
 
 $exampleClasses = @(
     "com.aspose.pdf.examples.getstarted.GetStartedExamples",
@@ -84,7 +85,7 @@ function Invoke-ExampleClass {
     return $exitCode
 }
 
-Push-Location $repoRoot
+Push-Location $examplesRoot
 try {
     $mavenCommand = Get-MavenCommand
     $failed = @()

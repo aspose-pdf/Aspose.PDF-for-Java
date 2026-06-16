@@ -2,7 +2,8 @@
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+EXAMPLES_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 
 LICENSE_PATH=""
 STOP_ON_FAILURE=0
@@ -19,7 +20,7 @@ while [[ $# -gt 0 ]]; do
       ;;
     *)
       echo "Unknown argument: $1"
-      echo "Usage: tools/run-all-examples.sh [--license /path/to/Aspose.PDF.lic] [--stop-on-failure]"
+      echo "Usage: examples/documentation/tools/run-all-examples.sh [--license /path/to/Aspose.PDF.lic] [--stop-on-failure]"
       exit 2
       ;;
   esac
@@ -60,7 +61,7 @@ else
   exit 1
 fi
 
-cd "$REPO_ROOT" || exit 1
+cd "$EXAMPLES_ROOT" || exit 1
 
 FAILED=()
 for EXAMPLE_CLASS in "${EXAMPLE_CLASSES[@]}"; do

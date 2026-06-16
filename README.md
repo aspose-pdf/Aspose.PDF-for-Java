@@ -5,8 +5,10 @@
 
 Directory | Description
 --------- | -----------
-[src/main/java/com/aspose/pdf/examples](src/main/java/com/aspose/pdf/examples) | Runnable Java examples that demonstrate product features.
-[sample-data](sample-data/) | Various samle files
+[examples/documentation](examples/documentation/) | Runnable Java examples used by Aspose.PDF documentation.
+[plugins/jython](plugins/jython/) | Jython integration examples and plugin-specific assets.
+[plugins/php](plugins/php/) | PHP integration examples and plugin-specific assets.
+[docs](docs/) | Repository structure and contribution guidance.
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/aspose-pdf/Aspose.pdf-for-Java/archive/master.zip">
@@ -95,16 +97,17 @@ CGM, MHT, PCL, PS, XSLFO, MD
 
 Aspose hosts Java APIs at the [Aspose Java Repository](https://releases.aspose.com/java/repo/). You can use Aspose.PDF for Java directly in Maven projects with simple configuration. For detailed setup instructions, see [Installing Aspose.PDF for Java from Aspose Repository](https://docs.aspose.com/pdf/java/installation/).
 
-Build the examples with:
+Build all Maven modules from the repository root with:
 
 ```bash
 mvn clean compile
 ```
 
-Run one example runner with:
+Run one documentation example runner with:
 
 ```bash
-mvn -DskipTests exec:java -Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples
+cd examples/documentation
+mvn -DskipTests exec:java "-Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples"
 ```
 
 ## Extract text from a PDF file using Java
@@ -123,4 +126,4 @@ try (Document pdfDocument = new Document("input.pdf")) {
 }
 ```
 
-[Product Page](https://products.aspose.com/pdf/java) | [Docs](https://docs.aspose.com/pdf/java/) | [Demos](https://products.aspose.app/pdf/family) | [API Reference](https://apireference.aspose.com/pdf/java) | [Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/src/main/java/com/aspose/pdf/examples) | [Blog](https://blog.aspose.com/category/pdf/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/pdf) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Product Page](https://products.aspose.com/pdf/java) | [Docs](https://docs.aspose.com/pdf/java/) | [Demos](https://products.aspose.app/pdf/family) | [API Reference](https://apireference.aspose.com/pdf/java) | [Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/examples/documentation/src/main/java/com/aspose/pdf/examples) | [Blog](https://blog.aspose.com/category/pdf/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/pdf) | [Temporary License](https://purchase.aspose.com/temporary-license)

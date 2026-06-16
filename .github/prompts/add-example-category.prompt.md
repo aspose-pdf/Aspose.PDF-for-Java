@@ -15,10 +15,10 @@ Input format:
 Tasks:
 1. Inspect existing patterns in:
    - [AGENTS.md](../../AGENTS.md)
-   - [ExampleConfig.java](../../src/main/java/com/aspose/pdf/examples/ExampleConfig.java)
-   - [ExampleRunner.java](../../src/main/java/com/aspose/pdf/examples/ExampleRunner.java)
-   - [BasicOperationsExamples.java](../../src/main/java/com/aspose/pdf/examples/basicoperations/BasicOperationsExamples.java)
-2. Create package folder under src/main/java/com/aspose/pdf/examples/<category package name>.
+   - [ExampleConfig.java](../../examples/documentation/src/main/java/com/aspose/pdf/examples/ExampleConfig.java)
+   - [ExampleRunner.java](../../examples/documentation/src/main/java/com/aspose/pdf/examples/ExampleRunner.java)
+   - [BasicOperationsExamples.java](../../examples/documentation/src/main/java/com/aspose/pdf/examples/basicoperations/BasicOperationsExamples.java)
+2. Create package folder under examples/documentation/src/main/java/com/aspose/pdf/examples/<category package name>.
 3. Create a category runner class named in PascalCase with Examples suffix.
 4. Add operation example classes (if provided), each with:
    - static example methods
@@ -29,9 +29,9 @@ Tasks:
    - ExampleConfig.initializeDataDir("<sample-data folder name>")
    - ExampleRunner.run for each operation
 6. Create sample-data directories:
-   - sample-data/<sample-data folder name>/input
-   - sample-data/<sample-data folder name>/output
-7. If register-runner is yes, add the new runner to tools scripts that execute all runners.
+   - examples/documentation/sample-data/<sample-data folder name>/input
+   - examples/documentation/sample-data/<sample-data folder name>/output
+7. If register-runner is yes, add the new runner to examples/documentation/tools scripts that execute all runners.
 8. Run a compile check and report any failures.
 
 Output:

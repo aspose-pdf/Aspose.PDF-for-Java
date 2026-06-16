@@ -4,18 +4,21 @@ This file helps AI coding agents work effectively in this repository.
 
 ## Scope and Goal
 
-- Repository type: Java Maven examples for Aspose.PDF.
-- Primary goal: add and maintain runnable example code under `src/main/java/com/aspose/pdf/examples` and matching sample data under `sample-data`.
+- Repository type: Java Maven examples and plugin integrations for Aspose.PDF.
+- Primary goal: add and maintain runnable documentation example code under `examples/documentation/src/main/java/com/aspose/pdf/examples` and matching sample data under `examples/documentation/sample-data`.
+- Plugin integrations live under `plugins/<plugin-name>` and should keep plugin-specific code, sample data, tools, and README content isolated.
 
 ## Environment and Build
 
-- Required Java version: JDK 25 or newer (enforced by Maven Enforcer in `pom.xml`).
-- Build command: `mvn clean compile`.
+- Required Java version: JDK 25 or newer (enforced by Maven Enforcer in `examples/documentation/pom.xml`).
+- Build all Maven modules from the repository root: `mvn clean compile`.
+- Build documentation examples only: `mvn -f examples/documentation/pom.xml clean compile`.
 - Run one example runner:
-  - `mvn -DskipTests exec:java -Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples`
+  - `cd examples/documentation`
+  - `mvn -DskipTests exec:java "-Dexec.mainClass=com.aspose.pdf.examples.basicoperations.BasicOperationsExamples"`
 - Run all registered runners:
-  - PowerShell: `tools/run-all-examples.ps1 [-LicensePath "C:\path\Aspose.PDF.lic"] [-StopOnFailure]`
-  - Bash: `tools/run-all-examples.sh [--license /path/Aspose.PDF.lic] [--stop-on-failure]`
+  - PowerShell: `examples/documentation/tools/run-all-examples.ps1 [-LicensePath "C:\path\Aspose.PDF.lic"] [-StopOnFailure]`
+  - Bash: `examples/documentation/tools/run-all-examples.sh [--license /path/Aspose.PDF.lic] [--stop-on-failure]`
 
 ## License Handling
 
@@ -35,7 +38,7 @@ This file helps AI coding agents work effectively in this repository.
 - Naming convention:
   - Category runner class: `XxxExamples` with `runAllExamples(String licensePath)` and `main(String[] args)`.
   - Operation classes follow the same `*Examples` suffix.
-- When adding a new category runner, register its fully qualified main class in both `tools/run-all-examples.ps1` (`$exampleClasses`) and `tools/run-all-examples.sh` (`EXAMPLE_CLASSES`); unregistered runners will not be executed by the run-all scripts.
+- When adding a new category runner, register its fully qualified main class in both `examples/documentation/tools/run-all-examples.ps1` (`$exampleClasses`) and `examples/documentation/tools/run-all-examples.sh` (`EXAMPLE_CLASSES`); unregistered runners will not be executed by the run-all scripts.
 - Typical flow inside `runAllExamples`:
   1. `ExampleConfig.setLicense(licensePath)`
   2. `ExampleConfig.initializeDataDir("category_name")`
@@ -45,7 +48,7 @@ This file helps AI coding agents work effectively in this repository.
 
 - Keep source and sample-data category names aligned:
   - Java package: `...examples.<categorypackage>`
-  - Sample data folder: `sample-data/<category_folder>/input` and `sample-data/<category_folder>/output`
+  - Sample data folder: `examples/documentation/sample-data/<category_folder>/input` and `examples/documentation/sample-data/<category_folder>/output`
 - `initializeDataDir` creates missing directories automatically.
 
 ## Editing Guidance for Agents
@@ -59,23 +62,23 @@ This file helps AI coding agents work effectively in this repository.
 ## README Update Guidance
 
 - For `README.md` changes, keep runtime/version claims synchronized with `pom.xml` (for example Java and dependency versions).
-- Keep quick-start commands runnable and aligned with repository scripts in `tools/`.
+- Keep quick-start commands runnable and aligned with repository scripts in `examples/documentation/tools/`.
 - Prefer linking to canonical docs (`docs.aspose.com`, API reference, and repository files) instead of duplicating long procedural content.
 - Preserve existing product positioning and support/resource links unless the task explicitly requests branding or navigation changes.
-- If README examples are changed, prefer short snippets and point to runnable examples under `src/main/java/com/aspose/pdf/examples`.
+- If README examples are changed, prefer short snippets and point to runnable examples under `examples/documentation/src/main/java/com/aspose/pdf/examples`.
 
 ## Known Pitfalls
 
 - JDK older than 25 will fail build due to the enforcer rule.
-- Many category directories are placeholders; treat a category as a placeholder only when `src/main/java/com/aspose/pdf/examples/<category>` contains no `.java` files, and check for file presence before assuming examples already exist there.
-- Input files are assumed to exist in `sample-data/<category>/input`; add missing sample files when introducing new examples.
-- Before submitting, verify that every input path referenced by new example code has a corresponding committed file under `sample-data/<category>/input`. If a sample file is generated programmatically instead, document that in the example's Javadoc.
+- Many category directories are placeholders; treat a category as a placeholder only when `examples/documentation/src/main/java/com/aspose/pdf/examples/<category>` contains no `.java` files, and check for file presence before assuming examples already exist there.
+- Input files are assumed to exist in `examples/documentation/sample-data/<category>/input`; add missing sample files when introducing new examples.
+- Before submitting, verify that every input path referenced by new example code has a corresponding committed file under `examples/documentation/sample-data/<category>/input`. If a sample file is generated programmatically instead, document that in the example's Javadoc.
 
 ## Useful References
 
 - Project overview: [README.md](README.md)
-- Build/tooling: [pom.xml](pom.xml)
-- Scripted execution: [tools/run-all-examples.ps1](tools/run-all-examples.ps1), [tools/run-all-examples.sh](tools/run-all-examples.sh)
+- Build/tooling: [pom.xml](pom.xml), [examples/documentation/pom.xml](examples/documentation/pom.xml)
+- Scripted execution: [examples/documentation/tools/run-all-examples.ps1](examples/documentation/tools/run-all-examples.ps1), [examples/documentation/tools/run-all-examples.sh](examples/documentation/tools/run-all-examples.sh)
 - Docs style instruction: [.github/instructions/docs-style.instructions.md](.github/instructions/docs-style.instructions.md)
 - README-focused instruction: [.github/instructions/readme-maintenance.instructions.md](.github/instructions/readme-maintenance.instructions.md)
 - README-focused prompt: [.github/prompts/update-readme.prompt.md](.github/prompts/update-readme.prompt.md)

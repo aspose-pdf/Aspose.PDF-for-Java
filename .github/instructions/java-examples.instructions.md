@@ -1,13 +1,13 @@
 ---
 description: "Use when creating or modifying Java example classes for Aspose.PDF examples, including runners, category orchestration, file path usage, and sample-data folder alignment."
 name: "Java Examples Conventions"
-applyTo: "src/main/java/com/aspose/pdf/examples/**/*.java"
+applyTo: "examples/documentation/src/main/java/com/aspose/pdf/examples/**/*.java"
 ---
 # Java Examples Conventions
 
 ## Follow Existing Structure
 
-- Keep classes in package paths under src/main/java/com/aspose/pdf/examples.
+- Keep classes in package paths under examples/documentation/src/main/java/com/aspose/pdf/examples.
 - Use final utility-style classes with a private constructor for example groups.
 - Keep the category runner pattern:
   - runAllExamples(String licensePath)
@@ -25,8 +25,8 @@ applyTo: "src/main/java/com/aspose/pdf/examples/**/*.java"
 - Use java.nio.file.Path for local file handling.
 - Convert to String only where Aspose APIs require it.
 - Keep sample-data category names aligned with code intent:
-  - sample-data/<category>/input
-  - sample-data/<category>/output
+  - examples/documentation/sample-data/<category>/input
+  - examples/documentation/sample-data/<category>/output
 
 ## Resource Safety
 
@@ -38,10 +38,10 @@ applyTo: "src/main/java/com/aspose/pdf/examples/**/*.java"
 - Keep examples small and runnable as standalone methods.
 - Do not add new frameworks or dependencies unless the task explicitly requires it.
 - Preserve existing console output style used by ExampleRunner.
-- If adding a new category runner, ensure tools/run-all-examples scripts are updated when appropriate.
+- If adding a new category runner, ensure examples/documentation/tools/run-all-examples scripts are updated when appropriate.
 
 ## References
 
 - [AGENTS.md](../../AGENTS.md)
-- [ExampleConfig.java](../../src/main/java/com/aspose/pdf/examples/ExampleConfig.java)
-- [ExampleRunner.java](../../src/main/java/com/aspose/pdf/examples/ExampleRunner.java)
+- [ExampleConfig.java](../../examples/documentation/src/main/java/com/aspose/pdf/examples/ExampleConfig.java)
+- [ExampleRunner.java](../../examples/documentation/src/main/java/com/aspose/pdf/examples/ExampleRunner.java)

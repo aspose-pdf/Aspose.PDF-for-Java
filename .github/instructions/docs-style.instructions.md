@@ -26,7 +26,7 @@ applyTo: "{README.md,docs/**/*.md}"
 
 - Prefer repository-relative links for local files and stable canonical links for external docs.
 - Keep code snippets short and directly relevant to the section.
-- When possible, point to runnable examples in `src/main/java/com/aspose/pdf/examples` instead of embedding long snippets.
+- When possible, point to runnable examples in `examples/documentation/src/main/java/com/aspose/pdf/examples` instead of embedding long snippets.
 
 ## Safe Editing Boundaries
 

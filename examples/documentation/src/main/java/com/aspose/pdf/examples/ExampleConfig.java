@@ -64,6 +64,16 @@ public final class ExampleConfig {
     }
 
     private static Path projectRoot() {
-        return Paths.get("").toAbsolutePath().normalize();
+        Path currentDir = Paths.get("").toAbsolutePath().normalize();
+        if (Files.isDirectory(currentDir.resolve("sample-data"))) {
+            return currentDir;
+        }
+
+        Path documentationExamplesDir = currentDir.resolve("examples").resolve("documentation");
+        if (Files.isDirectory(documentationExamplesDir.resolve("sample-data"))) {
+            return documentationExamplesDir;
+        }
+
+        return currentDir;
     }
 }

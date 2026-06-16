@@ -8,7 +8,7 @@ applyTo: "README.md"
 ## Accuracy First
 
 - Verify version statements against [pom.xml](../../pom.xml) before updating text.
-- Prefer repository-truth commands (`mvn clean compile`, runner commands, and scripts in [tools](../../tools)).
+- Prefer repository-truth commands (`mvn clean compile`, runner commands, and scripts in [examples/documentation/tools](../../examples/documentation/tools)).
 - If a statement conflicts with source-of-truth files, update the README to match code and build configuration.
 
 ## Keep Documentation Lean
@@ -21,6 +21,6 @@ applyTo: "README.md"
 
 ## Consistency Rules
 
-- Keep naming and paths consistent with repository layout (for example `src/main/java/com/aspose/pdf/examples` and `sample-data`).
+- Keep naming and paths consistent with repository layout (for example `examples/documentation/src/main/java/com/aspose/pdf/examples` and `examples/documentation/sample-data`).
 - Preserve existing support/product links unless the task explicitly asks for link changes.
 - Use Markdown tables and headings with the existing README style; avoid unrelated formatting rewrites.

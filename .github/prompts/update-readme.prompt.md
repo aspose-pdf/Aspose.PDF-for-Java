@@ -10,9 +10,10 @@ Tasks:
 1. Read and compare:
    - [README.md](../../README.md)
    - [pom.xml](../../pom.xml)
+   - [examples/documentation/pom.xml](../../examples/documentation/pom.xml)
    - [AGENTS.md](../../AGENTS.md)
-   - [tools/run-all-examples.ps1](../../tools/run-all-examples.ps1)
-   - [tools/run-all-examples.sh](../../tools/run-all-examples.sh)
+   - [examples/documentation/tools/run-all-examples.ps1](../../examples/documentation/tools/run-all-examples.ps1)
+   - [examples/documentation/tools/run-all-examples.sh](../../examples/documentation/tools/run-all-examples.sh)
 2. Correct outdated technical claims (versions, commands, paths) to match current files.
 3. Preserve existing README structure and product messaging unless the prompt explicitly asks for restructuring.
 4. Prefer links to canonical docs over long embedded explanations.
