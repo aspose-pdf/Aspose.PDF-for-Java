@@ -13,51 +13,65 @@ public final class PdfToExcelExamples {
     }
 
     public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
-        saveOptions.setInsertBlankColumnAtFirst(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+            saveOptions.setInsertBlankColumnAtFirst(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
-        saveOptions.setMinimizeTheNumberOfWorksheets(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+            saveOptions.setMinimizeTheNumberOfWorksheets(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSM);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.XLSM);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.CSV);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToOds(Path inputFile, Path outputFile) {
-        ExcelSaveOptions saveOptions = new ExcelSaveOptions();
-        saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
-        saveDocument(inputFile, outputFile, saveOptions);
-    }
-
-    private static void saveDocument(Path inputFile, Path outputFile, ExcelSaveOptions saveOptions) {
         try (Document document = new Document(inputFile.toString())) {
+            ExcelSaveOptions saveOptions = new ExcelSaveOptions();
+            saveOptions.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
             document.save(outputFile.toString(), saveOptions);
         }
         System.out.println(inputFile + " converted into " + outputFile);
