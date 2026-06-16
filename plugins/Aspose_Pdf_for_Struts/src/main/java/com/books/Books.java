@@ -4,17 +4,17 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Set;
 
 class Books {
 
 	int bookIdCount = 1000;
-	Map<Integer, StoreBook> bookMap = new HashMap<Integer, StoreBook>();
+	Map<Integer, StoreBook> bookMap;
 	private static Books books = null;
 
 	private Books() {
-	}
+        bookMap = new HashMap<>();
+    }
 
 	public static Books getInstance() {
 		if (books == null) {
@@ -88,10 +88,9 @@ class Books {
 	public List getBookList() {
 		List booksList = new ArrayList();
 		Set s = bookMap.keySet();
-		Iterator itr = s.iterator();
-		while (itr.hasNext()) {
-			booksList.add(bookMap.get((Integer) itr.next()).getBooks());
-		}
+        for (Object o : s) {
+            booksList.add(bookMap.get((Integer) o).getBooks());
+        }
 		return booksList;
 	}
 }

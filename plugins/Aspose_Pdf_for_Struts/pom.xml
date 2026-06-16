@@ -14,7 +14,7 @@
 		<repository>
 			<id>AsposeJavaAPI</id>
 			<name>Aspose Java API</name>
-			<url>http://maven.aspose.com/artifactory/simple/ext-release-local/</url>
+			<url>https://releases.aspose.com/java/repo/</url>
 		</repository>
 	</repositories>
 
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>com.aspose</groupId>
 			<artifactId>aspose-pdf</artifactId>
-			<version>10.4.0</version>
+			<version>26.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
