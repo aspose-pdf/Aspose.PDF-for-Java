@@ -13,23 +13,26 @@ public final class PdfToPowerPointExamples {
     }
 
     public static void convertPdfToPptx(Path inputFile, Path outputFile) {
-        saveDocument(inputFile, outputFile, new PptxSaveOptions());
+        try (Document document = new Document(inputFile.toString())) {
+            PptxSaveOptions saveOptions = new PptxSaveOptions();
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFile) {
-        PptxSaveOptions saveOptions = new PptxSaveOptions();
-        saveOptions.setSlidesAsImages(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            PptxSaveOptions saveOptions = new PptxSaveOptions();
+            saveOptions.setSlidesAsImages(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFile) {
-        PptxSaveOptions saveOptions = new PptxSaveOptions();
-        saveOptions.setImageResolution(300);
-        saveDocument(inputFile, outputFile, saveOptions);
-    }
-
-    private static void saveDocument(Path inputFile, Path outputFile, PptxSaveOptions saveOptions) {
         try (Document document = new Document(inputFile.toString())) {
+            PptxSaveOptions saveOptions = new PptxSaveOptions();
+            saveOptions.setImageResolution(300);
             document.save(outputFile.toString(), saveOptions);
         }
         System.out.println(inputFile + " converted into " + outputFile);

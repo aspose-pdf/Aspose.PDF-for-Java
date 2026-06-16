@@ -13,62 +13,83 @@ public final class PdfToHtmlExamples {
     }
 
     public static void convertPdfToHtml(Path inputFile, Path outputFile) {
-        saveDocument(inputFile, outputFile, new HtmlSaveOptions());
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setSpecialFolderForAllImages(inputFile.getParent().resolve("images").toString());
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setSpecialFolderForAllImages(inputFile.getParent().resolve("images").toString());
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setSplitIntoPages(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setSplitIntoPages(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
-        saveOptions.setCompressSvgGraphicsIfAny(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+            saveOptions.setCompressSvgGraphicsIfAny(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setHtmlMarkupGenerationMode(HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
-        saveOptions.setSplitIntoPages(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setHtmlMarkupGenerationMode(HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
+            saveOptions.setSplitIntoPages(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setSaveTransparentTexts(true);
-        saveOptions.setSaveShadowedTextsAsTransparentTexts(true);
-        saveDocument(inputFile, outputFile, saveOptions);
+        try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setSaveTransparentTexts(true);
+            saveOptions.setSaveShadowedTextsAsTransparentTexts(true);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
 
     public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path outputFile) {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setConvertMarkedContentToLayers(true);
-        saveDocument(inputFile, outputFile, saveOptions);
-    }
-
-    private static void saveDocument(Path inputFile, Path outputFile, HtmlSaveOptions saveOptions) {
         try (Document document = new Document(inputFile.toString())) {
+            HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+            saveOptions.setConvertMarkedContentToLayers(true);
             document.save(outputFile.toString(), saveOptions);
         }
         System.out.println(inputFile + " converted into " + outputFile);
