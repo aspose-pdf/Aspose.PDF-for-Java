@@ -14,7 +14,5 @@
 
     <modules>
         <module>examples/documentation</module>
-        <module>plugins/jython</module>
-        <module>plugins/php</module>
     </modules>
 </project>
