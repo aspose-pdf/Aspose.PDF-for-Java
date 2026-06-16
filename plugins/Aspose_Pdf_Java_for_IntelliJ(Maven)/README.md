@@ -1,0 +1,40 @@
+﻿## Aspose.PDF Java for IntelliJ IDEA (Maven)
+ 
+The project is **IntelliJ IDEA (JetBrains IDE) plugin**  that lets you work the robust PDF document creation API -**Aspose.PDF for Java** that enables you to read, write and manipulate PDF documents from Java code.
+
+The plugins are for those who wants to utilize / use **Aspose.PDF for Java API**. A robust PDF document creation API, written in Java, which allows developers to quickly and easily read, write and manipulate PDF documents without using Adobe Acrobat from their Java applications.
+
+The plugin contains two wizards:
+
+1.  **Aspose-Pdf Maven Project** Wizard - To create **Aspose.PDF for Java API** Maven project
+2.  **Aspose.PDF Examples** - To create / download **Aspose.PDF for Java API** Examples Source Codes (Which is meant to demonstrate the usages of the API)
+
+**Wizards Detail:**
+
+1.  **Aspose.PDF Maven Project** wizard, after installing the plugin, can be run from **File->New Project->Aspose.PDF Maven Project** option. You will have to follow the wizard steps asking for the project information i.e. **Project Name, Artifact ID** for your maven project or whether you want to download the Examples Source Codes (for later addition into the project).
+2.  **Aspose.PDF Examples** wizard lets you create /copy downloaded Source Code Examples into your project. All the examples within the selected category will be copied/ created inside "**com.aspose.pdf.examples**" package and also the corresponding directory structure for the package will be created within "src/main/resources" folder which is needed to run the examples.
+
+## What is Aspose.PDF Java API?
+
+**Aspose.PDF for Java** is a robust PDF document creation API that enables your Java applications to read, write and manipulate PDF documents without using Adobe Acrobat.
+
+**Aspose.PDF for Java** offers an incredible wealth of features, these include: PDF compression options, table creation and manipulation, graph support, image functions, extensive hyperlink functionality, extended security controls and custom font handling.
+
+For more info about the **Aspose.PDF for Java API**, [please check the api documentation - click here](http://goo.gl/bfok4I)
+
+## Plugin Documentation
+
+For the complete documentation of this IntelliJ IDEA plugin, [please go through this wiki - click here](http://goo.gl/cae4NH)
+
+## Download Latest Versions?
+
+* [Latest Releases](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_IntelliJ(Maven))
+
+
+## Clone Plugin SourceCodes?
+
+
+This project is also hosted and maintained at CodePlex. To clone navigate to: 
+
+
+* [Aspose.PDF Java for IntelliJ Maven - click here](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_IntelliJ(Maven))
