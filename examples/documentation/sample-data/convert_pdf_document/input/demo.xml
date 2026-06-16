@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<employees>
+    <companyname>ABC Inc.</companyname>
+    <employee>
+        <id>101</id>
+        <name>Andrew</name>
+        <designation>Manager</designation>
+    </employee>
+
+    <employee>
+        <id>102</id>
+        <name>Eduard</name>
+        <designation>Executive</designation>
+    </employee>
+
+    <employee>
+        <id>103</id>
+        <name>Peter</name>
+        <designation>Executive</designation>
+    </employee>
+</employees>

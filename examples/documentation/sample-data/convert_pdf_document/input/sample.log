@@ -1,0 +1,105 @@
+This is ObjectTeX, Version 3.1415926-1.0 (TeX engine: Aspose.TeX 24.8) (preloaded format=objectlatex 2024.7.31)  26 May 2026 00:03
+entering extended mode
+**
+(
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-07-12> (article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (graphics.sty
+Package: graphics 2024/06/18 v1.4d Standard LaTeX Graphics (Aspose Pty Ltd.)
+ (trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(graphicso.cfg
+File: graphicso.cfg 2024/06/18 v2.0 graphics configuration of Object TeX (Aspos
+e Pty Ltd.)
+)
+Package graphics Info: Driver file: objecttex.def on input line 93.
+ (objecttex.def
+File: objecttex.def 2024/06/18 v2.0 Graphics/color driver for Object TeX
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+) (l3backend-objecttex.def
+File: l3backend-objecttex.def 2021-07-12 L3 backend support: (Object TeX)
+\l__color_backend_stack_int=\count189
+\l__pdf_internal_box=\box50
+)
+(E:\Github\Aspose.PDF-for-Java\sample-data\convert_pdf_document\input\sample.au
+x)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+
+File not found: myfigure.png. Ignored due to IgnoreMissingPackages option setti
+ng.
+
+! Package objecttex.def Error: File `myfigure.png' not found: using draft setti
+ng.
+
+See the objecttex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                               
+                                                   
+l.28     \includegraphics[width=3.0in]{myfigure}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1
+
+] [2]
+(E:\Github\Aspose.PDF-for-Java\sample-data\convert_pdf_document\input\sample.au
+x) ) 
+Here is how much of TeX's memory you used:
+  strings out of 
+  string characters out of 
+  words of memory out of 
+ 18747 multiletter control sequences out of 
+  words of font info for 45 fonts, out of  for 150
+ 14 hyphenation exceptions out of 307
+ 57i, 6n, 66p, b, 297s stack positions out of 5000i, 40n, 200p, b, 6000s
+
+Output written on object model (2 pages).
