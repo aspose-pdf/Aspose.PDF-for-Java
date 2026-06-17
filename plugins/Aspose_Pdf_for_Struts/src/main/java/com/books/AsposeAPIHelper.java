@@ -3,8 +3,8 @@ package com.books;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletOutputStream;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletOutputStream;
 
 import com.aspose.pdf.BorderInfo;
 import com.aspose.pdf.MarginInfo;
@@ -33,7 +33,7 @@ public class AsposeAPIHelper {
 	 * @see com.aspose.pdf.Document
 	 */
 	public static void createAsposePdf(ServletOutputStream out,
-			List<Map> books, ServletContext context) throws Exception {
+			List<Map<String, Object>> books, ServletContext context) throws Exception {
 		try {
 
 			// Create PDF document
@@ -55,7 +55,7 @@ public class AsposeAPIHelper {
 		}
 	}
 
-	private static Table getTable(List<Map> books) {
+	private static Table getTable(List<Map<String, Object>> books) {
 		// Add a text paragraph into the section
 		Table table = new Table();
 		table.setColumnWidths("80 80 100 80");
@@ -76,7 +76,7 @@ public class AsposeAPIHelper {
 		row1.getCells().add("Book Name");
 		row1.getCells().add("AuthorName");
 		row1.getCells().add("Book Cost");
-		for (Map book : books) {
+		for (Map<String, Object> book : books) {
 			String bookId = book.get("BookId").toString();
 			String bookName = book.get("BookName").toString();
 			String bookAuthorName = book.get("AuthorName").toString();

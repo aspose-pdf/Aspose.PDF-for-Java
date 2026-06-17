@@ -1,9 +1,9 @@
 package com.books;
 
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Map;
 import java.util.Set;
 
 class Books {
@@ -42,7 +42,7 @@ class Books {
 		sb.updateBook(bookName, authorName, bookCost);
 	}
 
-	public Map searchBook(int bookId) {
+	public Map<String, Object> searchBook(int bookId) {
 		return bookMap.get(bookId).getBooks();
 	}
 
@@ -75,8 +75,8 @@ class Books {
 			this.bookCost = bookCost;
 		}
 
-		public Map getBooks() {
-			Map books = new HashMap();
+		public Map<String, Object> getBooks() {
+			Map<String, Object> books = new HashMap<>();
 			books.put("BookId", this.bookId);
 			books.put("BookName", this.bookName);
 			books.put("AuthorName", this.authorName);
@@ -85,8 +85,8 @@ class Books {
 		}
 	}
 
-	public List getBookList() {
-		List booksList = new ArrayList();
+	public List<Map<String, Object>> getBookList() {
+		List<Map<String, Object>> booksList = new ArrayList<>();
 		Set s = bookMap.keySet();
         for (Object o : s) {
             booksList.add(bookMap.get((Integer) o).getBooks());

@@ -1,19 +1,21 @@
 package com.books;
 
-import org.apache.struts.action.ActionForm;
-import org.apache.struts.action.ActionMapping;
-import org.apache.struts.action.ActionForward;
-import org.apache.struts.action.Action;
+import org.apache.struts2.ActionSupport;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+import java.util.Map;
 
-public class ShowBooks extends Action {
-	public ActionForward execute(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Show Books List");
-		Books b = Books.getInstance();
-		request.setAttribute("booksList", b.getBookList());
-		return mapping.findForward("success");
+public class ShowBooks extends ActionSupport {
+	private List<Map<String, Object>> booksList;
+
+	public List<Map<String, Object>> getBooksList() {
+		return booksList;
+	}
+
+	@Override
+	public String execute() {
+		Books books = Books.getInstance();
+		booksList = books.getBookList();
+		return SUCCESS;
 	}
 }

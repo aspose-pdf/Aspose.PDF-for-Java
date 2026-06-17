@@ -1,17 +1,11 @@
 package com.books;
 
-import org.apache.struts.action.ActionForm;
-
-public class BookForm extends ActionForm {
+public class BookForm {
 
 	private String bookName;
 	private String authorName;
 	private int bookCost;
 	private int bookId;
-
-	public BookForm() {
-		super();
-	}
 
 	public String getBookName() {
 		return bookName;

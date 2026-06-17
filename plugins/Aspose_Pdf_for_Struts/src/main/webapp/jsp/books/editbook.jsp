@@ -1,41 +1,34 @@
-<%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <body>
-	<p>
 	<h2>
-		<img src="images/aspose-struts-logo.jpg"
-			alt="Aspose.Pdf for Java"> Aspose.Pdf Struts Example -
+		<img src="images/aspose-struts-logo.jpg" alt="Aspose.Pdf for Java"> Aspose.Pdf Struts Example -
 		Simple Book Store App
 	</h2>
-	</p>
+
 	<b>Edit Book</b>
-	<html:form>
+	<s:form action="updatebook" method="post">
 		<table style="background-color: red; border: 1px solid black">
 			<tr>
 				<td>Book Id</td>
-				<td><html:text property="bookId" disabled="true" /></td>
+				<td><s:textfield name="bookId" readonly="true" /></td>
 			</tr>
 			<tr>
 				<td>Book Name</td>
-				<td><html:text property="bookName" /></td>
+				<td><s:textfield name="bookName" /></td>
 			</tr>
 			<tr>
 				<td>Author Name</td>
-				<td><html:text property="authorName" /></td>
+				<td><s:textfield name="authorName" /></td>
 			</tr>
 			<tr>
 				<td>Book Cost</td>
-				<td><html:text property="bookCost" /></td>
+				<td><s:textfield name="bookCost" /></td>
 			</tr>
 		</table>
-		</p>
 		<p>
-		<table>
-			<tr>
-				<td><input type="submit" name="actionMethod" value="UpdateBook" /></td>
-			</tr>
-		</table>
-	</html:form>
-	</p>
+			<s:submit value="Update Book" />
+		</p>
+	</s:form>
 </body>
 </html>

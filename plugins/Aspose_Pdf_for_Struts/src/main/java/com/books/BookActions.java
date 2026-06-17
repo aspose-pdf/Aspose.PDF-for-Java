@@ -1,110 +1,105 @@
 package com.books;
 
-import org.apache.struts.action.ActionForm;
-import org.apache.struts.action.ActionMapping;
-import org.apache.struts.action.ActionForward;
-import org.apache.struts.actions.DispatchAction;
+import org.apache.struts2.ActionSupport;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.util.List;
 import java.util.Map;
 
-/**
- * 
- * @author Adeel
- *
- */
+import org.apache.struts2.interceptor.parameter.StrutsParameter;
+import org.apache.struts2.ServletActionContext;
 
-public class BookActions extends DispatchAction {
-	public ActionForward AddBook(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Add Book Page");
-		return mapping.findForward("addBook");
+public class BookActions extends ActionSupport {
+	private String bookName;
+	private String authorName;
+	private int bookCost;
+	private int bookId;
+
+	public String getBookName() {
+		return bookName;
 	}
 
-	public ActionForward EditBook(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Edit Book Page");
-		int bookId = Integer.parseInt(request.getParameter("bookId"));
-
-		Books b = Books.getInstance();
-		Map bookDet = b.searchBook(bookId);
-
-		// Used form bean class methods to fill the form input elements with
-		// selected book values.
-		BookForm bf = (BookForm) form;
-		bf.setBookName(bookDet.get("BookName").toString());
-		bf.setAuthorName(bookDet.get("AuthorName").toString());
-		bf.setBookCost((Integer) bookDet.get("BookCost"));
-		bf.setBookId((Integer) bookDet.get("BookId"));
-		return mapping.findForward("editBook");
+	@StrutsParameter
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
 	}
 
-	public ActionForward SaveBook(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Save Book");
-		// Used form bean class methods to get the value of form input elements.
-		BookForm bf = (BookForm) form;
-		String bookName = bf.getBookName();
-		String authorName = bf.getAuthorName();
-		int bookCost = bf.getBookCost();
-
-		Books b = Books.getInstance();
-		b.storeBook(bookName, authorName, bookCost);
-		return new ActionForward("/showbooks.do", true);
+	public String getAuthorName() {
+		return authorName;
 	}
 
-	public ActionForward UpdateBook(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Update Book");
-		BookForm bf = (BookForm) form;
-		String bookName = bf.getBookName();
-		String authorName = bf.getAuthorName();
-		int bookCost = bf.getBookCost();
-		int bookId = bf.getBookId();
-
-		Books b = Books.getInstance();
-		b.updateBook(bookId, bookName, authorName, bookCost);
-		return new ActionForward("/showbooks.do", true);
+	@StrutsParameter
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
 	}
 
-	public ActionForward DeleteBook(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Delete Book");
-		int bookId = Integer.parseInt(request.getParameter("bookId"));
-		Books b = Books.getInstance();
-		b.deleteBook(bookId);
-		return new ActionForward("/showbooks.do", true);
+	public int getBookCost() {
+		return bookCost;
 	}
 
-	/**
-	 * Returns PDF file that can be downloaded locally. 
-	 * @see         AsposeAPIHelper
-	 */
-	public ActionForward ExportToPdf(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Aspose export pdf");
+	@StrutsParameter
+	public void setBookCost(int bookCost) {
+		this.bookCost = bookCost;
+	}
 
-		Books b = Books.getInstance();
+	public int getBookId() {
+		return bookId;
+	}
 
-		List<Map> books = b.getBookList();
+	@StrutsParameter
+	public void setBookId(int bookId) {
+		this.bookId = bookId;
+	}
+
+	public String addBook() {
+		return SUCCESS;
+	}
+
+	public String editBook() {
+		Books books = Books.getInstance();
+		Map<String, Object> bookDetails = books.searchBook(bookId);
+
+		bookName = bookDetails.get("BookName").toString();
+		authorName = bookDetails.get("AuthorName").toString();
+		bookCost = (Integer) bookDetails.get("BookCost");
+		bookId = (Integer) bookDetails.get("BookId");
+		return SUCCESS;
+	}
+
+	public String saveBook() {
+		Books books = Books.getInstance();
+		books.storeBook(bookName, authorName, bookCost);
+		return SUCCESS;
+	}
+
+	public String updateBook() {
+		Books books = Books.getInstance();
+		books.updateBook(bookId, bookName, authorName, bookCost);
+		return SUCCESS;
+	}
+
+	public String deleteBook() {
+		Books books = Books.getInstance();
+		books.deleteBook(bookId);
+		return SUCCESS;
+	}
+
+	public String exportToPdf() {
+		Books books = Books.getInstance();
+		List<Map<String, Object>> bookList = books.getBookList();
+		HttpServletRequest request = ServletActionContext.getRequest();
+		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setContentType("application/pdf");
-		response.setHeader("Content-Disposition",
-				"attachment;filename=AsposeExportBooksList.pdf");
-		for (Map book : books) {
-			try {
-				AsposeAPIHelper.createAsposePdf(response.getOutputStream(),
-						books, request.getServletContext());
-			} catch (Exception e) {
-				e.printStackTrace();
-
-			}
-
+		response.setHeader("Content-Disposition", "attachment;filename=AsposeExportBooksList.pdf");
+		try {
+			ServletContext servletContext = request.getServletContext();
+			AsposeAPIHelper.createAsposePdf(response.getOutputStream(), bookList, servletContext);
+		} catch (Exception e) {
+			throw new RuntimeException("Unable to export books to PDF", e);
 		}
-
-		return null;
+		return NONE;
 	}
-
 }
