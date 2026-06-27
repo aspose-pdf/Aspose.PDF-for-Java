@@ -1,14 +1,14 @@
 module Asposepdfjava
   module PdfToSvg
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Open the target document
-        pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        pdf = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
         # instantiate an object of SvgSaveOptions
-        save_options = Rjb::import('com.aspose.pdf.SvgSaveOptions').new
+        save_options = Asposepdfjava.java_class('com.aspose.pdf.SvgSaveOptions').new
 
         # do not compress SVG image to Zip archive
         save_options.CompressOutputToZipArchive = false

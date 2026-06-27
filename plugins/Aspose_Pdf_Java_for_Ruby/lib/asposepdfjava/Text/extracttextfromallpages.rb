@@ -1,14 +1,14 @@
 module Asposepdfjava
   module ExtractTextFromAllPages
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Open the target document
-        pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        pdf = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
         # create TextAbsorber object to extract text
-        text_absorber = Rjb::import('com.aspose.pdf.TextAbsorber').new
+        text_absorber = Asposepdfjava.java_class('com.aspose.pdf.TextAbsorber').new
         
         # accept the absorber for all the pages
         pdf.getPages().accept(text_absorber)
@@ -21,7 +21,7 @@ module Asposepdfjava
         extracted_text = text_absorber.getText()
 
         # create a writer and open the file
-        writer = Rjb::import('java.io.FileWriter').new(Rjb::import('java.io.File').new(data_dir + "extracted_text.out.txt"))
+        writer = Asposepdfjava.java_class('java.io.FileWriter').new(Asposepdfjava.java_class('java.io.File').new(data_dir + "extracted_text.out.txt"))
         writer.write(extracted_text)
         # write a line of text to the file
         # tw.WriteLine(extractedText);

@@ -1,20 +1,20 @@
 module Asposepdfjava
   module AddHtml
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Instantiate Document object
-        doc = Rjb::import('com.aspose.pdf.Document').new
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new
 
         # Add a page to pages collection of PDF file
         page = doc.getPages().add()
         
         # Instantiate HtmlFragment with HTML contents
-        title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
+        title = Asposepdfjava.java_class('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
         
         # set MarginInfo for margin details
-        margin = Rjb::import('com.aspose.pdf.MarginInfo').new
+        margin = Asposepdfjava.java_class('com.aspose.pdf.MarginInfo').new
         margin.setBottom(10)
         margin.setTop(200)
         

@@ -1,11 +1,11 @@
 module Asposepdfjava
   module SetDocumentWindow
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Set different document properties
         # Position of document's window - Default: false
@@ -13,7 +13,7 @@ module Asposepdfjava
 
         # Predominant reading order; determine the position of page
         # when displayed side by side - Default: L2R
-        doc.setDirection(Rjb::import('com.aspose.pdf.Direction.R2L'))
+        doc.setDirection(Asposepdfjava.java_class('com.aspose.pdf.Direction.R2L'))
 
         # Whether window's title bar should display document title.
         # If false, title bar displays PDF file name - Default: false
@@ -34,10 +34,10 @@ module Asposepdfjava
         doc.setHideWindowUI(true)
 
         # The document's page mode. How to display document on exiting full-screen mode.
-        doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
+        doc.setNonFullScreenPageMode(Asposepdfjava.java_class('com.aspose.pdf.PageMode.UseOC'))
 
         # The page layout i.e. single page, one column
-        doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
+        doc.setPageLayout(Asposepdfjava.java_class('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
         #How the document should display when opened.
         doc.setPageMode()

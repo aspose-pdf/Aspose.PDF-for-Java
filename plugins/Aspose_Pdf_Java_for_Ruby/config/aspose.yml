@@ -1,5 +1,4 @@
-jar_dir: ../asposepdfjava/jars
-license_path: ../asposepdfjava/license/path
+jar_dir: jars
+license_path:
 jvm_args: -Xms512m -Xmx1G
-
 

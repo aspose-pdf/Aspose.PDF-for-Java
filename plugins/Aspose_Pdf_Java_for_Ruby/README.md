@@ -1,31 +1,36 @@
-# Aspose_PDF_Java_for_Ruby
-Aspose.PDF Java for Ruby is a gem that demonstrates / provides the Aspose.PDF for Java API usage examples in Ruby by using Rjb - Ruby Java Bridge.
+# Aspose PDF Java for Ruby
+
+Aspose.PDF Java for Ruby is a JRuby gem that demonstrates and provides Aspose.PDF for Java API usage examples from Ruby.
 
 ## Installation
 
 Execute following command.
 
-    $ gem install asposepdfjava
+```bash
+jruby -S gem install asposepdfjava
+```
 
-To download Aspose.PDF for Java API to be used with these examples through RJB, Please navigate to:
+To download Aspose.PDF for Java API to be used with these examples, please navigate to [Releases Page](https://releases.aspose.com/pdf/java/).
 
-https://artifact.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf
+Note: Create a `jars` folder at the root of the gem and copy the downloaded Aspose.PDF for Java component into it. You can also set `jar_dir` in `config/aspose.yml`.
 
-Note: Create jars folder at root of the gem and copy downloaded Aspose.PDF for java component into it.
-
-For most complete documentation of the project, check Aspose.PDF Java for Ruby confluence wiki link:
-
-https://docs.aspose.com/display/pdfjava/Aspose.Pdf+Java+for+Ruby
+For most complete documentation of the project, check [Aspose.PDF Java for Ruby Docs](https://docs.aspose.com/pdf/java/aspose-pdf-java-for-ruby/)
 
 ## Usage
 
 ```ruby
-require File.dirname(File.dirname(File.dirname(__FILE__))) + '/lib/asposepdfjava'
+require "asposepdfjava"
+
 include Asposepdfjava
 include Asposepdfjava::HelloWorld
+
 initialize_aspose_pdf
+run
 ```
-Lets understand the above code
-* The first line makes sure that the aspose pdf is loaded and available 
-* Include the files that are required to access the aspose pdf
-* Initialize the libraries. The aspose JAVA classes are loaded from the path provided in the aspose.yml file
+
+Let's understand the above code
+
+* The first line loads the gem.
+* The include lines make the shared setup and selected example available.
+* `initialize_aspose_pdf` loads the jars from `config/aspose.yml` and applies the license when configured.
+* `run` executes the selected example.

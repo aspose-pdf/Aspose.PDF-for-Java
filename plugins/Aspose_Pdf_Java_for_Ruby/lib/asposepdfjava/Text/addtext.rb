@@ -1,22 +1,22 @@
 module Asposepdfjava
   module AddText
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Instantiate Document object
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
         # get particular page
         pdf_page = doc.getPages().get_Item(1)
         
         # create text fragment
-        text_fragment = Rjb::import('com.aspose.pdf.TextFragment').new("main text")
-        text_fragment.setPosition(Rjb::import('com.aspose.pdf.Position').new(100, 600))
+        text_fragment = Asposepdfjava.java_class('com.aspose.pdf.TextFragment').new("main text")
+        text_fragment.setPosition(Asposepdfjava.java_class('com.aspose.pdf.Position').new(100, 600))
 
         
-        font_repository = Rjb::import('com.aspose.pdf.FontRepository')
-        color = Rjb::import('com.aspose.pdf.Color')
+        font_repository = Asposepdfjava.java_class('com.aspose.pdf.FontRepository')
+        color = Asposepdfjava.java_class('com.aspose.pdf.Color')
 
         # set text properties
         text_fragment.getTextState().setFont(font_repository.findFont("Verdana"))
@@ -25,7 +25,7 @@ module Asposepdfjava
         #text_fragment.getTextState().setBackgroundColor(color.GRAY)
 
         # create TextBuilder object
-        text_builder = Rjb::import('com.aspose.pdf.TextBuilder').new(pdf_page)
+        text_builder = Asposepdfjava.java_class('com.aspose.pdf.TextBuilder').new(pdf_page)
         
         # append the text fragment to the PDF page
         text_builder.appendText(text_fragment)

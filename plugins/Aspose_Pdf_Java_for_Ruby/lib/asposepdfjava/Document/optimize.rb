@@ -1,6 +1,6 @@
 module Asposepdfjava
   module Optimize
-    def initialize()
+    def run
     	# Optimize document for the web
         #optimize_web()
 
@@ -13,7 +13,7 @@ module Asposepdfjava
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Optimize for web
         doc.optimize()
@@ -29,13 +29,13 @@ module Asposepdfjava
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Optimize the file size by removing unused objects
-        opt = Rjb::import('aspose.document.OptimizationOptions').new
+        opt = Asposepdfjava.java_class('com.aspose.pdf.optimization.OptimizationOptions').new
         opt.setRemoveUnusedObjects(true)
         opt.setRemoveUnusedStreams(true)
-        opt.setLinkDuplcateStreams(true)
+        opt.setLinkDuplicateStreams(true)
         doc.optimizeResources(opt)
         
         # Save output document

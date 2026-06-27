@@ -1,11 +1,11 @@
 module Asposepdfjava
   module DeletePage
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Open the target document
-        pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        pdf = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
         # delete a particular page
         pdf.getPages().delete(2)

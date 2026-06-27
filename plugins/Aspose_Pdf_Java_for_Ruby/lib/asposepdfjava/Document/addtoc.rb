@@ -1,20 +1,20 @@
 module Asposepdfjava
   module AddToc
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Get access to first page of PDF file
         toc_page = doc.getPages().insert(1)
 
         # Create object to represent TOC information
-        toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
-        title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
+        toc_info = Asposepdfjava.java_class('com.aspose.pdf.TocInfo').new
+        title = Asposepdfjava.java_class('com.aspose.pdf.TextFragment').new("Table Of Contents")
         title.getTextState().setFontSize(20)
-        #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
+        #title.getTextState().setFontStyle(Asposepdfjava.java_class('com.aspose.pdf.FontStyles.Bold'))
 
         # Set the title for TOC
         toc_info.setTitle(title)
@@ -26,9 +26,9 @@ module Asposepdfjava
         i = 0
         while i < 2
             # Create Heading object
-            heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+            heading2 = Asposepdfjava.java_class('com.aspose.pdf.Heading').new(1)
 
-            segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+            segment2 = Asposepdfjava.java_class('com.aspose.pdf.TextSegment').new
             heading2.setTocPage(toc_page)
             heading2.getSegments().add(segment2)
 

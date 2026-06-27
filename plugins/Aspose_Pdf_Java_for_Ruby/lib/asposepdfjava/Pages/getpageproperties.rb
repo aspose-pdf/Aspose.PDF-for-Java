@@ -1,11 +1,11 @@
 module Asposepdfjava
   module GetPageProperties
-    def initialize()
+    def run
         # The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Create PDF document
-        pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        pdf_document = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
         
         # get page collection
         page_collection = pdf_document.getPages()

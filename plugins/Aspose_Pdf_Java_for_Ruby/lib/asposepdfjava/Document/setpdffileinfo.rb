@@ -1,19 +1,19 @@
 module Asposepdfjava
   module SetPdfFileInfo
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Get document information
         doc_info = doc.getInfo()
         
         doc_info.setAuthor("Aspose.Pdf for java")
-        doc_info.setCreationDate(Rjb::import('java.util.Date').new)
+        doc_info.setCreationDate(Asposepdfjava.java_class('java.util.Date').new)
         doc_info.setKeywords("Aspose.Pdf, DOM, API")
-        doc_info.setModDate(Rjb::import('java.util.Date').new)
+        doc_info.setModDate(Asposepdfjava.java_class('java.util.Date').new)
         doc_info.setSubject("PDF Information")
         doc_info.setTitle("Setting PDF Document Information")
         

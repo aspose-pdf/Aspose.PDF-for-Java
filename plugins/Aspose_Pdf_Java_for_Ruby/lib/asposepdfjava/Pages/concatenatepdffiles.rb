@@ -1,14 +1,14 @@
 module Asposepdfjava
   module ConcatenatePdfFiles
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
                 
         # Open the target document
-        pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
+        pdf1 = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
         # Open the source document
-        pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
+        pdf2 = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
         
         # Add the pages of the source document to the target document
         pdf1.getPages().add(pdf2.getPages())

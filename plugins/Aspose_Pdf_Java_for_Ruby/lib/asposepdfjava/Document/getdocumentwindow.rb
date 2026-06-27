@@ -1,11 +1,11 @@
 module Asposepdfjava
   module GetDocumentWindow
-    def initialize()
+    def run
     	# The path to the documents directory.
         data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
         
         # Open a pdf document.
-        doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+        doc = Asposepdfjava.java_class('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
         # Get different document properties
         # Position of document's window - Default: false
