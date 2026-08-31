@@ -46,6 +46,13 @@ public final class PdfToOtherFileExamples {
         System.out.println(inputFile + " converted into " + outputFile);
     }
 
+    public static void convertPdfToXml(Path inputFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            document.save(outputFile.toString(), SaveFormat.Xml);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
+    }
+
     public static void convertPdfToMd(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
             MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
@@ -73,6 +80,7 @@ public final class PdfToOtherFileExamples {
         ExampleRunner.run("PDF to TeX", () -> convertPdfToTex(inputFile, dirs.outputFile("sample.tex")));
         ExampleRunner.run("PDF to TXT", () -> convertPdfToTxt(inputFile, dirs.outputFile("sample.txt")));
         ExampleRunner.run("PDF to XPS", () -> convertPdfToXps(inputFile, dirs.outputFile("sample.xps")));
+        ExampleRunner.run("PDF to XML", () -> convertPdfToXml(inputFile, dirs.outputFile("sample.xml")));
         ExampleRunner.run("PDF to MobiXML", () -> convertPdfToMobiXml(inputFile, dirs.outputFile("sample.mobi")));
 
         System.out.println();
