@@ -14,8 +14,7 @@ public final class ParsingAcroformsExamples {
     }
 
     public static void extractFormFields(Path inputFile) {
-        Form form = new Form(inputFile.toString());
-        try {
+        try (Form form = new Form(inputFile.toString())) {
             StringBuilder formValues = new StringBuilder("{");
             String[] fieldNames = form.getFieldNames();
             for (int i = 0; i < fieldNames.length; i++) {
@@ -26,24 +25,18 @@ public final class ParsingAcroformsExamples {
             }
             formValues.append("}");
             System.out.println(formValues);
-        } finally {
-            form.close();
         }
     }
 
     public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
-        Form form = new Form(inputFile.toString());
-        try {
+        try (Form form = new Form(inputFile.toString())) {
             String formValue = form.getField(fieldName);
             System.out.println(formValue);
-        } finally {
-            form.close();
         }
     }
 
     public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
-        Form form = new Form(inputFile.toString());
-        try {
+        try (Form form = new Form(inputFile.toString())) {
             StringBuilder json = new StringBuilder();
             json.append("{\n");
             String[] fieldNames = form.getFieldNames();
@@ -58,14 +51,11 @@ public final class ParsingAcroformsExamples {
             }
             json.append("}\n");
             Files.writeString(outputFile, json.toString());
-        } finally {
-            form.close();
         }
     }
 
     public static void extractFormFieldsJsonDoc(Path inputFile, Path outputFile) throws Exception {
-        Form form = new Form(inputFile.toString());
-        try {
+        try (Form form = new Form(inputFile.toString())) {
             StringBuilder json = new StringBuilder();
             json.append("{\n");
             String[] fieldNames = form.getFieldNames();
@@ -80,38 +70,27 @@ public final class ParsingAcroformsExamples {
             }
             json.append("}\n");
             Files.writeString(outputFile, json.toString());
-        } finally {
-            form.close();
         }
     }
 
     public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
-        Form form = new Form();
-        try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        try (Form form = new Form(); OutputStream stream = Files.newOutputStream(outputFile)) {
             form.bindPdf(inputFile.toString());
             form.exportXml(stream);
-        } finally {
-            form.close();
         }
     }
 
     public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
-        Form form = new Form();
-        try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        try (Form form = new Form(); OutputStream stream = Files.newOutputStream(outputFile)) {
             form.bindPdf(inputFile.toString());
             form.exportFdf(stream);
-        } finally {
-            form.close();
         }
     }
 
     public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {
-        Form form = new Form();
-        try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        try (Form form = new Form(); OutputStream stream = Files.newOutputStream(outputFile)) {
             form.bindPdf(inputFile.toString());
             form.exportXfdf(stream);
-        } finally {
-            form.close();
         }
     }
 
