@@ -65,11 +65,40 @@ public final class ParsingVectorGraphicsExamples {
             StringBuilder svg = new StringBuilder();
             svg.append("<svg xmlns=\"http://www.w3.org/2000/svg\">\n");
             for (GraphicElement element : absorber.getElements()) {
-                svg.append(element.saveToSvg()).append("\n");
+                String svgContent = element.saveToSvg();
+                String svgData = extractSvgContent(svgContent);
+                svg.append(svgData).append("\n");
             }
             svg.append("</svg>\n");
             Files.writeString(outputFile, svg.toString());
         }
+    }
+
+    static String extractSvgContent(String svgContent) {
+        if (svgContent == null) {
+            throw new IllegalArgumentException("SVG content must not be null");
+        }
+
+        int openingTagStart = svgContent.indexOf("<svg");
+        if (openingTagStart < 0) {
+            throw new IllegalArgumentException("SVG opening tag was not found");
+        }
+
+        int openingTagEnd = svgContent.indexOf('>', openingTagStart);
+        if (openingTagEnd < 0) {
+            throw new IllegalArgumentException("SVG opening tag is not closed");
+        }
+
+        if (svgContent.substring(openingTagStart, openingTagEnd).stripTrailing().endsWith("/")) {
+            return "";
+        }
+
+        int closingTagStart = svgContent.lastIndexOf("</svg>");
+        if (closingTagStart < openingTagEnd) {
+            throw new IllegalArgumentException("SVG closing tag was not found");
+        }
+
+        return svgContent.substring(openingTagEnd + 1, closingTagStart);
     }
 
     public static void extractSingleVectorElement(Path inputFile, Path outputFile) {
@@ -79,8 +108,7 @@ public final class ParsingVectorGraphicsExamples {
             graphicsAbsorber.visit(page);
             if (graphicsAbsorber.getElements().size() > 1) {
                 GraphicElement xformPlacement = graphicsAbsorber.getElements().get_Item(1);
-                if (xformPlacement instanceof XFormPlacement) {
-                    XFormPlacement placement = (XFormPlacement) xformPlacement;
+                if (xformPlacement instanceof XFormPlacement placement) {
                     if (placement.getElements().size() > 2) {
                         placement.getElements().get_Item(2).saveToSvg(outputFile.toString());
                     }
@@ -112,7 +140,7 @@ public final class ParsingVectorGraphicsExamples {
                         dirs.outputFile("single_element.svg")));
     }
 
-    public static void main(String[] args) throws Exception {
+     static void main(String[] args) throws Exception {
         runAllExamples(ExampleConfig.resolveLicensePath(args));
     }
 }
