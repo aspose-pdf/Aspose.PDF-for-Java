@@ -22,8 +22,7 @@ public final class ParsingAnnotationSpecialTextExamples {
     public static void extractHighlightedText(Path inputFile) {
         try (Document document = new Document(inputFile.toString())) {
             for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
-                if (annotation instanceof HighlightAnnotation) {
-                    HighlightAnnotation highlightAnnotation = (HighlightAnnotation) annotation;
+                if (annotation instanceof HighlightAnnotation highlightAnnotation) {
                     System.out.println(highlightAnnotation.getMarkedText());
                 }
             }
