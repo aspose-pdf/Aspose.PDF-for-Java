@@ -25,13 +25,27 @@ public final class ManipulatePdfDocumentExamples {
 
     public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            document.validate(outputFile.toString(), PdfFormat.PDF_A_1A);
+            if (document.validate(outputFile.toString(), PdfFormat.PDF_A_1A))
+            {
+                System.out.println("PDF document is valid");
+            }
+            else
+            {
+                System.out.println("PDF document is not valid");
+            }
         }
     }
 
     public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            document.validate(outputFile.toString(), PdfFormat.PDF_A_1B);
+            if (document.validate(outputFile.toString(), PdfFormat.PDF_A_1B))
+            {
+                System.out.println("PDF document is valid");
+            }
+            else
+            {
+                System.out.println("PDF document is not valid");
+            }
         }
     }
 
@@ -183,13 +197,7 @@ public final class ManipulatePdfDocumentExamples {
 
     public static void flattenFillablePdf(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            if (document.getForm() != null && document.getForm().size() > 0) {
-                for (WidgetAnnotation annotation : document.getForm()) {
-                    if (annotation instanceof Field field) {
-                        field.flatten();
-                    }
-                }
-            }
+            document.flatten();
             document.save(outputFile.toString());
         }
     }
