@@ -104,7 +104,7 @@ public final class FormattingPdfDocumentExamples {
 
     public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
         try (Document document = new Document(inputFile.toString())) {
-            document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+            //document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
             document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
             document.save(outputFile.toString());
         }
