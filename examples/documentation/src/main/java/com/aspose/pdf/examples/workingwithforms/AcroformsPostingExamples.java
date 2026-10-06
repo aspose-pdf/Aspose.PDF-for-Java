@@ -17,8 +17,7 @@ public final class AcroformsPostingExamples {
     }
 
     public static void addSubmitButton(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        editor.bindPdf(inputFile.toString());
+        FormEditor editor = new FormEditor(inputFile.toString(), outputFile.toString());
         try {
             editor.addSubmitBtn("submitbutton", 1, "Submit", "http://localhost/testing/show",
                     100, 450, 150, 475);

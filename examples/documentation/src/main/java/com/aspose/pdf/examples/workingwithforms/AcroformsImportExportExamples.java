@@ -10,8 +10,8 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public final class AcroformsImportExportExamples {
-    private AcroformsImportExportExamples() {
+public final class AcroFormsImportExportExamples {
+    private AcroFormsImportExportExamples() {
     }
 
     public static void importDataFromXml(Path inputFile, Path dataFile, Path outputFile) throws Exception {
