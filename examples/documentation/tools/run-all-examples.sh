@@ -29,6 +29,11 @@ done
 EXAMPLE_CLASSES=(
   "com.aspose.pdf.examples.getstarted.GetStartedExamples"
   "com.aspose.pdf.examples.facades.FacadesExamples"
+  "com.aspose.pdf.examples.facades.pdfannotationeditor.PdfAnnotationEditorExamples"
+  "com.aspose.pdf.examples.facades.pdfbookmarkeditor.UpdateDeleteExamples"
+  "com.aspose.pdf.examples.facades.pdfextractor.PdfExtractorExamples"
+  "com.aspose.pdf.examples.facades.pdffilemend.PdfFileMendExamples"
+  "com.aspose.pdf.examples.facades.pdfpageeditor.PdfPageEditorExamples"
   "com.aspose.pdf.examples.basicoperations.BasicOperationsExamples"
   "com.aspose.pdf.examples.convertpdfdocument.ConvertPdfDocumentExamples"
   "com.aspose.pdf.examples.pdffilemetadata.PdfFileMetadataExamples"

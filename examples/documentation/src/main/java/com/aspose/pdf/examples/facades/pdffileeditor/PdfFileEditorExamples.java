@@ -3,6 +3,7 @@ package com.aspose.pdf.examples.facades.pdffileeditor;
 import com.aspose.pdf.examples.ExampleConfig;
 import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
+import com.aspose.pdf.facades.IPdfFileEditor;
 import com.aspose.pdf.facades.PdfFileEditor;
 
 import java.nio.file.Path;
@@ -15,7 +16,7 @@ public final class PdfFileEditorExamples {
 
     public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.concatenate(new String[] {firstInputFile.toString(), secondInputFile.toString()}, outputFile.toString());
+        pdfEditor.concatenate(new String[]{firstInputFile.toString(), secondInputFile.toString()}, outputFile.toString());
     }
 
     public static void splitPdfFromBeginning(Path inputFile, Path outputFile) {
@@ -35,22 +36,22 @@ public final class PdfFileEditorExamples {
 
     public static void extractPagesFromPdf(Path inputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.extract(inputFile.toString(), new int[] {1, 4, 3}, outputFile.toString());
+        pdfEditor.extract(inputFile.toString(), new int[]{1, 4, 3}, outputFile.toString());
     }
 
     public static void deletePagesFromPdf(Path inputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.delete(inputFile.toString(), new int[] {2, 4}, outputFile.toString());
+        pdfEditor.delete(inputFile.toString(), new int[]{2, 4}, outputFile.toString());
     }
 
     public static void insertPagesIntoPdf(Path inputFile, Path sampleFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.insert(inputFile.toString(), 2, sampleFile.toString(), new int[] {1, 2}, outputFile.toString());
+        pdfEditor.insert(inputFile.toString(), 2, sampleFile.toString(), new int[]{1, 2}, outputFile.toString());
     }
 
     public static void appendPagesToPdf(Path inputFile, Path sampleFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.append(inputFile.toString(), new String[] {sampleFile.toString()}, 1, 1, outputFile.toString());
+        pdfEditor.append(inputFile.toString(), new String[]{sampleFile.toString()}, 1, 1, outputFile.toString());
     }
 
     public static void createPdfBooklet(Path inputFile, Path outputFile) {
@@ -79,19 +80,45 @@ public final class PdfFileEditorExamples {
 
     public static void addMarginsToPdfPages(Path inputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.addMargins(inputFile.toString(), outputFile.toString(), new int[] {1, 3}, 36, 36, 36, 36);
+        pdfEditor.addMargins(inputFile.toString(), outputFile.toString(), new int[]{1, 3}, 36, 36, 36, 36);
     }
 
     public static void resizePdfPageContents(Path inputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        if (!pdfEditor.resizeContents(inputFile.toString(), outputFile.toString(), new int[] {1, 3}, 400, 750)) {
+        if (!pdfEditor.resizeContents(inputFile.toString(), outputFile.toString(), new int[]{1, 3}, 400, 750)) {
             throw new IllegalStateException("Failed to resize PDF page contents.");
         }
     }
 
+    public static void resizePdfPageContents2(Path inputFile, Path outputFile) {
+        // Create PdfFileEditor Object
+        PdfFileEditor fileEditor = new PdfFileEditor();
+
+        // Specify Parameters to be used for resizing
+        IPdfFileEditor.ContentsResizeParameters parameters = new PdfFileEditor.ContentsResizeParameters(
+                // Left margin = 10% of page width
+                PdfFileEditor.ContentsResizeValue.percents(10),
+                // New contents width calculated automatically as width - left margin - right margin (100% - 10% - 10% = 80%)
+                null,
+                // Right margin is 10% of page
+                PdfFileEditor.ContentsResizeValue.percents(10),
+                // Top margin = 10% of height
+                PdfFileEditor.ContentsResizeValue.percents(10),
+                // New contents height is calculated automatically (similar to width)
+                null,
+                // Bottom margin is 10%
+                PdfFileEditor.ContentsResizeValue.percents(10)
+        );
+
+        // Resize Page Contents
+        fileEditor.resizeContents(inputFile.toString(), outputFile.toString(), new int[]{1, 2}, parameters);
+
+    }
+
+
     public static void addPageBreaksInPdf(Path inputFile, Path outputFile) {
         PdfFileEditor pdfEditor = new PdfFileEditor();
-        pdfEditor.addPageBreak(inputFile.toString(), outputFile.toString(), new PdfFileEditor.PageBreak[] {
+        pdfEditor.addPageBreak(inputFile.toString(), outputFile.toString(), new PdfFileEditor.PageBreak[]{
                 new PdfFileEditor.PageBreak(1, 400)
         });
     }
@@ -115,6 +142,7 @@ public final class PdfFileEditorExamples {
         ExampleRunner.run("Try Create N-Up PDF Document", () -> tryCreateNupPdfDocument(dirs.inputFile("try_create_nup_pdf_document.pdf"), dirs.outputFile("try_create_nup_pdf_document.pdf")));
         ExampleRunner.run("Add Margins to PDF Pages", () -> addMarginsToPdfPages(dirs.inputFile("add_margins_to_pdf_pages.pdf"), dirs.outputFile("add_margins_to_pdf_pages.pdf")));
         ExampleRunner.run("Resize PDF Page Contents", () -> resizePdfPageContents(dirs.inputFile("resize_pdf_page_contents.pdf"), dirs.outputFile("resize_pdf_page_contents.pdf")));
+        ExampleRunner.run("Resize PDF Page Contents -2", () -> resizePdfPageContents2(dirs.inputFile("resize_pdf_page_contents.pdf"), dirs.outputFile("resize_pdf_page_contents.pdf")));
         ExampleRunner.run("Add Page Breaks in PDF", () -> addPageBreaksInPdf(dirs.inputFile("add_page_breaks_in_pdf.pdf"), dirs.outputFile("add_page_breaks_in_pdf.pdf")));
 
         System.out.println();

@@ -23,7 +23,7 @@ import static com.aspose.pdf.AnnotationType.Text;
  * in the output directory, so no external sample files are required.
  */
 public final class PdfAnnotationEditorExamples {
-    private static final String CATEGORY = "facades/pdfannotationeditor";
+    private static final String CATEGORY = "facades/pdf_annotation_editor";
     private static final String SAMPLE_ANNOTATION_NAME = "sample-note-1";
 
     private PdfAnnotationEditorExamples() {

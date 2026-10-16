@@ -16,7 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public final class PdfContentEditorExamples {
-    private static final String CATEGORY = "facades/pdf_content_editor";
+    private static final String CATEGORY = "facades/pdfcontenteditor";
 
     private PdfContentEditorExamples() {
     }

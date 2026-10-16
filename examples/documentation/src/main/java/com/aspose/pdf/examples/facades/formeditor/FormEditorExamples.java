@@ -13,7 +13,7 @@ import java.awt.Color;
 import java.nio.file.Path;
 
 public final class FormEditorExamples {
-    private static final String CATEGORY = "facades/formeditor";
+    private static final String CATEGORY = "facades/form_editor";
 
     private FormEditorExamples() {
     }
