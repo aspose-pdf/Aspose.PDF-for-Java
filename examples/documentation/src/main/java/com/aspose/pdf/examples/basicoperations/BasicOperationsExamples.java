@@ -7,6 +7,7 @@ public final class BasicOperationsExamples {
     }
 
     public static void runAllExamples(String licensePath) throws Exception {
+        CreateDocumentExamples.runAllExamples(licensePath);
         OpenDocumentExamples.runAllExamples(licensePath);
         SaveDocumentExamples.runAllExamples(licensePath);
         MergeDocumentExamples.runAllExamples(licensePath);

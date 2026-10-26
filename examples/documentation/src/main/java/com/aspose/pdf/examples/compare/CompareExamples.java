@@ -13,6 +13,7 @@ import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
 
 import javax.imageio.ImageIO;
+import java.io.IOException;
 import java.nio.file.Path;
 
 public final class CompareExamples {
@@ -35,7 +36,7 @@ public final class CompareExamples {
         System.out.println("Difference images saved to " + diffOutputFile + " and " + destinationOutputFile);
     }
 
-    public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path outputFile) {
+    public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path outputFile) throws IOException {
         try (Document document1 = new Document(inputFile1.toString());
              Document document2 = new Document(inputFile2.toString())) {
             SideBySideComparisonOptions options = new SideBySideComparisonOptions();
@@ -60,7 +61,7 @@ public final class CompareExamples {
         System.out.println("Graphical comparison saved to " + outputFile);
     }
 
-    public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
+    public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) throws Exception {
         try (Document document1 = new Document(inputFile1.toString());
              Document document2 = new Document(inputFile2.toString())) {
             SideBySideComparisonOptions options = new SideBySideComparisonOptions();

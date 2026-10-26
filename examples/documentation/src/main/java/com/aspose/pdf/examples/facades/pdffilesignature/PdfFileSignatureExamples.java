@@ -114,6 +114,18 @@ public final class PdfFileSignatureExamples {
         }
     }
 
+    public static void checkUsageRights(Path inputFile, Path outputFile) throws Exception {
+        // Check whether the input PDF contains usage rights.
+        PdfFileSignature pdfSignature = new PdfFileSignature();
+        try {
+            pdfSignature.bindPdf(inputFile.toString());
+            boolean had_usage_rights = pdfSignature.containsUsageRights();
+            System.out.format("PDF contains usage rights: %s", had_usage_rights);
+        } finally {
+            pdfSignature.close();
+        }
+    }
+
     public static void removeSignature(Path inputFile, Path outputFile) {
         PdfFileSignature pdfSignature = new PdfFileSignature();
         try {
@@ -137,6 +149,7 @@ public final class PdfFileSignatureExamples {
         ExampleRunner.run("Get Signature Information", () -> getSignatureInformation(dirs.inputFile("signed.pdf")));
         ExampleRunner.run("Verify PDF Signature", () -> verifyPdfSignature(dirs.inputFile("signed.pdf")));
         ExampleRunner.run("Extract Signature Certificate", () -> extractSignatureCertificate(dirs.inputFile("signed.pdf"), dirs.outputFile("signature-certificate.cer")));
+        ExampleRunner.run("Check usage rights", () -> checkUsageRights(dirs.inputFile("signed.pdf"), dirs.outputFile("log.txt")));
         ExampleRunner.run("Remove Signature", () -> removeSignature(dirs.inputFile("signed.pdf"), dirs.outputFile("remove_signature_from_pdf.pdf")));
 
         System.out.println();

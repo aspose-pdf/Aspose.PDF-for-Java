@@ -32,7 +32,10 @@ public final class PdfViewerExamples {
     }
 
     public static void decodeAllPages(Path inputFile, Path outputDir) throws Exception {
-        PdfViewer viewer = createViewer();
+        PdfViewer viewer = new PdfViewer();
+        viewer.setCoordinateType(PageCoordinateType.MediaBox);
+        viewer.setResolution(150);
+        viewer.setScaleFactor(1.0f);
         try {
             viewer.bindPdf(inputFile.toString());            
             BufferedImage[] pages = viewer.decodeAllPages();
@@ -259,6 +262,7 @@ public final class PdfViewerExamples {
         if (Boolean.getBoolean("aspose.pdf.examples.print")) {
             String printer = System.getProperty("aspose.pdf.examples.printer");
             Path input = dirs.inputFile("sample.pdf");
+            ExampleRunner.run("Print to Default Printer", () -> printToDefaultPrinter(input));
             ExampleRunner.run("Print Without Dialog", () -> printWithoutDialog(input, printer));
             ExampleRunner.run("Print Simplex and Duplex", () -> printSimplexAndDuplex(input, printer));
             ExampleRunner.run("Print Multiple Documents", () -> printMultipleDocuments(printer,
@@ -291,4 +295,3 @@ public final class PdfViewerExamples {
         runAllExamples(ExampleConfig.resolveLicensePath(args));
     }
 }
-

@@ -10,10 +10,10 @@ import com.aspose.pdf.facades.PdfBookmarkEditor;
 import java.awt.*;
 import java.nio.file.Path;
 
-public final class CreateExamples {
-    private static final String CATEGORY = "facades/pdfbookmarkeditor";
+public final class PdfBookmarkCreateExamples {
+    private static final String CATEGORY = "facades/pdf_bookmark_editor";
 
-    private CreateExamples(Path inputFile, Path outputFile) {
+    private PdfBookmarkCreateExamples(Path inputFile, Path outputFile) {
 
     }
 

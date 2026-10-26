@@ -16,7 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public final class PdfContentEditorExamples {
-    private static final String CATEGORY = "facades/pdfcontenteditor";
+    private static final String CATEGORY = "facades/pdf_content_editor";
 
     private PdfContentEditorExamples() {
     }
@@ -120,6 +120,7 @@ public final class PdfContentEditorExamples {
 
     public static void deleteImages(Path inputFile, Path outputFile) {
         try (PdfContentEditor editor = new PdfContentEditor()) {
+            editor.bindPdf(inputFile.toString());
             editor.deleteImage();
             editor.save(outputFile.toString());
         }
@@ -279,6 +280,8 @@ public final class PdfContentEditorExamples {
     public static void runAllExamples(String licensePath) throws Exception {
         ExampleConfig.setLicense(licensePath);
         ExampleDataDirs dirs = ExampleConfig.initializeDataDir(CATEGORY);
+
+        ExampleRunner.run("Delete Images", () -> deleteImages(dirs.inputFile("replace_image.pdf"), dirs.outputFile("delete_images.pdf")));
 
         ExampleRunner.run("Bind From Stream and Save", () -> bindFromStreamAndSave(dirs.inputFile("sample.pdf"), dirs.outputFile("bind_from_stream_and_save.pdf")));
 

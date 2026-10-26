@@ -12,11 +12,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public final class UpdateDeleteExamples {
+public final class PdfBookmarkUpdateDeleteExamples {
 
-    public static final String CATEGORY = "facades/pdfbookmarkeditor";
+    public static final String CATEGORY = "facades/pdf_bookmark_editor";
 
-    private UpdateDeleteExamples() {
+    private PdfBookmarkUpdateDeleteExamples() {
 
     }
 

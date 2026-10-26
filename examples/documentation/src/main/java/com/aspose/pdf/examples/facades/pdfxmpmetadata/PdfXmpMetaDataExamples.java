@@ -1,6 +1,9 @@
 package com.aspose.pdf.examples.facades.pdfxmpmetadata;
 
 import com.aspose.pdf.XmpValue;
+import com.aspose.pdf.examples.ExampleConfig;
+import com.aspose.pdf.examples.ExampleDataDirs;
+import com.aspose.pdf.examples.ExampleRunner;
 import com.aspose.pdf.facades.DefaultMetadataProperties;
 import com.aspose.pdf.facades.PdfXmpMetadata;
 
@@ -71,5 +74,19 @@ public final class PdfXmpMetaDataExamples {
             // Save PDF document
             xmpMetaData.save(outputFile.toString());
         }
+    }
+    public static void runAllExamples(String licensePath) throws Exception {
+        ExampleConfig.setLicense(licensePath);
+        ExampleDataDirs dirs = ExampleConfig.initializeDataDir(CATEGORY);
+
+        ExampleRunner.run("Get XMP Data",
+                () -> GetXmpMetadata(dirs.inputFile("sample.pdf"), dirs.outputFile("sample.txt")));
+        ExampleRunner.run("Add XMP Data",
+                ()-> AddXmpMetadata(dirs.inputFile("sample.pdf"), dirs.outputFile("sample.pdf")));
+
+    }
+
+    public static void main(String[] args) throws Exception {
+        runAllExamples(ExampleConfig.resolveLicensePath(args));
     }
 }

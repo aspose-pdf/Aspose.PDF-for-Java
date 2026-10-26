@@ -200,11 +200,15 @@ public final class AddTablesExamples {
             Table table = new Table();
             table.setBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
             table.setDefaultCellBorder(new BorderInfo(BorderSide.All, 0.5f, Color.getLightGray()));
+            List<String> columnTemplates = List.of(
+                    "Column $\\mathbf{(%d, 1)}$",
+                    "Column \\tiny{(%d, 2)}",
+                    "Column \\underline{(%d, 3)}");
             for (int rowCount = 1; rowCount < 10; rowCount++) {
                 Row row = table.getRows().add();
-                row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\mathbf{(" + rowCount + ", 1)}$"));
-                row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\textcolor{red}{(" + rowCount + ", 2)}$"));
-                row.getCells().add().getParagraphs().add(new TeXFragment("Column $\\underline{(" + rowCount + ", 3)}$"));
+                for (String template : columnTemplates) {
+                    row.getCells().add().getParagraphs().add(new TeXFragment(template.formatted(rowCount)));
+                }
             }
             page.getParagraphs().add(table);
             document.save(outputFile.toString());

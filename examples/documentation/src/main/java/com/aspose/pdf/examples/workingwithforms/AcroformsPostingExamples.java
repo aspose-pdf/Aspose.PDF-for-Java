@@ -47,6 +47,10 @@ public final class AcroformsPostingExamples {
         ExampleConfig.setLicense(licensePath);
         ExampleDataDirs dirs = ExampleConfig.initializeDataDir("working_with_forms");
 
+        ExampleRunner.run("Add submit action",
+                () -> addSubmitAction(dirs.inputFile("StudentInfoFormElectronic.pdf"),
+                        dirs.outputFile("add_submit_action_out.pdf")));
+
         ExampleRunner.run("Add submit button",
                 () -> addSubmitButton(
                         dirs.inputFile("StudentInfoFormElectronic.pdf"),

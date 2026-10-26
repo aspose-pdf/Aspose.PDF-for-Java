@@ -7,10 +7,10 @@ import com.aspose.pdf.facades.PdfBookmarkEditor;
 
 import java.nio.file.Path;
 
-public final class ImportExportExamples {
-    public static final String CATEGORY = "facades/pdfbookmarkeditor";
+public final class PdfBookmarkImportExportExamples {
+    public static final String CATEGORY = "facades/pdf_bookmark_editor";
 
-    private ImportExportExamples() {
+    private PdfBookmarkImportExportExamples() {
 
     }
 
