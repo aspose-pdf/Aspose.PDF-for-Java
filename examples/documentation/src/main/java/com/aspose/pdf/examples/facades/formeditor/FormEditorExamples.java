@@ -13,121 +13,91 @@ import java.awt.Color;
 import java.nio.file.Path;
 
 public final class FormEditorExamples {
-    private static final String CATEGORY = "facades/formeditor";
+    private static final String CATEGORY = "facades/form_editor";
 
     private FormEditorExamples() {
     }
 
     public static void createTextBoxField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.addField(FieldType.Text, "first_name", "Alexander", 1, 50, 570, 150, 590);
             editor.addField(FieldType.Text, "last_name", "Smith", 1, 235, 570, 330, 590);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void createCheckBoxField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.addField(FieldType.CheckBox, "checkbox1", "Check Box 1", 1, 240, 498, 256, 514);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void createComboBoxField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.addField(FieldType.ComboBox, "combobox1", "Australia", 1, 230, 498, 350, 514);
-            editor.addListItem("combobox1", new String[] {"Australia", "Australia"});
-            editor.addListItem("combobox1", new String[] {"New Zealand", "New Zealand"});
+            editor.addListItem("combobox1", new String[]{"Australia", "Australia"});
+            editor.addListItem("combobox1", new String[]{"New Zealand", "New Zealand"});
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void addListItem(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
-            editor.addListItem("Country", new String[] {"New Zealand", "New Zealand"});
+            editor.addListItem("Country", new String[]{"New Zealand", "New Zealand"});
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void deleteListItem(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.delListItem("Country", "UK");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void moveField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.moveField("Country", 200, 600, 280, 620);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void removeField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.removeField("Country");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void renameField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.renameField("City", "Town");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void singleToMultiple(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.single2Multiple("City");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void copyInnerField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.copyInnerField("First Name", "First Name Copy", 2, 200, 600);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
@@ -137,19 +107,15 @@ public final class FormEditorExamples {
             document.save(outputFile.toString());
         }
 
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(outputFile.toString());
             editor.copyOuterField(inputFile.toString(), "First Name", 1, 200, 600);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void decorateField(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             FormFieldFacade facade = new FormFieldFacade();
             facade.setBackgroundColor(Color.RED);
@@ -159,43 +125,32 @@ public final class FormEditorExamples {
             editor.setFacade(facade);
             editor.decorateField("First Name");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void setFieldAlignment(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.setFieldAlignment("First Name", FormFieldFacade.ALIGN_CENTER);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void setFieldScript(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
             editor.addFieldScript("Script_Demo_Button", "app.alert('Script 1 has been executed');");
             editor.setFieldScript("Script_Demo_Button", "app.alert('Script 2 has been executed');");
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 
     public static void setSubmitUrl(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        try {
+        try (FormEditor editor = new FormEditor()) {
             editor.bindPdf(inputFile.toString());
-            editor.setSubmitUrl("Script_Demo_Button", "http://www.example.com/submit");
+            editor.setSubmitUrl("Script_Demo_Button", "https://www.example.com/submit");
             editor.setSubmitFlag("Script_Demo_Button", SubmitFormFlag.Xfdf);
             editor.save(outputFile.toString());
-        } finally {
-            editor.close();
         }
     }
 

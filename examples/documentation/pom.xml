@@ -20,8 +20,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>25</maven.compiler.release>
-        <aspose.pdf.version>26.7</aspose.pdf.version>
-        <aspose.imaging.version>26.7</aspose.imaging.version>
+        <aspose.pdf.version>26.9</aspose.pdf.version>
+        <aspose.imaging.version>26.9</aspose.imaging.version>
         <junit.jupiter.version>5.11.4</junit.jupiter.version>
     </properties>
 

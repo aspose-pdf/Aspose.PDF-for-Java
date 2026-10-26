@@ -1,21 +1,18 @@
 package com.aspose.pdf.examples.workingwithdocuments;
 
 import com.aspose.pdf.Document;
-import com.aspose.pdf.Document.CallBackGetHocr;
 import com.aspose.pdf.Page;
 import com.aspose.pdf.TextFragment;
+import com.aspose.pdf.devices.PngDevice;
+import com.aspose.pdf.devices.Resolution;
 import com.aspose.pdf.examples.ExampleConfig;
 import com.aspose.pdf.examples.ExampleDataDirs;
 import com.aspose.pdf.examples.ExampleRunner;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Scanner;
-
-import javax.imageio.ImageIO;
+import java.util.concurrent.TimeUnit;
 
 public final class CreatePdfDocumentExamples {
     private CreatePdfDocumentExamples() {
@@ -29,77 +26,79 @@ public final class CreatePdfDocumentExamples {
         }
     }
 
-    public static void createSearchablePdf(Path inputFile, Path outputFile) {
-        Path tempDir = outputFile.getParent().resolve("ocr-temp");
-
-        // Create callBack - logic recognize text for PDF images. Use outer OCR supports
-        // HOCR standard(http://en.wikipedia.org/wiki/HOCR).
-        // We have used free google tesseract
-        // OCR(http://en.wikipedia.org/wiki/Tesseract_%28software%29)
-
-        CallBackGetHocr cbgh = new CallBackGetHocr() {
-            @Override
-            public String invoke(java.awt.image.BufferedImage img) {
-                File outputfile = tempDir.resolve("test.jpg").toFile();
+    /** Creates a searchable PDF using Tesseract 4 or newer with English LSTM data. */
+    public static void createSearchablePdf(Path inputFile, Path outputFile)
+            throws IOException, InterruptedException {
+        Path outputDirectory = outputFile.toAbsolutePath().getParent();
+        Files.createDirectories(outputDirectory);
+        Path tempDir = Files.createTempDirectory(outputDirectory, "ocr-");
+        Path tempImage = tempDir.resolve("page.png");
+        Path tempDoc = tempDir.resolve("page");
+        Path tempPdf = tempDir.resolve("page.pdf");
+        Path tempLog = tempDir.resolve("page.log");
+        Throwable failure = null;
+        try (Document inputDocument = new Document(inputFile.toString());
+             Document outputDocument = new Document()) {
+            PngDevice pngDevice = new PngDevice(new Resolution(600));
+            for (Page page : inputDocument.getPages()) {
+                pngDevice.process(page, tempImage.toString());
+                ProcessBuilder pb = new ProcessBuilder(
+                        "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+                        tempImage.toString(),
+                        tempDoc.toString(),
+                        "--tessdata-dir", "C:\\Program Files\\Tesseract-OCR\\tessdata",
+                        "-l", "eng",
+                        "--oem", "1",
+                        "--psm", "3",
+                        "pdf");
+                pb.redirectErrorStream(true);
+                pb.redirectOutput(tempLog.toFile());
+                Process process = pb.start();
                 try {
-                    Files.createDirectories(tempDir);
-                    ImageIO.write(img, "jpg", outputfile);
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-
-                try {
-                    Path outputBase = tempDir.resolve("out");
-                    java.lang.Process process = new ProcessBuilder(
-                            "tesseract",
-                            outputfile.getAbsolutePath(),
-                            outputBase.toString(),
-                            "hocr").start();
-                    System.out.println("tesseract " + outputfile.getAbsolutePath() + " " + outputBase + " hocr");
-                    process.waitFor();
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                    e.printStackTrace();
-                }
-
-                // reading out.html to string
-                File file = tempDir.resolve("out.hocr").toFile();
-                StringBuilder fileContents = new StringBuilder((int) file.length());
-                Scanner scanner = null;
-                try {
-                    scanner = new Scanner(file);
-                    String lineSeparator = System.getProperty("line.separator");
-
-                    while (scanner.hasNextLine()) {
-                        fileContents.append(scanner.nextLine() + lineSeparator);
+                    if (!process.waitFor(2, TimeUnit.MINUTES)) {
+                        throw new IOException("Tesseract timed out after two minutes.");
                     }
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
+                    if (process.exitValue() != 0 || !Files.isRegularFile(tempPdf)) {
+                        throw new IOException("Tesseract failed (exit " + process.exitValue()
+                                + "): " + Files.readString(tempLog));
+                    }
                 } finally {
-                    if (scanner != null)
-                        scanner.close();
+                    if (process.isAlive()) {
+                        process.destroyForcibly();
+                        process.onExit().join();
+                    }
                 }
-
-                // deleting temp files
-                File fileOut = tempDir.resolve("out.hocr").toFile();
-                if (fileOut.exists()) {
-                    fileOut.delete();
-                }
-                File fileTest = tempDir.resolve("test.jpg").toFile();
-                if (fileTest.exists()) {
-                    fileTest.delete();
-                }
-
-                return fileContents.toString();
+                outputDocument.merge(tempPdf.toString());
+                Files.deleteIfExists(tempPdf);
             }
-        };
-        // End callBack
-        try (Document document = new Document(inputFile.toString())) {
-            document.convert(cbgh);
-            document.save(outputFile.toString());
+            outputDocument.save(outputFile.toString());
+        } catch (InterruptedException e) {
+            failure = e;
+            Thread.currentThread().interrupt();
+            throw e;
+        } catch (IOException | RuntimeException | Error e) {
+            failure = e;
+            throw e;
+        } finally {
+            IOException cleanupFailure = null;
+            for (Path path : new Path[] {tempImage, tempPdf, tempLog, tempDir}) {
+                try {
+                    Files.deleteIfExists(path);
+                } catch (IOException e) {
+                    if (cleanupFailure == null) {
+                        cleanupFailure = e;
+                    } else {
+                        cleanupFailure.addSuppressed(e);
+                    }
+                }
+            }
+            if (cleanupFailure != null) {
+                if (failure != null) {
+                    failure.addSuppressed(cleanupFailure);
+                } else {
+                    throw cleanupFailure;
+                }
+            }
         }
     }
 

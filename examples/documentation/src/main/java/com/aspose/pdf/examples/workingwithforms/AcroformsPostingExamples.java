@@ -17,8 +17,7 @@ public final class AcroformsPostingExamples {
     }
 
     public static void addSubmitButton(Path inputFile, Path outputFile) {
-        FormEditor editor = new FormEditor();
-        editor.bindPdf(inputFile.toString());
+        FormEditor editor = new FormEditor(inputFile.toString(), outputFile.toString());
         try {
             editor.addSubmitBtn("submitbutton", 1, "Submit", "http://localhost/testing/show",
                     100, 450, 150, 475);
@@ -47,6 +46,10 @@ public final class AcroformsPostingExamples {
     public static void runAllExamples(String licensePath) throws Exception {
         ExampleConfig.setLicense(licensePath);
         ExampleDataDirs dirs = ExampleConfig.initializeDataDir("working_with_forms");
+
+        ExampleRunner.run("Add submit action",
+                () -> addSubmitAction(dirs.inputFile("StudentInfoFormElectronic.pdf"),
+                        dirs.outputFile("add_submit_action_out.pdf")));
 
         ExampleRunner.run("Add submit button",
                 () -> addSubmitButton(

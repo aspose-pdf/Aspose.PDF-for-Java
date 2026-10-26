@@ -11,10 +11,10 @@ public final class WorkingWithFormsExamples {
         AcroformsDeleteExamples.runAllExamples(licensePath);
         AcroformsExtractExamples.runAllExamples(licensePath);
         AcroformsFillExamples.runAllExamples(licensePath);
-        AcroformsImportExportExamples.runAllExamples(licensePath);
+        AcroFormsImportExportExamples.runAllExamples(licensePath);
         AcroformsModifingExamples.runAllExamples(licensePath);
         AcroformsPostingExamples.runAllExamples(licensePath);
-        XfaformsExamples.runAllExamples(licensePath);
+        XfaFormsExamples.runAllExamples(licensePath);
 
         System.out.println();
         System.out.println("All Working With Forms examples finished.");

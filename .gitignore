@@ -1,40 +1,117 @@
-# Eclipse project files
+# Java build outputs and archives
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.ctxt
+*.log
+hs_err_pid*
+.mtj.tmp/
+bin/
+build/
+target/
+test-output/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Maven (keep the wrapper JAR versioned)
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+!**/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+
+# Eclipse, STS, and related plugins
 .classpath
 .project
 .settings/
-test-output/
+.metadata/
+.apt_generated/
+.factorypath
+.springBeans
+.sts4-cache/
+.loadpath
+.recommenders/
+.externalToolBuilders/
+*.launch
+*.pydevproject
+.cproject
+.autotools
+.buildpath
+.target
+.tern-project
+.texlipse
+.cache-main
+.scala_dependencies
+.worksheet
+local.properties
 
-# IntelliJ project files
+# IntelliJ IDEA
 .idea/
 *.iws
 *.iml
 *.ipr
 
-# Mac
-.DS_Store
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# Others
-Temp/
-obj/
-classes/
-generated/
-bin/
-* Out*
-* out*
-*.ldb
-_ReSharper*/
-*.eml
-out/
-*.user
-*.resx
-nbproject/
-target/
-build/
-build.xml
+# Other editors and local tooling
+.vscode/
+*.sublime-*
+.exercism/
+/scratch/
+README.html
+
+# Temporary files and editor backups
+tmp/
+*.tmp
+*.bak
+*.sw?
+*~.nib
+.#*
+*#
+*~
+
+# Git merge and conflict backups
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# macOS
+.DS_Store
+*.DS_Store
+
+# Windows
 Thumbs.db
-manifest.mf
-Out/
-Out*/
-*.lic
-Data/*Out*
-*out*
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk

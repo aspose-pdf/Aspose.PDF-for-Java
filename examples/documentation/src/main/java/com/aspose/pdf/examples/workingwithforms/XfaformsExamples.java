@@ -8,8 +8,8 @@ import com.aspose.pdf.examples.ExampleRunner;
 
 import java.nio.file.Path;
 
-public final class XfaformsExamples {
-    private XfaformsExamples() {
+public final class XfaFormsExamples {
+    private XfaFormsExamples() {
     }
 
     public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
